@@ -1,0 +1,559 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NZ MMP Seat Calculator — 2026</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --ink:#15181d; --muted:#5b6472; --line:#e3e6eb;
+    --accent:#0a5ad6; --accent-soft:#e7f0ff; --good:#137a3f; --warn:#b23b00; --over:#8a1c9e;
+    --shadow:0 1px 2px rgba(20,25,35,.06),0 8px 24px rgba(20,25,35,.05);
+    --radius:12px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0e1116; --panel:#161b22; --ink:#e7ebf0; --muted:#9aa4b2; --line:#262d38;
+      --accent:#5a9bff; --accent-soft:#16233a; --good:#4cc27a; --warn:#ff9a5a; --over:#d67cff;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme=dark]{
+    --bg:#0e1116; --panel:#161b22; --ink:#e7ebf0; --muted:#9aa4b2; --line:#262d38;
+    --accent:#5a9bff; --accent-soft:#16233a; --good:#4cc27a; --warn:#ff9a5a; --over:#d67cff;
+  }
+  :root[data-theme=light]{
+    --bg:#f6f7f9; --panel:#ffffff; --ink:#15181d; --muted:#5b6472; --line:#e3e6eb;
+    --accent:#0a5ad6; --accent-soft:#e7f0ff; --good:#137a3f; --warn:#b23b00; --over:#8a1c9e;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 80px}
+  header.top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+  h1{font-size:23px;margin:0 0 4px;letter-spacing:-.02em}
+  h1 .yr{font-size:13px;font-weight:600;color:var(--accent);background:var(--accent-soft);
+    padding:2px 8px;border-radius:20px;vertical-align:middle;margin-left:6px;letter-spacing:0}
+  .presets{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .pbtn{border:1px solid var(--line);background:var(--panel);color:var(--ink);
+    border-radius:7px;padding:6px 11px;cursor:pointer;font-size:12.5px;font-weight:600}
+  .pbtn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+  .callout{background:var(--accent-soft);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px;margin:0 0 14px;font-size:12.8px;color:var(--ink);line-height:1.55}
+  .callout b{color:var(--over)}
+  .sub{color:var(--muted);font-size:13.5px;margin:0;max-width:60ch}
+  .themebtn{border:1px solid var(--line);background:var(--panel);color:var(--muted);
+    border-radius:8px;padding:7px 11px;cursor:pointer;font-size:13px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:18px;margin-top:18px}
+  .panel h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
+    margin:0 0 14px;font-weight:600}
+
+  /* settings */
+  .settings{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:flex-end}
+  .field{display:flex;flex-direction:column;gap:5px}
+  .field label{font-size:12px;color:var(--muted);font-weight:600}
+  .field input[type=number]{width:92px}
+  input[type=number],input[type=text]{background:var(--bg);border:1px solid var(--line);
+    color:var(--ink);border-radius:8px;padding:8px 10px;font-size:14px;font-variant-numeric:tabular-nums}
+  input[type=number]:focus,input[type=text]:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg button{border:0;background:var(--panel);color:var(--muted);padding:8px 12px;cursor:pointer;font-size:13px}
+  .seg button.on{background:var(--accent);color:#fff}
+  .toggle{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
+  .toggle input{width:16px;height:16px;accent-color:var(--accent)}
+
+  /* input table */
+  table{width:100%;border-collapse:collapse}
+  th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+    text-align:left;padding:6px 10px;font-weight:600;border-bottom:1px solid var(--line)}
+  th.num,td.num{text-align:right}
+  td{padding:6px 10px;border-bottom:1px solid var(--line)}
+  #inRows td input[type=text]{width:100%;min-width:120px}
+  #inRows td input[type=number]{width:96px;text-align:right}
+  .swatch{width:12px;height:12px;border-radius:3px;display:inline-block;vertical-align:middle;margin-right:2px;border:1px solid rgba(0,0,0,.15)}
+  .del{border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:17px;line-height:1;padding:2px 6px;border-radius:6px}
+  .del:hover{color:var(--warn);background:var(--bg)}
+  .addbtn{margin-top:12px;border:1px dashed var(--line);background:transparent;color:var(--accent);
+    border-radius:8px;padding:9px 14px;cursor:pointer;font-size:13.5px;font-weight:600}
+  .addbtn:hover{background:var(--accent-soft)}
+  .rowsum{color:var(--muted);font-size:12.5px;margin-top:8px}
+  .rowsum.bad{color:var(--warn)}
+
+  /* results */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:6px}
+  .stat{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .stat .k{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+  .stat .v{font-size:26px;font-weight:650;letter-spacing:-.02em;font-variant-numeric:tabular-nums;margin-top:2px}
+  .stat .v small{font-size:13px;color:var(--muted);font-weight:500}
+
+  /* parliament bar */
+  .bar{display:flex;height:34px;border-radius:8px;overflow:hidden;border:1px solid var(--line);margin:2px 0 4px}
+  .bar span{display:block;height:100%}
+  .majline{position:relative;height:14px;margin-bottom:16px}
+  .majline .tick{position:absolute;top:0;width:2px;height:14px;background:var(--ink);transform:translateX(-1px)}
+  .majline .lbl{position:absolute;top:0;transform:translateX(-50%);font-size:11px;color:var(--muted);white-space:nowrap;background:var(--panel);padding:0 4px}
+
+  #resTable td.party{white-space:nowrap}
+  #resTable tr.excluded{color:var(--muted)}
+  #resTable td .over{color:var(--over);font-weight:600}
+  #resTable .pct{color:var(--muted);font-variant-numeric:tabular-nums}
+  #resTable tbody tr{cursor:pointer}
+  #resTable tbody tr:hover{background:var(--accent-soft)}
+  #resTable tbody tr.inbloc{background:var(--accent-soft)}
+  #resTable td.num,#resTable th.num{font-variant-numeric:tabular-nums}
+  .chk{width:15px;height:15px;accent-color:var(--accent);vertical-align:middle}
+  tfoot td{font-weight:650;border-top:2px solid var(--line);border-bottom:0}
+
+  /* coalition */
+  .bloc{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:8px}
+  .blocpill{font-size:15px}
+  .blocpill b{font-size:20px;font-variant-numeric:tabular-nums}
+  .verdict{font-weight:650;padding:5px 12px;border-radius:20px;font-size:13.5px}
+  .verdict.win{background:rgba(19,122,63,.14);color:var(--good)}
+  .verdict.lose{background:rgba(178,59,0,.14);color:var(--warn)}
+  .hint{color:var(--muted);font-size:12.5px}
+  .note{color:var(--muted);font-size:12px;margin-top:14px;line-height:1.6}
+  .note code{background:var(--bg);padding:1px 5px;border-radius:4px;font-size:11.5px}
+  a{color:var(--accent)}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>NZ MMP Seat Calculator <span class="yr">2026</span></h1>
+      <p class="sub">Plug in party-vote polling and electorate seats to project Parliament under New Zealand's
+        Sainte-Laguë method. Handles the 5% / one-electorate threshold, list top-ups, overhang, and coalition maths.
+        Enter your own numbers, or use <b>Load</b> below for a poll or past result.</p>
+    </div>
+    <button class="themebtn" id="themeBtn">◐ Theme</button>
+  </header>
+
+  <section class="panel">
+    <h2>Settings</h2>
+    <div class="settings">
+      <div class="field">
+        <label>Party-vote input</label>
+        <div class="seg" id="modeSeg">
+          <button data-mode="pct" class="on">Percentages</button>
+          <button data-mode="raw">Raw votes</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="seats">Nominal seats</label>
+        <input type="number" id="seats" value="120" min="1" step="1">
+      </div>
+      <div class="field">
+        <label for="thresh">Threshold %</label>
+        <input type="number" id="thresh" value="5" min="0" step="0.1">
+      </div>
+      <div class="field">
+        <label>Coat-tail rule</label>
+        <label class="toggle"><input type="checkbox" id="coattail" checked>
+          <span>1 electorate → list seats</span></label>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+      <h2 style="margin:0">Parties</h2>
+      <div class="presets">
+        <span class="hint" style="margin-right:2px">Load:</span>
+        <button class="pbtn" data-preset="poll2026">2026 Verian poll</button>
+        <button class="pbtn" data-preset="result2023">2023 result</button>
+        <button class="pbtn" data-preset="blank">Clear</button>
+      </div>
+    </div>
+    <div class="callout">
+      <b>Māori-seat overhang:</b> Te Pāti Māori is polling ~1% (below 5%) but its co-leaders still hold Māori
+      electorates — plus <b>Tākuta Ferris</b> (Te Tai Tonga, now independent) and <b>Mariameno Kapa-Kingi</b>
+      (Te Tai Tokerau, now her own party) sit on near-zero party vote. Each electorate winner keeps their seat,
+      so those seats become <b>overhang</b> on top of 120. Adjust the electorate column to test who holds what.
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:40%">Party</th>
+          <th class="num" id="voteHead">Party vote %</th>
+          <th class="num">Electorate seats</th>
+          <th style="width:32px"></th>
+        </tr>
+      </thead>
+      <tbody id="inRows"></tbody>
+    </table>
+    <button class="addbtn" id="addRow">+ Add party</button>
+    <div class="rowsum" id="rowSum"></div>
+  </section>
+
+  <section class="panel" id="resultsPanel">
+    <h2>Projected Parliament</h2>
+    <div class="stats" id="stats"></div>
+    <div class="bar" id="bar"></div>
+    <div class="majline" id="majline"></div>
+    <table id="resTable">
+      <thead>
+        <tr>
+          <th style="width:26px"></th>
+          <th>Party</th>
+          <th class="num">Vote %</th>
+          <th class="num">Entitlement</th>
+          <th class="num">Electorate</th>
+          <th class="num">List</th>
+          <th class="num">Total</th>
+        </tr>
+      </thead>
+      <tbody id="resRows"></tbody>
+      <tfoot id="resFoot"></tfoot>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Coalition builder</h2>
+    <p class="hint">Tick parties in the table above (or below) to assemble a bloc and test it against the majority line.</p>
+    <div class="bloc" id="blocBox"></div>
+  </section>
+
+  <p class="note">
+    <b>Method.</b> Among parties that clear the threshold (≥ threshold% of the party vote <em>or</em> ≥ 1 electorate seat when
+    the coat-tail rule is on), the nominal seats are handed out one at a time to the highest quotient
+    <code>votes / (2s + 1)</code> (Sainte-Laguë odd divisors 1, 3, 5, …). A party's <b>list seats = entitlement − electorate seats</b>.
+    If a party wins more electorates than its entitlement, it keeps them all and the surplus is added on top as
+    <span style="color:var(--over)">overhang</span>, growing Parliament beyond the nominal total — as with Te Pāti Māori in 2023.
+    Party lists are assumed long enough to fill every list seat (the rare list-exhaustion "underhang" case is not modelled).
+    Not affiliated with the Electoral Commission — a projection tool, not official.
+  </p>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var PALETTE = ["#1f6fd6","#d1352b","#2f9e44","#f0a020","#7048e8","#e64980","#0c8599","#e8590c","#495057","#12b886"];
+  var LS = "nzmmp-v1";
+  var mode = "pct";          // "pct" | "raw"
+  var rows = [];             // {name,votes,elect,color}
+  var bloc = {};             // name -> true
+  var lastResult = null;
+
+  var $ = function(id){ return document.getElementById(id); };
+
+  /* ---------- state ---------- */
+  function row(name, votes, elect){
+    return { name:name, votes:votes, elect:elect };
+  }
+
+  var PRESETS = {
+    // 1News Verian poll, fieldwork 8–11 Aug 2026 (party vote %).
+    // Electorate column reflects Māori-seat holders post-2025/26 TPM split; big
+    // parties left at 0 since a poll doesn't determine electorate outcomes.
+    poll2026: { mode:"pct", seats:120, thresh:5, coattail:true, rows:[
+      row("Labour", 30, 0),
+      row("National", 29, 0),
+      row("Green", 12, 0),
+      row("ACT", 9, 0),
+      row("Opportunity (TOP)", 8, 0),
+      row("NZ First", 8, 0),
+      row("Te Pāti Māori", 1, 4),
+      row("Tākuta Ferris (Ind)", 0, 1),
+      row("Te Tai Tokerau Party", 0, 1),
+      row("Others (below 5%)", 3, 0)
+    ]},
+    // Official 2023 general election result — reproduces the real 122-seat House
+    // (Te Pāti Māori +2 overhang); the 123rd seat came from the Port Waikato by-election.
+    result2023: { mode:"pct", seats:120, thresh:5, coattail:true, rows:[
+      row("National", 38.08, 27),
+      row("Labour", 26.92, 17),
+      row("Green", 11.60, 3),
+      row("ACT", 8.64, 1),
+      row("NZ First", 6.09, 0),
+      row("Te Pāti Māori", 3.08, 6)
+    ]},
+    blank: { mode:"pct", seats:120, thresh:5, coattail:true, rows:[
+      row("","",""), row("","",""), row("","",""), row("","","")
+    ]}
+  };
+
+  function applyPreset(key){
+    var p = PRESETS[key]; if(!p) return;
+    rows = p.rows.map(function(r){ return row(r.name, r.votes, r.elect); });
+    mode = p.mode || "pct";
+    $("seats").value = (p.seats!=null) ? p.seats : 120;
+    $("thresh").value = (p.thresh!=null) ? p.thresh : 5;
+    $("coattail").checked = (p.coattail!==false);
+    bloc = {};
+  }
+  function load(){
+    try{
+      var s = JSON.parse(localStorage.getItem(LS));
+      if(s && s.rows && s.rows.length){
+        rows = s.rows; mode = s.mode||"pct";
+        if(typeof s.seats!=="undefined") $("seats").value = s.seats;
+        if(typeof s.thresh!=="undefined") $("thresh").value = s.thresh;
+        if(typeof s.coattail!=="undefined") $("coattail").checked = s.coattail;
+        return;
+      }
+    }catch(e){}
+    applyPreset("blank");
+  }
+  function save(){
+    try{
+      localStorage.setItem(LS, JSON.stringify({
+        rows:rows, mode:mode, seats:$("seats").value,
+        thresh:$("thresh").value, coattail:$("coattail").checked
+      }));
+    }catch(e){}
+  }
+
+  /* ---------- Sainte-Laguë core (juliuste-style highest-quotient loop) ---------- */
+  function allocate(parties, seats){
+    // parties: [{key, votes}] already filtered to qualifiers with votes>0
+    var seatsBy = {}, i;
+    for(i=0;i<parties.length;i++) seatsBy[parties[i].key] = 0;
+    for(var s=0;s<seats;s++){
+      var bestKey=null, bestQ=-1, tie=false, bestVotes=-1;
+      for(i=0;i<parties.length;i++){
+        var p = parties[i];
+        var q = p.votes/(2*seatsBy[p.key]+1);
+        if(q > bestQ + 1e-12){ bestQ=q; bestKey=p.key; bestVotes=p.votes; tie=false; }
+        else if(Math.abs(q-bestQ) <= 1e-9){
+          // tie-break: larger raw vote wins; flag genuine dead heat
+          if(p.votes > bestVotes){ bestKey=p.key; bestVotes=p.votes; }
+          tie = (p.votes === bestVotes);
+        }
+      }
+      seatsBy[bestKey]++;
+    }
+    return seatsBy;
+  }
+
+  /* ---------- NZ rule layer (wombleton-style: threshold, electorate, overhang) ---------- */
+  function compute(){
+    var seats = Math.max(1, parseInt($("seats").value,10)||120);
+    var thr = Math.max(0, parseFloat($("thresh").value)||0);
+    var coat = $("coattail").checked;
+
+    var active = rows.filter(function(r){ return String(r.name).trim() !== ""; })
+                     .map(function(r){
+      return {
+        name: String(r.name).trim(),
+        votes: Math.max(0, parseFloat(r.votes)||0),
+        elect: Math.max(0, parseInt(r.elect,10)||0)
+      };
+    });
+    var totalVotes = active.reduce(function(a,r){ return a + r.votes; }, 0);
+
+    active.forEach(function(r){
+      r.pct = (mode==="pct") ? r.votes : (totalVotes>0 ? r.votes/totalVotes*100 : 0);
+      r.qualifies = (r.pct >= thr - 1e-9) || (coat && r.elect >= 1);
+    });
+
+    var qualifiers = active.filter(function(r){ return r.qualifies && r.votes>0; })
+                           .map(function(r){ return {key:r.name, votes:r.votes}; });
+    var alloc = allocate(qualifiers, seats);
+
+    var totalOverhang = 0;
+    active.forEach(function(r){
+      var ent = r.qualifies ? (alloc[r.name]||0) : 0;   // sub-threshold non-coattail parties get no list entitlement
+      r.entitlement = ent;
+      if(r.elect > ent){
+        // keeps all electorate seats; surplus is overhang
+        r.list = 0;
+        r.overhang = r.elect - ent;
+        r.total = r.elect;
+        totalOverhang += r.overhang;
+      } else {
+        r.list = ent - r.elect;
+        r.overhang = 0;
+        r.total = ent;
+      }
+    });
+
+    active.sort(function(a,b){ return b.total - a.total || b.pct - a.pct; });
+    return {
+      parties: active, seats: seats, totalOverhang: totalOverhang,
+      house: seats + totalOverhang, majority: Math.floor((seats+totalOverhang)/2)+1,
+      totalVotes: totalVotes, mode: mode
+    };
+  }
+
+  /* ---------- rendering ---------- */
+  function colorFor(name, idx){ return PALETTE[idx % PALETTE.length]; }
+
+  function renderInputs(){
+    var tb = $("inRows"); tb.innerHTML = "";
+    rows.forEach(function(r, i){
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        '<td><input type="text" data-i="'+i+'" data-f="name" placeholder="Party name" value="'+esc(r.name)+'"></td>'+
+        '<td class="num"><input type="number" data-i="'+i+'" data-f="votes" step="0.01" min="0" placeholder="0" value="'+esc(r.votes)+'"></td>'+
+        '<td class="num"><input type="number" data-i="'+i+'" data-f="elect" step="1" min="0" placeholder="0" value="'+esc(r.elect)+'"></td>'+
+        '<td><button class="del" data-del="'+i+'" title="Remove">×</button></td>';
+      tb.appendChild(tr);
+    });
+  }
+
+  function renderRowSum(res){
+    var el = $("rowSum");
+    if(mode==="pct"){
+      var sum = res.parties.reduce(function(a,r){ return a+r.pct; },0);
+      el.textContent = "Entered party vote sums to " + fmt(sum,2) + "%.";
+      el.className = "rowsum" + (sum>100.001 ? " bad" : "");
+      if(sum>100.001) el.textContent += " — over 100%.";
+    } else {
+      el.textContent = "Total party votes entered: " + fmt(res.totalVotes,0) + ".";
+      el.className = "rowsum";
+    }
+  }
+
+  function renderResults(res){
+    lastResult = res;
+    var idxOf = {}; res.parties.forEach(function(p,i){ p.color = colorFor(p.name,i); idxOf[p.name]=i; });
+
+    // stats
+    var seated = res.parties.filter(function(p){ return p.total>0; }).length;
+    $("stats").innerHTML =
+      statCard("House size", res.house + (res.totalOverhang?' <small>('+res.seats+'+'+res.totalOverhang+' overhang)</small>':'')) +
+      statCard("Majority needs", res.majority) +
+      statCard("Parties in House", seated) +
+      statCard("Overhang seats", res.totalOverhang);
+
+    // seat bar (only seated parties)
+    var seatedParties = res.parties.filter(function(p){ return p.total>0; });
+    var barEl = $("bar"); barEl.innerHTML = "";
+    seatedParties.forEach(function(p){
+      var sp = document.createElement("span");
+      sp.style.background = p.color;
+      sp.style.width = (p.total/res.house*100)+"%";
+      sp.title = p.name+": "+p.total;
+      barEl.appendChild(sp);
+    });
+    if(!seatedParties.length){ barEl.innerHTML='<span style="width:100%;background:var(--line)"></span>'; }
+
+    // majority tick
+    var ml = $("majline");
+    var pos = (res.majority-0.5)/res.house*100;
+    ml.innerHTML = '<div class="tick" style="left:'+pos+'%"></div>'+
+                   '<div class="lbl" style="left:'+pos+'%">majority '+res.majority+'</div>';
+
+    // table
+    var tb = $("resRows"); tb.innerHTML = "";
+    res.parties.forEach(function(p){
+      var tr = document.createElement("tr");
+      tr.className = (p.qualifies?"":"excluded") + (bloc[p.name]?" inbloc":"");
+      tr.setAttribute("data-name", p.name);
+      var ovr = p.overhang ? ' <span class="over" title="overhang">+'+p.overhang+'</span>' : '';
+      var entTxt = p.qualifies ? p.entitlement : '<span title="below threshold">—</span>';
+      tr.innerHTML =
+        '<td><input type="checkbox" class="chk" '+(bloc[p.name]?"checked":"")+' '+(p.total?"":"disabled")+'></td>'+
+        '<td class="party"><span class="swatch" style="background:'+p.color+'"></span>'+esc(p.name)+
+            (p.qualifies?'':' <span class="hint">(below threshold)</span>')+'</td>'+
+        '<td class="num pct">'+fmt(p.pct,2)+'</td>'+
+        '<td class="num">'+entTxt+'</td>'+
+        '<td class="num">'+p.elect+'</td>'+
+        '<td class="num">'+p.list+'</td>'+
+        '<td class="num"><b>'+p.total+'</b>'+ovr+'</td>';
+      tb.appendChild(tr);
+    });
+    var totEl = res.parties.reduce(function(a,p){return a+p.elect;},0);
+    var totLi = res.parties.reduce(function(a,p){return a+p.list;},0);
+    var totTo = res.parties.reduce(function(a,p){return a+p.total;},0);
+    $("resFoot").innerHTML =
+      '<tr><td></td><td>Total</td><td></td><td></td>'+
+      '<td class="num">'+totEl+'</td><td class="num">'+totLi+'</td><td class="num">'+totTo+'</td></tr>';
+
+    renderBloc(res);
+  }
+
+  function renderBloc(res){
+    var box = $("blocBox");
+    var members = res.parties.filter(function(p){ return bloc[p.name] && p.total>0; });
+    var sum = members.reduce(function(a,p){ return a+p.total; },0);
+    if(!members.length){
+      box.innerHTML = '<span class="hint">No parties selected.</span>';
+      return;
+    }
+    var names = members.map(function(p){
+      return '<span class="swatch" style="background:'+p.color+'"></span>'+esc(p.name)+' '+p.total;
+    }).join(" &nbsp;+&nbsp; ");
+    var win = sum >= res.majority;
+    var v = win ? '<span class="verdict win">Majority ✓ (+'+(sum-res.majority+1 -1)+' over)</span>'
+                : '<span class="verdict lose">Short by '+(res.majority-sum)+'</span>';
+    box.innerHTML =
+      '<span class="blocpill">'+names+'</span>'+
+      '<span class="blocpill">= <b>'+sum+'</b> / '+res.house+'</span>'+ v;
+  }
+
+  /* ---------- helpers ---------- */
+  function statCard(k,v){ return '<div class="stat"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>'; }
+  function fmt(n,d){ if(!isFinite(n)) n=0; return n.toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d}); }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+
+  function recompute(){ var res = compute(); renderRowSum(res); renderResults(res); save(); }
+
+  function syncModeUI(){
+    $("voteHead").textContent = (mode==="pct") ? "Party vote %" : "Party votes";
+    [].forEach.call($("modeSeg").children, function(b){ b.classList.toggle("on", b.getAttribute("data-mode")===mode); });
+  }
+
+  /* ---------- events ---------- */
+  $("inRows").addEventListener("input", function(e){
+    var i = e.target.getAttribute("data-i"), f = e.target.getAttribute("data-f");
+    if(i==null) return;
+    rows[+i][f] = e.target.value;
+    recompute();
+  });
+  $("inRows").addEventListener("click", function(e){
+    var d = e.target.getAttribute("data-del");
+    if(d==null) return;
+    var name = (rows[+d].name||"").trim(); if(name) delete bloc[name];
+    rows.splice(+d,1);
+    if(!rows.length) rows.push(row("","",""));
+    renderInputs(); recompute();
+  });
+  $("addRow").addEventListener("click", function(){ rows.push(row("","","")); renderInputs(); recompute(); });
+
+  document.querySelector(".presets").addEventListener("click", function(e){
+    var k = e.target.getAttribute("data-preset"); if(!k) return;
+    applyPreset(k); syncModeUI(); renderInputs(); recompute();
+  });
+
+  $("resRows").addEventListener("click", function(e){
+    var tr = e.target.closest("tr"); if(!tr) return;
+    var name = tr.getAttribute("data-name"); if(!name) return;
+    var p = lastResult && lastResult.parties.filter(function(x){return x.name===name;})[0];
+    if(!p || !p.total) return;
+    if(bloc[name]) delete bloc[name]; else bloc[name]=true;
+    tr.classList.toggle("inbloc", !!bloc[name]);
+    var chk = tr.querySelector(".chk"); if(chk) chk.checked = !!bloc[name];
+    renderBloc(lastResult);
+  });
+
+  ["seats","thresh"].forEach(function(id){ $(id).addEventListener("input", recompute); });
+  $("coattail").addEventListener("change", recompute);
+
+  $("modeSeg").addEventListener("click", function(e){
+    var m = e.target.getAttribute("data-mode"); if(!m) return;
+    mode = m;
+    [].forEach.call(this.children, function(b){ b.classList.toggle("on", b.getAttribute("data-mode")===m); });
+    $("voteHead").textContent = (m==="pct") ? "Party vote %" : "Party votes";
+    recompute();
+  });
+
+  // theme
+  (function(){
+    var btn = $("themeBtn"), root = document.documentElement, key="nzmmp-theme";
+    var saved = localStorage.getItem(key); if(saved) root.setAttribute("data-theme", saved);
+    btn.addEventListener("click", function(){
+      var cur = root.getAttribute("data-theme");
+      var next = cur==="dark" ? "light" : (cur==="light" ? "dark" :
+                 (matchMedia("(prefers-color-scheme:dark)").matches ? "light" : "dark"));
+      root.setAttribute("data-theme", next); localStorage.setItem(key, next);
+    });
+  })();
+
+  /* ---------- init ---------- */
+  load();
+  syncModeUI();
+  renderInputs();
+  recompute();
+})();
+</script>
