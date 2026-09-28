@@ -127,7 +127,7 @@ var ROSTER=[{name:"Labour",color:"#d1352b"},{name:"National",color:"#1f6fd6"},{n
 var EXTRA=[{name:"Te Tai Tokerau Party",color:"#7048e8"},{name:"Independent",color:"#12b886"}];
 var ABBR={"Labour":"LAB","National":"NAT","Green":"GRN","ACT":"ACT","Opportunity (TOP)":"TOP","NZ First":"NZF","Te Pāti Māori":"TPM","Others (below 5%)":"OTH","Te Tai Tokerau Party":"TTT","Independent":"IND"};
 var MAORI=[{seat:"Te Tai Tokerau",holder:"Mariameno Kapa-Kingi",party:"Te Tai Tokerau Party"},{seat:"Te Tai Tonga",holder:"Tākuta Ferris",party:"Independent"},{seat:"Hauraki-Waikato",holder:"Hana-Rāwhiti Maipi-Clarke",party:"Te Pāti Māori"},{seat:"Tāmaki Makaurau",holder:"Oriini Kaipara",party:"Te Pāti Māori"},{seat:"Te Tai Hauāuru",holder:"Debbie Ngarewa-Packer",party:"Te Pāti Māori"},{seat:"Waiariki",holder:"Rawiri Waititi",party:"Te Pāti Māori"},{seat:"Ikaroa-Rāwhiti",holder:"Cushla Tangaere-Manuel",party:"Labour"}];
-var VERIAN={"Labour":30,"National":29,"Green":12,"ACT":9,"Opportunity (TOP)":8,"NZ First":8,"Te Pāti Māori":1,"Others (below 5%)":3};
+var VERIAN={"Labour":28.2,"National":27.8,"Green":16,"ACT":11.4,"Opportunity (TOP)":5.6,"NZ First":8.8,"Te Pāti Māori":1.2,"Others (below 5%)":1};
 var ELECTION_2023={"Labour":26.92,"National":38.08,"Green":11.6,"ACT":8.64,"Opportunity (TOP)":2.22,"NZ First":6.09,"Te Pāti Māori":3.08,"Others (below 5%)":3.37};
 var DEFAULT_WINNERS={};MAORI.forEach(function(m){DEFAULT_WINNERS[m.seat]=m.party});
 function maoriPreset(tpm){var w={};MAORI.forEach(function(m){w[m.seat]=tpm.indexOf(m.seat)>=0?"Te Pāti Māori":"Labour"});return w}
