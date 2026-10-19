@@ -1,0 +1,3131 @@
+{
+ "source": "Wikipedia: Candidates in the 2026 New Zealand general election by electorate (snapshot 13 Oct 2026, CC BY-SA)",
+ "seats": {
+  "Auckland Central": {
+   "candidates": [
+    {
+     "name": "Johan Chang",
+     "party": "TOP",
+     "rank": 36
+    },
+    {
+     "name": "Naisi Chen",
+     "party": "LAB",
+     "rank": 35,
+     "notes": "List MP 2020–2023, contested Botany in 2020 and East Coast Bays in 2023"
+    },
+    {
+     "name": "Candace Kinser",
+     "party": "NAT",
+     "rank": 55
+    },
+    {
+     "name": "Christopher Manaia",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 5
+    },
+    {
+     "name": "Antonia Modkova",
+     "party": "ACT",
+     "rank": 13,
+     "notes": "Contested Panmure-Ōtāhuhu in 2023"
+    },
+    {
+     "name": "Chlöe Swarbrick",
+     "party": "GRN",
+     "incumbent": true,
+     "rank": 2
+    }
+   ],
+   "retiring": []
+  },
+  "Banks Peninsula": {
+   "candidates": [
+    {
+     "name": "Tracey McLellan",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 28,
+     "notes": "MP for Banks Peninsula 2020–2023"
+    },
+    {
+     "name": "Craig Pauling",
+     "party": "GRN",
+     "rank": 14
+    },
+    {
+     "name": "Leslie Sales",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 8
+    },
+    {
+     "name": "John Stringer",
+     "party": "NZF",
+     "rank": 47,
+     "notes": "Contested Ilam for the Conservative Party in 2014"
+    },
+    {
+     "name": "Kyle Turnbull",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 5
+    },
+    {
+     "name": "Amy Turner",
+     "party": "OTH",
+     "label": "Conservative Party NZ",
+     "rank": 8
+    },
+    {
+     "name": "Vanessa Weenink",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 39
+    },
+    {
+     "name": "Zachary Wellman",
+     "party": "ACT",
+     "rank": 31
+    },
+    {
+     "name": "Lindsay Kerslake",
+     "party": "NZF",
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Botany": {
+   "candidates": [
+    {
+     "name": "Ali Dahche",
+     "party": "ACT",
+     "rank": 28
+    },
+    {
+     "name": "Neru Leavasa",
+     "party": "LAB",
+     "rank": 32,
+     "notes": "MP for Takanini 2020–2023"
+    },
+    {
+     "name": "Christopher Luxon",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 1
+    },
+    {
+     "name": "Craig Stobo",
+     "party": "NZF",
+     "rank": 8
+    }
+   ],
+   "retiring": []
+  },
+  "Christchurch Central": {
+   "candidates": [
+    {
+     "name": "Blair Anderson",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 7,
+     "notes": "Contested Wigram in 2023"
+    },
+    {
+     "name": "Mark Arneil",
+     "party": "NZF",
+     "rank": 24,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Greg Byrnes",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 13
+    },
+    {
+     "name": "Kahurangi Carter",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 11,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "George Hampton",
+     "party": "LAB",
+     "rank": 52,
+     "notes": "Contested North Shore in 2023"
+    },
+    {
+     "name": "Tubby Hansen",
+     "party": "OTH",
+     "label": "Economic Euthenics",
+     "notes": "Contested Wigram in 2023"
+    },
+    {
+     "name": "Hayden Laurie",
+     "party": "IND"
+    },
+    {
+     "name": "Eden Skipper",
+     "party": "TOP",
+     "rank": 5
+    },
+    {
+     "name": "Dale Stephens",
+     "party": "NAT",
+     "rank": 23,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Duncan Webb",
+     "party": "LAB"
+    }
+   ]
+  },
+  "Christchurch East": {
+   "candidates": [
+    {
+     "name": "Teresa Butler",
+     "party": "GRN",
+     "rank": 55,
+     "notes": "List only candidate for Te Pāti Māori in 2023"
+    },
+    {
+     "name": "David Cajar-Mueller",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 13
+    },
+    {
+     "name": "Alexandra Davids",
+     "party": "NAT",
+     "rank": 65
+    },
+    {
+     "name": "Reuben Davidson",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 21
+    },
+    {
+     "name": "Ethan Gullery",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 3
+    },
+    {
+     "name": "Helen Houghton",
+     "party": "OTH",
+     "label": "Conservative Party NZ",
+     "rank": 1,
+     "notes": "Contested electorate in 2023; originally selected for Tāmaki"
+    },
+    {
+     "name": "Paula Lambert",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 4,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Toni Severin",
+     "party": "ACT",
+     "rank": 39,
+     "notes": "List MP 2020–2023; contested electorate in 2023"
+    },
+    {
+     "name": "Vikramjit Singh",
+     "party": "IND"
+    },
+    {
+     "name": "Glenn Thompson",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 17
+    },
+    {
+     "name": "Shane Wiremu",
+     "party": "NZF",
+     "rank": 45,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Coromandel": {
+   "candidates": [
+    {
+     "name": "Vincent Anderson",
+     "party": "NZF",
+     "rank": 30
+    },
+    {
+     "name": "Glen Bennett",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 25,
+     "notes": "MP for New Plymouth 2020–2023"
+    },
+    {
+     "name": "Ray Cobb",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 8,
+     "notes": "Contested electorate for New Zealand Loyal in 2023"
+    },
+    {
+     "name": "Pamela Grealey",
+     "party": "GRN",
+     "rank": 32,
+     "notes": "Contested electorate in 2020 and 2023"
+    },
+    {
+     "name": "Steven Hart",
+     "party": "IND"
+    },
+    {
+     "name": "Mike McCormick",
+     "party": "ACT",
+     "notes": "Contested Papakura in 2023"
+    },
+    {
+     "name": "Scott Simpson",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 19
+    }
+   ],
+   "retiring": []
+  },
+  "Dunedin": {
+   "candidates": [
+    {
+     "name": "Kristine Asuncion",
+     "party": "NAT",
+     "rank": 42
+    },
+    {
+     "name": "David Bainbridge-Zafar",
+     "party": "TOP",
+     "rank": 8
+    },
+    {
+     "name": "Victor Billot",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 1,
+     "notes": "Contested Dunedin North in 2011"
+    },
+    {
+     "name": "Rachel Brooking",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 11
+    },
+    {
+     "name": "Francisco Hernandez",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 10,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Adrian McDermott",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 10,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Kym McDonald-King",
+     "party": "NZF",
+     "rank": 26
+    },
+    {
+     "name": "Benedict Ong",
+     "party": "IND"
+    }
+   ],
+   "retiring": []
+  },
+  "East Cape": {
+   "candidates": [
+    {
+     "name": "Gordon Dickson",
+     "party": "IND",
+     "notes": "Contested East Coast in 2023"
+    },
+    {
+     "name": "Darrin Hawkes",
+     "party": "ACT",
+     "rank": 35
+    },
+    {
+     "name": "Dana Kirkpatrick",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 33,
+     "notes": "MP for East Coast since 2023"
+    },
+    {
+     "name": "Jo Luxton",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 17,
+     "notes": "MP for Rangitata 2020–2023"
+    },
+    {
+     "name": "Cail Smith",
+     "party": "TOP",
+     "rank": 33
+    },
+    {
+     "name": "Jordan Walker",
+     "party": "GRN",
+     "rank": 45,
+     "notes": "Contested East Coast in 2023"
+    },
+    {
+     "name": "Te Kira Lawrence",
+     "party": "NZF",
+     "notes": "Changed candidacy to Napier"
+    }
+   ],
+   "retiring": []
+  },
+  "East Coast Bays": {
+   "candidates": [
+    {
+     "name": "Allan Lind",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 12
+    },
+    {
+     "name": "Brendan McEnroe",
+     "party": "LAB",
+     "rank": 69
+    },
+    {
+     "name": "Abe McKee",
+     "party": "GRN",
+     "rank": 35
+    },
+    {
+     "name": "Sam Mills",
+     "party": "ACT",
+     "rank": 22
+    },
+    {
+     "name": "Erica Stanford",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 5
+    },
+    {
+     "name": "Vaughan Taylor",
+     "party": "NZF",
+     "rank": 42
+    }
+   ],
+   "retiring": []
+  },
+  "Epsom": {
+   "candidates": [
+    {
+     "name": "Camilla Belich",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 23,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Paul Goldsmith",
+     "party": "NAT",
+     "listMP": true,
+     "rank": 6,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Martin Gummer",
+     "party": "NZF",
+     "rank": 27,
+     "notes": "Contested Waitakere for National in 1981"
+    },
+    {
+     "name": "Paul Jackson",
+     "party": "TOP",
+     "rank": 39
+    },
+    {
+     "name": "Sawan Jerry",
+     "party": "OTH",
+     "label": "Vision NZ",
+     "rank": 3
+    },
+    {
+     "name": "David Seymour",
+     "party": "ACT",
+     "incumbent": true,
+     "rank": 1
+    },
+    {
+     "name": "Lawrence Xu-Nan",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 8,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Glendene": {
+   "candidates": [
+    {
+     "name": "Evan French",
+     "party": "TOP",
+     "rank": 28
+    },
+    {
+     "name": "Sunil Kumar",
+     "party": "NAT",
+     "rank": 63
+    },
+    {
+     "name": "Robert McNeil",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 1,
+     "notes": "Contested Botany in 2023"
+    },
+    {
+     "name": "Alfred Ngaro",
+     "party": "NZF",
+     "rank": 5,
+     "notes": "National list MP, 2011–2020; contested Te Atatū in 2020; NewZeal leader and list only candidate in 2023"
+    },
+    {
+     "name": "Amanda Roberts",
+     "party": "ACT",
+     "rank": 19
+    },
+    {
+     "name": "Tua Schuster",
+     "party": "IND"
+    },
+    {
+     "name": "Carmel Sepuloni",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 2,
+     "notes": "MP for Kelston since 2014"
+    },
+    {
+     "name": "Yasmine Serhan",
+     "party": "GRN",
+     "rank": 18
+    }
+   ],
+   "retiring": []
+  },
+  "Hamilton East": {
+   "candidates": [
+    {
+     "name": "Georgie Dansey",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 33,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Jacobus Gielen",
+     "party": "IND",
+     "notes": "Contested electorate for The Republic of New Zealand Party in 2023"
+    },
+    {
+     "name": "Ryan Hamilton",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 36
+    },
+    {
+     "name": "Nicola Laboyrie",
+     "party": "NZF",
+     "rank": 41
+    },
+    {
+     "name": "Naomi Pocock",
+     "party": "TOP",
+     "rank": 15,
+     "notes": "Contested Hamilton West in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Hamilton West": {
+   "candidates": [
+    {
+     "name": "Nathan Lee Couper",
+     "party": "OTH",
+     "label": "New World Order McCann Party",
+     "notes": "Contested Hamilton East in 2023"
+    },
+    {
+     "name": "Louise Hutt",
+     "party": "GRN",
+     "rank": 19
+    },
+    {
+     "name": "Steve Phelps",
+     "party": "IND"
+    },
+    {
+     "name": "Donna Pokere-Phillips",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 6,
+     "notes": "Contested Hauraki-Waikato in 2023"
+    },
+    {
+     "name": "Tama Potaka",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 11
+    },
+    {
+     "name": "Blair Smith",
+     "party": "TOP",
+     "rank": 35
+    },
+    {
+     "name": "Kevin Stone",
+     "party": "NZF",
+     "rank": 43,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Wiremu Thomson",
+     "party": "IND",
+     "notes": "Contested Wigram in 2023"
+    },
+    {
+     "name": "Myra Williamson",
+     "party": "LAB",
+     "rank": 60,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Henderson": {
+   "candidates": [
+    {
+     "name": "Kay Luv",
+     "party": "IND"
+    },
+    {
+     "name": "Angee Nicholas",
+     "party": "NAT",
+     "rank": 26,
+     "notes": "Contested Te Atatū in 2023"
+    },
+    {
+     "name": "Kelso Papali'i",
+     "party": "OTH",
+     "label": "Jobseeker Party"
+    },
+    {
+     "name": "Nick Peirce",
+     "party": "ACT",
+     "rank": 34
+    },
+    {
+     "name": "John Divine Paola Talagi",
+     "party": "IND"
+    },
+    {
+     "name": "Phil Twyford",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 40,
+     "notes": "MP for Te Atatū since 2011"
+    },
+    {
+     "name": "Alika Wells",
+     "party": "GRN",
+     "rank": 27
+    },
+    {
+     "name": "David Wilson",
+     "party": "NZF",
+     "listMP": true,
+     "rank": 12,
+     "notes": "Contested Upper Harbour in 2023"
+    },
+    {
+     "name": "Almo Wong",
+     "party": "TOP",
+     "rank": 37
+    }
+   ],
+   "retiring": []
+  },
+  "Hutt South": {
+   "candidates": [
+    {
+     "name": "Ginny Andersen",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 12,
+     "notes": "MP for Hutt South 2020–2023"
+    },
+    {
+     "name": "Chris Bishop",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 3
+    },
+    {
+     "name": "Alistair Boyce",
+     "party": "NZF",
+     "rank": 35
+    },
+    {
+     "name": "Malcolm Dick",
+     "party": "IND"
+    },
+    {
+     "name": "Tom Petterson",
+     "party": "OTH",
+     "label": "Socialist Equality Group"
+    },
+    {
+     "name": "David L F Smith",
+     "party": "IND"
+    },
+    {
+     "name": "Courtney White",
+     "party": "GRN",
+     "rank": 29
+    },
+    {
+     "name": "Benjamin Wylie-van Eerd",
+     "party": "TOP",
+     "rank": 13,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Ilam": {
+   "candidates": [
+    {
+     "name": "Hamish Campbell",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 48
+    },
+    {
+     "name": "Mike Davidson",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 20,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Courtney Fraser",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 9
+    },
+    {
+     "name": "Ken Harpur",
+     "party": "ACT",
+     "rank": 44
+    },
+    {
+     "name": "Rata Jamieson",
+     "party": "LAB",
+     "rank": 56
+    },
+    {
+     "name": "Nathan Walton",
+     "party": "NZF",
+     "rank": 49
+    }
+   ],
+   "retiring": []
+  },
+  "Invercargill": {
+   "candidates": [
+    {
+     "name": "Anntwinette Grumball",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 6,
+     "notes": "Contested Southland in 2023"
+    },
+    {
+     "name": "Dave Kennedy",
+     "party": "GRN",
+     "rank": 41,
+     "notes": "Contested Southland in 2023"
+    },
+    {
+     "name": "Janice Lee",
+     "party": "LAB",
+     "rank": 61
+    },
+    {
+     "name": "Hayden John Seager",
+     "party": "IND"
+    },
+    {
+     "name": "Penny Simmonds",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 14
+    }
+   ],
+   "retiring": []
+  },
+  "Kaikōura": {
+   "candidates": [
+    {
+     "name": "Jamie Arbuckle",
+     "party": "NZF",
+     "listMP": true,
+     "rank": 13,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Iain Britton",
+     "party": "IND"
+    },
+    {
+     "name": "Matthew Flight",
+     "party": "LAB",
+     "notes": "Contested electorate in 2020"
+    },
+    {
+     "name": "Oliver Hill Hughes",
+     "party": "IND"
+    },
+    {
+     "name": "Ted Howard",
+     "party": "IND",
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Stuart Smith",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 21
+    },
+    {
+     "name": "Tom Spooner",
+     "party": "ACT",
+     "rank": 24
+    }
+   ],
+   "retiring": []
+  },
+  "Kaipara ki Mahurangi": {
+   "candidates": [
+    {
+     "name": "Zephyr Brown",
+     "party": "GRN",
+     "rank": 24,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Simon Court",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 8,
+     "notes": "Contested Te Atatū in 2023"
+    },
+    {
+     "name": "Mark Dennis",
+     "party": "IND"
+    },
+    {
+     "name": "Liz Dotcom",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 11
+    },
+    {
+     "name": "Daniel Eb",
+     "party": "TOP",
+     "rank": 2
+    },
+    {
+     "name": "Jenny Marcroft",
+     "party": "NZF",
+     "listMP": true,
+     "rank": 10,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Jessica Rowe",
+     "party": "NAT",
+     "rank": 68
+    },
+    {
+     "name": "Jo Swinburn",
+     "party": "LAB"
+    },
+    {
+     "name": "Ivan Wagstaff",
+     "party": "IND"
+    },
+    {
+     "name": "Tracey-Lee Repia",
+     "party": "LAB",
+     "notes": "Contested list only for Mana Movement in 2017"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Chris Penk",
+     "party": "NAT"
+    }
+   ]
+  },
+  "Kapiti": {
+   "candidates": [
+    {
+     "name": "Tim Costley",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 38,
+     "notes": "MP for Ōtaki since 2023"
+    },
+    {
+     "name": "Penny Gaylor",
+     "party": "NZF",
+     "rank": 19,
+     "notes": "Contested Taranaki-King Country for Labour in 2014"
+    },
+    {
+     "name": "Richard Goode",
+     "party": "OTH",
+     "label": "Not A Party",
+     "notes": "Contested Mana in 2023"
+    },
+    {
+     "name": "Sophie Handford",
+     "party": "LAB",
+     "rank": 26
+    },
+    {
+     "name": "Chee-Khiang Sng",
+     "party": "TOP",
+     "rank": 26
+    },
+    {
+     "name": "Michael Walker",
+     "party": "OTH",
+     "label": "Progressive Aotearoa",
+     "notes": "Contested Mana in 2020"
+    },
+    {
+     "name": "Melody Willis",
+     "party": "GRN",
+     "rank": 31
+    },
+    {
+     "name": "Asher Wilson-Goldman",
+     "party": "GRN"
+    }
+   ],
+   "retiring": []
+  },
+  "Kenepuru": {
+   "candidates": [
+    {
+     "name": "Jon Blackshaw",
+     "party": "NZF",
+     "rank": 48
+    },
+    {
+     "name": "Barbara Edmonds",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 3,
+     "notes": "MP for Mana since 2020"
+    },
+    {
+     "name": "Matthew Evetts",
+     "party": "NAT",
+     "rank": 60,
+     "notes": "Contested list only in 2014"
+    },
+    {
+     "name": "Robert Mason",
+     "party": "TOP",
+     "rank": 20
+    },
+    {
+     "name": "Lan Pham",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 6,
+     "notes": "Contested Banks Peninsula in 2023"
+    },
+    {
+     "name": "Bob Wessex",
+     "party": "OTH",
+     "label": "Not A Party",
+     "notes": "Contested Ōtaki in 2023"
+    },
+    {
+     "name": "Lyra Yan Zhang",
+     "party": "ACT"
+    }
+   ],
+   "retiring": []
+  },
+  "Māngere": {
+   "candidates": [
+    {
+     "name": "Hine Afeaki",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 4
+    },
+    {
+     "name": "Kelvyn Alp",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 1,
+     "notes": "Contested 2025 Tāmaki Makaurau by-election"
+    },
+    {
+     "name": "Rosemary Bourke",
+     "party": "NAT",
+     "rank": 39,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Vicky Hau",
+     "party": "NZF",
+     "rank": 21
+    },
+    {
+     "name": "Ben Lane",
+     "party": "TOP",
+     "rank": 25
+    },
+    {
+     "name": "Michel Mulipola",
+     "party": "GRN",
+     "rank": 49
+    },
+    {
+     "name": "Manu Singh",
+     "party": "ACT",
+     "rank": 26
+    },
+    {
+     "name": "Lemauga Lydia Sosene",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 41
+    },
+    {
+     "name": "Alani Fisher Taione",
+     "party": "OTH",
+     "label": "People's Party New Zealand"
+    }
+   ],
+   "retiring": []
+  },
+  "Manurewa": {
+   "candidates": [
+    {
+     "name": "Ghouse Majeed",
+     "party": "NAT",
+     "rank": 66
+    },
+    {
+     "name": "Avalua Tavui",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 7
+    },
+    {
+     "name": "Esther Tofilau-Tevaga",
+     "party": "NZF",
+     "rank": 18
+    },
+    {
+     "name": "Arena Williams",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 41
+    }
+   ],
+   "retiring": []
+  },
+  "Maungakiekie": {
+   "candidates": [
+    {
+     "name": "Juan Alvarez de Lugo",
+     "party": "ACT",
+     "rank": 25,
+     "notes": "Contested New Lynn in 2023"
+    },
+    {
+     "name": "Greg Fleming",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 44
+    },
+    {
+     "name": "Keegan Langeveld",
+     "party": "NZF",
+     "rank": 36,
+     "notes": "Contested Dunedin in 2023"
+    },
+    {
+     "name": "Derrick Paull",
+     "party": "TOP",
+     "rank": 23
+    },
+    {
+     "name": "Adam Powell",
+     "party": "GRN",
+     "rank": 36
+    },
+    {
+     "name": "Priyanca Radhakrishnan",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 18,
+     "notes": "MP for Maungakiekie 2020–2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Mount Albert": {
+   "candidates": [
+    {
+     "name": "Luke Bones",
+     "party": "IND"
+    },
+    {
+     "name": "Sheldon Eden-Whaitiri",
+     "party": "NZF",
+     "rank": 32
+    },
+    {
+     "name": "Melissa Lee",
+     "party": "NAT",
+     "listMP": true,
+     "rank": 29,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Ricardo Menéndez March",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 9,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Alex Price",
+     "party": "ACT",
+     "rank": 14
+    },
+    {
+     "name": "Helen White",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 37
+    },
+    {
+     "name": "Qiulae Wong",
+     "party": "TOP",
+     "rank": 1
+    }
+   ],
+   "retiring": []
+  },
+  "Mount Maunganui": {
+   "candidates": [
+    {
+     "name": "Tracey Coxhead",
+     "party": "NZF",
+     "rank": 15
+    },
+    {
+     "name": "Caitlin Grattan",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 9,
+     "notes": "Contested Bay of Plenty in 2023"
+    },
+    {
+     "name": "Rhieve Grey",
+     "party": "LAB",
+     "rank": 64
+    },
+    {
+     "name": "Cameron Luxton",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 12,
+     "notes": "Contested Bay of Plenty in 2023"
+    },
+    {
+     "name": "Tom Rutherford",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 27,
+     "notes": "MP for Bay of Plenty since 2023"
+    },
+    {
+     "name": "Pualele Westhead",
+     "party": "GRN",
+     "rank": 51
+    },
+    {
+     "name": "Greer Young",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 6,
+     "notes": "Originally selected for Tauranga"
+    }
+   ],
+   "retiring": []
+  },
+  "Mount Roskill": {
+   "candidates": [
+    {
+     "name": "Jamie Attenborough",
+     "party": "TOP",
+     "rank": 29
+    },
+    {
+     "name": "Carlos Cheung",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 33
+    },
+    {
+     "name": "Priyanka Deo",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 6
+    },
+    {
+     "name": "Anjana Iyer",
+     "party": "GRN",
+     "rank": 38
+    },
+    {
+     "name": "Yang Qu",
+     "party": "ACT",
+     "rank": 17
+    },
+    {
+     "name": "Michael Wood",
+     "party": "LAB",
+     "notes": "MP for Mount Roskill 2016–2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Napier": {
+   "candidates": [
+    {
+     "name": "Roy Boonen",
+     "party": "GRN",
+     "rank": 52
+    },
+    {
+     "name": "Alex Hedley",
+     "party": "LAB",
+     "rank": 49
+    },
+    {
+     "name": "Te Kira Lawrence",
+     "party": "NZF",
+     "rank": 28,
+     "notes": "Originally selected for East Cape"
+    },
+    {
+     "name": "Katie Nimon",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 26
+    },
+    {
+     "name": "John Ormond",
+     "party": "ACT",
+     "rank": 40
+    },
+    {
+     "name": "Graham Wainwright",
+     "party": "IND"
+    },
+    {
+     "name": "Stuart Nash",
+     "party": "NZF",
+     "notes": "Labour MP for Napier 2014–2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Nelson": {
+   "candidates": [
+    {
+     "name": "Chris Baillie",
+     "party": "ACT",
+     "rank": 46,
+     "notes": "List MP 2020–2023; contested electorate in 2023"
+    },
+    {
+     "name": "Rachel Boyack",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 37
+    },
+    {
+     "name": "Blair Cameron",
+     "party": "NAT",
+     "rank": 41,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Julian Crawford",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 7,
+     "notes": "Contested Dunedin South for the Aotearoa Legalise Cannabis Party in 2014"
+    },
+    {
+     "name": "Bruce Dyer",
+     "party": "OTH",
+     "label": "Progressive Aotearoa",
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Jodie Kuntzsch",
+     "party": "TOP",
+     "rank": 6
+    },
+    {
+     "name": "Rohan O'Neill-Stevens",
+     "party": "GRN",
+     "rank": 16
+    }
+   ],
+   "retiring": []
+  },
+  "New Plymouth": {
+   "candidates": [
+    {
+     "name": "Amanda Clinton-Gohdes",
+     "party": "LAB",
+     "rank": 59
+    },
+    {
+     "name": "Rusty Kane",
+     "party": "OTH",
+     "label": "Independent Taranaki",
+     "notes": "Contested electorate in 2020"
+    },
+    {
+     "name": "Sarah Lucas",
+     "party": "TOP",
+     "rank": 7
+    },
+    {
+     "name": "David MacLeod",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 46
+    }
+   ],
+   "retiring": []
+  },
+  "North Shore": {
+   "candidates": [
+    {
+     "name": "Karen Chhour",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 5,
+     "notes": "Contested Upper Harbour in 2023"
+    },
+    {
+     "name": "Sam Collins",
+     "party": "LAB",
+     "rank": 63
+    },
+    {
+     "name": "Josh Jacobsen",
+     "party": "GRN",
+     "rank": 25
+    },
+    {
+     "name": "Holly Knill",
+     "party": "TOP",
+     "rank": 9
+    },
+    {
+     "name": "Simon Watts",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 13
+    },
+    {
+     "name": "Marie Drury",
+     "party": "OTH",
+     "label": "Conservative Party NZ",
+     "rank": 5,
+     "notes": "Changed candidacy to Northcote"
+    }
+   ],
+   "retiring": []
+  },
+  "Northcote": {
+   "candidates": [
+    {
+     "name": "Dan Bidois",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 31
+    },
+    {
+     "name": "Lily Carrington",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 3,
+     "notes": "Contested Hamilton East in 2023"
+    },
+    {
+     "name": "Marie Drury",
+     "party": "OTH",
+     "label": "Conservative Party NZ",
+     "rank": 5,
+     "notes": "Originally selected for North Shore"
+    },
+    {
+     "name": "Barak Ford",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 16
+    },
+    {
+     "name": "Bhen Goodsir",
+     "party": "GRN",
+     "rank": 17
+    },
+    {
+     "name": "Daryl Habraken",
+     "party": "NZF",
+     "rank": 29
+    },
+    {
+     "name": "Shanan Halbert",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 19,
+     "notes": "MP for Northcote 2020–2023"
+    },
+    {
+     "name": "Martin Lundqvist",
+     "party": "ACT",
+     "rank": 42
+    },
+    {
+     "name": "Cody Marsh",
+     "party": "TOP",
+     "rank": 17
+    }
+   ],
+   "retiring": []
+  },
+  "Northland": {
+   "candidates": [
+    {
+     "name": "Mike Finlayson",
+     "party": "GRN",
+     "rank": 48,
+     "notes": "Contested electorate for Northland Party in 2023"
+    },
+    {
+     "name": "Shane Jones",
+     "party": "NZF",
+     "listMP": true,
+     "rank": 2,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Ashleigh Latimer",
+     "party": "LAB",
+     "rank": 55
+    },
+    {
+     "name": "Jeff Lye",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 3,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Doug Lyell",
+     "party": "OTH",
+     "label": "Conservative Party NZ",
+     "rank": 4
+    },
+    {
+     "name": "Grant McCallum",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 35
+    },
+    {
+     "name": "Richard McIntosh",
+     "party": "OTH",
+     "label": "Build the Nation"
+    },
+    {
+     "name": "Pete Verhoeven",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 10
+    },
+    {
+     "name": "Alistair Wait",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 5
+    },
+    {
+     "name": "Sean Brickland",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party"
+    },
+    {
+     "name": "Lucian Plaumann",
+     "party": "GRN"
+    }
+   ],
+   "retiring": []
+  },
+  "Ōtāhuhu": {
+   "candidates": [
+    {
+     "name": "John Alcock",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 9,
+     "notes": "Contested Pakuranga for Rock The Vote NZ in 2023"
+    },
+    {
+     "name": "Lalit Arya",
+     "party": "NAT",
+     "rank": 58
+    },
+    {
+     "name": "Henrietta Devoe",
+     "party": "ACT",
+     "rank": 21
+    },
+    {
+     "name": "Phillip Harry Faleu",
+     "party": "IND"
+    },
+    {
+     "name": "Eseta Haunga",
+     "party": "OTH",
+     "label": "People's Party New Zealand"
+    },
+    {
+     "name": "Adam MacRae-Martin",
+     "party": "TOP",
+     "rank": 18
+    },
+    {
+     "name": "Karl Mokaraka",
+     "party": "OTH",
+     "label": "Vision NZ",
+     "rank": 4,
+     "notes": "Contested Panmure-Ōtāhuhu in 2023"
+    },
+    {
+     "name": "James Robb",
+     "party": "IND",
+     "notes": "Contested Panmure-Ōtāhuhu for Workers Now in 2023"
+    },
+    {
+     "name": "Jenny Salesa",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 24,
+     "notes": "MP for Panmure-Ōtāhuhu since 2020"
+    },
+    {
+     "name": "Te Whatanui Skipwith",
+     "party": "GRN",
+     "rank": 30
+    }
+   ],
+   "retiring": []
+  },
+  "Pakuranga": {
+   "candidates": [
+    {
+     "name": "Simeon Brown",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 4
+    },
+    {
+     "name": "Kevin Huang",
+     "party": "TOP",
+     "rank": 40
+    },
+    {
+     "name": "Campbell Matthews",
+     "party": "LAB",
+     "rank": 70
+    },
+    {
+     "name": "Parmjeet Parmar",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 10,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Catherine Somerville-Ryan",
+     "party": "NZF"
+    }
+   ],
+   "retiring": []
+  },
+  "Palmerston North": {
+   "candidates": [
+    {
+     "name": "Brian Baker",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 5
+    },
+    {
+     "name": "Ankit Bansal",
+     "party": "NAT",
+     "rank": 53,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Netra Ghimire",
+     "party": "TOP",
+     "rank": 32
+    },
+    {
+     "name": "Joshua Moss",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 11
+    },
+    {
+     "name": "Teanau Tuiono",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 3,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Tangi Utikere",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 14
+    },
+    {
+     "name": "Bruce McGechan",
+     "party": "ACT",
+     "notes": "Contested New Plymouth in 2023"
+    },
+    {
+     "name": "Helma Vermuelen",
+     "party": "NZF",
+     "notes": "Contested Rangitīkei in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Papakura": {
+   "candidates": [
+    {
+     "name": "Emma Chatterton",
+     "party": "NAT",
+     "rank": 52,
+     "notes": "Contested Remutaka in 2023"
+    },
+    {
+     "name": "Angela Dalton",
+     "party": "GRN",
+     "rank": 26
+    },
+    {
+     "name": "Anahila Kanongata'a",
+     "party": "LAB",
+     "rank": 48,
+     "notes": "List MP 2017–2023; contested electorate in 2023"
+    },
+    {
+     "name": "Malkiat Singh",
+     "party": "ACT",
+     "rank": 29
+    },
+    {
+     "name": "Hannah Tamaki",
+     "party": "OTH",
+     "label": "Vision NZ",
+     "rank": 1,
+     "notes": "Contested Tāmaki Makaurau in 2023 and also contested the 2025 Tāmaki Makaurau by-election"
+    },
+    {
+     "name": "George Ngatai",
+     "party": "NZF",
+     "notes": "Contested Takanini for Vision NZ in 2020"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Judith Collins",
+     "party": "NAT"
+    }
+   ]
+  },
+  "Port Waikato": {
+   "candidates": [
+    {
+     "name": "Matt Brachi",
+     "party": "LAB"
+    },
+    {
+     "name": "Casey Costello",
+     "party": "NZF",
+     "listMP": true,
+     "rank": 3,
+     "notes": "Contested electorate in 2023 and contested 2023 Port Waikato by-election"
+    },
+    {
+     "name": "Sarah Jane Lochead-Macmillan",
+     "party": "ACT",
+     "rank": 43
+    },
+    {
+     "name": "Carl Morgan",
+     "party": "GRN",
+     "rank": 28
+    },
+    {
+     "name": "Matthew Paul",
+     "party": "NAT",
+     "rank": 62
+    },
+    {
+     "name": "Daymond Goulder-Horobin",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 14,
+     "notes": "Later announced to be contesting list only"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Andrew Bayly",
+     "party": "NAT"
+    }
+   ]
+  },
+  "Rangitata": {
+   "candidates": [
+    {
+     "name": "Aaron Allred",
+     "party": "ACT",
+     "rank": 37
+    },
+    {
+     "name": "Matt Harris",
+     "party": "TOP",
+     "rank": 30
+    },
+    {
+     "name": "Sange Malama",
+     "party": "LAB",
+     "rank": 64
+    },
+    {
+     "name": "Kevin McCraken",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 15
+    },
+    {
+     "name": "James Meager",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 18
+    },
+    {
+     "name": "Isaac Nicholson",
+     "party": "NZF",
+     "rank": 38
+    },
+    {
+     "name": "Dave Richards",
+     "party": "GRN",
+     "rank": 42
+    },
+    {
+     "name": "Karl Thomas",
+     "party": "OTH",
+     "label": "Conservative Party NZ",
+     "rank": 2,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Rangitīkei": {
+   "candidates": [
+    {
+     "name": "Steve Gibson",
+     "party": "NZF",
+     "rank": 33
+    },
+    {
+     "name": "Andrew Hoggard",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 3,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Bernard Long",
+     "party": "GRN",
+     "rank": 39,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Suze Redmayne",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 32
+    },
+    {
+     "name": "Karl Severinsen",
+     "party": "LAB",
+     "rank": 66
+    },
+    {
+     "name": "Jason Smith",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 14
+    },
+    {
+     "name": "Kevin Campbell",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "notes": "List MP 1999–2002; contested Wigram in 2011"
+    }
+   ],
+   "retiring": []
+  },
+  "Remutaka": {
+   "candidates": [
+    {
+     "name": "Victor Edward Dench",
+     "party": "IND"
+    },
+    {
+     "name": "Nigel Elder",
+     "party": "ACT",
+     "rank": 23
+    },
+    {
+     "name": "Andy Foster",
+     "party": "NZF",
+     "listMP": true,
+     "rank": 11,
+     "notes": "Contested Mana in 2023"
+    },
+    {
+     "name": "Chris Hipkins",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 1
+    },
+    {
+     "name": "Zabeen Lateef",
+     "party": "NAT",
+     "rank": 67
+    },
+    {
+     "name": "Chris Norton",
+     "party": "GRN",
+     "rank": 34,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Luke Ross",
+     "party": "TOP",
+     "rank": 21
+    }
+   ],
+   "retiring": []
+  },
+  "Rotorua": {
+   "candidates": [
+    {
+     "name": "Billy Brown",
+     "party": "NZF",
+     "rank": 34
+    },
+    {
+     "name": "Finn Liley",
+     "party": "TOP",
+     "rank": 27
+    },
+    {
+     "name": "Todd McClay",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 10
+    },
+    {
+     "name": "Fisher Wang",
+     "party": "LAB",
+     "rank": 68
+    }
+   ],
+   "retiring": []
+  },
+  "Selwyn": {
+   "candidates": [
+    {
+     "name": "Alma de Anda",
+     "party": "GRN",
+     "rank": 33
+    },
+    {
+     "name": "Sunita Gautam",
+     "party": "LAB"
+    },
+    {
+     "name": "Nicola Grigg",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 17
+    },
+    {
+     "name": "Jesse Luke",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 10
+    },
+    {
+     "name": "Adrian Mee",
+     "party": "TOP",
+     "rank": 38
+    },
+    {
+     "name": "Elizabeth Mundt",
+     "party": "NZF",
+     "rank": 46
+    },
+    {
+     "name": "Iain Murray",
+     "party": "ACT",
+     "rank": 11
+    },
+    {
+     "name": "Zoran Rakovic",
+     "party": "IND"
+    },
+    {
+     "name": "Nick Moody",
+     "party": "LAB"
+    }
+   ],
+   "retiring": []
+  },
+  "Southland": {
+   "candidates": [
+    {
+     "name": "Bianca Beebe",
+     "party": "TOP",
+     "rank": 11
+    },
+    {
+     "name": "Jason Herrick",
+     "party": "NZF",
+     "rank": 17
+    },
+    {
+     "name": "Naomi Maclean",
+     "party": "OTH",
+     "label": "Vision NZ",
+     "rank": 5,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Peter McDonald",
+     "party": "LAB",
+     "rank": 58
+    },
+    {
+     "name": "Joseph Mooney",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 50
+    },
+    {
+     "name": "Todd Stephenson",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 6,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Taieri": {
+   "candidates": [
+    {
+     "name": "Robbie Byars",
+     "party": "ACT",
+     "rank": 32
+    },
+    {
+     "name": "Matthew French",
+     "party": "NAT",
+     "rank": 54,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Anna Knight",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 2
+    },
+    {
+     "name": "Ingrid Leary",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 39
+    },
+    {
+     "name": "Mark Patterson",
+     "party": "NZF",
+     "listMP": true,
+     "rank": 4,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Scott Willis",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 15,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Mathew Phillips",
+     "party": "TOP",
+     "notes": "Resigned from party"
+    }
+   ],
+   "retiring": []
+  },
+  "Takanini": {
+   "candidates": [
+    {
+     "name": "Elliot Ikilei",
+     "party": "NZF",
+     "rank": 20,
+     "notes": "Contested electorate for New Conservatives in 2020"
+    },
+    {
+     "name": "Rima Nakhle",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 45
+    },
+    {
+     "name": "Paul Teio",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 2,
+     "notes": "Contested Māngere for the Direct Democracy Party of New Zealand in 2005"
+    },
+    {
+     "name": "Kharag Singh",
+     "party": "LAB",
+     "rank": 61,
+     "notes": "Contested Botany in 2023"
+    },
+    {
+     "name": "Lynley Tulloch",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 8,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Tāmaki": {
+   "candidates": [
+    {
+     "name": "James Christmas",
+     "party": "ACT",
+     "rank": 7,
+     "notes": "Contested the list only for National in 2023"
+    },
+    {
+     "name": "Max Harris",
+     "party": "LAB",
+     "rank": 29
+    },
+    {
+     "name": "Sacha Haskell",
+     "party": "TOP",
+     "rank": 31
+    },
+    {
+     "name": "Donald Mackenzie-Mayo",
+     "party": "GRN",
+     "rank": 43
+    },
+    {
+     "name": "Mahesh Muralidhar",
+     "party": "NAT",
+     "rank": 23,
+     "notes": "Contested Auckland Central in 2023"
+    },
+    {
+     "name": "Ryan Earl Pausina",
+     "party": "IND"
+    },
+    {
+     "name": "Finlay Smith",
+     "party": "IND"
+    },
+    {
+     "name": "Helen Houghton",
+     "party": "OTH",
+     "label": "Conservative Party NZ",
+     "rank": 1,
+     "notes": "Changed candidacy to Christchurch East"
+    },
+    {
+     "name": "John Ryan",
+     "party": "NZF"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Brooke van Velden",
+     "party": "ACT"
+    }
+   ]
+  },
+  "Taranaki-King Country": {
+   "candidates": [
+    {
+     "name": "Ivana Jovicic",
+     "party": "ACT"
+    },
+    {
+     "name": "Barbara Kuriger",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 43
+    },
+    {
+     "name": "Phil McCabe",
+     "party": "GRN",
+     "rank": 50,
+     "notes": "Contested Hunua in 2017"
+    },
+    {
+     "name": "David Pattemore",
+     "party": "LAB",
+     "rank": 71
+    }
+   ],
+   "retiring": []
+  },
+  "Taupō": {
+   "candidates": [
+    {
+     "name": "Chris Flatt",
+     "party": "LAB",
+     "rank": 20
+    },
+    {
+     "name": "Celine Kearney",
+     "party": "GRN"
+    },
+    {
+     "name": "Itania Nikolao",
+     "party": "IND"
+    },
+    {
+     "name": "Sam Plummer",
+     "party": "TOP",
+     "rank": 34
+    },
+    {
+     "name": "Louise Upston",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 7
+    },
+    {
+     "name": "Gordon Wilson",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 13,
+     "notes": "Contested electorate in 2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Tauranga": {
+   "candidates": [
+    {
+     "name": "Michael Carter",
+     "party": "TOP",
+     "rank": 22
+    },
+    {
+     "name": "Sam Connely",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 10
+    },
+    {
+     "name": "Tim Maltby",
+     "party": "IND"
+    },
+    {
+     "name": "Bryan Norton",
+     "party": "ACT",
+     "rank": 41
+    },
+    {
+     "name": "Daniël Oosthuizen",
+     "party": "GRN",
+     "rank": 40
+    },
+    {
+     "name": "Jan Tinetti",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 15,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Sam Uffindell",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 51
+    },
+    {
+     "name": "Greer Young",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 6,
+     "notes": "Changed candidacy to Mount Maunganui"
+    }
+   ],
+   "retiring": []
+  },
+  "Tukituki": {
+   "candidates": [
+    {
+     "name": "Rob Douglas",
+     "party": "ACT",
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Mark Longworth",
+     "party": "GRN",
+     "rank": 47
+    },
+    {
+     "name": "Romana Manz Manning",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 9,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Taine Randell",
+     "party": "NZF",
+     "rank": 9
+    },
+    {
+     "name": "Dan Scott",
+     "party": "LAB"
+    },
+    {
+     "name": "Grant Seton",
+     "party": "IND"
+    },
+    {
+     "name": "Allister Tosh",
+     "party": "IND",
+     "notes": "Contested electorate for Future Youth in 2023"
+    },
+    {
+     "name": "Rachel Ward",
+     "party": "TOP",
+     "rank": 14
+    },
+    {
+     "name": "Catherine Wedd",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 36
+    },
+    {
+     "name": "Kaleb Hawkins",
+     "party": "IND"
+    }
+   ],
+   "retiring": []
+  },
+  "Upper Harbour": {
+   "candidates": [
+    {
+     "name": "Hannah Pia Baral",
+     "party": "LAB",
+     "rank": 44,
+     "notes": "Contested Waitakere for United Future in 2005"
+    },
+    {
+     "name": "Cameron Brewer",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 20
+    },
+    {
+     "name": "Jonathon Griffiths",
+     "party": "IND"
+    },
+    {
+     "name": "Panos Patros",
+     "party": "ACT",
+     "rank": 36
+    },
+    {
+     "name": "Ryan Richards",
+     "party": "GRN",
+     "rank": 53
+    },
+    {
+     "name": "Bernadette Soares",
+     "party": "NZF",
+     "rank": 22,
+     "notes": "Contested electorate for Vision NZ in 2023"
+    },
+    {
+     "name": "Romeo Tevaga",
+     "party": "TOP",
+     "rank": 12
+    }
+   ],
+   "retiring": []
+  },
+  "Waikato": {
+   "candidates": [
+    {
+     "name": "Robbie Cookson",
+     "party": "NZF",
+     "rank": 23
+    },
+    {
+     "name": "Ash Parmar",
+     "party": "ACT",
+     "rank": 16,
+     "notes": "Contested Hamilton East in 2023"
+    },
+    {
+     "name": "Turi Te Kamonga Robinson",
+     "party": "IND"
+    },
+    {
+     "name": "Jamie Toko",
+     "party": "LAB",
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Tim van de Molen",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 48
+    },
+    {
+     "name": "Brendan Richard Whyte",
+     "party": "IND"
+    }
+   ],
+   "retiring": []
+  },
+  "Waimakariri": {
+   "candidates": [
+    {
+     "name": "Ashley Bettridge",
+     "party": "ACT",
+     "rank": 30
+    },
+    {
+     "name": "Matt Doocey",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 12
+    },
+    {
+     "name": "Jackie Farrelly",
+     "party": "NZF",
+     "rank": 44,
+     "notes": "Contested West Coast-Tasman in 2023"
+    },
+    {
+     "name": "Dan Rosewarne",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 35,
+     "notes": "Also list MP 2022–2023. Contested electorate in 2020 and 2023"
+    },
+    {
+     "name": "Richard Wesley",
+     "party": "GRN",
+     "rank": 54,
+     "notes": "Contested Wigram in 2023"
+    },
+    {
+     "name": "Ali McDougall",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)"
+    }
+   ],
+   "retiring": []
+  },
+  "Wairarapa": {
+   "candidates": [
+    {
+     "name": "Victoria Ale",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 6
+    },
+    {
+     "name": "Mike Butterick",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 20
+    },
+    {
+     "name": "Lauren Craig",
+     "party": "GRN",
+     "rank": 23
+    },
+    {
+     "name": "Jared Gardner",
+     "party": "OTH",
+     "label": "Te Pāti Hira",
+     "notes": "Contested electorate as an independent in 2023"
+    },
+    {
+     "name": "Ron Mark",
+     "party": "NZF",
+     "rank": 16,
+     "notes": "List MP 1996–2008, 2014–2020. Contested electorate in 2020"
+    },
+    {
+     "name": "Kieran McAnulty",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 10,
+     "notes": "MP for Wairarapa 2020–2023"
+    },
+    {
+     "name": "Matt Shepherd",
+     "party": "TOP",
+     "rank": 24
+    },
+    {
+     "name": "Barry Young",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 3,
+     "notes": "Originally selected for Wellington North"
+    }
+   ],
+   "retiring": []
+  },
+  "Waitākere": {
+   "candidates": [
+    {
+     "name": "Steve Abel",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 12,
+     "notes": "Contested New Lynn in 2023"
+    },
+    {
+     "name": "Agnes Loheni",
+     "party": "NAT",
+     "rank": 57,
+     "notes": "List MP 2019–2020; contested Māngere in 2020"
+    },
+    {
+     "name": "Bianca O'Keefe",
+     "party": "IND"
+    },
+    {
+     "name": "Mark Roach",
+     "party": "TOP",
+     "rank": 19
+    },
+    {
+     "name": "Callum Sheridan",
+     "party": "ACT",
+     "rank": 20
+    },
+    {
+     "name": "Vanushi Walters",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 8,
+     "notes": "MP for Upper Harbour 2020–2023"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Paulo Garcia",
+     "party": "NAT"
+    }
+   ]
+  },
+  "Waitaki": {
+   "candidates": [
+    {
+     "name": "Miles Anderson",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 46
+    },
+    {
+     "name": "Sean Beamish",
+     "party": "ACT",
+     "rank": 45,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Adrian Daegal Graamans",
+     "party": "IND"
+    },
+    {
+     "name": "Bronwyn Judge",
+     "party": "IND"
+    },
+    {
+     "name": "Michael Laws",
+     "party": "NZF",
+     "rank": 6,
+     "notes": "MP for Hawke's Bay 1990–1996"
+    },
+    {
+     "name": "Damien O'Connor",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 16,
+     "notes": "MP since 1993; previously represented West Coast-Tasman"
+    },
+    {
+     "name": "Daniel Shand",
+     "party": "IND",
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Helen Tait",
+     "party": "TOP",
+     "rank": 16
+    }
+   ],
+   "retiring": []
+  },
+  "Wellington Bays": {
+   "candidates": [
+    {
+     "name": "Liam Anderson",
+     "party": "OTH",
+     "label": "Money Free Party"
+    },
+    {
+     "name": "Julie Anne Genter",
+     "party": "GRN",
+     "incumbent": true,
+     "rank": 5,
+     "notes": "MP for Rongotai since 2023"
+    },
+    {
+     "name": "Kayla Kingdon-Bebb",
+     "party": "TOP",
+     "rank": 4
+    },
+    {
+     "name": "Donald DS McDonald",
+     "party": "IND",
+     "notes": "Contested Rongotai in 2023"
+    },
+    {
+     "name": "Nicole McKee",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 2,
+     "notes": "Contested Rongotai in 2023"
+    },
+    {
+     "name": "Karunā Muthu",
+     "party": "NAT",
+     "rank": 63,
+     "notes": "Contested Rongotai in 2023"
+    },
+    {
+     "name": "Craig Renney",
+     "party": "LAB",
+     "rank": 50
+    },
+    {
+     "name": "Gerald Warner",
+     "party": "NZF",
+     "rank": 39
+    },
+    {
+     "name": "Bruce Welsh",
+     "party": "IND",
+     "notes": "Contested Rongotai for New Conservatives in 2023"
+    },
+    {
+     "name": "Alison Pavlovich",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 7,
+     "notes": "Later announced to be contesting list only"
+    }
+   ],
+   "retiring": []
+  },
+  "Wellington North": {
+   "candidates": [
+    {
+     "name": "Michael Appleby",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 2,
+     "notes": "Contested Wellington Central in 2023"
+    },
+    {
+     "name": "Taylor Arneil",
+     "party": "NZF",
+     "rank": 40,
+     "notes": "Contested Wellington Central in 2023"
+    },
+    {
+     "name": "Matthew Hague",
+     "party": "ACT",
+     "rank": 33
+    },
+    {
+     "name": "Jessica Hammond",
+     "party": "TOP",
+     "rank": 3,
+     "notes": "Contested Ōhāriu in 2023"
+    },
+    {
+     "name": "Josh Harford",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 8
+    },
+    {
+     "name": "Tamatha Paul",
+     "party": "GRN",
+     "incumbent": true,
+     "rank": 4,
+     "notes": "MP for Wellington Central since 2023"
+    },
+    {
+     "name": "Jonathan Pitts",
+     "party": "NAT",
+     "rank": 67
+    },
+    {
+     "name": "Ayesha Verrall",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 6
+    },
+    {
+     "name": "Barry Young",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 3,
+     "notes": "Changed candidacy to Wairarapa"
+    }
+   ],
+   "retiring": []
+  },
+  "West Coast-Tasman": {
+   "candidates": [
+    {
+     "name": "Andrew Beaumont",
+     "party": "GRN",
+     "rank": 37
+    },
+    {
+     "name": "Jamie Cleine",
+     "party": "NZF",
+     "rank": 14
+    },
+    {
+     "name": "Sara Dyatlova–Murphy",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)",
+     "rank": 4
+    },
+    {
+     "name": "Sue Grey",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 1,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Alex Hislop",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 4
+    },
+    {
+     "name": "Janelle Hocking",
+     "party": "ACT",
+     "rank": 15,
+     "notes": "Contested the list only for National in 2023"
+    },
+    {
+     "name": "Katie Milne",
+     "party": "NAT",
+     "rank": 24
+    },
+    {
+     "name": "Richard Osmaston",
+     "party": "OTH",
+     "label": "Money Free Party",
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Rory Paterson",
+     "party": "LAB",
+     "rank": 53
+    },
+    {
+     "name": "Kevin Rooke",
+     "party": "OTH",
+     "label": "Progressive Aotearoa"
+    },
+    {
+     "name": "Cindie Uddstrom",
+     "party": "TOP"
+    },
+    {
+     "name": "Louis Coup",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Maureen Pugh",
+     "party": "NAT"
+    }
+   ]
+  },
+  "Whanganui": {
+   "candidates": [
+    {
+     "name": "Carl Bates",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 29
+    },
+    {
+     "name": "Juan Charles Coffey",
+     "party": "OTH",
+     "label": "Balance New Zealand"
+    },
+    {
+     "name": "Harete Hipango-Brownlie",
+     "party": "NZF",
+     "rank": 7,
+     "notes": "National MP for Whanganui 2017–2020"
+    },
+    {
+     "name": "Sandra Kyle",
+     "party": "OTH",
+     "label": "Animal Justice Party Aotearoa New Zealand",
+     "rank": 4,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Angela Roberts",
+     "party": "LAB",
+     "rank": 46,
+     "notes": "List MP 2020–2023; contested Taranaki-King Country in 2023"
+    },
+    {
+     "name": "Awhi Haenga",
+     "party": "GRN",
+     "rank": 31
+    }
+   ],
+   "retiring": []
+  },
+  "Whangaparāoa": {
+   "candidates": [
+    {
+     "name": "Mark Mitchell",
+     "party": "NAT",
+     "incumbent": true,
+     "rank": 8
+    },
+    {
+     "name": "Estefania Muller-Pallarès",
+     "party": "LAB",
+     "rank": 47,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Helena Roza",
+     "party": "ACT",
+     "rank": 27
+    }
+   ],
+   "retiring": []
+  },
+  "Whangārei": {
+   "candidates": [
+    {
+     "name": "Luke Beharrell",
+     "party": "OTH",
+     "label": "Money Free Party",
+     "notes": "Announced for but did not contest Auckland Central in 2023"
+    },
+    {
+     "name": "Collin Blackman",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 11
+    },
+    {
+     "name": "Lloyd Budd",
+     "party": "NAT",
+     "rank": 60
+    },
+    {
+     "name": "Daryl Warren Clotworthy",
+     "party": "IND"
+    },
+    {
+     "name": "Vince Cocurullo",
+     "party": "NZF",
+     "rank": 31
+    },
+    {
+     "name": "Simon DellaBarca",
+     "party": "TOP"
+    },
+    {
+     "name": "Doug Graham",
+     "party": "ACT",
+     "rank": 38
+    },
+    {
+     "name": "Gary Payinda",
+     "party": "LAB",
+     "rank": 48
+    },
+    {
+     "name": "Jon Twyman",
+     "party": "IND"
+    },
+    {
+     "name": "Noah Wakelam",
+     "party": "OTH",
+     "label": "NZ Outdoors & Freedom Party",
+     "rank": 17
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Shane Reti",
+     "party": "NAT"
+    }
+   ]
+  },
+  "Wigram": {
+   "candidates": [
+    {
+     "name": "William Donald Alexander",
+     "party": "OTH",
+     "label": "Free Palestine Party (New Zealand)",
+     "rank": 5
+    },
+    {
+     "name": "Laura McClure",
+     "party": "ACT",
+     "listMP": true,
+     "rank": 9,
+     "notes": "Contested Banks Peninsula in 2023"
+    },
+    {
+     "name": "Geoff McTague",
+     "party": "IND",
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Shreejan Pandey",
+     "party": "GRN",
+     "rank": 22
+    },
+    {
+     "name": "Bryce Park",
+     "party": "NZF",
+     "rank": 37
+    },
+    {
+     "name": "Tracy Summerfield",
+     "party": "NAT",
+     "rank": 56,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Dominik Yanzick",
+     "party": "LAB",
+     "rank": 52
+    },
+    {
+     "name": "Nicolas Pegg",
+     "party": "OTH",
+     "label": "Alliance (New Zealand political party)"
+    }
+   ],
+   "retiring": [
+    {
+     "name": "Megan Woods",
+     "party": "LAB"
+    }
+   ]
+  },
+  "Hauraki-Waikato": {
+   "candidates": [
+    {
+     "name": "Neil Denby",
+     "party": "IND"
+    },
+    {
+     "name": "Kingi Kiriona",
+     "party": "LAB",
+     "rank": 22
+    },
+    {
+     "name": "Hana-Rawhiti Maipi-Clarke",
+     "party": "TPM",
+     "incumbent": true
+    }
+   ],
+   "retiring": []
+  },
+  "Ikaroa-Rāwhiti": {
+   "candidates": [
+    {
+     "name": "Haley Maxwell",
+     "party": "TPM"
+    },
+    {
+     "name": "Cushla Tangaere-Manuel",
+     "party": "LAB",
+     "incumbent": true,
+     "rank": 9
+    }
+   ],
+   "retiring": []
+  },
+  "Tāmaki Makaurau": {
+   "candidates": [
+    {
+     "name": "Oriini Kaipara",
+     "party": "TPM",
+     "incumbent": true
+    },
+    {
+     "name": "Kerrin Leoni",
+     "party": "LAB",
+     "rank": 43,
+     "notes": "Contested Waikato in 2020"
+    },
+    {
+     "name": "Florence Te Ohaere",
+     "party": "GRN",
+     "rank": 44
+    }
+   ],
+   "retiring": []
+  },
+  "Te Tai Hauāuru": {
+   "candidates": [
+    {
+     "name": "Te Pūoho Kātene",
+     "party": "LAB",
+     "rank": 34
+    },
+    {
+     "name": "Debbie Ngarewa-Packer",
+     "party": "TPM",
+     "incumbent": true
+    },
+    {
+     "name": "Coral Raukawa",
+     "party": "NAT",
+     "rank": 56
+    }
+   ],
+   "retiring": []
+  },
+  "Te Tai Tokerau": {
+   "candidates": [
+    {
+     "name": "Karl Barkley",
+     "party": "OTH",
+     "label": "Your PIC Party"
+    },
+    {
+     "name": "Aperahama Edwards",
+     "party": "TPM"
+    },
+    {
+     "name": "Maki Herbert",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 1,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Mariameno Kapa-Kingi",
+     "party": "TTT",
+     "incumbent": true,
+     "rank": 2,
+     "notes": "Elected as Te Pāti Māori MP in 2023"
+    },
+    {
+     "name": "Hūhana Lyndon",
+     "party": "GRN",
+     "listMP": true,
+     "rank": 7,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Willow-Jean Prime",
+     "party": "LAB",
+     "listMP": true,
+     "rank": 7,
+     "notes": "MP for Northland 2020–2023"
+    }
+   ],
+   "retiring": []
+  },
+  "Te Tai Tonga": {
+   "candidates": [
+    {
+     "name": "Tākuta Ferris",
+     "party": "IND",
+     "incumbent": true,
+     "notes": "Elected as Te Pāti Māori MP in 2023"
+    },
+    {
+     "name": "Christine Fisher",
+     "party": "OTH",
+     "label": "New Zealand Loyal",
+     "rank": 15
+    },
+    {
+     "name": "Tania Henare",
+     "party": "OTH",
+     "label": "Aotearoa Legalise Cannabis Party",
+     "rank": 8
+    },
+    {
+     "name": "Lisa Marie Murch",
+     "party": "TPM"
+    },
+    {
+     "name": "Mananui Ramsden",
+     "party": "LAB"
+    },
+    {
+     "name": "Lisa Te Morenga",
+     "party": "GRN",
+     "rank": 46
+    }
+   ],
+   "retiring": []
+  },
+  "Waiariki": {
+   "candidates": [
+    {
+     "name": "Toni Boynton",
+     "party": "LAB",
+     "rank": 44,
+     "notes": "Contested electorate in 2023"
+    },
+    {
+     "name": "Tania Waikato",
+     "party": "GRN",
+     "rank": 13
+    },
+    {
+     "name": "Rawiri Waititi",
+     "party": "TPM",
+     "incumbent": true
+    },
+    {
+     "name": "Pāpā Wharewera",
+     "party": "TOP",
+     "rank": 10
+    }
+   ],
+   "retiring": []
+  }
+ }
+}

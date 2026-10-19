@@ -1,0 +1,3913 @@
+{{Short description|Candidates in the 2026 New Zealand election}}
+{{Use New Zealand English|date=December 2025}}
+{{Use dmy dates|date=December 2025}}
+{{New Zealand political candidates}}
+
+This page lists candidates contesting electorates in the [[2026 New Zealand general election]].
+
+{{TOC right}}
+
+==General electorates==
+
+===Auckland Central===
+{{NZ election box begin|New Zealand|2026|Auckland Central|
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Johan Chang
+ |notes = 
+ |list = 36
+ |sources = <ref name="opp26">{{cite web |url=https://www.opportunity.org.nz/meet_the_opportunity_candidates |title=Meet the first Opportunity candidates |publisher=Opportunity |accessdate=2 June 2026}}</ref><ref name="toplist">{{cite news |url=https://www.rnz.co.nz/news/politics/850090/opportunity-party-reveals-candidates-for-40-electorates |title=Opportunity Party reveals candidates for 40 electorates |date=31 July 2026 |work=RNZ}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = [[Naisi Chen]]
+ |notes = List MP 2020–2023, contested Botany in 2020 and East Coast Bays in 2023
+ |list = 35
+ |sources =<ref name="Henry Cooke">{{cite web |url=https://x.com/henrycooke/status/2038764034271719889/photo/1 |title=Labour Selects Naisi Chen for Auckland Central |publisher=Henry Cooke}}</ref><ref name="lablist">{{cite web |url=https://www.rnz.co.nz/news/political/597538/who-s-in-who-s-out-labour-unveils-list-for-november-election |title=Who's in, who's out? Labour unveils list for November election |date=8 June 2026 |work=RNZ |first=Russell |last=Palmer}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Candace Kinser
+ |notes = 
+ |list = 55
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2605/S00014/candace-kinser-selected-to-stand-for-national-in-auckland-central.htm |title=Candace Kinser Selected To Stand For National In Auckland Central |date=4 May 2026 |website=scoop.co.nz}}</ref><ref name="natlist">{{cite news |title=Watch: National Party announces list for 2026 General Election |url=https://www.rnz.co.nz/news/politics/934651/watch-national-party-announces-list-for-2026-general-election |access-date=8 August 2026 |agency=RNZ |date=8 August 2026}}</ref>
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Christopher Manaia
+ |notes = 
+ |list = 5
+ |sources = <ref name="ALCP2026"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Antonia Modkova
+ |notes = Contested Panmure-Ōtāhuhu in 2023
+ |list = 13
+ |sources =<ref name="ACT31May">{{cite press release |url=https://auckland.scoop.co.nz/2026/05/act-unveils-first-2026-election-candidates/ |title=ACT Unveils First 2026 Election Candidates |publisher=ACT New Zealand |date=31 May 2026 |accessdate=31 May 2026}}</ref><ref name="actlist">{{cite news |url=https://www.nzherald.co.nz/nz/politics/election-2026-act-party-releases-its-list-paul-henry-ranking/IAKOUUQBHJDGNB3JC4ACEM76XE/ |title=Election 2026: Act Party releases its list, Paul Henry ranking |date=13 September 2026 |work=New Zealand Herald |first=Jamie |last=Ensor}}</ref>
+}}
+{{NZ election box incumbent
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Chlöe Swarbrick]]
+ |notes = 
+ |list = 2
+ |sources =<ref name="greens">{{cite web |url=https://www.greens.org.nz/candidates_2026 |title=Meet our candidates for 2026 |publisher=Green Party of Aotearoa New Zealand}}</ref><ref name="greenlist">{{cite news |url=https://www.nzherald.co.nz/nz/politics/election-2026-several-green-mps-receive-small-boost-but-still-at-risk-as-party-releases-final-candidate-list/TRBQIKNQ5BA2DKZMM2ECCPMQXU/ |title=Election 2026: Several Green MPs receive small boost but still at risk as party releases final candidate list |first=Adam |last=Pearse |date=22 April 2026 |work=[[The New Zealand Herald]] |access-date=22 April 2026}}</ref>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Lester Bryant
+ |notes = Announced, but not on final list of candidates
+ |list = 
+ |sources = <ref name="NZOFPNL">{{Cite web |title=Newsletter: Standing Up for Our Outdoors & Our Freedom |url=https://nzofp.co.nz/campaigns/1133774 |access-date=21 August 2026 |website=[[NZ Outdoors & Freedom Party]]}}</ref><ref name="ec">{{cite web |url=https://elections.nz/media-and-news/2026/candidate-and-party-lists-released |title=Candidate and party lists released |date=9 October 2026 |publisher=Electoral Commission}}</ref>
+}}
+{{NZ election box independent
+ |candidate=Wero Te Kino
+ |notes=Announced, but not on final list of candidates
+ |sources=<ref>{{cite web |url=https://www.voteauckland.com/ |title= Vote Auckland |website=Vote Auckland |access-date=16 September 2026}}</ref><ref name="ec"/>
+}}
+|}
+
+===Banks Peninsula===
+{{NZ election box begin|New Zealand|2026|Banks Peninsula|
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Tracey McLellan]]
+ |notes = MP for Banks Peninsula 2020–2023
+ |list = 28
+ |sources = <ref name="banks"/><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Craig Pauling]]
+ |notes = 
+ |list = 14
+ |sources =<ref name="banks">{{cite news |url=https://www.thepress.co.nz/nz-news/360925014/former-ecan-chair-contest-banks-peninsula |title=Former ECan chair to contest Banks Peninsula |work=The Press |first=Tina |last=Law |date=2 January 2026}}</ref><ref name="greenlist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Leslie Sales
+ |notes =
+ |list = 8
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand First
+ |candidate = John Stringer
+ |notes = Contested Ilam for the Conservative Party in 2014
+ |list = 47
+ |sources = <ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Kyle Turnbull
+ |notes = 
+ |list = 5
+ |sources =<ref name="alliance2"/><ref name="alliancelist">{{Cite web |date=7 October 2026 |title=Alliance Launches 2026 Party List With A Call To Break From “Political Inertia And Managed Decline” |url=https://www.scoop.co.nz/stories/PO2610/S00036/alliance-launches-2026-party-list-with-a-call-to-break-from-political-inertia-and-managed-decline.htm|access-date=7 October 2026 |publisher=[[Alliance (New Zealand political party)|Alliance]] |via=[[Scoop (website)|Scoop]]}}</ref>
+}}
+{{NZ election box candidate|
+ |party = Conservative Party NZ
+ |candidate = Amy Turner
+ |notes = 
+ |list = 8
+ |sources =<ref>{{Cite web |date=12 August 2026 |title=Introducing Amy Turner - Banks Peninsula Candidate |url=https://www.scoop.co.nz/stories/PO2608/S00085/introducing-amy-turner-banks-peninsula-candidate.htm |access-date=12 August 2026 |publisher=[[Conservative Party NZ]] |via=[[Scoop (website)|Scoop]]}}</ref>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Vanessa Weenink]]
+ |notes = 
+ |list = 39
+ |sources = <ref name="banks"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Zachary Wellman
+ |notes = 
+ |list = 31
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Rebecca Cleaver
+ |notes = Announced, but not on final list of candidates
+ |list = 
+ |sources = <ref name="Animal Justice"/><ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Lindsay Kerslake
+ |notes = Contested electorate in 2023
+ |list = 
+ |sources = <ref name="nzfcan"/><ref name="nzf6"/>
+}}
+|}
+
+===Botany===
+{{NZ election box begin|New Zealand|2026|Botany|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Ali Dahche
+ |notes = 
+ |list = 28
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = [[Neru Leavasa]]
+ |notes = MP for Takanini 2020–2023
+ |list = 32
+ |sources = <ref>{{cite web |url=https://www.indianweekender.co.nz/features/labour-selects-dr-anae-neru-leavasa-for-botany |title=Labour selects Dr Anae Neru Leavasa for Botany |date=27 March 2026 |work=The Indian Weekender}}</ref><ref name="lablist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Christopher Luxon]]
+ |notes =
+ |list = 1
+ |sources = <ref name="bates"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Craig Stobo
+ |notes = 
+ |list = 8
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/nz/politics/former-fma-boss-craig-stobo-joins-nz-first-running-in-christopher-luxons-seat/R6NPKFWJBJBUZDI366QMKHHEV4 |title=Former FMA boss Craig Stobo joins NZ First, running in Christopher Luxon’s seat |work=New Zealand Herald |author=Adam Pearse |date=28 August 2026 |accessdate=28 August 2026}}</ref><ref name="nzflist">{{cite news |url=https://www.nzherald.co.nz/nz/politics/nz-first-unveils-party-list-with-new-candidates-leapfrogging-current-caucus/PF3OP7MQCFD7XGRBUINB7F3IGI/ |title=NZ First unveils party list with new candidates leapfrogging current caucus |date=7 October 2026 |work=New Zealand Herald |first=Thomas |last=Coughlan}}</ref>
+}}
+|}
+
+===Christchurch Central===
+{{NZ election box begin|New Zealand|2026|Christchurch Central|
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Blair Anderson
+ |notes = Contested Wigram in 2023
+ |list = 7
+ |sources = <ref name="ALCP2026"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Mark Arneil
+ |notes = Contested electorate in 2023
+ |list = 24
+ |sources = <ref name="nzfcan"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Greg Byrnes
+ |notes = 
+ |list = 13
+ |sources =<ref name="alliance2">{{cite web |url=https://community.scoop.co.nz/2026/03/alliance-party-announces-eight-further-south-island-candidates-for-2026-general-election/ |title=Alliance Party Announces Eight Further South Island Candidates For 2026 General Election |date=29 March 2026 |website=scoop.co.nz}}</ref><ref name="alliancelist"/>
+}}
+{{NZ election box candidate list
+ |party=Green Party of Aotearoa New Zealand
+ |candidate=[[Kahurangi Carter]]
+ |sources=<ref>{{cite web |url=https://www.thepress.co.nz/nz-news/360937085/green-party-eyes-central-christchurch-seat-coming-election |title=Green Party eyes central Christchurch seat at coming election |date=27 January 2026 |work=The Press |first=Sinead |last=Gill}}</ref><ref name="greenlist"/>
+ |list= 11
+ |notes=Contested electorate in 2023
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = George Hampton
+ |notes = Contested North Shore in 2023
+ |list = 52
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2603/S00046/labour-selects-former-un-climate-official-and-business-owner-george-hampton-for-christchurch-central.htm |title=Labour Selects Former UN Climate Official And Business Owner George Hampton For Christchurch Central |date=8 March 2026 |website=scoop.co.nz}}</ref><ref name="lablist"/>
+}}
+{{NZ election box minor party candidate
+ |party = Economic Euthenics
+ |candidate = Tubby Hansen
+ |notes = Contested Wigram in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box independent
+ |candidate = Hayden Laurie
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Eden Skipper
+ |notes = 
+ |list = 5
+ |sources =<ref name="opp26First20">{{cite web |url=https://www.scoop.co.nz/stories/PO2603/S00121/the-next-generation-of-leaders-first-opportunity-candidates-announced.htm |title=The Next Generation Of Leaders: First Opportunity Candidates Announced |date=20 March 2026 |website=scoop.co.nz}}</ref><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand National Party
+ |candidate = Dale Stephens
+ |notes = Contested electorate in 2023
+ |list = 23
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2603/S00198/dale-aotea-stephens-selected-as-nationals-candidate-in-christchurch-central.htm |title=Dale Aotea Stephens Selected As National’s Candidate In Christchurch Central |date=31 March 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Christian van der Pump
+ |notes = Announced, but not on final list of candidates
+ |list = 
+ |sources =<ref name="ACT31May"/><ref name="ec"/>
+}}
+{{NZ election box retired|
+ |party = New Zealand Labour Party
+ |candidate = [[Duncan Webb]]
+ |notes = 
+ |list = 
+ |sources =<ref>{{cite web |url=https://www.stuff.co.nz/politics/360860965/labours-duncan-webb-stand-down-next-year |title=Labour’s Duncan Webb to stand down next year |date=21 October 2025 |work=Stuff |first=Glenn |last=McConnell}}</ref>
+}}
+|}
+
+===Christchurch East===
+{{NZ election box begin|New Zealand|2026|Christchurch East|
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Teresa Butler
+ |notes = List only candidate for Te Pāti Māori in 2023
+ |list = 55
+ |sources = <ref>{{cite news |url=https://www.chrislynchmedia.com/news-items/green-party-selects-teresa-butler-to-contest-christchurch-east/ |title=Green Party selects Teresa Butler to contest Christchurch East |date=23 April 2026 |work=Chris Lynch Media}}</ref>
+}}
+{{NZ election box candidate
+ |party = NZ Outdoors & Freedom Party
+ |candidate = David Cajar-Mueller
+ |notes = 
+ |list = 13
+ |sources = <ref name="nzofp"/><ref name="NZOFPList">{{cite web |url=https://www.facebook.com/reel/1723666168730719/ |title=NZ Outdoors & Freedom Party list for the 2026 Election |date=6 October 2026 |website=|access-date=6 October 2026|publisher=[[NZ Outdoors & Freedom Party]]|via=[[Facebook]]}}</ref>
+}}
+{{NZ election box candidate|
+ |party = New Zealand National Party
+ |candidate = Alexandra Davids
+ |notes = 
+ |list = 65
+ |sources = <ref>{{cite news |url=https://www.thepress.co.nz/nz-news/360984947/national-taps-alexandra-davids-take-labour-christchurch-east |title=National taps Alexandra Davids to take on Labour in Christchurch East |date=13 April 2026 |work=The Press |first=Liz |last=McDonald}}</ref><ref name="natlist"/>
+}}
+{{NZ election box incumbent|
+ |party = New Zealand Labour Party
+ |candidate = [[Reuben Davidson]]
+ |notes = 
+ |list = 21
+ |sources = <ref>{{cite web |title=Reuben Davidson Candidate for Christchurch East |url=https://www.labour.org.nz/2026-campaign/our-candidates/reuben-davidson |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Ethan Gullery
+ |notes = 
+ |list = 3
+ |sources =<ref name="alliance2"/><ref name="alliancelist"/>
+}}
+{{NZ election box candidate|
+ |party = Conservative Party NZ
+ |candidate = Helen Houghton
+ |notes = Contested electorate in 2023; originally selected for Tāmaki 
+ |list = 1
+ |sources = <ref>{{Cite web |title=Helen Houghton for Christchurch East |url=https://conservatives.org.nz/christchurch-east-electorate-2026-elections/ |access-date=21 September 2026 |website=[[Conservative Party NZ]]}}</ref>
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Paula Lambert
+ |notes = Contested electorate in 2023
+ |list = 4
+ |sources = <ref name="ALCP2026"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = [[Toni Severin]]
+ |notes = List MP 2020–2023; contested electorate in 2023
+ |list = 39
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Vikramjit Singh
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Glenn Thompson
+ |notes =
+ |list = 17
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Shane Wiremu
+ |notes = Contested electorate in 2023
+ |list = 45
+ |sources = <ref name="nzfcan">{{cite web |url=https://www.chrislynchmedia.com/news-items/new-zealand-first-unveils-canterbury-candidates-ahead-of-2026-election/ |title=New Zealand First unveils Canterbury candidates ahead of 2026 election |work=Chris Lynch Media |date=19 July 2026}}</ref><ref name="nzflist"/>
+}}
+|}
+
+===Coromandel===
+{{NZ election box begin|New Zealand|2026|Coromandel|
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Vincent Anderson
+ |notes = 
+ |list = 30
+ |sources = <ref name="nzfteam">{{cite web |url=https://www.nzfirst.nz/our-team |title=Our Team |work=New Zealand First|accessdate=26 August 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Glen Bennett]]
+ |notes = MP for New Plymouth 2020–2023
+ |list = 25
+ |sources = <ref>{{cite web |title=Glen Bennett Candidate for Coromandel|url=https://www.labour.org.nz/2026-campaign/our-candidates/glen-bennett |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Ray Cobb
+ |notes = Contested electorate for New Zealand Loyal in 2023
+ |list = 8
+ |sources = <ref name="nzofp"/><ref name="NZOFPList"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Pamela Grealey
+ |notes = Contested electorate in 2020 and 2023
+ |list = 32
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2601/S00080/green-party-announces-pamela-grealey-as-candidate-for-coromandel-electorate.htm |title=Green Party Announces Pamela Grealey As Candidate For Coromandel Electorate |date=18 January 2026 |website=scoop.co.nz}}</ref><ref name="greenlist"/>
+}}
+{{NZ election box independent
+ |candidate = Steven Hart
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Mike McCormick
+ |notes = Contested Papakura in 2023
+ |list = 
+ |sources =<ref name="ACT31May"/>
+}}
+{{NZ election box incumbent|
+ |party = New Zealand National Party
+ |candidate = [[Scott Simpson (politician)|Scott Simpson]]
+ |notes =
+ |list = 19
+ |sources = <ref>{{cite web |title=Scott Simpson Re-selected as National Party Candidate for 2026 Election |url=https://hcpost.news/2025/12/23/scott-simpson-re-selected-as-national-party-candidate-for-2026-election/ |date=23 December 2025 |work=Hauraki Coromandel Post}}</ref><ref name="natlist"/>
+}}
+|}
+
+=== Dunedin ===
+{{NZ election box begin|New Zealand|2026|Dunedin|
+}}
+{{NZ election box candidate
+ |party=New Zealand National Party
+ |candidate= Kristine Asuncion
+ |notes= 
+ |sources=<ref>{{cite web |title=Time to give back, says National's Dunedin candidate | website=Otago Daily Times Online News | date=18 April 2026 | url=https://www.odt.co.nz/news/dunedin/time-give-back-says-nationals-dunedin-candidate}}</ref><ref name="natlist"/>
+ |list= 42
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = David Bainbridge-Zafar
+ |notes = 
+ |list = 8
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = [[Victor Billot]]
+ |notes = Contested Dunedin North in 2011
+ |list = 1
+ |sources =<ref name="alliance1">{{cite web |url=https://www.scoop.co.nz/stories/PO2603/S00136/alliance-party-announces-key-candidates-for-otago-electorates.htm |title=Alliance Party Announces Key Candidates For Otago Electorates |date=23 March 2026 |website=scoop.co.nz}}</ref><ref name="alliancelist"/>
+}}
+{{NZ election box incumbent
+ |party=New Zealand Labour Party
+ |candidate=[[Rachel Brooking]]
+ |notes= 
+ |sources=<ref name="q324">{{cite web | last=Houlahan | first=Mike | title=Greens to make big push in Dunedin | website=Otago Daily Times Online News | date=2 February 2026 | url=https://www.odt.co.nz/news/dunedin/greens-make-big-push-dunedin | access-date=2 February 2026}}</ref><ref name="lablist"/>
+ |list= 11
+}}
+{{NZ election box candidate list
+ |party=Green Party of Aotearoa New Zealand
+ |candidate=[[Francisco Hernandez (politician)|Francisco Hernandez]]
+ |sources=<ref name="q324"/><ref name="greenlist"/>
+ |list= 10
+ |notes=Contested electorate in 2023
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Adrian McDermott
+ |notes = Contested electorate in 2023
+ |list = 10
+ |sources = <ref name="ec"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Kym McDonald-King
+ |notes = 
+ |list = 26
+ |sources =<ref name="nzfjul9"/><ref name="nzflist"/>
+}}
+{{NZ election box independent
+ |candidate = [[Benedict Ong]]
+ |notes = 
+ |list = 
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/nz/controversial-dunedin-councillor-benedict-ong-to-run-as-independent-in-general-election/4YR5OPFBV5ELBPV6V34XHITK4U/ |title=Controversial Dunedin councillor Benedict Ong to run as independent in general election |date=25 September 2026 |work=New Zealand Herald}}</ref>
+}}
+|}
+
+===East Cape===
+{{NZ election box begin|New Zealand|2026|East Cape|
+}}
+{{NZ election box independent
+ |candidate = Gordon Dickson
+ |notes = Contested East Coast in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Darrin Hawkes
+ |notes = 
+ |list = 35
+ |sources = <ref name="act23jun"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Dana Kirkpatrick]]
+ |notes = MP for East Coast since 2023
+ |list = 33
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/gisborne-herald/news/east-coast-mp-dana-kirkpatrick-confirmed-as-national-partys-2026-east-cape-candidate/V467XC34HFDZXKFVJ5ULU2SXNE/ |title=East Coast MP Dana Kirkpatrick confirmed as National Party’s 2026 East Cape candidate |work=New Zealand Herald |date=24 November 2025}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Jo Luxton]]
+ |notes = MP for Rangitata 2020–2023
+ |list = 17
+ |sources =<ref>{{cite web |url=https://www.nzherald.co.nz/gisborne-herald/news/jo-luxton-to-contest-east-cape-for-labour-with-cost-of-living-focus/2GQE6VO46FANTGM7JFTYTQUB5I/ |title=Jo Luxton to contest East Cape for Labour with cost of living focus |publisher=New Zealand Herald |work=The Gisborne Herald |date=9 December 2025 |accessdate=9 December 2025}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Cail Smith
+ |notes = 
+ |list = 33
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Jordan Walker
+ |notes = Contested East Coast in 2023
+ |list = 45
+ |sources = <ref name="greens"/><ref name="eclists"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Te Kira Lawrence
+ |notes = Changed candidacy to Napier
+ |list = 
+ |sources =<ref name="nzfjul9">{{cite web |url=https://pacific.scoop.co.nz/2026/07/nzfirst-announces-next-tranche-of-candidates/ |title=NZFirst Announces Next Tranche Of Candidates |website=scoop.co.nz |date=9 July 2026}}</ref><ref name="Te Kira">{{cite news |url=https://www.1news.co.nz/2026/07/23/nz-first-quickly-replaces-nash-in-napier-electorate |title=NZ First quickly replaces Nash in Napier electorate |work=Radio New Zealand |date=23 July 2026 |accessdate=23 July 2026}}</ref>
+}}
+|}
+
+===East Coast Bays===
+{{NZ election box begin|New Zealand|2026|East Coast Bays|
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Allan Lind
+ |notes =
+ |list = 12
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Brendan McEnroe
+ |notes = 
+ |list = 69
+ |sources = <ref>{{cite web |url=https://www.labour.org.nz/brendanmcenroe |title=Brendan McEnroe for Labour East Coast Bays |work=New Zealand Labour Party |accessdate=14 May 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Abe McKee
+ |notes = 
+ |list = 35
+ |sources = <ref name="greens"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Sam Mills
+ |notes = 
+ |list = 22
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Erica Stanford]]
+ |notes =
+ |list = 5
+ |sources = <ref name="natlist" />
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Vaughan Taylor
+ |notes = 
+ |list = 42
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+|}
+
+===Epsom===
+{{NZ election box begin|New Zealand|2026|Epsom|
+}}
+{{NZ election box candidate list|
+ |party = New Zealand Labour Party
+ |candidate = [[Camilla Belich]]
+ |notes = Contested electorate in 2023
+ |list = 23
+ |sources = <ref>{{cite web |title=Camilla Belich Candidate for Epsom |url=https://www.labour.org.nz/2026-campaign/our-candidates/camilla-belich/ |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand National Party
+ |candidate = [[Paul Goldsmith (politician)|Paul Goldsmith]]
+ |notes = Contested electorate in 2023
+ |list = 6
+ |sources = <ref name="natlist" />
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Martin Gummer
+ |notes = Contested Waitakere for National in 1981
+ |list = 27
+ |sources = <ref>{{cite web |url=https://www.thepost.co.nz/politics/361046085/long-time-nat-martin-gummer-standing-nz-first-epsom |title=Peters poaches life-long Auckland Nat for true-blue Epsom |date=18 July 2026 |work=The Post |first=Anneke |last=Smith}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Paul Jackson
+ |notes = 
+ |list = 39
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate
+ |party = Vision NZ
+ |candidate = Sawan Jerry
+ |notes = 
+ |list = 3
+ |sources = <ref name="VisionNZ"/><ref name="eclists"/>
+}}
+{{NZ election box incumbent|
+ |party = ACT New Zealand
+ |candidate = [[David Seymour]]
+ |notes = 
+ |list = 1
+ |sources = <ref>{{cite press release|url=https://www.scoop.co.nz/stories/PA2605/S00139/david-seymour-selected-as-act-candidate-for-epsom.htm |title=David Seymour Selected As ACT Candidate For Epsom |publisher=Scoop.co.nz |author=ACT New Zealand |date=17 May 2026 |accessdate=17 May 2026}}</ref><ref name="actlist"/>
+}}
+{{NZ election box candidate list
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Lawrence Xu-Nan]]
+ |notes = Contested electorate in 2023
+ |list = 8
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+|}
+
+===Glendene===
+{{NZ election box begin|New Zealand|2026|Glendene|
+}}
+{{NZ election box candidate
+ |party = The Opportunity Party
+ |candidate = Evan French
+ |notes = 
+ |list = 28
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Sunil Kumar
+ |notes = 
+ |list = 63
+ |sources = <ref name="natauck"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Robert McNeil
+ |notes = Contested Botany in 2023
+ |list = 1
+ |sources =<ref name="Animal Justice">{{cite web |url=https://animaljustice.org.nz/our-candidates/ |title=Our Candidates |publisher=[[Animal Justice Party Aotearoa New Zealand]] |access-date=29 May 2026}}</ref><ref name="eclists">{{cite web |url=https://vote.nz/2026-general-election/voting-in-the-election/party-lists |title=Party lists |publisher=[[Electoral Commission (New Zealand)|Electoral Commission]] |date=9 October 2026 |access-date=9 October 2026}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = [[Alfred Ngaro]]
+ |notes = National list MP, 2011–2020; contested Te Atatū in 2020; [[NewZeal]] leader and list only candidate in 2023
+ |list = 5
+ |sources = <ref name="NZF West Auck">{{cite news |title=Winston Peters unveils KiwiSaver-from-birth NZ First policy, bank takeover plan |url=https://www.rnz.co.nz/news/political/595475/winston-peters-unveils-kiwisaver-from-birth-nz-first-policy-bank-takeover-plan |access-date=17 May 2026 |work=RNZ |date=17 May 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Amanda Roberts
+ |notes = 
+ |list = 19
+ |sources = <ref name="ACT July 4">{{cite press release |title=ACT Announces Final Candidates As Nationwide Team Takes Shape For 2026 |url=https://www.scoop.co.nz/stories/PA2607/S00035/act-announces-final-candidates-as-nationwide-team-takes-shape-for-2026.htm |work=ACT New Zealand |date=4 July 2026 |access-date=4 July 2026 }}</ref><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Tua Schuster
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Carmel Sepuloni]]
+ |notes = MP for Kelston since 2014
+ |list = 2
+ |sources = <ref>{{cite web |first=Carmel|last=Sepuloni|author-link=Carmel Sepuloni|title=I have just been confirmed as the Labour candidate for the new Glendene electorate for the 2026 election''[...]'' |url=https://www.instagram.com/p/DSeLWXYjG_M/ |website=Instagram |date=19 December 2025 |access-date=31 May 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Yasmine Serhan
+ |notes = 
+ |list = 18
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+|}
+
+===Hamilton East===
+{{NZ election box begin|New Zealand|2026|Hamilton East|
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Georgie Dansey]]
+ |notes = Contested electorate in 2023
+ |list = 33
+ |sources = <ref name="dansey">{{cite news |url=https://www.waikatotimes.co.nz/nz-news/360934501/dansey-wellington-november-7-election-tussle-looms |title=Dansey off to Wellington as November 7 election tussle looms |date=22 January 2026 |work=Waikato Times |first=Paora |last=Manuel}}</ref><ref name="lablist"/>
+}}
+{{NZ election box independent
+ |candidate = Jacobus Gielen
+ |notes = Contested electorate for [[The Republic of New Zealand Party]] in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Ryan Hamilton (New Zealand politician)|Ryan Hamilton]]
+ |notes =
+ |list = 36
+ |sources = <ref name="natlist" />
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Nicola Laboyrie
+ |notes =
+ |list = 41
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2606/S00073/nzfirst-candidate-for-hamilton-east-announced.htm |title=NZFirst Candidate For Hamilton East Announced |date=10 June 2026 |website=scoop.co.nz}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Naomi Pocock
+ |notes = Contested Hamilton West in 2023
+ |list = 15
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+|}
+
+===Hamilton West===
+{{NZ election box begin|New Zealand|2026|Hamilton West|
+}}
+{{NZ election box minor party candidate
+ |party = New World Order McCann Party
+ |candidate = Nathan Lee Couper
+ |notes = Contested Hamilton East in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Louise Hutt
+ |notes = 
+ |list = 19
+ |sources = <ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box independent
+ |candidate = Steve Phelps
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate 
+ |party = NZ Outdoors & Freedom Party
+ |candidate = [[Donna Pokere-Phillips]]
+ |notes = Contested Hauraki-Waikato in 2023
+ |list = 6
+ |sources =<ref name="nzofp"/><ref name="NZOFPList"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Tama Potaka]]
+ |notes =
+ |list = 11
+ |sources = <ref name="natlist" />
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Blair Smith
+ |notes = 
+ |list = 35
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand First
+ |candidate = Kevin Stone
+ |notes = Contested electorate in 2023
+ |list = 43
+ |sources = <ref name="nzf14062026">{{cite news |url=https://www.scoop.co.nz/stories/PA2606/S00103/winston-peters-speech-keep-hope-alive.htm |title=Winston Peters' Speech – "Keep Hope Alive" |publisher=scoop.co.nz |date=14 June 2026 |accessdate=15 June 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box independent
+ |candidate = Wiremu Thomson
+ |notes = Contested Wigram in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Myra Williamson
+ |notes = Contested electorate in 2023
+ |list = 60
+ |sources = <ref name="dansey"/><ref name="lablist"/>
+}}
+|}
+
+===Henderson===
+{{NZ election box begin|New Zealand|2026|Henderson|
+}}
+{{NZ election box independent
+ |candidate = Kay Luv
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = [[Angee Nicholas]]
+ |notes = Contested Te Atatū in 2023
+ |list = 26
+ |sources = <ref>{{cite web |url=https://www.national.org.nz/news/20260319-angee-nicholas-selected-as-nationals-candidate-in-henderson |title=Angee Nicholas selected as National’s candidate in Henderson |date=19 March 2026 |publisher=New Zealand National Party}}</ref><ref name="natlist"/>
+}}
+{{NZ election box minor party candidate
+ |party = Jobseeker Party
+ |candidate = Kelso Papali'i
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Nick Peirce
+ |notes = 
+ |list = 34
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = John Divine Paola Talagi
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Phil Twyford]]
+ |notes = MP for Te Atatū since 2011
+ |list = 40
+ |sources =<ref>{{cite web |first=Phil|last=Twyford|author-link=Phil Twyford|title=I've just been confirmed as Labour's candidate for the new Henderson electorate''[...]'' |url=https://www.instagram.com/reel/DSizE4gkgtC/ |website=Instagram |date=21 December 2025 |access-date=31 May 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Alika Wells
+ |notes = 
+ |list = 27
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand First
+ |candidate = [[David Wilson (New Zealand First politician)|David Wilson]]
+ |notes = Contested Upper Harbour in 2023
+ |list = 12
+ |sources = <ref name="NZF West Auck" /><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Almo Wong
+ |notes = 
+ |list = 37
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+|}
+
+===Hutt South===
+{{NZ election box begin|New Zealand|2026|Hutt South|
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Ginny Andersen]]
+ |notes = MP for Hutt South 2020–2023
+ |list = 12
+ |sources = <ref>{{cite web |title=Hon Ginny Andersen Candidate for Hutt South |url=https://www.labour.org.nz/2026-campaign/our-candidates/hon-ginny-andersen |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Chris Bishop]]
+ |notes = 
+ |list = 3
+ |sources = <ref name="bates"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Alistair Boyce
+ |notes = 
+ |list = 35
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box independent
+ |candidate = Malcolm Dick
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box minor party candidate
+ |party = Socialist Equality Group
+ |candidate = Tom Petterson
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box independent
+ |candidate = David L F Smith
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Courtney White
+ |notes = 
+ |list = 29
+ |sources = <ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Benjamin Wylie-van Eerd
+ |notes = Contested electorate in 2023
+ |list = 13
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+|}
+
+===Ilam===
+{{NZ election box begin|New Zealand|2026|Ilam|
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Hamish Campbell]]
+ |notes = 
+ |list = 48
+ |sources =<ref>{{cite web |url=https://www.national.org.nz/news/251205-hamishcampbell |title=Hamish Campbell – December Update |publisher=New Zealand National Party |date=5 December 2025 |first=Hamish |last=Campbell}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate list|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Mike Davidson (politician)|Mike Davidson]]
+ |notes = Contested electorate in 2023
+ |list = 20
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Courtney Fraser
+ |notes = 
+ |list = 9
+ |sources =<ref name="alliance2"/><ref name="alliancelist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Ken Harpur
+ |notes = 
+ |list = 44
+ |sources = <ref name="ACT July 4"/><ref name="actlist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Rata Jamieson 
+ |notes = 
+ |list = 56
+ |sources =<ref>{{cite web |url=https://www.thepress.co.nz/nz-news/360962326/labour-selects-fine-arts-student-contest-ilam-seat-election |title=Labour selects fine arts student to contest Ilam seat at election|publisher=The Post |date=6 March 2026 |first=The |last=Press}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Nathan Walton
+ |notes = 
+ |list = 49
+ |sources = <ref name="nzfcan"/><ref name="nzflist"/>
+}}
+|}
+
+===Invercargill===
+{{NZ election box begin|New Zealand|2026|Invercargill|
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Anntwinette Grumball
+ |notes = Contested Southland in 2023
+ |list = 6
+ |sources = <ref name="ALCP2026"/>
+}}
+{{NZ election box candidate 
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Dave Kennedy
+ |notes = Contested Southland in 2023
+ |list = 41
+ |sources = <ref>{{cite news |url=https://www.thepress.co.nz/nz-news/361039011/invercargill-green-candidate-confirmed |title=Invercargill Green candidate confirmed |date=8 July 2026 |work=The Press}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate
+|party = New Zealand Labour Party
+|candidate = Janice Lee
+|notes = 
+|list = 61
+|sources = <ref>{{cite news |url=https://www.thepress.co.nz/nz-news/360973121/koha-kai-founder-janice-lee-nominated-labour-candidate-invercargill-2026-general-election |title=Koha Kai founder Janice Lee nominated as Labour candidate for Invercargill in 2026 general election |date=24 March 2026 |work=The Press}}</ref><ref name="lablist"/>
+}}
+{{NZ election box independent
+ |candidate = Hayden John Seager
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Penny Simmonds]]
+ |notes =
+ |list = 14
+ |sources = <ref name="natlist"/>
+}}
+|}
+
+===Kaikōura===
+{{NZ election box begin|New Zealand|2026|Kaikōura|
+}}
+{{NZ election box candidate list
+ |party = New Zealand First
+ |candidate = [[Jamie Arbuckle]]
+ |notes = Contested electorate in 2023
+ |list = 13
+ |sources = <ref>{{cite web |url=https://www.thepress.co.nz/nz-news/361029492/jamie-arbuckle-bullish-nz-first-launches-kaikoura-campaign |title=Jamie Arbuckle bullish as NZ First launches Kaikōura campaign |date=23 June 2026 |work=The Press |first=Ian |last=Allen}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box independent
+ |candidate = Iain Britton
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Matthew Flight
+ |notes = Contested electorate in 2020
+ |list = 
+ |sources = <ref>{{cite news |url=https://www.thepress.co.nz/nz-news/360977641/labours-kaikoura-candidate-has-youth-and-hurunui-votes-focus |title=Labour’s Kaikōura candidate has youth and Hurunui votes in focus |date=31 March 2026 |newspaper=[[Marlborough Express]]|publisher=[[The Press]]|first=Freddie|last=Wilkie|access-date=9 April 2026|url-access=subscription}}</ref>
+}}
+{{NZ election box independent
+ |candidate = Oliver Hill Hughes
+ |notes = 
+ |list = 
+ |sources = <ref>{{cite news |url=https://newspapers.odt.co.nz/blenheim-sun/20260715/page/10 |title=One on One with The Sun |date=15 July 2026 |newspaper=Blenheim Sun|publisher=[[Otago Daily Times]] |access-date=15 July 2026}}</ref>
+}}
+{{NZ election box independent
+ |candidate = Ted Howard
+ |notes = Contested electorate in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Stuart Smith (politician)|Stuart Smith]]
+ |notes =
+ |list = 21
+ |sources = <ref>{{cite news |url=https://marlboroughapp.co.nz/news/articles/6a55bf0b25209103cf9b71ea |title=Kaikōura Electorate MP maps election approach |publisher=Marlborough App |author=Evan Tuchinsky |date=16 July 2026 |accessdate=16 July 2026}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Tom Spooner
+ |notes = 
+ |list = 24
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+|}
+
+===Kaipara ki Mahurangi===
+{{NZ election box begin|New Zealand|2026|Kaipara ki Mahurangi|
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Zephyr Brown
+ |notes = Contested electorate in 2023
+ |list = 24
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Simon Court]]
+ |notes = Contested Te Atatū in 2023
+ |list = 8
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Mark Dennis
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Liz Dotcom
+ |notes =
+ |list = 11
+ |sources =<ref>{{Cite news |date=18 September 2026 |title=Kim Dotcom’s wife Liz to contest outgoing National MP Chris Penk’s Kaipara ki Mahurangi seat |url=https://www.nzherald.co.nz/nz/kim-dotcoms-wife-liz-to-contest-outgoing-national-mp-chris-penks-kaipara-ki-mahurangi-seat/SSDOXM43CFHDBHB3WQGVCXK5KE/ |access-date=19 September 2026 |work=[[The New Zealand Herald]]}}</ref><ref name="NZOFPList"/>
+}}
+{{NZ election box candidate
+ |party = The Opportunity Party
+ |candidate = Daniel Eb
+ |notes = 
+ |list = 2
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand First
+ |candidate = [[Jenny Marcroft]]
+ |notes = Contested electorate in 2023
+ |list = 10
+ |sources =<ref>{{cite news |title=NZ First wants a Special Economic Zone at Marsden Point|url=https://www.rnz.co.nz/news/political/596186/nz-first-wants-special-economic-zone-at-marsden-point |work=[[Radio New Zealand]] |date=24 May 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand National Party
+ |candidate = Jessica Rowe
+ |notes =
+ |list = 68
+ |sources =<ref>{{Cite news |last=Pearse |first=Adam |date=7 September 2026 |title=Election 2026: National selects candidate to replace Chris Penk in Auckland seat |url=https://www.nzherald.co.nz/nz/politics/election-2026-national-selects-candidate-to-replace-chris-penk-in-auckland-seat/AB3RQ7INKJBVJBYYK7MGMAPPRI/ |access-date=7 September 2026 |work=[[The New Zealand Herald]]}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Jo Swinburn
+ |notes =
+ |list = 
+ |sources =<ref>{{Cite news |last=Gabel |first=Julia |date=7 August 2026 |title=Another Labour candidate backs out of election |url=https://www.nzherald.co.nz/nz/politics/another-labour-candidate-backs-out-of-election/4NIB3HG24ZHPBPSCCWXPIX5NQM/ |access-date=7 August 2026 |work=[[The New Zealand Herald]]}}</ref>
+}}
+{{NZ election box candidate
+ |party = Independent politician
+ |candidate = Ivan Wagstaff
+ |notes = 
+ |list = 
+ |sources = <ref>{{cite web |url=https://www.facebook.com/ivanforrodney/posts/pfbid02aeeFT8sHyfVCWa3fBAYmrHt3RVXuZn33PVR9to3uXmVPRfbLm6tKLieNmspDuw8El |title=Ivan Wagstaff - Independent for Kaipara ki Mahurangi's post |date=2 August 2026}}</ref>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box retired|
+ |party = New Zealand National Party
+ |candidate = [[Chris Penk]]
+ |notes = Was re-selected, but later chose to retire
+ |list = 
+ |sources =<ref name="natlist" /><ref>{{cite news |title=Chris Penk says he will not seek re-election after losing ministerial portfolios |url=https://www.rnz.co.nz/news/politics/975747/chris-penk-says-he-will-not-seek-re-election-after-losing-ministerial-portfolios |access-date=12 August 2026 |publisher=RNZ |date=12 August 2026}}</ref>
+}}
+|-
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Tracey-Lee Repia
+ |notes = Contested list only for Mana Movement in 2017
+ |list = 
+ |sources =<ref name="Henry Cooke 2">{{cite news |last1=Cooke |first1=Henry |title=What does Labour have outside of its past? |url=https://www.thepost.co.nz/politics/360987690/what-does-labour-have-outside-its-past |access-date=17 April 2026 |work=The Post |publisher=Stuff |date=17 April 2026}}</ref><ref>{{cite news |url=https://www.localmatters.co.nz/health/labour-candidate-pulls-out/ |title=Labour candidate pulls out |date=20 July 2026 |work=Local Matters}}</ref>
+}}
+|}
+
+===Kapiti===
+{{NZ election box begin|New Zealand|2026|Kapiti|
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Tim Costley]]
+ |notes = MP for Ōtaki since 2023
+ |list = 38
+ |sources = <ref>{{Cite news|url=https://www.kcnews.co.nz/2025/12/05/tim-costley-confirms-for-new-kapiti-electorate/ |title=Tim Costley confirms for new Kapiti electorate |date=5 December 2025 |website=kcnews.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Penny Gaylor
+ |notes = Contested Taranaki-King Country for Labour in 2014
+ |list = 19
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2608/S00060/experienced-kapiti-leader-penny-gaylor-to-stand-for-new-zealand-first.htm |title=Experienced Kapiti Leader Penny Gaylor To Stand For New Zealand First |date=7 August 2026 |publisher=[[New Zealand First]]|via=[[Scoop (website)|Scoop]]}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box minor party candidate
+ |party = [[Not A Party]]
+ |candidate = Richard Goode
+ |notes = Contested Mana in 2023
+ |sources = <ref name="NAP2026">{{cite web|title=2026 candidates |url=https://www.nap.org.nz/people/ |website=[[Not A Party]] |access-date=8 October 2026}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = [[Sophie Handford]]
+ |notes = 
+ |list = 26
+ |sources =<ref>{{cite news |first=Anna |last=Whyte|url=https://www.thepost.co.nz/politics/360891809/climate-activist-turned-councillor-named-labours-kapiti-candidate |title=Climate activist turned councillor named as Labour’s Kāpiti candidate |date=19 November 2025 |work=[[The Post (New Zealand newspaper)|The Post]] }}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Chee-Khiang Sng
+ |notes = 
+ |list = 26
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box minor party candidate
+ |party = [[Progressive Party of Aotearoa New Zealand|Progressive Aotearoa]]
+ |candidate = Michael Walker
+ |notes = Contested Mana in 2020
+ |sources = <ref name="Progressive"></ref>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Melody Willis
+ |notes = 
+ |list = 31
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Asher Wilson-Goldman
+ |notes = 
+ |list = 
+ |sources =<ref>{{cite web |url=https://www.thepost.co.nz/nz-news/360990721/green-party-candidate-quits-kapiti-race |title=Green Party candidate quits Kāpiti race |date=22 April 2026 |work=The Post |first=Justin |last=Wong}}</ref>
+}}
+|}
+
+===Kenepuru===
+{{NZ election box begin|New Zealand|2026|Kenepuru|
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Jon Blackshaw
+ |notes = 
+ |list = 48
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Barbara Edmonds]]
+ |notes = MP for Mana since 2020
+ |list = 3
+ |sources = <ref>{{cite web |url=https://wellington.scoop.co.nz/?p=175927 |title=Mana MP chosen as Labour’s candidate for new Kenepuru electorate |date=23 November 2025 |website=Scoop.co.nz}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Matthew Evetts
+ |notes = Contested list only in 2014
+ |list = 60
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2604/S00175/matthew-evetts-selected-for-national-in-kenepuru.htm |title=Matthew Evetts Selected For National In Kenepuru |date=30 April 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Robert Mason
+ |notes = 
+ |list = 20
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate list
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Lan Pham]]
+ |notes = Contested Banks Peninsula in 2023
+ |list = 6
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box minor party candidate
+ |party = [[Not A Party]]
+ |candidate = Bob Wessex
+ |notes = Contested Ōtaki in 2023
+ |sources = <ref name="NAP2026"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Lyra Yan Zhang
+ |notes = 
+ |list = 
+ |sources = <ref name="act23jun"/><ref>{{cite news |url=https://www.thepost.co.nz/nz-news/360840432/act-candidate-resigns-after-chinese-political-group-link-revealed |title=ACT candidate resigns after Chinese political group link revealed |date=30 June 2026 |work=The Post |first=Justin |last=Wong}}</ref>
+}}
+|}
+
+===Māngere===
+{{NZ election box begin|New Zealand|2026|Māngere|
+}}
+{{NZ election box candidate 
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Hine Afeaki
+ |notes = 
+ |list = 4
+ |sources =<ref name="nzofp"/><ref name="NZOFPList"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = [[Kelvyn Alp]]
+ |notes = Contested [[2025 Tāmaki Makaurau by-election]]
+ |list = 1
+ |sources = <ref name="nzl">{{Cite web |title=Candidates |url=https://nzloyal.com/candidates/ |website=[[New Zealand Loyal]]}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Rosemary Bourke
+ |notes = Contested electorate in 2023
+ |list = 39
+ |sources = <ref name="natauck"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First 
+ |candidate = Vicky Hau
+ |notes = 
+ |list = 21
+ |sources = <ref>{{cite news |title=NZ First targets Pacific vote with Māngere candidate Vicky Hau |url=https://pmn.co.nz/read/political/nz-first-targets-pacific-vote-with-mangere-candidate-vicky-hau |date=23 June 2026 |first=Khalia |last=Strong |work=Pacific Media Network}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Ben Lane
+ |notes = 
+ |list = 25
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Michel Mulipola]]
+ |notes = 
+ |list = 49
+ |sources = <ref>{{cite web |url=https://www.nzherald.co.nz/nz/politics/greens-candidate-cops-criticism-after-posting-now-deleted-joke-about-charlie-kirk-assassination/6WWNOKWWHRBLZDEK6TWMKPWRHE/ |title=Greens candidate cops criticism after posting now-deleted joke about Charlie Kirk assassination |date=24 April 2026 |work=New Zealand Herald |first=Azaria |last=Howell}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Manu Singh
+ |notes = 
+ |list = 26
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Lemauga Lydia Sosene]]
+ |notes = 
+ |list = 41
+ |sources = <ref>{{cite web |title=Lemauga Lydia Sosene Candidate for Māngere |url=https://www.labour.org.nz/2026-campaign/our-candidates/lemauga-lydia-sosene |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box minor party candidate
+ |party = People's Party New Zealand
+ |candidate = Alani Fisher Taione
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate 
+ |party = Independent politician
+ |candidate = Timoti Te Moke
+ |notes = Withdrew from Green Party selection
+ |list = 
+ |sources =<ref>{{cite news |url=https://newsroom.co.nz/2026/04/13/high-profile-green-candidate-withdraws-candidacy/ |title=‘They’re not ready for me’: high-profile Green candidate flips to independent |date=13 April 2026 |work=Newsroom |first=Fox |last=Meyer}}</ref>
+}}
+|}
+
+===Manurewa===
+{{NZ election box begin|New Zealand|2026|Manurewa|
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Ghouse Majeed
+ |notes = 
+ |list = 66
+ |sources = <ref name="natauck"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Avalua Tavui
+ |notes =
+ |list = 7
+ |sources =<ref name="Animal Justice"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First 
+ |candidate = Esther Tofilau-Tevaga 
+ |notes = 
+ |list = 18
+ |sources = <ref name=ot>{{cite web |title=Our Team |url=https://www.nzfirst.nz/our-team|access-date=6 July 2026 |website=[[NZ First]]}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Arena Williams]]
+ |notes = 
+ |list = 41
+ |sources = <ref>{{cite web |url=https://pmn.co.nz/read/political/south-auckland-voters-turning-away-from-politics-labour-mp |title=South Auckland voters turning away from politics – Labour MP |date=26 January 2026|access-date=9 April 2026 |website=[[Pacific Media Network]]|first='Alakihihifo |last=Vailala}}</ref><ref name="lablist"/>
+}}
+|}
+
+===Maungakiekie===
+{{NZ election box begin|New Zealand|2026|Maungakiekie|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Juan Alvarez de Lugo
+ |notes = Contested New Lynn in 2023
+ |list = 25
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Greg Fleming (politician)|Greg Fleming]]
+ |notes =
+ |list = 44
+ |sources = <ref name="natlist" />
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Keegan Langeveld
+ |notes = Contested Dunedin in 2023
+ |list = 36
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Derrick Paull
+ |notes = 
+ |list = 23
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Adam Powell
+ |notes = 
+ |list = 36
+ |sources = <ref name="greens"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Priyanca Radhakrishnan]]
+ |notes = MP for Maungakiekie 2020–2023
+ |list = 18
+ |sources = <ref>{{cite news |url=https://www.indianweekender.co.nz/news/priyanca-radhakrishnan-confirmed-as-labour-candidate-for-maungakiekie |title=Priyanca Radhakrishnan outlines priority list if elected again |date=5 December 2025 |work=The Indian Weekender}}</ref><ref name="lablist"/>
+}}
+|}
+
+=== Mount Albert ===
+{{NZ election box begin|New Zealand|2026|Mount Albert|
+}}
+{{NZ election box independent
+ |candidate = Luke Bones
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Sheldon Eden-Whaitiri
+ |notes = 
+ |list = 32
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand National Party
+ |candidate = [[Melissa Lee]]
+ |notes = Contested electorate in 2023
+ |list = 29
+ |sources = <ref name="natlist"/>
+}}
+{{NZ election box candidate list
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Ricardo Menéndez March]]
+ |notes = Contested electorate in 2023
+ |list = 9
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Alex Price
+ |notes = 
+ |list = 14
+ |sources = <ref name="ACT July 4"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Helen White (politician)|Helen White]]
+ |notes = 
+ |list = 37
+ |sources = <ref>{{cite web |url=https://www.instagram.com/p/DROjhzfETVC/ |title=I am incredibly honoured to announce that I have been selected as Mt Albert’s Labour Party candidate for the 2026 general election ''[...]'' |first=Helen|last=White|author-link=Helen White (politician)|date=18 November 2025 |access-date=24 March 2026|website=[[Instagram]]}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = [[Qiulae Wong]]
+ |notes = 
+ |list = 1
+ |sources =<ref>{{cite news |last1=Schmidt |first1=Veronica |title=Opportunity Party to double candidates this election, Qiulae Wong to stand in Mt Albert |url=https://thespinoff.co.nz/politics/16-02-2026/opportunity-party-to-double-candidates-this-election-qiulae-wong-to-stand-in-mt-albert |access-date=23 February 2026 |work=[[The Spinoff]] |date=16 February 2026 |archive-url=https://web.archive.org/web/20260216180409/https://thespinoff.co.nz/politics/16-02-2026/opportunity-party-to-double-candidates-this-election-qiulae-wong-to-stand-in-mt-albert |archive-date=16 February 2026 |url-status=live}}</ref><ref name="toplist"/>
+}}
+|}
+
+===Mount Maunganui===
+{{NZ election box begin|New Zealand|2026|Mount Maunganui|
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Tracey Coxhead
+ |notes = 
+ |list = 15
+ |sources =<ref name="nzfjul9"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Caitlin Grattan
+ |notes = Contested Bay of Plenty in 2023
+ |list = 9
+ |sources = <ref name="Animal Justice"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Rhieve Grey
+ |notes = 
+ |list = 64
+ |sources = <ref>{{cite news |last1=Cooke |first1=Henry |title=A Budget beyond the fuel crisis starts to take shape |url=https://www.thepost.co.nz/politics/361004954/budget-beyond-fuel-crisis-starts-take-shape |access-date=15 May 2026 |work=The Post |publisher=Stuff |date=15 May 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Cameron Luxton]]
+ |notes = Contested Bay of Plenty in 2023
+ |list = 12
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Tom Rutherford]]
+ |notes = MP for Bay of Plenty since 2023
+ |list = 27
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/bay-of-plenty-times/news/2026-election-tom-rutherford-named-as-national-party-candidate-for-mount-maunganui-electorate/CEC4EB7NKRD4VK4IRCIN2VMRQE/ |title=2026 election: Tom Rutherford National Party candidate for Mount Maunganui electorate |date=23 October 2025 |work=[[New Zealand Herald]] |first=Kaitlyn |last=Morrell}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Pualele Westhead 
+ |notes = 
+ |list = 51
+ |sources = <ref>{{cite news |title= Election 2026: Who is standing for Tauranga, Mount Maunganui and Waiariki electorates, and why? |url=https://www.nzherald.co.nz/bay-of-plenty-times/news/election-2026-who-is-standing-for-tauranga-mount-maunganui-and-waiariki-electorates-and-why/EA2YP3BXPNFCDBFNPZXU6H3E2M/|date=18 July 2026 |work=[[New Zealand Herald]] |first=Bijou|last=Johnson}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Greer Young
+ |notes = Originally selected for Tauranga
+ |list = 6
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+|}
+
+===Mount Roskill===
+{{NZ election box begin|New Zealand|2026|Mount Roskill|
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Jamie Attenborough
+ |notes = 
+ |list = 29
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Carlos Cheung]]
+ |notes =
+ |list = 33
+ |sources = <ref name="natlist" />
+}}
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Priyanka Deo
+ |notes =
+ |list = 6
+ |sources =<ref name="Animal Justice"/><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Anjana Iyer
+ |notes = 
+ |list = 38
+ |sources = <ref name="ec"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Yang Qu
+ |notes = 
+ |list = 17
+ |sources = <ref name="act23jun">{{cite web |url=https://www.scoop.co.nz/stories/PA2606/S00169/act-expands-2026-candidate-team.htm |title=ACT Expands 2026 Candidate Team |date=23 June 2026 |website=scoop.co.nz}}</ref><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = [[Michael Wood (New Zealand politician)|Michael Wood]]
+ |notes = MP for Mount Roskill 2016–2023
+ |list = none
+ |sources =<ref>{{cite news |title=Former MP Michael Wood announces bid to return to politics |url=https://www.1news.co.nz/2025/11/21/former-mp-michael-wood-announces-bid-to-return-to-politics/ |work=1News |date=21 November 2025}}</ref>
+}}
+|}
+
+===Napier===
+{{NZ election box begin|New Zealand|2026|Napier|
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Roy Boonen
+ |notes = 
+ |list = 52
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/hawkes-bay-today/news/green-party-names-roy-boonen-as-napier-candidate |title=Green Party names Roy Boonen as Napier candidate |date=22 July 2026 |accessdate=22 July 2026 |work=Hawke's Bay Today |publisher=New Zealand Herald |author=Rafaella Melo}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Alex Hedley
+ |notes = 
+ |list = 49
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/nz/election-2026-labour-candidate-for-napier-electorate-in-next-years-general-election-named/2OK75MIHKJE7PPKUW5UWOKM7GM |title=Election 2026: Labour candidate for Napier electorate in next year’s general election named |date=15 December 2025 |accessdate=15 December 2025 |work=New Zealand Herald |author=Doug Laing}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Te Kira Lawrence
+ |notes = Originally selected for East Cape
+ |list = 28
+ |sources =<ref name="Te Kira"/><ref name="nzflist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Katie Nimon]]
+ |notes = 
+ |list = 26
+ |sources = <ref name="hb">{{cite news |url=https://www.nzherald.co.nz/nz/election-2026-teacher-and-conservation-leader-join-list-of-hawkes-bay-candidates/VING77VURVCRTI5BN7V2CGAFPI/ |title=Election 2026: Teacher and conservation leader join list of Hawke’s Bay candidates |date=30 April 2026 |work=[[New Zealand Herald]] |first=Gary |last=Hamilton-Irvine}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = John Ormond
+ |notes = 
+ |list = 40
+ |sources = <ref name="act23jun"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Graham Wainwright
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = [[Stuart Nash]]
+ |notes = Labour MP for Napier 2014–2023
+ |list = 
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/nz/politics/christopher-luxon-rules-out-stuart-nash-from-future-government/5QIUTHNVLBBDZER2YJUBOLRXKA/ |title=NZ First accepts Stuart Nash’s resignation after Christopher Luxon rules out Nash from future government |date=22 July 2026 |accessdate=22 July 2026 |work=New Zealand Herald |publisher=New Zealand Herald |author=Thomas Coughlan}}</ref>
+}}
+|}
+
+===Nelson===
+{{NZ election box begin|New Zealand|2026|Nelson|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = [[Chris Baillie (politician)|Chris Baillie]]
+ |notes = List MP 2020–2023; contested electorate in 2023
+ |list = 46
+ |sources = <ref name="act23jun"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Rachel Boyack]]
+ |notes = 
+ |list = 37
+ |sources = <ref>{{Cite news |url=https://www.thepress.co.nz/nz-news/360890444/incumbent-mp-vowing-keep-nelson-conversation-she-vies-third-term |title=Incumbent MP vowing to keep Nelson in the conversation as she vies for a third term |work=The Press |date=18 November 2025 |first=Katie |last=Townshend}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand National Party
+ |candidate = [[Blair Cameron]]
+ |notes = Contested electorate in 2023
+ |list = 41
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2511/S00055/blair-cameron-selected-as-nationals-candidate-in-nelson.htm |title=Blair Cameron Selected As National’s Candidate In Nelson |date=8 November 2025 |website=Scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Julian Crawford
+ |notes = Contested Dunedin South for the Aotearoa Legalise Cannabis Party in 2014
+ |list = 7
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box minor party candidate
+ |party = [[Progressive Party of Aotearoa New Zealand|Progressive Aotearoa]]
+ |candidate = Bruce Dyer
+ |notes = Contested electorate in 2023
+ |sources = <ref name="Progressive">{{cite web |url=https://www.scoop.co.nz/stories/PO2608/S00166/nz-faces-a-crisis-of-soul-says-progressive-party-leader.htm |title=NZ Faces A Crisis Of Soul, Says Progressive Party Leader |date=24 August 2026 |access-date=24 August 2026 |publisher=[[Progressive Party of Aotearoa New Zealand]] |via=[[Scoop (website)|Scoop]]}}</ref>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Jodie Kuntzsch
+ |notes = 
+ |list = 6
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Rohan O'Neill-Stevens]]
+ |notes = 
+ |list = 16
+ |sources =<ref>{{cite web |url=https://www.rnz.co.nz/news/political/589036/ex-deputy-mayor-of-nelson-rohan-o-neill-stevens-to-run-for-seat-as-green-candidate |title=Ex-deputy mayor of Nelson, Rohan O'Neill-Stevens, to run for seat as Green candidate |date=9 March 2026 |website=rnz.co.nz}}</ref><ref name="greenlist"/>
+}}
+|}
+
+===New Plymouth===
+{{NZ election box begin|New Zealand|2026|New Plymouth|
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Amanda Clinton-Gohdes
+ |notes =
+ |list = 59
+ |sources =<ref>{{cite news |url=https://www.thepost.co.nz/nz-news/360967097/ex-councillor-hits-campaign-trail-labour-new-plymouth |title=Ex-councillor hits campaign trail for Labour in New Plymouth |date=13 March 2026 |accessdate=14 March 2026 |work=The Post |author=Will Johnston}}</ref><ref name="lablist"/>
+}}
+{{NZ election box minor party candidate|
+ |party = Independent Taranaki
+ |candidate = Rusty Kane
+ |notes = Contested electorate in 2020
+ |sources =<ref>{{cite news |url=https://www.thepost.co.nz/nz-news/361057892/independent-partys-rigorous-search-ends-familiar-face |title=Independent party’s ‘rigorous search’ ends with familiar face |date=7 August 2026 |work=The Post |first=Will |last=Johnston}}</ref>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Sarah Lucas
+ |notes = 
+ |list = 7
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[David MacLeod]]
+ |notes =
+ |list = 46
+ |sources =<ref>{{cite web |url=https://www.thepost.co.nz/nz-news/360848624/national-party-confirm-david-macleod-np-candidate |title=National Party confirm David MacLeod as NP candidate |date=9 October 2025 |work=The Post}}</ref><ref name="natlist"/>
+}}
+|}
+
+===North Shore===
+{{NZ election box begin|New Zealand|2026|North Shore|
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Karen Chhour]]
+ |notes = Contested Upper Harbour in 2023
+ |list = 5
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Sam Collins
+ |notes =
+ |list = 63
+ |sources =<ref name="Henry Cooke 2" /><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Josh Jacobsen
+ |notes = 
+ |list = 25
+ |sources = <ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Holly Knill
+ |notes = 
+ |list = 9
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Simon Watts]]
+ |notes =
+ |list = 13
+ |sources = <ref name="natlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = Conservative Party NZ
+ |candidate = Marie Drury
+ |notes = Changed candidacy to Northcote
+ |list = 5
+ |sources =<ref>{{Cite web |date=6 August 2026 |title=Conservative Party Announces Experienced Healthcare Leader As North Shore Candidate |url=https://www.scoop.co.nz/stories/PO2608/S00038/conservative-party-announces-experienced-healthcare-leader-as-north-shore-candidate.htm |publisher=[[Conservative Party NZ]]|via=[[Scoop (website)]] |access-date=6 August 2026}}</ref>
+}}
+|}
+
+===Northcote===
+{{NZ election box begin|New Zealand|2026|Northcote|
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Dan Bidois]]
+ |notes = 
+ |list = 31
+ |sources = <ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Lily Carrington
+ |notes = Contested Hamilton East in 2023
+ |list = 3
+ |sources = <ref name="Animal Justice"></ref><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = Conservative Party NZ
+ |candidate = Marie Drury
+ |notes = Originally selected for North Shore
+ |list = 5
+ |sources =<ref>{{Cite web |date=30 September 2026 |title= Conservative NZ Announces 2026 Party List |url=https://www.scoop.co.nz/stories/PO2609/S00250/conservative-nz-announces-2026-party-list.htm |access-date=30 September 2026 |publisher=[[Conservative Party NZ]] |via=[[Scoop (website)|Scoop]]}}</ref>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Barak Ford
+ |notes = 
+ |list = 16
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Bhen Goodsir
+ |notes = 
+ |list = 17
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Daryl Habraken
+ |notes = 
+ |list = 29
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Shanan Halbert]]
+ |notes = MP for Northcote 2020–2023
+ |list = 19
+ |sources = <ref>{{cite news |last1=Tukaki |first1=Matthew |title=#election2026: Shanan Halbert Confirms Northcote Re-Election Bid |url=https://waateanews.com/2026/03/02/election2026-shanan-halbert-confirms-northcote-re-election-bid/ |access-date=31 May 2026 |work=Waatea News |date=2 March 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Martin Lundqvist
+ |notes = 
+ |list = 42
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Cody Marsh
+ |notes = 
+ |list = 17
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+|}
+
+===Northland===
+{{NZ election box begin|New Zealand|2026|Northland|
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Mark Cameron (politician)|Mark Cameron]]
+ |notes = Contested electorate in 2023. Withdrew from ACT's list due to ill health but remained ACT's Northland candidate.
+ |list = 
+ |sources =<ref name="ACT31May"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Mike Finlayson
+ |notes = Contested electorate for Northland Party in 2023
+ |list = 48
+ |sources =<ref name="greens"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand First
+ |candidate = [[Shane Jones]]
+ |notes = Contested electorate in 2023
+ |list = 2
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Ashleigh Latimer
+ |notes = 
+ |list = 55
+ |sources = <ref>{{cite news |last1=Cooke |first1=Henry |title=National remembers it is in Government and can do things |url=https://www.thepost.co.nz/politics/361000768/national-remembers-it-government-and-can-do-things |access-date=15 May 2026 |work=The Post |publisher=Stuff |date=8 May 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Jeff Lye
+ |notes = Contested electorate in 2023
+ |list = 3
+ |sources = <ref name="ALCP2026">{{Cite web |date=2026 |title=2026 candidates |url=https://www.alcp.org.nz/2026-candidates |access-date=30 August 2026 |website=[[Aotearoa Legalise Cannabis Party]]}}</ref>
+}}
+{{NZ election box candidate|
+ |party = Conservative Party NZ
+ |candidate = Doug Lyell
+ |notes = 
+ |list = 4
+ |sources = <ref>{{Cite web |date=10 August 2026 |title=Conservative Party Announces Doug Lyell As Northland Candidate |url=https://www.scoop.co.nz/stories/PO2608/S00068/conservative-party-announces-doug-lyell-as-northland-candidate.htm |access-date=10 August 2026 |publisher=[[Conservative Party NZ]] |via=[[Scoop (website)]]}}</ref>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Grant McCallum]]
+ |notes = 
+ |list = 35
+ |sources = <ref name="northland">{{cite news |url=https://www.nzherald.co.nz/northern-advocate/news/election-2026-whos-in-whos-out-and-whos-circling-northland-seats/HQ4ATRAKO5FPXJ267ZDYXWMECQ/ |title=Election 2026: Who’s in, who’s out and who’s circling Northland seats |date=23 March 2026 |work=New Zealand Herald |first=Denise |last=Piper}}</ref><ref name="natlist"/>
+}}
+{{NZ election box minor party candidate
+ |color = #07247e
+ |party = Build the Nation
+ |candidate = Richard McIntosh
+ |notes = 
+ |list = 
+ |sources = <ref name="northland"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Pete Verhoeven
+ |notes =
+ |list = 10
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Alistair Wait
+ |notes = 
+ |list = 5
+ |sources =<ref name="nzofp"/><ref name="NZOFPList"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Sean Brickland
+ |notes =
+ |list = 
+ |sources = <ref>{{Cite web |date=10 May 2026 |title=Election 2026: What Northland voters need to know about new rules |url=https://www.nzherald.co.nz/northern-advocate/news/election-2026-what-northland-voters-need-to-know-about-new-rules/XW27VSMM6VF3TM4JGAMVJC4PP4/ |archive-url=https://web.archive.org/web/20260511092324/https://www.nzherald.co.nz/northern-advocate/news/election-2026-what-northland-voters-need-to-know-about-new-rules/XW27VSMM6VF3TM4JGAMVJC4PP4/ |archive-date=11 May 2026 |access-date=10 August 2026 |website=[[New Zealand Herald]] |agency=[[Northern Advocate]]}}</ref>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Lucian Plaumann
+ |notes = 
+ |list = 
+ |sources =<ref>{{cite web |url=https://www.greens.org.nz/candidates_2026 |archive-url=https://web.archive.org/web/20260415074205/https://www.greens.org.nz/candidates_2026 |archive-date=15 April 2026 |title=Meet our candidates for 2026}}</ref>
+}}
+|}
+
+===Ōtāhuhu===
+{{NZ election box begin|New Zealand|2026|Ōtāhuhu|
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = John Alcock
+ |notes = Contested Pakuranga for Rock The Vote NZ in 2023
+ |list = 9
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Lalit Arya
+ |notes = 
+ |list = 58
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2605/S00012/lalit-arya-selected-for-national-in-otahuhu.htm |title=Lalit Arya Selected For National In Ōtāhuhu |date=3 May 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Henrietta Devoe
+ |notes = 
+ |list = 21
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Phillip Harry Faleu
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box minor party candidate
+ |party = People's Party New Zealand
+ |candidate = Eseta Haunga
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Adam MacRae-Martin
+ |notes = 
+ |list = 18
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate
+ |party = Vision NZ
+ |candidate = [[Karl Mokaraka]]
+ |notes = Contested Panmure-Ōtāhuhu in 2023
+ |list = 4
+ |sources = <ref name="VisionNZ"/><ref name="eclists"/>
+}}
+{{NZ election box independent
+ |candidate = James Robb
+ |notes = Contested Panmure-Ōtāhuhu for Workers Now in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box incumbent|
+ |party = New Zealand Labour Party
+ |candidate = [[Jenny Salesa]]
+ |notes = MP for Panmure-Ōtāhuhu since 2020
+ |list = 24
+ |sources = <ref>{{cite web |title=Hon Jenny Salesa Candidate for Ōtāhuhu |url=https://www.labour.org.nz/2026-campaign/our-candidates/hon-jenny-salesa |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Te Whatanui Skipwith
+ |notes = 
+ |list = 30
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+|}
+
+===Pakuranga===
+{{NZ election box begin|New Zealand|2026|Pakuranga|
+}}
+{{NZ election box incumbent|
+ |party = New Zealand National Party
+ |candidate = [[Simeon Brown]]
+ |notes =
+ |list = 4
+ |sources =<ref>{{cite web |url=https://www.national.org.nz/news/251129-simeonbrown |title=Simeon Says — 29 November 2025 |publisher=New Zealand National Party |date=29 November 2025 |first=Simeon |last=Brown}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Kevin Huang
+ |notes = 
+ |list = 40
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Campbell Matthews
+ |notes = 
+ |list = 70
+ |sources = <ref>{{cite web |url=https://www.labour.org.nz/campbellmatthews |title=Campbell Matthews for Pakuranga |work=New Zealand Labour Party |accessdate=29 May 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Parmjeet Parmar]]
+ |notes = Contested electorate in 2023
+ |list = 10
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Catherine Somerville-Ryan
+ |notes = 
+ |list = 
+ |sources = <ref>{{cite news |url=https://www.times.co.nz/news/nz-first-candidate-steps-away |title=NZ First candidate steps away |work=Eastern Times |author=Phil Taylor |date=15 September 2026 |accessdate=16 September 2026}}</ref>
+}}
+|}
+
+===Palmerston North===
+{{NZ election box begin|New Zealand|2026|Palmerston North|
+}}
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Brian Baker
+ |notes =
+ |list = 5
+ |sources =<ref name="Animal Justice"/><ref name="eclists"/>
+}}
+{{NZ election box candidate 
+ |party = New Zealand National Party
+ |candidate = Ankit Bansal
+ |notes = Contested electorate in 2023
+ |list = 53
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2511/S00251/ankit-bansal-selected-as-nationals-candidate-in-palmerston-north.htm |title=Ankit Bansal Selected As National’s Candidate In Palmerston North |date=29 November 2025 |website=Scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Netra Ghimire
+ |notes = 
+ |list = 32
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Joshua Moss
+ |notes = 
+ |list = 11
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PO2609/S00187/alliance-party-announces-joshua-moss-as-candidate-for-palmerston-north.htm |title=Alliance Party Announces Joshua Moss As Candidate For Palmerston North |date=23 September 2026 |website=scoop.co.nz}}</ref><ref name="alliancelist"/>
+}}
+{{NZ election box candidate list
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Teanau Tuiono]]
+ |notes = Contested electorate in 2023
+ |list = 3
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box incumbent|
+ |party = New Zealand Labour Party
+ |candidate = [[Tangi Utikere]]
+ |notes = 
+ |list = 14
+ |sources = <ref>{{cite news |url=https://www.thepost.co.nz/nz-news/360945670/tangi-utikere-confirmed-labour-candidate-pn |title=Tangi Utikere confirmed as Labour candidate for PN |work=The Post |date=9 February 2026}}</ref><ref name="lablist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Bruce McGechan
+ |notes = Contested New Plymouth in 2023
+ |list = 
+ |sources =<ref name="ACT31May"/><ref>{{cite news |url=https://www.thepost.co.nz/nz-news/361084762/another-candidate-withdraws-palmerston-north-race |title=Another candidate withdraws from Palmerston North race |date=23 September 2026 |work=The Post |first=George |last=Heagney}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Helma Vermuelen
+ |notes = Contested Rangitīkei in 2023
+ |list = 
+ |sources = <ref name="nzfteam"/><ref name="nzf6">{{cite news |url=https://www.stuff.co.nz/politics/361036209/nz-first-loses-six-candidates-says-they-were-only-ever-potential-runners |title=NZ First loses six candidates, says they were only ever ‘potential’ runners |date=21 September 2026 |work=Stuff |first=Glenn |last=McConnell}}</ref>
+}}
+|}
+
+=== Papakura ===
+{{NZ election box begin|New Zealand|2026|Papakura|
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Emma Chatterton
+ |notes = Contested Remutaka in 2023
+ |list = 52
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2603/S00136/emma-chatterton-selected-as-nationals-candidate-in-papakura.htm |title=Emma Chatterton Selected As National’s Candidate In Papakura |date=21 March 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Angela Dalton]]
+ |notes = 
+ |list = 26
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = [[Anahila Kanongata'a]]
+ |notes = List MP 2017–2023; contested electorate in 2023
+ |list = 48
+ |sources = <ref>{{cite web |title=Anahila Kanongata'a Candidate for Papakura|url=https://www.labour.org.nz/2026-campaign/our-candidates/anahila-kanongataa |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Malkiat Singh
+ |notes = 
+ |list = 29
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = Vision NZ
+ |candidate = [[Hannah Tamaki]]
+ |notes = Contested Tāmaki Makaurau in 2023 and also contested the [[2025 Tāmaki Makaurau by-election]]
+ |list = 1
+ |sources = <ref>{{Cite web |date=1 July 2026 |title=Vision New Zealand Facebook Post |url=https://www.facebook.com/VisionNZparty/posts/pfbid0344Ag2DBF9bB3BT9JFPi5eTEnuLkCWsRMdXbFKmX9z7qqmPcQkcpQrHNLGuxMFFaYl |access-date=4 July 2026 |publisher=[[Vision New Zealand]] |via=[[Facebook]]}}</ref><ref name="eclists"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box retired|
+ |party = New Zealand National Party
+ |candidate = [[Judith Collins]]
+ |notes = 
+ |sources =<ref>{{cite web |url=https://www.rnz.co.nz/news/top/585206/national-s-judith-collins-retires-from-politics-appointed-law-commission-president |title=National's Judith Collins retires from politics, appointed Law Commission president |date=28 January 2026 |work=RNZ |first=Russell |last=Palmer}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = George Ngatai
+ |notes = Contested Takanini for Vision NZ in 2020
+ |list = 
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/nz/auckland/nz-first-candidate-george-ngatai-stands-down-amid-claims-he-was-blackmailed/premium/XUGB6427WZBRTF4SMMM7YN677U/ |title=NZ First candidate George Ngatai stands down amid claims he was blackmailed |date=26 August 2026 |work=New Zealand Herald}}</ref>
+}}
+|}
+
+===Port Waikato===
+{{NZ election box begin|New Zealand|2026|Port Waikato|
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Matt Brachi
+ |notes = 
+ |list = 
+ |sources = <ref>{{cite news |url=https://franklintimes.co.nz/teacher-puts-hand-up-for-labour |title=Teacher puts hand up for Labour |work=Franklin Times |first=Helena |last=O'Neill |date=18 May 2026 |accessdate=19 May 2026}}</ref>
+}}
+{{NZ election box candidate list|
+ |party = New Zealand First
+ |candidate = [[Casey Costello]]
+ |notes = Contested electorate in 2023 and contested [[2023 Port Waikato by-election]]
+ |list = 3
+ |sources = <ref name="nzf14062026"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Sarah Jane Lochead-Macmillan
+ |notes = 
+ |list = 43
+ |sources = <ref name="ACT July 4"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Carl Morgan
+ |notes = 
+ |list = 28
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Matthew Paul
+ |notes = 
+ |list = 62
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2605/S00002/matthew-paul-selected-for-national-in-port-waikato.htm |title=Matthew Paul Selected For National In Port Waikato |date=1 May 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box retired|
+ |party = New Zealand National Party
+ |candidate = [[Andrew Bayly]]
+ |notes = 
+ |list = 
+ |sources =<ref>{{cite news |title=Former minister Bayly won't contest seat, looks to National list|url=https://www.1news.co.nz/2026/03/03/former-minister-bayly-wont-contest-seat-looks-to-national-list/ |date=3 March 2026 |work=[[1News]] |access-date=3 March 2026}}</ref>
+}}
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Daymond Goulder-Horobin
+ |notes = Later announced to be contesting list only
+ |list = 14
+ |sources = <ref>{{cite web |date=17 May 2026 |title=NZ Outdoors And Freedom Party Announces Economic And Tech Expert Daymond Goulder-Horobin For Port Waikato Electorate |url= https://m.scoop.co.nz/stories/PO2605/S00102/nz-outdoors-and-freedom-party-announces-economic-and-tech-expert-daymond-goulder-horobin-for-port-waikato-electorate.htm |access-date=6 October 2026 |publisher=[[NZ Outdoors & Freedom Party]] |via=[[Scoop (website)|Scoop]]}}</ref><ref name="NZOFPList"/>
+}}
+|}
+
+===Rangitata===
+{{NZ election box begin|New Zealand|2026|Rangitata|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Aaron Allred
+ |notes = 
+ |list = 37
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Matt Harris
+ |notes = 
+ |list = 30
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Sange Malama
+ |notes = 
+ |list = 64
+ |sources =<ref>{{cite web |title=Labour Selects Candidate For Rangitata |url=https://www.scoop.co.nz/stories/PA2605/S00059/labour-selects-candidate-for-rangitata.htm |date=8 May 2026 |accessdate=8 May 2026 |work=New Zealand Labour Party}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Kevin McCraken
+ |notes = 
+ |list = 15
+ |sources =<ref>{{cite web |title=Rangitata electorate|url=https://policy.nz/2026/rangitata-electorate/candidates/kevin-mccracken |date=2026 |accessdate=25 September 2026 |website=[[Policy.nz]]}}</ref><ref name="NZOFPList"/>
+}}
+{{NZ election box incumbent|
+ |party = New Zealand National Party
+ |candidate = [[James Meager]]
+ |notes = 
+ |list = 18
+ |sources =<ref>{{cite web |title=Meager re-selected for Rangitata |url=https://www.timarucourier.co.nz/news/meager-re-selected-for-rangitata/ |date=23 April 2026 |work=[[Timaru Courier]]}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Isaac Nicholson
+ |notes = 
+ |list = 38
+ |sources = <ref name="nzfcan"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Dave Richards
+ |notes = 
+ |list = 42
+ |sources =<ref>{{cite news |url=https://www.thepress.co.nz/nz-news/361046018/green-party-selects-rangitata-candidate-2026-general-election |title=Green Party selects Rangitata candidate for 2026 General Election |work=The Press |first=Rachael |last=Comer |date=22 July 2026}}</ref>
+}}
+{{NZ election box candidate|
+ |party= Conservative Party NZ
+ |candidate= Karl Thomas
+ |notes = Contested electorate in 2023
+ |list = 2
+ |sources =<ref>{{Cite web |date=8 August 2026 |title=Conservative Party Announces Karl Thomas as Rangitata Candidate |url=https://www.scoop.co.nz/stories/PO2608/S00058/conservative-party-announces-karl-thomas-as-rangitata-candidate.htm |access-date=8 August 2026 |publisher=[[Conservative Party NZ]] |via=[[Scoop (website)|Scoop]]}}</ref>
+}}
+|}
+
+===Rangitīkei===
+{{NZ election box begin|New Zealand|2026|Rangitīkei|
+}}
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Cedric Backhouse
+ |notes = Withdrew as New Conservative candidate for this electorate in 2020
+ |list = 12
+ |sources = <ref name="nzofp"/><ref name="NZOFPList"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Steve Gibson
+ |notes = 
+ |list = 33
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Andrew Hoggard]]
+ |notes = Contested electorate in 2023
+ |list = 3
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Bernard Long
+ |notes = Contested electorate in 2023
+ |list = 39
+ |sources =<ref>{{cite news |url=https://www.scoop.co.nz/stories/PA2603/S00131/green-party-announces-teanau-tuiono-as-candidate-for-palmerston-north-and-bernard-long-for-rangitikei-electorates.htm |title=Green Party Announces Teanau Tuiono As Candidate For Palmerston North And Bernard Long For Rangitīkei Electorates |publisher=Scoop.co.nz |author=Green Party |date=19 March 2026 |accessdate=19 March 2026}}</ref>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Suze Redmayne]]
+ |notes =
+ |list = 32
+ |sources =<ref>{{cite news |title=Redmayne to seek second term as Rangitīkei MP |url=https://www.thepost.co.nz/nz-news/360946155/redmayne-seek-second-term-rangitikei-mp |access-date=31 May 2026 |work=The Post |publisher=Stuff |date=9 February 2026}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party=New Zealand Labour Party
+ |candidate=Karl Severinsen
+ |list= 66
+ |notes=
+ |sources=<ref name="b747">{{cite web | title=Former army officer confirmed as Labour’s Rangitīkei candidate | website=The Post | url=https://www.thepost.co.nz/nz-news/360996180/former-army-officer-confirmed-labours-rangitikei-candidate | access-date=30 April 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Jason Smith
+ |notes =
+ |list = 14
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = [[Kevin Campbell (New Zealand politician)|Kevin Campbell]]
+ |notes = List MP 1999–2002; contested Wigram in 2011
+ |list = 
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PO2606/S00023/alliance-party-names-former-mp-kevin-campbell-as-candidate-for-rangitikei.htm |title=Alliance Party Names Former MP Kevin Campbell As Candidate For Rangitikei |date=3 June 2026 |website=scoop.co.nz}}</ref><ref>{{cite web |url=https://www.scoop.co.nz/stories/PO2608/S00141/alliance-candidate-for-rangitikei-kevin-campbell-stands-down.htm |title=Alliance Candidate For Rangitīkei Kevin Campbell Stands Down |date=19 August 2026 |website=scoop.co.nz}}</ref>
+}}
+|}
+
+===Remutaka===
+{{NZ election box begin|New Zealand|2026|Remutaka|
+}}
+{{NZ election box independent
+ |candidate = Victor Edward Dench
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Nigel Elder
+ |notes = 
+ |list = 23
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand First
+ |candidate = [[Andy Foster]]
+ |notes = Contested Mana in 2023
+ |list = 11
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Chris Hipkins]]
+ |notes = 
+ |list = 1
+ |sources = <ref>{{cite web |title=Rt Hon Chris Hipkins Candidate for Remutaka |url=https://www.labour.org.nz/2026-campaign/our-candidates/rt-hon-chris-hipkins/ |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Zabeen Lateef
+ |notes = 
+ |list = 67
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2606/S00218/dr-zabeen-lateef-selected-as-nationals-remutaka-candidate-in-2026.htm |title=Dr Zabeen Lateef Selected As National’s Remutaka Candidate In 2026 |publisher=Scoop.co.nz |date=30 June 2026 |accessdate=30 June 2026}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Chris Norton
+ |notes = Contested electorate in 2023
+ |list = 34
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Luke Ross
+ |notes = 
+ |list = 21
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+|}
+
+===Rotorua===
+{{NZ election box begin|New Zealand|2026|Rotorua|
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Billy Brown
+ |notes = 
+ |list = 34
+ |sources =<ref name="nzfjul9"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Finn Liley
+ |notes = 
+ |list = 27
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box incumbent 
+ |party = New Zealand National Party
+ |candidate = [[Todd McClay]]
+ |notes = 
+ |list = 10
+ |sources = <ref name="wang"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Fisher Wang
+ |notes =
+ |list = 68
+ |sources = <ref name="wang">{{cite web |url=https://www.nzherald.co.nz/rotorua-daily-post/news/election-2026-rotorua-lakes-councillor-fisher-wang-enters-mp-race/BWJMU7YFN5E37PTSQG5HVQQCZ4/ |title=Election 2026: Rotorua Lakes councillor Fisher Wang enters MP race |date=23 April 2026 |work=New Zealand Herald |first=Mathew |last=Nash}}</ref><ref name="lablist"/>
+}}
+|}
+
+===Selwyn===
+{{NZ election box begin|New Zealand|2026|Selwyn|
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Alma de Anda
+ |notes =
+ |list = 33
+ |sources = <ref>{{cite web |title=Alma de Anda |url=https://www.greens.org.nz/candidates_2026 |website=Green Party of Aotearoa New Zealand |access-date=2 July 2026}}</ref><ref>{{cite web |title=Green Party releases final candidate list for the 2026 General Election |url=https://www.greens.org.nz/green_party_releases_final_candidate_list_for_the_2026_general_election |website=Green Party of Aotearoa New Zealand |date=22 April 2026 |access-date=2 July 2026}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Sunita Gautam
+ |notes = 
+ |list = 
+ |sources = <ref name="Moody">{{cite news |url=https://www.nzherald.co.nz/nz/politics/labour-candidate-backs-out-of-south-island-electorate-race-party-forced-to-reselect/2XP37KX6MFD4PDM2MFYLR36TTI |title=Labour candidate backs out of South Island electorate race, party forced to reselect |work=New Zealand Herald |author=Julia Gabel |date=27 July 2026 |accessdate=27 July 2026}}</ref>
+}}
+{{NZ election box incumbent 
+ |party = New Zealand National Party
+ |candidate = [[Nicola Grigg]]
+ |notes = 
+ |list = 17
+ |sources = <ref name="selwn"/><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Jesse Luke
+ |notes = 
+ |list = 10
+ |sources =<ref name="alliance2"/><ref name="alliancelist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Adrian Mee
+ |notes = 
+ |list = 38
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Elizabeth Mundt
+ |notes = 
+ |list = 46
+ |sources = <ref name="nzfcan"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Iain Murray
+ |notes = 
+ |list = 11
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate 
+ |party = Independent politician
+ |candidate = Zoran Rakovic
+ |notes = 
+ |list = 
+ |sources =<ref>{{cite web |url=https://issuu.com/malvernnews/docs/issue_1_213-_friday_5th_december_2025 |title=Zoran Rakovic announces independent run for Selwyn seat |date=5 December 2025 |website=Malvernnews.co.nz |page=10}}</ref>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Nick Moody
+ |notes = 
+ |list = 
+ |sources = <ref name="selwn">{{cite news |url=https://www.thepress.co.nz/nz-news/360998351/labour-selects-ecan-councillor-challenge-nicola-grigg-selwyn |title=Labour selects ECan councillor to challenge Nicola Grigg in Selwyn |date=5 May 2026 |work=The Post |first=Elsie |last=Williams}}</ref><ref name="Moody"/>
+}}
+|}
+
+===Southland===
+{{NZ election box begin|New Zealand|2026|Southland|
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Bianca Beebe
+ |notes = 
+ |list = 11
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Jason Herrick
+ |notes =
+ |list = 17
+ |sources = <ref>{{cite web |url=https://www.nzfirst.nz/southland_federated_farmers_president_jason_herrick_to_stand_for_nz_first |title=Southland Federated Farmers President Jason Herrick to Stand for NZ First |date=23 April 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = Vision NZ
+ |candidate = Naomi Maclean
+ |notes = Contested electorate in 2023
+ |list = 5
+ |sources = <ref name="VisionNZ">{{Cite web |title=About us |url=https://www.vision.org.nz/about-us |access-date=15 September 2026 |website=[[Vision New Zealand]]}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Peter McDonald
+ |notes =
+ |list = 58
+ |sources = <ref>{{cite web |url=https://www.thepress.co.nz/nz-news/360967977/labour-selects-peter-mcdonald-contest-southland-electorate |title=Labour selects Peter McDonald to contest Southland electorate |date=17 March 2026 |work=The Press |first=Michael |last=Fallow}}</ref><ref name="lablist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Joseph Mooney (New Zealand politician)|Joseph Mooney]]
+ |notes =
+ |list = 50
+ |sources = <ref>{{cite web |url=https://www.thepress.co.nz/nz-news/360970055/mooney-reselected-defend-southland-seat |title=Mooney reselected to defend Southland seat |date=18 March 2026 |work=The Press}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Todd Stephenson]]
+ |notes = Contested electorate in 2023
+ |list = 6
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+|}
+
+=== Taieri ===
+{{NZ election box begin|New Zealand|2026|Taieri|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Robbie Byars
+ |notes = 
+ |list = 32
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Matthew French
+ |notes = Contested electorate in 2023
+ |list = 54
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2602/S00048/matthew-french-selected-as-nationals-candidate-in-taieri.htm |title=Matthew French Selected As National’s Candidate In Taieri |date=9 February 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Anna Knight
+ |notes = 
+ |list = 2
+ |sources =<ref name="alliance1"/><ref name="alliancelist"/>
+}}
+{{NZ election box incumbent
+ |party=New Zealand Labour Party
+ |candidate=[[Ingrid Leary]]
+ |sources=<ref name="q324"/><ref name="lablist"/>
+ |notes=
+ |list=39
+}}
+{{NZ election box candidate list
+ |party=New Zealand First
+ |candidate=[[Mark Patterson (New Zealand politician)|Mark Patterson]]
+ |sources=<ref>{{cite news |last1=Houlahan |first1=Mike |title=Election 2026 interview: NZ First's Mark Patterson |url=https://www.odt.co.nz/news/dunedin/election-2026-interview-nz-firsts-mark-patterson-e1d1c06f |access-date=7 September 2026 |work=Otago Daily Times |publisher=Allied Press |date=10 July 2026}}</ref><ref name="nzflist"/>
+ |list=4
+ |notes=Contested electorate in 2023
+}}
+{{NZ election box candidate list
+ |party=Green Party of Aotearoa New Zealand
+ |candidate=[[Scott Willis (politician)|Scott Willis]]
+ |sources=<ref name="q324"/><ref name="greenlist"/>
+ |list=15
+ |notes=Contested electorate in 2023
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Mathew Phillips
+ |notes = Resigned from party
+ |list = 
+ |sources = <ref>{{cite web |url=https://www.odt.co.nz/news/dunedin/taieri-candidate-missing-as-opportunity-releases-party-list-f54kbmr0 |first=Mike |last=Houlahan |title=Taieri candidate missing as Opportunity releases party list |work=[[Otago Daily Times]] |date=2 August 2026 |access-date=10 August 2026 }}</ref>
+}}
+|}
+
+===Takanini===
+{{NZ election box begin|New Zealand|2026|Takanini|
+}}
+{{NZ election box candidate
+ |party = New Zealand First 
+ |candidate = [[Elliot Ikilei]]
+ |notes = Contested electorate for New Conservatives in 2020
+ |list = 20
+ |sources = <ref name=ot/><ref name="nzflist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Rima Nakhle]]
+ |notes = 
+ |list = 45
+ |sources = <ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Paul Teio
+ |notes = Contested Māngere for the Direct Democracy Party of New Zealand in 2005
+ |list = 2
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Kharag Singh
+ |notes = Contested Botany in 2023
+ |list = 61
+ |sources = <ref>{{cite news |url=https://www.indiannewslink.co.nz/community-leader-kharag-singh-is-labour-s-takanini-candidate |title=Community leader Kharag Singh is Labour’s Takanini Candidate |date=24 March 2026 |work=Indian Newslink}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Lynley Tulloch
+ |notes = Contested electorate in 2023
+ |list = 8
+ |sources =<ref name="Animal Justice"/><ref name="eclists"/>
+}}
+|}
+
+=== Tāmaki ===
+{{NZ election box begin|New Zealand|2026|Tāmaki|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = James Christmas
+ |notes = Contested the list only for National in 2023
+ |list = 7
+ |sources = <ref>{{cite web |url=https://www.nzherald.co.nz/nz/politics/nationals-former-attorney-general-prospect-to-contest-tamaki-for-act/WUZN2IKXPBCK5NPBIITCBWDRHQ |title=National’s former Attorney-General prospect to contest Tāmaki for Act |date=20 April 2026 |website=nzherald.co.nz}}</ref><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party=New Zealand Labour Party
+ |candidate=Max Harris
+ |notes=
+ |list=29
+ |sources=<ref name="i631">{{cite web | title=INBOX: Max Harris to stand for Labour in Tāmaki | website=X (formerly Twitter) | url=https://x.com/henrycooke/status/2036249699263676662 | access-date=25 March 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Sacha Haskell
+ |notes = 
+ |list = 31
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Donald Mackenzie-Mayo
+ |notes = 
+ |list = 43
+ |sources = <ref name="greens"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Mahesh Muralidhar
+ |notes = Contested Auckland Central in 2023
+ |list = 23
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2602/S00122/mahesh-muralidhar-selected-as-nationals-candidate-in-tamaki.htm |title=Mahesh Muralidhar Selected As National’s Candidate In Tāmaki |date=20 February 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box independent
+ |candidate = Ryan Earl Pausina
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box independent
+ |candidate = Finlay Smith
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = Conservative Party NZ
+ |candidate = Helen Houghton
+ |notes = Changed candidacy to Christchurch East 
+ |list = 1
+ |sources = <ref>{{cite press release |url=https://www.scoop.co.nz/stories/PO2607/S00179/conservative-leader-helen-houghton-enters-tamaki-race-promising-real-world-leadership.htm |title=Conservative Leader Helen Houghton Enters Tāmaki Race, Promising Real-World Leadership |author=Conservative Party NZ |publisher=Scoop.co.nz |date=28 July 2026 |accessdate=28 July 2026}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = John Ryan
+ |notes = 
+ |list = none
+ |sources = <ref name="nzfteam"/><ref name="nzf6"/>
+}}
+{{NZ election box retired
+ |party=ACT New Zealand
+ |candidate=[[Brooke van Velden]]
+ |notes=
+ |sources=<ref name="z239">{{cite web | title=Act deputy Van Velden to step down | website=Newsroom | date=23 March 2026 | url=https://newsroom.co.nz/2026/03/24/van-velden-to-step-down/ | access-date=23 March 2026}}</ref>
+}}
+|}
+
+===Taranaki-King Country===
+{{NZ election box begin|New Zealand|2026|Taranaki-King Country|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Ivana Jovicic
+ |notes = 
+ |list = 
+ |sources =<ref name="ACT31May"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Barbara Kuriger]]
+ |notes =
+ |list = 43
+ |sources = <ref name="tkc">{{cite news |url=https://www.teawamutunews.nz/2026/04/its-kuriger-v-pattemore/ |title=It’s Kuriger v Pattemore |date=30 April 2026 |work=Te Awamutu News}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Phil McCabe
+ |notes = Contested Hunua in 2017
+ |list = 50
+ |sources = <ref name="greens"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = David Pattemore
+ |notes =
+ |list = 71
+ |sources = <ref name="tkc"/><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Lee Smith
+ |notes = Withdrew as DemocracyNZ candidate for this electorate in 2023, contested electorate for New Conservatives in 2020
+ |list = 25
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2606/S00072/candidate-for-taranaki-king-country-announced.htm |title=Candidate For Taranaki-King Country Announced |date=10 June 2026 |website=scoop.co.nz}}</ref><ref name="nzflist"/>
+}}
+|}
+
+===Taupō===
+{{NZ election box begin|New Zealand|2026|Taupō|
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Chris Flatt
+ |notes =
+ |list = 20
+ |sources = <ref name="taupo">{{cite news |url=https://www.tauponews.co.nz/stories/labour-chooses-heavy-hitter-as-taupo-candidate |title=Labour chooses heavy hitter as Taupō candidate |date=13 April 2026 |work=Taupō & Tūrangi News |first=Dan |last=Hutchinson}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Celine Kearney
+ |notes = 
+ |list = none
+ |sources = <ref>{{cite news |url=https://www.waikatotimes.co.nz/nz-news/361078868/brief-greens-pick-candidate-cambridge-recycling-centre-funding-boost |title=In Brief: Greens pick candidate from Cambridge, recycling centre funding boost |date=11 September 2026 |work=Waikato Times |first=Matthew |last=Martin}}</ref>
+}}
+{{NZ election box independent
+ |candidate = Itania Nikolao
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Sam Plummer
+ |notes = 
+ |list = 34
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Louise Upston]]
+ |notes =
+ |list = 7
+ |sources = <ref name="taupo"/><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Gordon Wilson
+ |notes = Contested electorate in 2023
+ |list = 13
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+|}
+
+===Tauranga===
+{{NZ election box begin|New Zealand|2026|Tauranga|
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Michael Carter
+ |notes = 
+ |list = 22
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Sam Connely
+ |notes = 
+ |list = 10
+ |sources =<ref name="Animal Justice"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = Independent politician
+ |candidate = Tim Maltby
+ |notes = 
+ |list = 
+ |sources = <ref>https://www.timmaltby.nz/</ref>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Bryan Norton
+ |notes = 
+ |list = 41
+ |sources = <ref name="ACT July 4"/><ref name="actlist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Daniël Oosthuizen
+ |notes = 
+ |list = 40
+ |sources = <ref name="greens"/>
+}}
+{{NZ election box candidate list|
+ |party = New Zealand Labour Party
+ |candidate = [[Jan Tinetti]]
+ |notes = Contested electorate in 2023
+ |list = 15
+ |sources = <ref>{{cite web |title=Hon Jan Tinetti Candidate for Tauranga |url=https://www.labour.org.nz/2026-campaign/our-candidates/hon-jan-tinetti |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Sam Uffindell]]
+ |notes = 
+ |list = 51
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/bay-of-plenty-times/news/2026-election-sam-uffindell-selected-as-national-candidate-for-tauranga/BLWWKISUZNDTBF4RWW3K6KCCV4 |title=2026 election: Sam Uffindell selected as National candidate for Tauranga |date=9 January 2026 |accessdate=9 January 2026 |work=Bay of Plenty Times |author=Rosalie Liddle Crawford}}</ref><ref name="natlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate 
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Wendy Gillespie
+ |notes = Contested Bay of Plenty for the Leighton Baker Party in 2023; Announced, but not on final list of candidates
+ |list =
+ |sources =<ref name="nzofp"/><ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Greer Young
+ |notes = Changed candidacy to Mount Maunganui
+ |list = 6
+ |sources = <ref name="nzl"/><ref name="ec"/><ref name="eclists"/>
+}}
+|}
+
+===Tukituki===
+{{NZ election box begin|New Zealand|2026|Tukituki|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Rob Douglas
+ |notes = Contested electorate in 2023
+ |list = 
+ |sources = <ref name="ACT31May"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Mark Longworth
+ |notes =
+ |list = 47
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/hawkes-bay-today/news/mark-longworth-green-party-name-natural-medicine-grower-as-tukituki-candidate/6OJWMWIZDBAIXGKWKOEW6UAEGQ |title=Mark Longworth: Green Party name natural medicine grower as Tukituki candidate |work=Hawke's Bay Today |publisher=NZ Herald |date=26 May 2026 |accessdate=26 May 2026}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Romana Manz Manning
+ |notes = Contested electorate in 2023
+ |list = 9
+ |sources = <ref name="ALCP2026"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand First
+ |candidate = [[Taine Randell]]
+ |notes =
+ |list = 9
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/nz/politics/former-all-black-captain-taine-randell-to-stand-for-nz-first-in-hawkes-bay-seat/GMK4P5LQUVB5VKM4LF5O2JFPTY/ |title=Former All Black captain Taine Randell to stand for NZ First in Hawke’s Bay seat |date=14 April 2026 |work=New Zealand Herald |first=Adam |last=Pearse}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Dan Scott
+ |notes =
+ |list =
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/nz/dan-scott-labour-names-meteorologist-as-candidate-for-tukituki/2CLGQYGUCJCRPJHC5LRU2LUDDI/ |title=Dan Scott: Labour names meteorologist as candidate for Tukituki |date=13 May 2026 |work=New Zealand Herald |first=Gary |last=Hamilton-Irvine}}</ref>
+}}
+{{NZ election box independent
+ |candidate = Grant Seton
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box independent
+ |candidate = Allister Tosh
+ |notes = Contested electorate for Future Youth in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = The Opportunity Party
+ |candidate = Rachel Ward
+ |notes =
+ |list = 14
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Catherine Wedd]]
+ |notes =
+ |list = 36
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/hawkes-bay-today/news/catherine-wedd-confirmed-as-nationals-tukituki-candidate-for-2026-election/4X4WTDUBYVDHFEJABLOLUEALIY/ |title=Catherine Wedd confirmed as National’s Tukituki candidate for 2026 election |date=8 December 2025 |accessdate=8 December 2025 |website=Hawke's Bay Today}}</ref><ref name="natlist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+{{NZ election box candidate
+ |party = Independent politician
+ |candidate = Kaleb Hawkins
+ |notes =
+ |list =
+ |sources = <ref name="hb"/><ref>{{cite news |url=https://www.nzherald.co.nz/nz/tukituki-candidate-kaleb-hawkins-pulls-out-hours-before-nomination-deadline/BVOHEYY7QVD3NLY57P5JL6L5VE/ |title=Tukituki candidate Kaleb Hawkins pulls out hours before nomination deadline |first=Jack |last=Riddell |date=8 October 2026 |work=[[Hawke's Bay Today]] |access-date=8 October 2026}}</ref>
+}}
+|}
+
+===Upper Harbour===
+{{NZ election box begin|New Zealand|2026|Upper Harbour|
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Hannah Pia Baral
+ |notes = Contested Waitakere for United Future in 2005
+ |list = 44
+ |sources = <ref name="Henry Cooke 2" /><ref name="lablist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Cameron Brewer]]
+ |notes = 
+ |list = 20
+ |sources = <ref name="natlist"/>
+}}
+{{NZ election box independent
+ |candidate = Jonathon Griffiths
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Panos Patros
+ |notes = 
+ |list = 36
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Ryan Richards
+ |notes = 
+ |list = 53
+ |sources = <ref name="greens"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Bernadette Soares
+ |notes = Contested electorate for Vision NZ in 2023
+ |list = 22
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Romeo Tevaga
+ |notes = 
+ |list = 12
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+|}
+
+===Waikato===
+{{NZ election box begin|New Zealand|2026|Waikato|
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Robbie Cookson
+ |notes = 
+ |list = 23
+ |sources = <ref name="nzfteam"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Ash Parmar
+ |notes = Contested Hamilton East in 2023
+ |list = 16
+ |sources = <ref name="act23jun"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Turi Te Kamonga Robinson
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Jamie Toko
+ |notes = Contested electorate in 2023
+ |list = 
+ |sources = <ref>{{cite web |title=Jamie Toko Candidate for Waikato |url=https://www.labour.org.nz/2026-campaign/our-candidates/jamie-toko/ |publisher=New Zealand Labour Party |access-date=9 June 2026}}</ref>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Tim van de Molen]]
+ |notes = 
+ |list = 48
+ |sources = <ref name="natlist"/>
+}}
+{{NZ election box independent
+ |candidate = Brendan Richard Whyte
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box independent
+ |candidate = Walt Cavendish
+ |notes = Announced, but not on final list of candidates
+ |sources = <ref>{{cite web |url=https://waltcavendish.com/ |title=Walt Cavendish — Independent for Waikato}}</ref><ref name="ec"/>
+}}
+|}
+
+===Waimakariri===
+{{NZ election box begin|New Zealand|2026|Waimakariri|
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Ashley Bettridge
+ |notes = 
+ |list = 30
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Matt Doocey]]
+ |notes = 
+ |list = 12
+ |sources = <ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Jackie Farrelly
+ |notes = Contested West Coast-Tasman in 2023
+ |list = 44
+ |sources = <ref name="nzfcan"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Dan Rosewarne]]
+ |notes = Also list MP 2022–2023. Contested electorate in 2020 and 2023
+ |list = 35
+ |sources = <ref>{{cite press release |url=https://www.scoop.co.nz/stories/PA2603/S00057/labour-selects-dan-rosewarne-for-waimakariri.htm |title=Labour Selects Dan Rosewarne For Waimakariri |publisher=Scoop.co.nz |author=New Zealand Labour Party |date=10 March 2026 |accessdate=10 March 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Richard Wesley
+ |notes = Contested Wigram in 2023
+ |list = 54
+ |sources = <ref name="greens"/><ref name="eclists"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = Conservative Party NZ
+ |candidate = Steve Chick
+ |notes = Announced, but not on final list of candidates
+ |list = 
+ |sources =<ref>{{Cite web |date=5 August 2026 |title=Conservative Party Announces Steve Chick As Waimakariri Candidate |url=https://www.scoop.co.nz/stories/PO2608/S00024/conservative-party-announces-steve-chick-as-waimakariri-candidate.htm |website=scoop.co.nz}}</ref><ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party=Alliance (New Zealand political party)
+ |candidate = Ali McDougall
+ |notes = 
+ |list = 
+ |sources=<ref>{{Cite web |date=23 April 2026 |title=Ali McDougall – Alliance Party's post |url=https://www.facebook.com/permalink.php?story_fbid=pfbid02G9Vjr9ZRwzwPYP3Cj8Xxj5irhCcsN7fQkwbnWrVNyRXx1wibo4X7UCmu67cc6X4Ll&id=61577519264964 |access-date=29 May 2026 |via=[[Facebook]]}}</ref>
+}}
+|}
+
+===Wairarapa===
+{{NZ election box begin|New Zealand|2026|Wairarapa|
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Victoria Ale
+ |notes =
+ |list = 6
+ |sources =<ref name="alliance3">{{cite web |url=https://allianceparty.nz/candidates/ |title=Candidates |date=2026 |website=[[Alliance (New Zealand political party)|Alliance]] |access-date=24 September 2026}}</ref><ref name="alliancelist"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Mike Butterick]]
+ |notes = 
+ |list = 20
+ |sources = <ref name="hb"/><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Lauren Craig
+ |notes = 
+ |list = 23
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box minor party candidate
+ |party = Te Pāti Hira
+ |candidate = Jared Gardner
+ |notes = Contested electorate as an independent in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = [[Ron Mark]]
+ |notes = List MP 1996–2008, 2014–2020. Contested electorate in 2020
+ |list = 16
+ |sources = <ref>{{cite press release |url=https://www.scoop.co.nz/stories/PA2608/S00009/candidate-announcement-ron-mark-returns-for-nzfirst.htm |title=Ron Mark Returns for New Zealand First  |website=Scoop.co.nz |publisher=NZ First |date=2 August 2026 |access-date=2 August 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Kieran McAnulty]]
+ |notes = MP for Wairarapa 2020–2023
+ |list = 10
+ |sources = <ref>{{cite news |url=https://www.thepost.co.nz/nz-news/360897365/kieran-mcanulty-confirmed-labours-candidate-wairarapa-electorate-2026 |title=Kieran McAnulty confirmed as Labour’s candidate for Wairarapa electorate in 2026 |work=The Post |date=25 November 2025 |first=Lucy |last=Cooper}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = The Opportunity Party
+ |candidate = Matt Shepherd
+ |notes = 
+ |list = 24
+ |sources =<ref name="Opportunity">{{cite web |url=https://www.opportunity.org.nz/team |title=Opportunity candidates |publisher=The Opportunity Party}}</ref><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Barry Young
+ |notes = Originally selected for Wellington North
+ |list = 3
+ |sources = <ref>{{Cite web |date=13 September 2026 |title=Freedom Party's post |url=https://www.facebook.com/FreedomDotKiwi/posts/pfbid05GDLEfta1qF8WKWpkpzmdHioyK5o577hUuUS3wsb1uYNiUmVy1bKyqALqXwhxRsFl |access-date=13 September 2026 |publisher=[[NZ Outdoors & Freedom Party]] |via=[[Facebook]]}}</ref><ref name="nzofp"/><ref name="NZOFPList"/>
+}}
+|}
+
+===Waitākere===
+{{NZ election box begin|New Zealand|2026|Waitākere|
+}}
+{{NZ election box candidate list
+ |party=Green Party of Aotearoa New Zealand
+ |candidate=[[Steve Abel]]
+ |notes = Contested New Lynn in 2023
+ |list = 12
+ |sources = <ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = [[Agnes Loheni]]
+ |notes = List MP 2019–2020; contested Māngere in 2020
+ |list = 57
+ |sources = <ref name="natauck">{{cite web |url=https://www.scoop.co.nz/stories/PA2604/S00073/national-selects-suite-of-new-auckland-candidates.htm |title=National Selects Suite Of New Auckland Candidates |date=14 April 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box independent
+ |candidate = Bianca O'Keefe
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Mark Roach
+ |notes = 
+ |list = 19
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Callum Sheridan
+ |notes = 
+ |list = 20
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2606/S00186/act-selects-callum-sheridan-as-waitakere-candidate.htm |title=ACT Selects Callum Sheridan As Waitākere Candidate |date=25 June 2026 |website=scoop.co.nz}}</ref><ref name="actlist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Vanushi Walters]]
+ |notes = MP for Upper Harbour 2020–2023
+ |list = 8
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/nz/politics/audrey-young-interviews-vanushi-walters-the-mp-who-wants-to-be-our-next-foreign-minister/premium/FVKEYUGXNJAPDFSQIQ5KFGMXZE/ |title=Audrey Young interviews Vanushi Walters – the MP who wants to be our next Foreign Minister |work=New Zealand Herald |date=27 March 2026 |first=Audrey |last=Young}}</ref><ref name="lablist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box retired|
+ |party = New Zealand National Party
+ |candidate = [[Paulo Garcia (New Zealand politician)|Paulo Garcia]]
+ |notes = MP for New Lynn since 2023
+ |sources =<ref>{{cite web |url=https://www.thepost.co.nz/politics/360917227/national-mp-paulo-garcia-standing-down-election |title=National MP Paulo Garcia standing down at election |date=16 December 2025 |accessdate=8 August 2026 |work=[[The Post (New Zealand newspaper)|The Post]] |publisher=[[Stuff (website)|Stuff]] |first=Henry |last=Cooke}}</ref>
+}}
+|}
+
+===Waitaki===
+{{NZ election box begin|New Zealand|2026|Waitaki|
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Miles Anderson (politician)|Miles Anderson]]
+ |notes = 
+ |list = 46
+ |sources =<ref>{{cite news |url=https://www.thepress.co.nz/nz-news/361037291/michael-laws-joins-race-waitaki-electorate-seat |title=Michael Laws joins race for Waitaki electorate seat |date=3 July 2026 |work=The Press |first=Brooke |last=Black}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Sean Beamish
+ |notes = Contested electorate in 2023
+ |list = 45
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Adrian Daegal Graamans
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box independent
+ |candidate = Bronwyn Judge
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand First
+ |candidate = [[Michael Laws]]
+ |notes = MP for Hawke's Bay 1990–1996
+ |list = 6
+ |sources =<ref>{{cite news |url=https://www.stuff.co.nz/politics/361001467/nz-first-confirms-broadcaster-michael-laws-political-comeback-after-mounting-speculation |title=NZ First confirms broadcaster Michael Laws’ political comeback after mounting speculation |publisher=Stuff.co.nz |author=Hamish McNeilly |date=3 July 2026 |accessdate=3 July 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate list|
+ |party = New Zealand Labour Party
+ |candidate = [[Damien O'Connor]]
+ |notes = MP since 1993; previously represented [[West Coast-Tasman]]
+ |list = 16
+ |sources =<ref name="WCT"/><ref name="lablist"/>
+}}
+{{NZ election box independent
+ |candidate = Daniel Shand
+ |notes = Contested electorate in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Helen Tait
+ |notes = 
+ |list = 16
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+|}
+
+===Wellington Bays===
+{{NZ election box begin|New Zealand|2026|Wellington Bays|
+}}
+{{NZ election box minor party candidate
+ |party = [[Money Free Party]]
+ |candidate = Liam Anderson
+ |notes = 
+ |list = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box incumbent
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Julie Anne Genter]]
+ |notes = MP for Rongotai since 2023
+ |list = 5
+ |sources = <ref>{{cite news |url=https://www.thepost.co.nz/politics/360902408/julie-anne-genter-confirms-plans-be-first-wellington-bays-mp |title=Julie Anne Genter confirms plans to be first Wellington Bays MP |work=The Post |date=28 November 2025}}</ref><ref name="greenlist"/>
+}}
+{{NZ election box candidate|
+ |party = Opportunity Party (New Zealand)
+ |candidate = Kayla Kingdon-Bebb
+ |notes = 
+ |list = 4
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box independent
+ |candidate = Donald DS McDonald
+ |notes = Contested Rongotai in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Nicole McKee]]
+ |notes = Contested Rongotai in 2023
+ |list = 2
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Karunā Muthu
+ |notes = Contested Rongotai in 2023
+ |list = 63
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PA2603/S00138/karuna-muthu-selected-as-nationals-candidate-in-wellington-bays.htm |title=Karunā Muthu Selected As National’s Candidate In Wellington Bays |date=23 March 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate 
+ |party = New Zealand Labour Party
+ |candidate = [[Craig Renney]]
+ |notes = 
+ |list = 50
+ |sources =<ref>{{cite news |url=https://www.rnz.co.nz/news/political/579750/labour-selects-ctu-economist-craig-renney-as-wellington-bays-candidate |title=Labour selects CTU economist Craig Renney as Wellington Bays candidate |work=[[Radio New Zealand]] |date=23 November 2025}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Gerald Warner
+ |notes = 
+ |list = 39
+ |sources = <ref name="nzfwel">{{cite web |url=https://www.facebook.com/NZFirst/posts/nz-first-confirms-final-selection-of-wellington-candidates-penny-gaylor-for-kapi/1511318977707362/ |title=NZ First confirms final selection of Wellington candidates  |date=7 August 2026 |website=Facebook}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box independent
+ |candidate = Bruce Welsh
+ |notes = Contested Rongotai for New Conservatives in 2023
+ |sources = <ref name="ec"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate 
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Alison Pavlovich
+ |notes = Later announced to be contesting list only
+ |list = 7
+ |sources =<ref name="NZOFPNL"></ref><ref name="NZOFPList"/>
+}}
+|}
+
+===Wellington North===
+{{NZ election box begin|New Zealand|2026|Wellington North|
+}}
+{{NZ election box candidate
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = [[Michael Appleby (politician)|Michael Appleby]]
+ |notes = Contested Wellington Central in 2023
+ |list = 2
+ |sources = <ref>{{cite web |url=https://policy.nz/2026/wellington-north-electorate/candidates/michael-appleby |title=Wellington North electorate |date=2026 |website=[[Policy.nz]] |access-date=25 September 2026}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Taylor Arneil
+ |notes = Contested Wellington Central in 2023
+ |list = 40
+ |sources = <ref name="nzfwel"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Matthew Hague
+ |notes = 
+ |list = 33
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = [[Jessica Hammond]]
+ |notes = Contested Ōhāriu in 2023
+ |list = 3
+ |sources =<ref name="opp26First20"/><ref name="toplist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Josh Harford
+ |notes = 
+ |list = 8
+ |sources =<ref>{{cite web |url=https://www.scoop.co.nz/stories/PO2604/S00043/young-wellington-activist-to-stand-for-alliance-in-wellington-north.htm |title=Young Wellington Activist To Stand For Alliance In Wellington North |date=8 April 2026 |website=scoop.co.nz}}</ref><ref name="alliancelist"/>
+}}
+{{NZ election box incumbent
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Tamatha Paul]]
+ |notes = MP for Wellington Central since 2023
+ |list = 4
+ |sources = <ref>{{cite news |url=https://www.thepost.co.nz/nz-news/360900753/wellington-central-green-mp-tamatha-paul-contest-wellington-north |title=Wellington Central Green MP Tamatha Paul to contest Wellington North |date=27 November 2025 |work=The Post |first=Tom |last=Hunt}}</ref><ref name="greenlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Jonathan Pitts
+ |notes = 
+ |list = 67
+ |sources = <ref>{{cite news |title=National chooses lawyer as candidate for Wellington North |url=https://wellington.scoop.co.nz/?p=179032 |website=scoop.co.nz |date=8 April 2026}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate list|
+ |party = New Zealand Labour Party
+ |candidate = [[Ayesha Verrall]]
+ |notes = 
+ |list = 6
+ |sources = <ref>{{cite news |title=Labour confirms Ayesha Verrall as candidate for Wellington North electorate |url=https://www.thepost.co.nz/politics/360896314/labour-confirms-ayesha-verrall-candidate-wellington-north-electorate |work=The Post |date=23 November 2025 |first=Anna |last=Whyte}}</ref><ref name="lablist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Barry Young
+ |notes = Changed candidacy to Wairarapa
+ |list = 3
+ |sources = <ref>{{cite news |title='We were having to physically shove them back': Candidates shield Verrall from agitators |url=https://www.thepost.co.nz/politics/361076936/we-were-having-physically-shove-them-back-candidates-shield-verrall-agitators |work=[[The Post (New Zealand newspaper)|The Post]] |date=9 September 2026 |first=Anneke |last=Smith|last2=Hunt|first2=Tom}}</ref><ref name="NZOFPList"/>
+}}
+|}
+
+===West Coast-Tasman===
+{{NZ election box begin|New Zealand|2026|West Coast-Tasman|
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Andrew Beaumont
+ |notes = 
+ |list = 37
+ |sources = <ref>{{cite web |title=Golden Bay : Meet the candidate |url=https://www.greens.org.nz/wes_se_260514 |publisher=Green Party |access-date=1 June 2026}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand First
+ |candidate = [[Jamie Cleine]]
+ |notes = 
+ |list = 14
+ |sources = <ref>{{cite web|url=https://www.nzfirst.nz/candidate_announcement_west_coast_tasman |title= Candidate Announcement: West Coast-Tasman |date=29 March 2026 |publisher=New Zealand First}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Sara Dyatlova–Murphy
+ |notes = 
+ |list = 4
+ |sources = <ref>{{cite web |url=https://www.scoop.co.nz/stories/PO2607/S00195/alliance-party-announces-sara-dyatlova-murphy-as-candidate-for-west-coast-tasman.htm |title=Alliance Party Announces Sara Dyatlova–Murphy As Candidate For West Coast – Tasman |date=30 July 2026 |website=scoop.co.nz}}</ref><ref name="alliancelist"/>
+}}
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = [[Sue Grey (lawyer)|Sue Grey]]
+ |notes = Contested electorate in 2023
+ |list = 1
+ |sources = <ref name="nzofp">{{cite web |url=https://nzofp.co.nz/2026-candidates |title=NZOFP – 2026 Candidates |publisher=NZ Outdoors & Freedom Party}}</ref><ref name="NZOFPList"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Alex Hislop
+ |notes = 
+ |list = 4
+ |sources = <ref>{{Cite web |date=29 August 2026 |title=Alex Hislop announced as West Coast-Tasman candidate for NZ Loyal |url=https://nzloyal.com/alex-hislop-announced-as-west-coast-tasman-candidate-for-nz-loyal/ |access-date=30 August 2026 |website=[[New Zealand Loyal]]}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Janelle Hocking
+ |notes = Contested the list only for National in 2023
+ |list = 15
+ |sources = <ref name="act23jun"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = [[Katie Milne]]
+ |notes = 
+ |list = 24
+ |sources = <ref>{{cite web |title=Katie Milne Selected As National’s Candidate In West Coast-Tasman |url=https://www.scoop.co.nz/stories/PA2604/S00059/katie-milne-selected-as-nationals-candidate-in-west-coast-tasman.htm |date=11 April 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box minor party candidate
+ |party = [[Money Free Party]]
+ |candidate = Richard Osmaston
+ |notes = Contested electorate in 2023
+ |list = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Rory Paterson
+ |notes = 
+ |list = 53
+ |sources = <ref name="WCT">{{cite news |url=https://www.thepress.co.nz/nz-news/360984528/battle-contenders-announced-fight-west-coast-tasman-electorate |title=Battle contenders announced in fight for West Coast-Tasman electorate |date=14 April 2026 |work=The Press |first=Joanne |last=Naish}}</ref><ref name="lablist"/>
+}}
+{{NZ election box minor party candidate
+ |party = [[Progressive Party of Aotearoa New Zealand|Progressive Aotearoa]]
+ |candidate = Kevin Rooke
+ |notes = 
+ |sources = <ref>{{cite web |url=https://policy.nz/2026/west-coast-tasman-electorate/candidates/kevin-rooke |date=2026 
+|title= West Coast-Tasman electorate |access-date=25 September 2026 |website=[[Policy.nz]]}}</ref>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Cindie Uddstrom
+ |notes = 
+ |list = 
+ |sources =<ref name="opp26First20"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Louis Coup
+ |notes = 
+ |list = 
+ |sources =<ref name="alliance2"/>
+}}
+{{NZ election box retired|
+ |party = New Zealand National Party
+ |candidate = [[Maureen Pugh]]
+ |notes = 
+ |sources =<ref>{{cite news |title=Maureen Pugh to retire from politics at 2026 election |url=https://www.stuff.co.nz/nz-news/360928915/maureen-pugh-retire-politics-2026-election |access-date=3 February 2026 |work=[[Stuff (website)|Stuff]] |date=23 January 2026}}</ref>
+}}
+|}
+
+===Whanganui===
+{{NZ election box begin|New Zealand|2026|Whanganui|
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Carl Bates]]
+ |notes = 
+ |list = 29
+ |sources =<ref name="bates">{{cite news |url=https://www.nzherald.co.nz/whanganui-chronicle/news/elections-2026-whanganui-mp-carl-bates-reselected-as-nationals-electoral-candidate/VNIZ6D7SCRDH5LXKHWTAH6BBTI/ |title=Elections 2026: Whanganui MP Carl Bates reselected as National’s electoral candidate |date=5 November 2025 |work=New Zealand Herald |first=Mike |last=Tweed}}</ref><ref name="natlist"/>
+}}
+{{NZ election box minor party candidate
+ |party = Balance New Zealand
+ |candidate = Juan Charles Coffey
+ |notes = 
+ |list = 
+ |sources =<ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = [[Harete Hipango|Harete Hipango-Brownlie]]
+ |notes = National MP for Whanganui 2017–2020
+ |list = 7
+ |sources =<ref>{{cite news |url=https://www.rnz.co.nz/news/politics/691707/nz-first-haven-former-mp-harete-hipango-brownlie-latest-to-make-the-jump |title=NZ First haven: Former MP Harete Hipango-Brownlie latest to make the jump |work=Radio New Zealand |author=Jo Moir |date=9 July 2026 |accessdate=9 July 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate
+ |party = Animal Justice Party Aotearoa New Zealand
+ |candidate = Sandra Kyle
+ |notes = Contested electorate in 2023
+ |list = 4
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/whanganui-chronicle/news/election-2026-animal-justice-party-selects-sandra-kyle-to-contest-whanganui-seat/6LLQWTPPXJDTXE4NVCEW6TSX6Q/ |title=Election 2026: Animal Justice Party selects Sandra Kyle to contest Whanganui seat |date=11 June 2026 |work=[[The New Zealand Herald]] |agency=[[Whanganui Chronicle]] |first=Noam Mānuka |last=Lazarus |access-date=16 June 2026}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = [[Angela Roberts (politician)|Angela Roberts]]
+ |notes = List MP 2020–2023; contested Taranaki-King Country in 2023
+ |list = 46
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/whanganui-chronicle/news/elections-2026-labour-selects-former-mp-angela-roberts-to-challenge-whanganui-seat/KZNQBCSWNFGGVGOI3GSKDAEBDQ/ |title=Elections 2026: Labour selects former MP Angela Roberts to challenge Whanganui seat |date=30 March 2026 |work=New Zealand Herald |first=Erin |last=Smith}}</ref><ref name="lablist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Awhi Haenga
+ |notes = 
+ |list = 31
+ |sources = <ref>{{cite news |url=https://www.nzherald.co.nz/whanganui-chronicle/news/election-2026-whanganui-green-party-candidate-awhi-haenga-withdraws/2VGIGDS4R5BBTFCBN32FNZSYBQ/ |title=Election 2026: Whanganui Green Party candidate Awhi Haenga withdraws |date=27 May 2026 |work=New Zealand Herald |first=Mike |last=Tweed}}</ref>
+}}
+|}
+
+===Whangaparāoa===
+{{NZ election box begin|New Zealand|2026|Whangaparāoa|
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Brenton Faithfull
+ |notes = Withdrew from Kaipara ki Mahurangi in 2023
+ |list = 3
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box incumbent
+ |party = New Zealand National Party
+ |candidate = [[Mark Mitchell (New Zealand politician)|Mark Mitchell]]
+ |notes =
+ |list = 8
+ |sources = <ref name="whangaparaoa">{{cite web |url=https://www.localmatters.co.nz/hibiscus-news/mark-mitchell-confirmed-as-national-candidate-for-2026/ |title=Mark Mitchell confirmed as National candidate for 2026 |date=7 April 2026 |website=localmatters.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Estefania Muller-Pallarès
+ |notes = Contested electorate in 2023
+ |list = 47
+ |sources = <ref name="whangaparaoa"/><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Helena Roza
+ |notes = 
+ |list = 27
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+|}
+
+===Whangārei===
+{{NZ election box begin|New Zealand|2026|Whangārei|
+}}
+{{NZ election box minor party candidate
+ |party = [[Money Free Party]]
+ |candidate = Luke Beharrell
+ |notes = Announced for but did not contest Auckland Central in 2023
+ |list = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Collin Blackman
+ |notes =
+ |list = 11
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Lloyd Budd
+ |notes =
+ |list = 60
+ |sources = <ref name="whangarei">{{cite web |url=https://www.scoop.co.nz/stories/PA2605/S00008/lloyd-budd-selected-for-national-in-whangarei.htm |title=Lloyd Budd Selected For National In Whangārei |date=2 May 2026 |website=scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box independent
+ |candidate = Daryl Warren Clotworthy
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = [[Vince Cocurullo]]
+ |notes = 
+ |list = 31
+ |sources =<ref>{{cite news |title=NZ First wants a Special Economic Zone at Marsden Point|url=https://www.rnz.co.nz/news/political/579103/labour-selects-dr-gary-payinda-to-take-on-former-health-minister-dr-shane-reti |work=[[New Zealand Herald]] |date=24 May 2026}}</ref><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Simon DellaBarca
+ |notes = 
+ |list = 
+ |sources = <ref name="opp26"/>
+}}
+{{NZ election box candidate
+ |party = ACT New Zealand
+ |candidate = Doug Graham
+ |notes = 
+ |list = 38
+ |sources = <ref name="ACT July 4"/><ref name="actlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Gary Payinda
+ |notes = 
+ |list = 48
+ |sources =<ref>{{cite news |title=Labour selects Dr Gary Payinda to take on former Health Minister Dr Shane Reti |url=https://www.rnz.co.nz/news/political/596186/nz-first-wants-special-economic-zone-at-marsden-point |work=[[Radio New Zealand]] |date=18 November 2025}}</ref><ref name="lablist"/>
+}}
+{{NZ election box independent
+ |candidate = Jon Twyman
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = NZ Outdoors & Freedom Party
+ |candidate = Noah Wakelam
+ |notes =
+ |list = 17
+ |sources = <ref name="nzofp"/><ref name="NZOFPList"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box retired|
+ |party = New Zealand National Party
+ |candidate = [[Shane Reti]]
+ |notes=
+ |sources=<ref>{{cite news |url=https://www.stuff.co.nz/politics/360949177/shane-reti-retire-politics |title=Shane Reti to retire from politics |date=10 March 2026 |work=Stuff |first=Jenna |last=Lynch}}</ref>
+}}
+|}
+
+===Wigram===
+{{NZ election box begin|New Zealand|2026|Wigram|
+}}
+{{NZ election box candidate|
+ |party = Free Palestine Party (New Zealand)
+ |candidate = William Donald Alexander
+ |notes = 
+ |list = 5
+ |sources =<ref name="ec"/><ref name="eclists"/>
+}}
+{{NZ election box candidate list
+ |party = ACT New Zealand
+ |candidate = [[Laura McClure]]
+ |notes = Contested Banks Peninsula in 2023
+ |list = 9
+ |sources =<ref name="ACT31May"/><ref name="actlist"/>
+}}
+{{NZ election box independent
+ |candidate = Geoff McTague
+ |notes = Contested electorate in 2023
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate|
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Shreejan Pandey
+ |notes = 
+ |list = 22
+ |sources =<ref name="greens"/><ref name="greenlist"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand First
+ |candidate = Bryce Park
+ |notes = 
+ |list = 37
+ |sources = <ref name="nzfcan"/><ref name="nzflist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand National Party
+ |candidate = Tracy Summerfield
+ |notes = Contested electorate in 2023
+ |list = 56
+ |sources =<ref>{{Cite news |url=https://www.scoop.co.nz/stories/PA2511/S00143/tracy-summerfield-selected-as-nationals-candidate-in-wigram.htm |title=Tracy Summerfield Selected As National’s Candidate In Wigram |date=18 November 2025 |website=Scoop.co.nz}}</ref><ref name="natlist"/>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Labour Party
+ |candidate = Dominik Yanzick
+ |notes = 
+ |list = 52
+ |sources =<ref>{{Cite news |url=https://www.thepress.co.nz/politics/360909442/labours-candidate-once-safe-seat-wigram-revealed |title=Labour’s candidate for once-safe seat of Wigram revealed |date=5 December 2025 |accessdate=9 December 2025 |work=The Press |first=Henry |last=Cooke}}</ref><ref name="lablist"/>
+}}
+!colspan=6| Retiring incumbents and withdrawn candidates
+|-
+{{NZ election box candidate|
+ |party = Alliance (New Zealand political party)
+ |candidate = Nicolas Pegg
+ |notes = 
+ |list = 
+ |sources =<ref name="alliance2"/><ref>{{Cite web |date=29 May 2026 |title=Nicolas Pegg, political candidate.'s post |url=https://www.facebook.com/permalink.php?story_fbid=pfbid0aC4j8XxZDcFGXKBxxGLH56cTSMZ352Wf7kr8DcWEFXEoUgCqDsQV9wNmz3HqaBWrl&id=61574745630560 |via=[[Facebook]]}}</ref>
+}}
+{{NZ election box retired|
+ |party = New Zealand Labour Party
+ |candidate = [[Megan Woods]]
+ |notes = Contesting list only
+ |sources =<ref>{{cite news |title=Senior Labour MP won't contest electorate, will stand on list in 2026 |url=https://www.1news.co.nz/2025/08/03/senior-labour-mp-wont-contest-electorate-will-stand-on-list-in-2026/ |work=1News |date=3 August 2025}}</ref>
+}}
+|}
+
+==Māori electorates==
+===Hauraki-Waikato===
+{{NZ election box begin|New Zealand|2026|Hauraki-Waikato|
+}}
+{{NZ election box independent
+ |candidate = Neil Denby
+ |notes = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Kingi Kiriona
+ |notes = 
+ |list = 22
+ |sources = <ref name="kingi">{{cite web |url=https://www.rnz.co.nz/news/political/592732/labour-selects-kingi-kiriona-to-contest-hauraki-waikato |title=Labour selects Kingi Kiriona to contest Hauraki-Waikato |date=18 April 2026 |work=RNZ |first=Pokere |last=Paewai}}</ref><ref name="lablist"/>
+}}
+{{NZ election box incumbent
+ |party = Te Pāti Māori
+ |candidate = [[Hana-Rawhiti Maipi-Clarke]]
+ |notes = 
+ |list = none
+ |sources = <ref name="Te Pāti Māori candidates">{{cite web |title=Te Pāti Māori Responds To Announcement Of New Political Party |url=https://www.scoop.co.nz/stories/PA2605/S00071/te-pati-maori-responds-to-announcement-of-new-political-party.htm |website=scoop.co.nz |access-date=11 May 2026}}</ref>
+}}
+|}
+
+===Ikaroa-Rāwhiti===
+{{NZ election box begin|New Zealand|2026|Ikaroa-Rāwhiti|
+}}
+{{NZ election box candidate
+ |party = Te Pāti Māori
+ |candidate = Haley Maxwell
+ |notes = 
+ |list = none
+ |sources =<ref>{{cite news |title=Te Pāti Māori announces Ikaroa-Rāwhiti candidate |url=https://www.rnz.co.nz/news/top/568189/te-pati-maori-announces-ikaroa-rawhiti-candidate |date=28 July 2025 |work=[[Radio New Zealand]] |first=Russell |last=Palmer}}</ref>
+}}
+{{NZ election box incumbent
+ |party = New Zealand Labour Party
+ |candidate = [[Cushla Tangaere-Manuel]]
+ |notes = 
+ |list = 9
+ |sources = <ref name="kingi"/><ref name="lablist"/>
+}}
+{{NZ election box candidate
+|party=Green Party of Aotearoa New Zealand
+|candidate=Heather Te Au-Skipworth
+|notes = Withdrew as Te Pāti Māori candidate for this electorate and Tukituki in 2023
+|list = 21
+|sources = <ref name="tania"/><ref name="greenlist"/>
+}}
+|}
+
+===Tāmaki Makaurau===
+{{NZ election box begin|New Zealand|2026|Tāmaki Makaurau|
+}}
+{{NZ election box incumbent
+ |party = Te Pāti Māori
+ |candidate = [[Oriini Kaipara]]
+ |notes = 
+ |list = none
+ |sources =<ref name="Te Pāti Māori candidates" />
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = [[Kerrin Leoni]]
+ |notes = Contested Waikato in 2020
+ |list = 43
+ |sources = <ref>{{cite web |url=https://www.rnz.co.nz/news/political/590449/labour-selects-kerrin-leoni-to-contest-for-tamaki-makaurau-seat |title=Labour selects Kerrin Leoni to contest for Tāmaki Makaurau seat |date=24 March 2026 |work=RNZ}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = Florence Te Ohaere
+ |notes = 
+ |list = 44
+ |sources =<ref name="greens"/>
+}}
+|}
+
+===Te Tai Hauāuru===
+{{NZ election box begin|New Zealand|2026|Te Tai Hauāuru|
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Te Pūoho Kātene
+ |notes = 
+ |list = 34
+ |sources = <ref>{{cite web |url=https://www.rnz.co.nz/news/political/594347/labour-party-announces-te-puoho-katene-as-final-candidate-for-maori-seats |title=Labour Party announces Te Pūoho Katene as final candidate for Māori seats |date=6 May 2026 |accessdate=6 May 2026 |work=RNZ |first=Lillian |last=Hanly}}</ref><ref name="lablist"/>
+}}
+{{NZ election box incumbent
+ |party = Te Pāti Māori
+ |candidate = [[Debbie Ngarewa-Packer]]
+ |notes = 
+ |list = none
+ |sources =<ref name="Te Pāti Māori candidates" />
+}}
+{{NZ election box candidate
+ |party = New Zealand National Party
+ |candidate = Coral Raukawa
+ |notes = 
+ |list = 56
+ |sources = <ref>{{cite web |url=https://www.rnz.co.nz/news/politics/644733/national-selects-rangitikei-district-councillor-coral-raukawa-to-contest-maori-electorate-seat-of-te-tai-hauauru |title=National selects Rangitīkei District Councillor Coral Raukawa to contest Māori electorate seat of Te Tai Hauāuru |date=30 June 2026 |accessdate=30 June 2026 |work=RNZ |first=Tuwhenuaroa |last=Natanahira}}</ref><ref name="natlist"/>
+}}
+|}
+
+===Te Tai Tokerau===
+{{NZ election box begin|New Zealand|2026|Te Tai Tokerau|
+}}
+{{NZ election box minor party candidate
+ |party = Your PIC Party
+ |candidate = Karl Barkley
+ |notes = 
+ |list = 
+ |sources = <ref name="ec"/>
+}}
+{{NZ election box candidate 
+ |party = Te Pāti Māori
+ |candidate = [[Aperahama Edwards]]
+ |notes = 
+ |list = none
+ |sources =<ref>{{cite news |url=https://www.nzherald.co.nz/nz/aperahama-edwards-to-run-as-te-pati-maori-mp-for-te-tai-tokerau/WVNPRD26HNA5VASTQKZ4TM2MUU |title=Aperahama Edwards to run for Te Pāti Māori in Te Tai Tokerau |work=NZ Herald |date=27 May 2026 |accessdate=27 May 2026}}</ref>
+}}
+{{NZ election box candidate 
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Maki Herbert
+ |notes = Contested electorate in 2023
+ |list = 1
+ |sources = <ref>{{Cite web |date=23 June 2026 |title=The Aotearoa Legalise Cannabis Party Is Preparing To Run In The 2026 Elections |url=https://www.scoop.co.nz/stories/PO2606/S00160/the-aotearoa-legalise-cannabis-party-is-preparing-to-run-in-the-2026-elections.htm |access-date=26 June 2026 |publisher=[[Aotearoa Legalise Cannabis Party]] |via=[[Scoop (website)|Scoop]]}}</ref><ref name="ALCP2026"/>
+}}
+{{NZ election box incumbent
+ |party = Te Tai Tokerau Party
+ |candidate = [[Mariameno Kapa-Kingi]]
+ |notes = Elected as Te Pāti Māori MP in 2023
+ |list = 2
+ |sources = <ref>{{cite web |url=https://www.rnz.co.nz/news/political/594843/te-pati-maori-splits-as-mp-mariameno-kapa-kingi-announces-new-te-tai-tokerau-party |title=Te Pāti Māori splits as MP Mariameno Kapa-Kingi announces new Te Tai Tokerau Party |date=11 May 2026 |work=RNZ |first=Giles |last=Dexter}}</ref><ref name="eclists"/>
+}}
+{{NZ election box candidate list
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Hūhana Lyndon]]
+ |notes = Contested electorate in 2023
+ |list = 7
+ |sources =<ref name="Tai Tokerau 5Feb">{{cite web |title=Greens, Labour and Te Pāti Māori gear up for intense Te Tai Tokerau battle |url=https://www.stuff.co.nz/politics/360931874/greens-labour-and-te-pati-maori-gear-intense-te-tai-tokerau-battle |publisher=Stuff.co.nz |author=Glenn McConnell |date=5 February 2026 |accessdate=5 February 2026}}</ref><ref name="greenlist"/>
+}}
+{{NZ election box candidate list
+ |party = New Zealand Labour Party
+ |candidate = [[Willow-Jean Prime]]
+ |notes = MP for Northland 2020–2023
+ |list = 7
+ |sources =<ref name="Tai Tokerau 5Feb"/><ref name="lablist"/>
+}}
+|}
+
+===Te Tai Tonga===
+{{NZ election box begin|New Zealand|2026|Te Tai Tonga|
+}}
+{{NZ election box incumbent
+ |party = Independent politician
+ |candidate = [[Tākuta Ferris]]
+ |notes = Elected as Te Pāti Māori MP in 2023
+ |list = 
+ |sources = <ref>{{cite news |url=https://www.thepress.co.nz/te-ao-maori/360971449/takuta-ferris-remain-independent-candidate-te-pati-maori-election-looms-now|title=Tākuta Ferris to remain independent candidate from Te Pāti Māori as election looms – for now|date=21 March 2026|access-date=2 August 2026|newspaper=[[The Press]]|publisher=[[Stuff (company)|Stuff]]|first=Maxine|last=Jacobs|url-access=subscription}}</ref>
+}}
+{{NZ election box candidate|
+ |party = New Zealand Loyal
+ |candidate = Christine Fisher
+ |notes =
+ |list = 15
+ |sources = <ref name="nzl"/><ref name="eclists"/>
+}}
+{{NZ election box candidate|
+ |party = Aotearoa Legalise Cannabis Party
+ |candidate = Tania Henare
+ |notes = 
+ |list = 8
+ |sources = <ref name="ALCP2026"/>
+}}
+{{NZ election box candidate
+ |party = Te Pāti Māori
+ |candidate = Lisa Marie Murch
+ |notes = 
+ |list = none
+ |sources = <ref>{{cite news |url=https://www.scoop.co.nz/stories/PA2606/S00105/te-pati-maori-announces-lisa-marie-murch-as-te-tai-tonga-candidate-for-2026.htm |title=Te Pāti Māori Announces Lisa Marie Murch As Te Tai Tonga Candidate For 2026 |date=15 June 2026 |accessdate=15 June 2026 |website=scoop.co.nz}}</ref>
+}}
+{{NZ election box candidate
+ |party = New Zealand Labour Party
+ |candidate = Mananui Ramsden
+ |notes = 
+ |list = none
+ |sources = <ref>{{cite news |url=https://waateanews.com/2026/03/17/regional-labour-selects-mananui-ramsden-as-candidate-for-te-tai-tonga/ |title=#regional: Labour selects Mananui Ramsden as candidate for Te Tai Tonga |date=17 March 2026 |website=waateanews.com}}</ref>
+}}
+{{NZ election box candidate
+ |party = Green Party of Aotearoa New Zealand
+ |candidate = [[Lisa Te Morenga]]
+ |notes = 
+ |list = 46
+ |sources = <ref>{{cite web |first=Lisa|last=Te Morenga|author-link=Lisa Te Morenga|title=I'm delighted to announce that I'm standing as the Green Party candidate for the Te Tai Tonga Māori electorate.''[...]'' |url=https://www.facebook.com/permalink.php?story_fbid=pfbid02Bn8bnc411UbdofoP4itNPQYPzTPnpTaFXAHc8Btvt3xxDBvbjBvixxgBs3H8aeNpl&id=61590441993452 |website=Facebook |date=2 June 2026 |access-date=4 June 2026}}</ref>
+}}
+|}
+
+===Waiariki===
+{{NZ election box begin|New Zealand|2026|Waiariki|
+}}
+{{NZ election box candidate
+|party=New Zealand Labour Party
+|candidate=Toni Boynton
+|notes = Contested electorate in 2023
+|list = 44
+|sources = <ref>{{cite news |url=https://aukaha.news/tauranga/boynton-back-in-waiariki-labour-candidate-vows-lessons-learned-after-crushing-defeat/ |title=Boynton back in Waiariki: Labour candidate vows lessons learned after crushing defeat. |work=Aukaha News |date=29 April 2026}}</ref><ref name="lablist"/>
+}}
+{{NZ election box candidate
+|party=Green Party of Aotearoa New Zealand
+|candidate=Tania Waikato
+|notes = 
+|list = 13
+|sources = <ref name="tania">{{cite news |url=https://www.nzherald.co.nz/nz/politics/waitangi-2026-former-te-pati-maori-candidate-to-stand-for-greens-in-2026-general-election/MB677U3K7JBR3DFUM6GQ5OHIQY/ |title=Waitangi 2026: Former Te Pāti Māori candidate to stand for Greens in 2026 general election |first=Julia |last=Gabel |work=New Zealand Herald |date=5 February 2026}}</ref><ref name="greenlist"/>
+}}
+{{NZ election box incumbent
+ |party = Te Pāti Māori
+ |candidate = [[Rawiri Waititi]]
+ |notes = 
+ |list = none
+ |sources =<ref name="Te Pāti Māori candidates" />
+}}
+{{NZ election box candidate|
+ |party = The Opportunity Party
+ |candidate = Pāpā Wharewera
+ |notes = 
+ |list = 10
+ |sources = <ref name="opp26"/><ref name="toplist"/>
+}}
+|}
+
+== References ==
+{{reflist}}
+
+[[Category:2026 New Zealand general election]]
+[[Category:Lists of New Zealand political candidates|Candidates 2026]]

@@ -1,0 +1,2216 @@
+{
+ "source": "2023 official voting-place results (Electoral Commission) re-aggregated onto 2025 Stats NZ electorate boundaries. Notional estimate.",
+ "parties": [
+  "NAT",
+  "LAB",
+  "GRN",
+  "ACT",
+  "NZF",
+  "TPM",
+  "TOP",
+  "OTH"
+ ],
+ "split2023": {
+  "ACT": {
+   "ACT": 0.2887,
+   "OTH": 0.0286,
+   "GRN": 0.0088,
+   "LAB": 0.0324,
+   "NAT": 0.62,
+   "NZF": 0.0131,
+   "TPM": 0.003,
+   "TOP": 0.0055
+  },
+  "OTH": {
+   "ACT": 0.054,
+   "OTH": 0.0534,
+   "GRN": 0.0816,
+   "LAB": 0.3058,
+   "NAT": 0.4267,
+   "NZF": 0.0293,
+   "TPM": 0.039,
+   "TOP": 0.0102
+  },
+  "GRN": {
+   "ACT": 0.0084,
+   "OTH": 0.0183,
+   "GRN": 0.411,
+   "LAB": 0.45,
+   "NAT": 0.0535,
+   "NZF": 0.0036,
+   "TPM": 0.0356,
+   "TOP": 0.0195
+  },
+  "LAB": {
+   "ACT": 0.0076,
+   "OTH": 0.0136,
+   "GRN": 0.0687,
+   "LAB": 0.8118,
+   "NAT": 0.0419,
+   "NZF": 0.0086,
+   "TPM": 0.0423,
+   "TOP": 0.0054
+  },
+  "NAT": {
+   "ACT": 0.0553,
+   "OTH": 0.0138,
+   "GRN": 0.0106,
+   "LAB": 0.0283,
+   "NAT": 0.8757,
+   "NZF": 0.0083,
+   "TPM": 0.0037,
+   "TOP": 0.0043
+  },
+  "NZF": {
+   "ACT": 0.0518,
+   "OTH": 0.1236,
+   "GRN": 0.0272,
+   "LAB": 0.1701,
+   "NAT": 0.296,
+   "NZF": 0.3015,
+   "TPM": 0.0224,
+   "TOP": 0.0073
+  },
+  "TPM": {
+   "ACT": 0.0038,
+   "OTH": 0.027,
+   "GRN": 0.1107,
+   "LAB": 0.2116,
+   "NAT": 0.0227,
+   "NZF": 0.0062,
+   "TPM": 0.6128,
+   "TOP": 0.0052
+  },
+  "TOP": {
+   "ACT": 0.0369,
+   "OTH": 0.049,
+   "GRN": 0.1916,
+   "LAB": 0.3282,
+   "NAT": 0.2104,
+   "NZF": 0.0127,
+   "TPM": 0.0165,
+   "TOP": 0.1547
+  }
+ },
+ "seats": [
+  {
+   "name": "Auckland Central",
+   "maori": false,
+   "party": {
+    "NAT": 32.23,
+    "GRN": 25.1,
+    "LAB": 23.35,
+    "ACT": 8.93,
+    "NZF": 3.58,
+    "TOP": 3.49,
+    "OTH": 1.71,
+    "TPM": 1.63
+   },
+   "cand": {
+    "GRN": 43.8,
+    "NAT": 35.78,
+    "LAB": 13.23,
+    "ACT": 3.48,
+    "TOP": 1.75,
+    "OTH": 1.62,
+    "IND": 0.33
+   },
+   "winner": "GRN",
+   "second": "NAT",
+   "margin": 8.02,
+   "votes": 42399,
+   "from": {
+    "Auckland Central": 0.785,
+    "Mount Albert": 0.215
+   }
+  },
+  {
+   "name": "Banks Peninsula",
+   "maori": false,
+   "party": {
+    "NAT": 31.96,
+    "LAB": 26.63,
+    "GRN": 19.7,
+    "ACT": 7.91,
+    "NZF": 5.36,
+    "TOP": 4.84,
+    "OTH": 2.81,
+    "TPM": 0.78
+   },
+   "cand": {
+    "NAT": 36.53,
+    "LAB": 35.72,
+    "GRN": 17.03,
+    "ACT": 4.24,
+    "NZF": 3.27,
+    "OTH": 2.84,
+    "IND": 0.38
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 0.81,
+   "votes": 49559,
+   "from": {
+    "Banks Peninsula": 1.0
+   }
+  },
+  {
+   "name": "Botany",
+   "maori": false,
+   "party": {
+    "NAT": 63.13,
+    "LAB": 15.26,
+    "ACT": 8.7,
+    "GRN": 5.98,
+    "NZF": 3.09,
+    "OTH": 2.25,
+    "TOP": 1.23,
+    "TPM": 0.35
+   },
+   "cand": {
+    "NAT": 71.67,
+    "LAB": 18.3,
+    "ACT": 6.26,
+    "OTH": 2.96,
+    "NZF": 0.69,
+    "IND": 0.11
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 53.37,
+   "votes": 44444,
+   "from": {
+    "Botany": 0.74,
+    "Papakura": 0.223,
+    "Takanini": 0.038
+   }
+  },
+  {
+   "name": "Christchurch Central",
+   "maori": false,
+   "party": {
+    "NAT": 30.44,
+    "LAB": 29.09,
+    "GRN": 19.77,
+    "ACT": 6.6,
+    "TOP": 5.35,
+    "NZF": 5.24,
+    "OTH": 2.55,
+    "TPM": 0.97
+   },
+   "cand": {
+    "LAB": 41.64,
+    "NAT": 34.61,
+    "GRN": 13.84,
+    "ACT": 3.55,
+    "NZF": 3.39,
+    "OTH": 2.87,
+    "IND": 0.11
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 7.03,
+   "votes": 44834,
+   "from": {
+    "Christchurch Central": 0.858,
+    "Wigram": 0.142
+   }
+  },
+  {
+   "name": "Christchurch East",
+   "maori": false,
+   "party": {
+    "LAB": 34.31,
+    "NAT": 28.57,
+    "GRN": 14.72,
+    "ACT": 7.09,
+    "NZF": 6.82,
+    "OTH": 3.95,
+    "TOP": 3.46,
+    "TPM": 1.07
+   },
+   "cand": {
+    "LAB": 39.64,
+    "NAT": 33.09,
+    "GRN": 12.12,
+    "NZF": 5.3,
+    "OTH": 4.86,
+    "ACT": 4.39,
+    "IND": 0.6
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 6.55,
+   "votes": 39634,
+   "from": {
+    "Christchurch East": 0.985,
+    "Christchurch Central": 0.015
+   }
+  },
+  {
+   "name": "Coromandel",
+   "maori": false,
+   "party": {
+    "NAT": 43.09,
+    "LAB": 19.67,
+    "ACT": 11.92,
+    "NZF": 10.44,
+    "GRN": 7.83,
+    "OTH": 5.2,
+    "TOP": 1.09,
+    "TPM": 0.77
+   },
+   "cand": {
+    "NAT": 54.28,
+    "LAB": 16.73,
+    "GRN": 10.69,
+    "NZF": 6.81,
+    "ACT": 5.93,
+    "OTH": 5.56
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 37.55,
+   "votes": 46892,
+   "from": {
+    "Coromandel": 1.0
+   }
+  },
+  {
+   "name": "Dunedin",
+   "maori": false,
+   "party": {
+    "LAB": 30.96,
+    "GRN": 26.93,
+    "NAT": 22.71,
+    "ACT": 5.79,
+    "NZF": 5.64,
+    "TOP": 4.26,
+    "OTH": 2.27,
+    "TPM": 1.44
+   },
+   "cand": {
+    "LAB": 40.97,
+    "NAT": 21.87,
+    "GRN": 19.23,
+    "TOP": 4.53,
+    "ACT": 4.06,
+    "IND": 3.19,
+    "NZF": 3.12,
+    "OTH": 3.03
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 19.1,
+   "votes": 42507,
+   "from": {
+    "Dunedin": 1.0
+   }
+  },
+  {
+   "name": "East Cape",
+   "maori": false,
+   "party": {
+    "NAT": 36.94,
+    "LAB": 29.87,
+    "NZF": 9.65,
+    "ACT": 8.92,
+    "GRN": 7.47,
+    "OTH": 3.73,
+    "TPM": 2.27,
+    "TOP": 1.14
+   },
+   "cand": {
+    "NAT": 43.12,
+    "LAB": 35.01,
+    "NZF": 6.38,
+    "ACT": 4.88,
+    "GRN": 4.48,
+    "TPM": 3.13,
+    "OTH": 2.4,
+    "IND": 0.6
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 8.11,
+   "votes": 40354,
+   "from": {
+    "East Coast": 1.0
+   }
+  },
+  {
+   "name": "East Coast Bays",
+   "maori": false,
+   "party": {
+    "NAT": 57.17,
+    "LAB": 14.88,
+    "ACT": 9.83,
+    "GRN": 8.99,
+    "NZF": 3.97,
+    "OTH": 3.12,
+    "TOP": 1.67,
+    "TPM": 0.37
+   },
+   "cand": {
+    "NAT": 72.04,
+    "LAB": 19.13,
+    "OTH": 4.31,
+    "ACT": 4.24,
+    "GRN": 0.29
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 52.91,
+   "votes": 35894,
+   "from": {
+    "East Coast Bays": 0.975,
+    "Whangaparāoa": 0.025
+   }
+  },
+  {
+   "name": "Epsom",
+   "maori": false,
+   "party": {
+    "NAT": 50.59,
+    "LAB": 14.96,
+    "GRN": 14.36,
+    "ACT": 12.27,
+    "TOP": 3.35,
+    "NZF": 2.6,
+    "OTH": 1.04,
+    "TPM": 0.82
+   },
+   "cand": {
+    "ACT": 42.82,
+    "NAT": 24.72,
+    "LAB": 15.08,
+    "GRN": 11.18,
+    "TOP": 4.37,
+    "NZF": 1.37,
+    "OTH": 0.44
+   },
+   "winner": "ACT",
+   "second": "NAT",
+   "margin": 18.1,
+   "votes": 42603,
+   "from": {
+    "Epsom": 0.951,
+    "Auckland Central": 0.049
+   }
+  },
+  {
+   "name": "Glendene",
+   "maori": false,
+   "party": {
+    "LAB": 34.92,
+    "NAT": 33.99,
+    "GRN": 13.78,
+    "ACT": 6.12,
+    "NZF": 4.61,
+    "OTH": 2.96,
+    "TOP": 2.07,
+    "TPM": 1.55
+   },
+   "cand": {
+    "LAB": 41.8,
+    "NAT": 35.51,
+    "GRN": 11.24,
+    "ACT": 5.92,
+    "TPM": 2.68,
+    "NZF": 1.21,
+    "OTH": 1.0,
+    "IND": 0.63
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 6.29,
+   "votes": 29676,
+   "from": {
+    "Te Atatū": 0.5,
+    "Kelston": 0.371,
+    "New Lynn": 0.129
+   }
+  },
+  {
+   "name": "Hamilton East",
+   "maori": false,
+   "party": {
+    "NAT": 42.85,
+    "LAB": 24.85,
+    "GRN": 12.35,
+    "ACT": 8.07,
+    "NZF": 5.01,
+    "TOP": 2.72,
+    "OTH": 2.66,
+    "TPM": 1.48
+   },
+   "cand": {
+    "NAT": 48.45,
+    "LAB": 34.79,
+    "ACT": 4.53,
+    "TPM": 3.31,
+    "NZF": 3.26,
+    "TOP": 3.23,
+    "OTH": 2.44
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 13.66,
+   "votes": 38210,
+   "from": {
+    "Hamilton East": 1.0
+   }
+  },
+  {
+   "name": "Hamilton West",
+   "maori": false,
+   "party": {
+    "NAT": 41.37,
+    "LAB": 26.44,
+    "GRN": 9.97,
+    "ACT": 8.77,
+    "NZF": 6.22,
+    "OTH": 2.89,
+    "TOP": 2.5,
+    "TPM": 1.84
+   },
+   "cand": {
+    "NAT": 46.82,
+    "LAB": 29.55,
+    "GRN": 8.59,
+    "ACT": 5.9,
+    "NZF": 4.62,
+    "TOP": 2.79,
+    "OTH": 1.73
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 17.27,
+   "votes": 38736,
+   "from": {
+    "Hamilton West": 1.0
+   }
+  },
+  {
+   "name": "Henderson",
+   "maori": false,
+   "party": {
+    "LAB": 37.52,
+    "NAT": 36.55,
+    "GRN": 9.39,
+    "ACT": 5.9,
+    "NZF": 4.54,
+    "OTH": 3.16,
+    "TPM": 1.63,
+    "TOP": 1.3
+   },
+   "cand": {
+    "LAB": 42.11,
+    "NAT": 36.94,
+    "GRN": 8.75,
+    "ACT": 6.38,
+    "TPM": 2.57,
+    "NZF": 1.32,
+    "IND": 1.03,
+    "OTH": 0.57,
+    "TOP": 0.34
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 5.17,
+   "votes": 30110,
+   "from": {
+    "Te Atatū": 0.741,
+    "Upper Harbour": 0.191,
+    "Kelston": 0.069
+   }
+  },
+  {
+   "name": "Hutt South",
+   "maori": false,
+   "party": {
+    "NAT": 34.11,
+    "LAB": 32.29,
+    "GRN": 15.63,
+    "ACT": 5.72,
+    "NZF": 5.17,
+    "TOP": 3.41,
+    "OTH": 2.29,
+    "TPM": 1.38
+   },
+   "cand": {
+    "NAT": 44.53,
+    "LAB": 41.66,
+    "GRN": 5.92,
+    "NZF": 2.81,
+    "TOP": 2.46,
+    "ACT": 1.33,
+    "OTH": 1.3
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 2.87,
+   "votes": 43613,
+   "from": {
+    "Hutt South": 0.973,
+    "Ōhāriu": 0.027
+   }
+  },
+  {
+   "name": "Ilam",
+   "maori": false,
+   "party": {
+    "NAT": 42.98,
+    "LAB": 22.22,
+    "GRN": 14.9,
+    "ACT": 8.24,
+    "TOP": 4.95,
+    "NZF": 4.15,
+    "OTH": 1.94,
+    "TPM": 0.62
+   },
+   "cand": {
+    "NAT": 44.26,
+    "TOP": 25.46,
+    "LAB": 21.76,
+    "GRN": 5.7,
+    "OTH": 2.67,
+    "NZF": 0.11
+   },
+   "winner": "NAT",
+   "second": "TOP",
+   "margin": 18.8,
+   "votes": 43386,
+   "from": {
+    "Ilam": 0.986,
+    "Christchurch Central": 0.014
+   }
+  },
+  {
+   "name": "Invercargill",
+   "maori": false,
+   "party": {
+    "NAT": 43.0,
+    "LAB": 25.5,
+    "ACT": 10.66,
+    "NZF": 7.42,
+    "GRN": 6.21,
+    "OTH": 5.19,
+    "TOP": 1.28,
+    "TPM": 0.74
+   },
+   "cand": {
+    "NAT": 56.58,
+    "LAB": 29.49,
+    "OTH": 8.49,
+    "ACT": 5.42
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 27.09,
+   "votes": 37657,
+   "from": {
+    "Invercargill": 0.993,
+    "Southland": 0.007
+   }
+  },
+  {
+   "name": "Kaikōura",
+   "maori": false,
+   "party": {
+    "NAT": 41.21,
+    "LAB": 20.78,
+    "ACT": 14.09,
+    "NZF": 9.11,
+    "GRN": 7.83,
+    "OTH": 4.8,
+    "TOP": 1.68,
+    "TPM": 0.51
+   },
+   "cand": {
+    "NAT": 49.97,
+    "LAB": 22.47,
+    "NZF": 10.47,
+    "ACT": 6.32,
+    "GRN": 6.05,
+    "OTH": 4.12,
+    "IND": 0.6
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 27.5,
+   "votes": 41939,
+   "from": {
+    "Kaikōura": 1.0
+   }
+  },
+  {
+   "name": "Kaipara ki Mahurangi",
+   "maori": false,
+   "party": {
+    "NAT": 47.48,
+    "LAB": 16.78,
+    "ACT": 12.31,
+    "GRN": 9.42,
+    "NZF": 7.03,
+    "OTH": 4.51,
+    "TOP": 1.82,
+    "TPM": 0.66
+   },
+   "cand": {
+    "NAT": 58.24,
+    "LAB": 17.78,
+    "GRN": 9.64,
+    "ACT": 6.01,
+    "NZF": 5.48,
+    "OTH": 2.86
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 40.46,
+   "votes": 43377,
+   "from": {
+    "Kaipara ki Mahurangi": 1.0
+   }
+  },
+  {
+   "name": "Kapiti",
+   "maori": false,
+   "party": {
+    "NAT": 36.67,
+    "LAB": 28.54,
+    "GRN": 14.47,
+    "ACT": 7.2,
+    "NZF": 6.5,
+    "OTH": 2.79,
+    "TOP": 2.63,
+    "TPM": 1.19
+   },
+   "cand": {
+    "NAT": 47.64,
+    "LAB": 36.34,
+    "GRN": 9.08,
+    "ACT": 2.85,
+    "OTH": 2.49,
+    "NZF": 1.6
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 11.3,
+   "votes": 41679,
+   "from": {
+    "Ōtaki": 0.659,
+    "Mana": 0.341
+   }
+  },
+  {
+   "name": "Kenepuru",
+   "maori": false,
+   "party": {
+    "LAB": 36.71,
+    "NAT": 31.07,
+    "GRN": 15.78,
+    "ACT": 5.23,
+    "NZF": 4.31,
+    "TOP": 3.07,
+    "OTH": 2.13,
+    "TPM": 1.69
+   },
+   "cand": {
+    "LAB": 47.41,
+    "NAT": 33.67,
+    "GRN": 9.98,
+    "TOP": 3.15,
+    "ACT": 2.38,
+    "NZF": 2.12,
+    "OTH": 1.29
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 13.74,
+   "votes": 56935,
+   "from": {
+    "Ōhāriu": 0.514,
+    "Mana": 0.486
+   }
+  },
+  {
+   "name": "Manurewa",
+   "maori": false,
+   "party": {
+    "LAB": 51.69,
+    "NAT": 29.78,
+    "GRN": 5.94,
+    "OTH": 3.61,
+    "NZF": 3.44,
+    "ACT": 2.79,
+    "TPM": 2.13,
+    "TOP": 0.61
+   },
+   "cand": {
+    "LAB": 57.59,
+    "NAT": 33.08,
+    "TPM": 5.54,
+    "OTH": 3.56,
+    "ACT": 0.23
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 24.51,
+   "votes": 30135,
+   "from": {
+    "Manurewa": 0.969,
+    "Takanini": 0.031
+   }
+  },
+  {
+   "name": "Maungakiekie",
+   "maori": false,
+   "party": {
+    "NAT": 40.48,
+    "LAB": 28.58,
+    "GRN": 13.67,
+    "ACT": 7.89,
+    "NZF": 3.88,
+    "TOP": 2.65,
+    "OTH": 1.88,
+    "TPM": 0.97
+   },
+   "cand": {
+    "NAT": 46.42,
+    "LAB": 36.17,
+    "GRN": 9.62,
+    "ACT": 4.19,
+    "NZF": 2.35,
+    "IND": 0.64,
+    "OTH": 0.61
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 10.25,
+   "votes": 39127,
+   "from": {
+    "Maungakiekie": 0.887,
+    "Panmure-Ōtāhuhu": 0.113
+   }
+  },
+  {
+   "name": "Mount Albert",
+   "maori": false,
+   "party": {
+    "NAT": 34.33,
+    "LAB": 29.51,
+    "GRN": 20.57,
+    "ACT": 6.21,
+    "NZF": 3.27,
+    "TOP": 3.23,
+    "OTH": 1.53,
+    "TPM": 1.35
+   },
+   "cand": {
+    "LAB": 38.07,
+    "NAT": 35.49,
+    "GRN": 18.78,
+    "ACT": 4.53,
+    "TOP": 2.33,
+    "IND": 0.27,
+    "OTH": 0.24,
+    "TPM": 0.15,
+    "NZF": 0.14
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 2.58,
+   "votes": 45518,
+   "from": {
+    "Mount Albert": 0.671,
+    "Mount Roskill": 0.268,
+    "Kelston": 0.061
+   }
+  },
+  {
+   "name": "Mount Maunganui",
+   "maori": false,
+   "party": {
+    "NAT": 47.35,
+    "LAB": 17.6,
+    "ACT": 11.24,
+    "NZF": 8.37,
+    "GRN": 8.26,
+    "OTH": 3.82,
+    "TOP": 2.07,
+    "TPM": 1.27
+   },
+   "cand": {
+    "NAT": 51.78,
+    "LAB": 18.41,
+    "ACT": 9.41,
+    "GRN": 9.17,
+    "NZF": 8.63,
+    "OTH": 1.89,
+    "IND": 0.57,
+    "TPM": 0.13
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 33.37,
+   "votes": 44915,
+   "from": {
+    "Bay of Plenty": 0.902,
+    "Tauranga": 0.098
+   }
+  },
+  {
+   "name": "Mount Roskill",
+   "maori": false,
+   "party": {
+    "NAT": 45.25,
+    "LAB": 26.7,
+    "GRN": 12.11,
+    "ACT": 6.8,
+    "NZF": 4.03,
+    "OTH": 2.13,
+    "TOP": 2.07,
+    "TPM": 0.91
+   },
+   "cand": {
+    "NAT": 47.03,
+    "LAB": 36.05,
+    "GRN": 9.76,
+    "ACT": 6.3,
+    "OTH": 0.86
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 10.98,
+   "votes": 34907,
+   "from": {
+    "Mount Roskill": 0.695,
+    "New Lynn": 0.305
+   }
+  },
+  {
+   "name": "Māngere",
+   "maori": false,
+   "party": {
+    "LAB": 61.09,
+    "NAT": 19.52,
+    "GRN": 7.81,
+    "NZF": 3.37,
+    "OTH": 3.06,
+    "ACT": 2.11,
+    "TPM": 2.1,
+    "TOP": 0.94
+   },
+   "cand": {
+    "LAB": 61.21,
+    "NAT": 20.16,
+    "GRN": 9.33,
+    "TPM": 3.37,
+    "ACT": 2.32,
+    "OTH": 1.88,
+    "IND": 1.74
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 41.05,
+   "votes": 30142,
+   "from": {
+    "Māngere": 0.975,
+    "Manurewa": 0.025
+   }
+  },
+  {
+   "name": "Napier",
+   "maori": false,
+   "party": {
+    "NAT": 41.17,
+    "LAB": 26.27,
+    "ACT": 11.27,
+    "GRN": 8.47,
+    "NZF": 6.9,
+    "OTH": 3.49,
+    "TOP": 1.51,
+    "TPM": 0.92
+   },
+   "cand": {
+    "NAT": 53.8,
+    "LAB": 30.87,
+    "GRN": 5.4,
+    "NZF": 4.24,
+    "ACT": 3.14,
+    "OTH": 2.0,
+    "IND": 0.54
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 22.93,
+   "votes": 41511,
+   "from": {
+    "Napier": 0.979,
+    "Tukituki": 0.021
+   }
+  },
+  {
+   "name": "Nelson",
+   "maori": false,
+   "party": {
+    "NAT": 32.45,
+    "LAB": 29.32,
+    "GRN": 14.41,
+    "ACT": 10.37,
+    "NZF": 6.12,
+    "OTH": 4.06,
+    "TOP": 2.48,
+    "TPM": 0.8
+   },
+   "cand": {
+    "LAB": 41.74,
+    "NAT": 41.68,
+    "GRN": 6.64,
+    "ACT": 6.41,
+    "OTH": 3.53
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 0.06,
+   "votes": 42706,
+   "from": {
+    "Nelson": 1.0
+   }
+  },
+  {
+   "name": "New Plymouth",
+   "maori": false,
+   "party": {
+    "NAT": 42.18,
+    "LAB": 24.19,
+    "ACT": 10.16,
+    "GRN": 8.51,
+    "NZF": 7.26,
+    "OTH": 4.31,
+    "TOP": 1.96,
+    "TPM": 1.43
+   },
+   "cand": {
+    "NAT": 52.92,
+    "LAB": 36.47,
+    "OTH": 6.01,
+    "ACT": 4.61
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 16.45,
+   "votes": 43172,
+   "from": {
+    "New Plymouth": 1.0
+   }
+  },
+  {
+   "name": "North Shore",
+   "maori": false,
+   "party": {
+    "NAT": 51.68,
+    "LAB": 17.34,
+    "GRN": 11.47,
+    "ACT": 10.87,
+    "NZF": 3.86,
+    "TOP": 2.49,
+    "OTH": 1.8,
+    "TPM": 0.49
+   },
+   "cand": {
+    "NAT": 62.49,
+    "LAB": 21.01,
+    "GRN": 8.39,
+    "ACT": 5.01,
+    "TOP": 2.81,
+    "OTH": 0.3
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 41.48,
+   "votes": 44679,
+   "from": {
+    "North Shore": 0.925,
+    "East Coast Bays": 0.075
+   }
+  },
+  {
+   "name": "Northcote",
+   "maori": false,
+   "party": {
+    "NAT": 43.71,
+    "LAB": 23.49,
+    "GRN": 14.01,
+    "ACT": 8.61,
+    "NZF": 4.21,
+    "TOP": 3.03,
+    "OTH": 2.2,
+    "TPM": 0.75
+   },
+   "cand": {
+    "NAT": 54.36,
+    "LAB": 30.55,
+    "GRN": 8.77,
+    "NZF": 2.81,
+    "ACT": 2.74,
+    "OTH": 0.6,
+    "TOP": 0.17
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 23.81,
+   "votes": 41442,
+   "from": {
+    "Northcote": 0.938,
+    "Upper Harbour": 0.062
+   }
+  },
+  {
+   "name": "Northland",
+   "maori": false,
+   "party": {
+    "NAT": 35.47,
+    "LAB": 22.04,
+    "NZF": 14.04,
+    "ACT": 10.22,
+    "GRN": 8.01,
+    "OTH": 7.44,
+    "TPM": 1.54,
+    "TOP": 1.24
+   },
+   "cand": {
+    "NAT": 35.92,
+    "LAB": 22.45,
+    "NZF": 17.94,
+    "OTH": 13.66,
+    "GRN": 5.33,
+    "ACT": 4.7
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 13.47,
+   "votes": 45956,
+   "from": {
+    "Northland": 1.0
+   }
+  },
+  {
+   "name": "Pakuranga",
+   "maori": false,
+   "party": {
+    "NAT": 58.26,
+    "LAB": 16.5,
+    "ACT": 9.97,
+    "GRN": 7.29,
+    "NZF": 3.8,
+    "OTH": 2.22,
+    "TOP": 1.46,
+    "TPM": 0.51
+   },
+   "cand": {
+    "NAT": 72.36,
+    "LAB": 20.41,
+    "ACT": 3.77,
+    "OTH": 3.46
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 51.95,
+   "votes": 38224,
+   "from": {
+    "Pakuranga": 0.962,
+    "Botany": 0.038
+   }
+  },
+  {
+   "name": "Palmerston North",
+   "maori": false,
+   "party": {
+    "NAT": 35.42,
+    "LAB": 29.71,
+    "GRN": 12.24,
+    "ACT": 9.12,
+    "NZF": 6.22,
+    "OTH": 3.37,
+    "TOP": 2.26,
+    "TPM": 1.67
+   },
+   "cand": {
+    "LAB": 40.98,
+    "NAT": 36.81,
+    "GRN": 9.04,
+    "ACT": 9.02,
+    "OTH": 3.49,
+    "NZF": 0.65
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 4.17,
+   "votes": 41581,
+   "from": {
+    "Palmerston North": 0.863,
+    "Rangitīkei": 0.137
+   }
+  },
+  {
+   "name": "Papakura",
+   "maori": false,
+   "party": {
+    "NAT": 50.27,
+    "LAB": 23.41,
+    "ACT": 9.1,
+    "GRN": 5.99,
+    "NZF": 5.48,
+    "OTH": 3.27,
+    "TPM": 1.26,
+    "TOP": 1.21
+   },
+   "cand": {
+    "NAT": 56.62,
+    "LAB": 28.08,
+    "ACT": 7.09,
+    "NZF": 4.24,
+    "OTH": 2.86,
+    "IND": 1.12
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 28.54,
+   "votes": 35057,
+   "from": {
+    "Papakura": 0.928,
+    "Takanini": 0.072
+   }
+  },
+  {
+   "name": "Port Waikato",
+   "maori": false,
+   "party": {
+    "NAT": 50.18,
+    "LAB": 18.67,
+    "ACT": 12.05,
+    "NZF": 7.42,
+    "GRN": 5.86,
+    "OTH": 3.72,
+    "TOP": 1.2,
+    "TPM": 0.9
+   },
+   "cand": {
+    "NAT": 56.56,
+    "LAB": 22.59,
+    "ACT": 7.08,
+    "GRN": 5.17,
+    "NZF": 3.12,
+    "OTH": 2.6,
+    "TPM": 2.1,
+    "TOP": 0.78
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 33.97,
+   "votes": 42399,
+   "from": {
+    "Port Waikato": 1.0
+   }
+  },
+  {
+   "name": "Rangitata",
+   "maori": false,
+   "party": {
+    "NAT": 44.9,
+    "LAB": 26.35,
+    "ACT": 10.09,
+    "NZF": 7.44,
+    "GRN": 5.81,
+    "OTH": 3.74,
+    "TOP": 1.29,
+    "TPM": 0.39
+   },
+   "cand": {
+    "NAT": 56.97,
+    "LAB": 29.86,
+    "NZF": 5.4,
+    "GRN": 4.46,
+    "OTH": 3.32
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 27.11,
+   "votes": 40461,
+   "from": {
+    "Rangitata": 1.0
+   }
+  },
+  {
+   "name": "Rangitīkei",
+   "maori": false,
+   "party": {
+    "NAT": 40.03,
+    "LAB": 26.16,
+    "ACT": 11.73,
+    "NZF": 9.1,
+    "GRN": 6.73,
+    "OTH": 3.82,
+    "TPM": 1.27,
+    "TOP": 1.17
+   },
+   "cand": {
+    "NAT": 48.38,
+    "LAB": 28.21,
+    "ACT": 11.06,
+    "GRN": 6.42,
+    "NZF": 4.85,
+    "OTH": 1.09
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 20.17,
+   "votes": 45211,
+   "from": {
+    "Rangitīkei": 0.628,
+    "Ōtaki": 0.372
+   }
+  },
+  {
+   "name": "Remutaka",
+   "maori": false,
+   "party": {
+    "LAB": 38.29,
+    "NAT": 30.45,
+    "GRN": 12.22,
+    "ACT": 5.94,
+    "NZF": 5.83,
+    "OTH": 3.29,
+    "TOP": 2.78,
+    "TPM": 1.2
+   },
+   "cand": {
+    "LAB": 54.03,
+    "NAT": 32.93,
+    "GRN": 6.76,
+    "OTH": 3.16,
+    "ACT": 3.02,
+    "TOP": 0.06,
+    "NZF": 0.05
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 21.1,
+   "votes": 42678,
+   "from": {
+    "Remutaka": 0.978,
+    "Hutt South": 0.022
+   }
+  },
+  {
+   "name": "Rotorua",
+   "maori": false,
+   "party": {
+    "NAT": 41.79,
+    "LAB": 23.91,
+    "ACT": 9.84,
+    "GRN": 7.8,
+    "NZF": 7.78,
+    "OTH": 4.91,
+    "TPM": 2.25,
+    "TOP": 1.73
+   },
+   "cand": {
+    "NAT": 54.07,
+    "LAB": 28.54,
+    "TPM": 7.41,
+    "ACT": 5.01,
+    "OTH": 3.46,
+    "IND": 0.97,
+    "NZF": 0.29,
+    "GRN": 0.26
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 25.53,
+   "votes": 37831,
+   "from": {
+    "Rotorua": 0.973,
+    "Bay of Plenty": 0.027
+   }
+  },
+  {
+   "name": "Selwyn",
+   "maori": false,
+   "party": {
+    "NAT": 49.11,
+    "LAB": 18.11,
+    "ACT": 12.26,
+    "GRN": 9.07,
+    "NZF": 5.5,
+    "OTH": 2.78,
+    "TOP": 2.67,
+    "TPM": 0.5
+   },
+   "cand": {
+    "NAT": 65.95,
+    "LAB": 24.8,
+    "ACT": 6.06,
+    "OTH": 3.19
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 41.15,
+   "votes": 43384,
+   "from": {
+    "Selwyn": 1.0
+   }
+  },
+  {
+   "name": "Southland",
+   "maori": false,
+   "party": {
+    "NAT": 48.32,
+    "LAB": 16.56,
+    "ACT": 13.6,
+    "GRN": 8.82,
+    "NZF": 5.69,
+    "OTH": 4.48,
+    "TOP": 2.05,
+    "TPM": 0.48
+   },
+   "cand": {
+    "NAT": 59.44,
+    "LAB": 15.51,
+    "GRN": 9.94,
+    "OTH": 7.93,
+    "ACT": 7.19
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 43.93,
+   "votes": 39436,
+   "from": {
+    "Southland": 1.0
+   }
+  },
+  {
+   "name": "Taieri",
+   "maori": false,
+   "party": {
+    "LAB": 34.33,
+    "NAT": 33.62,
+    "GRN": 10.84,
+    "ACT": 7.92,
+    "NZF": 7.71,
+    "OTH": 2.81,
+    "TOP": 2.2,
+    "TPM": 0.58
+   },
+   "cand": {
+    "LAB": 39.86,
+    "NAT": 36.39,
+    "GRN": 9.37,
+    "NZF": 7.38,
+    "ACT": 4.08,
+    "OTH": 1.59,
+    "IND": 1.32
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 3.47,
+   "votes": 42259,
+   "from": {
+    "Taieri": 1.0
+   }
+  },
+  {
+   "name": "Takanini",
+   "maori": false,
+   "party": {
+    "NAT": 51.77,
+    "LAB": 28.96,
+    "GRN": 5.89,
+    "ACT": 5.58,
+    "NZF": 3.32,
+    "OTH": 2.51,
+    "TPM": 1.14,
+    "TOP": 0.84
+   },
+   "cand": {
+    "NAT": 56.9,
+    "LAB": 35.72,
+    "ACT": 5.42,
+    "OTH": 1.95
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 21.18,
+   "votes": 34594,
+   "from": {
+    "Takanini": 1.0
+   }
+  },
+  {
+   "name": "Taranaki-King Country",
+   "maori": false,
+   "party": {
+    "NAT": 46.59,
+    "LAB": 17.96,
+    "ACT": 13.09,
+    "NZF": 8.59,
+    "GRN": 6.81,
+    "OTH": 4.16,
+    "TOP": 1.54,
+    "TPM": 1.25
+   },
+   "cand": {
+    "NAT": 61.54,
+    "LAB": 26.59,
+    "IND": 8.08,
+    "OTH": 2.26,
+    "NZF": 0.66,
+    "ACT": 0.46,
+    "GRN": 0.4
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 34.95,
+   "votes": 43320,
+   "from": {
+    "Taranaki-King Country": 0.943,
+    "Rangitīkei": 0.057
+   }
+  },
+  {
+   "name": "Taupō",
+   "maori": false,
+   "party": {
+    "NAT": 45.52,
+    "LAB": 22.08,
+    "ACT": 11.31,
+    "NZF": 8.0,
+    "GRN": 6.32,
+    "OTH": 4.0,
+    "TOP": 1.47,
+    "TPM": 1.29
+   },
+   "cand": {
+    "NAT": 57.83,
+    "LAB": 19.43,
+    "GRN": 8.01,
+    "ACT": 6.53,
+    "NZF": 4.92,
+    "OTH": 3.28
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 38.4,
+   "votes": 43858,
+   "from": {
+    "Taupō": 1.0
+   }
+  },
+  {
+   "name": "Tauranga",
+   "maori": false,
+   "party": {
+    "NAT": 45.9,
+    "LAB": 18.18,
+    "ACT": 10.73,
+    "NZF": 9.26,
+    "GRN": 8.74,
+    "OTH": 3.98,
+    "TOP": 2.13,
+    "TPM": 1.08
+   },
+   "cand": {
+    "NAT": 46.72,
+    "LAB": 23.0,
+    "ACT": 9.23,
+    "NZF": 8.7,
+    "GRN": 6.5,
+    "IND": 2.44,
+    "OTH": 2.02,
+    "TPM": 1.37
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 23.72,
+   "votes": 41475,
+   "from": {
+    "Tauranga": 0.905,
+    "Bay of Plenty": 0.095
+   }
+  },
+  {
+   "name": "Tukituki",
+   "maori": false,
+   "party": {
+    "NAT": 41.38,
+    "LAB": 25.75,
+    "ACT": 12.21,
+    "GRN": 8.02,
+    "NZF": 6.12,
+    "OTH": 4.08,
+    "TOP": 1.44,
+    "TPM": 1.01
+   },
+   "cand": {
+    "NAT": 53.88,
+    "LAB": 29.54,
+    "GRN": 5.96,
+    "OTH": 5.17,
+    "ACT": 4.9,
+    "IND": 0.56
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 24.34,
+   "votes": 40473,
+   "from": {
+    "Tukituki": 1.0
+   }
+  },
+  {
+   "name": "Tāmaki",
+   "maori": false,
+   "party": {
+    "NAT": 51.97,
+    "LAB": 17.4,
+    "ACT": 12.15,
+    "GRN": 11.08,
+    "NZF": 2.93,
+    "TOP": 2.35,
+    "OTH": 1.4,
+    "TPM": 0.72
+   },
+   "cand": {
+    "ACT": 42.07,
+    "NAT": 33.82,
+    "LAB": 22.5,
+    "OTH": 0.95,
+    "GRN": 0.59,
+    "NZF": 0.06
+   },
+   "winner": "ACT",
+   "second": "NAT",
+   "margin": 8.25,
+   "votes": 43505,
+   "from": {
+    "Tāmaki": 0.958,
+    "Maungakiekie": 0.027,
+    "Panmure-Ōtāhuhu": 0.014
+   }
+  },
+  {
+   "name": "Upper Harbour",
+   "maori": false,
+   "party": {
+    "NAT": 53.3,
+    "LAB": 18.69,
+    "GRN": 9.72,
+    "ACT": 9.37,
+    "NZF": 3.92,
+    "TOP": 2.2,
+    "OTH": 2.15,
+    "TPM": 0.66
+   },
+   "cand": {
+    "NAT": 57.85,
+    "LAB": 21.86,
+    "GRN": 7.56,
+    "ACT": 6.02,
+    "NZF": 2.92,
+    "TOP": 2.43,
+    "OTH": 1.37
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 35.99,
+   "votes": 39750,
+   "from": {
+    "Upper Harbour": 0.827,
+    "Kaipara ki Mahurangi": 0.158,
+    "East Coast Bays": 0.015
+   }
+  },
+  {
+   "name": "Waikato",
+   "maori": false,
+   "party": {
+    "NAT": 50.41,
+    "LAB": 17.64,
+    "ACT": 12.27,
+    "NZF": 7.69,
+    "GRN": 5.51,
+    "OTH": 3.8,
+    "TOP": 1.72,
+    "TPM": 0.96
+   },
+   "cand": {
+    "NAT": 65.51,
+    "LAB": 21.24,
+    "NZF": 8.56,
+    "TOP": 3.69,
+    "OTH": 1.0
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 44.27,
+   "votes": 43146,
+   "from": {
+    "Waikato": 1.0
+   }
+  },
+  {
+   "name": "Waimakariri",
+   "maori": false,
+   "party": {
+    "NAT": 42.74,
+    "LAB": 24.22,
+    "ACT": 10.58,
+    "GRN": 8.55,
+    "NZF": 7.03,
+    "OTH": 4.15,
+    "TOP": 2.21,
+    "TPM": 0.51
+   },
+   "cand": {
+    "NAT": 58.25,
+    "LAB": 29.99,
+    "OTH": 7.27,
+    "ACT": 4.49
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 28.26,
+   "votes": 46721,
+   "from": {
+    "Waimakariri": 1.0
+   }
+  },
+  {
+   "name": "Wairarapa",
+   "maori": false,
+   "party": {
+    "NAT": 38.55,
+    "LAB": 27.23,
+    "ACT": 10.8,
+    "NZF": 8.39,
+    "GRN": 8.3,
+    "OTH": 4.06,
+    "TOP": 1.64,
+    "TPM": 1.02
+   },
+   "cand": {
+    "NAT": 45.69,
+    "LAB": 39.06,
+    "ACT": 4.82,
+    "GRN": 4.47,
+    "OTH": 3.75,
+    "TPM": 1.12,
+    "NZF": 0.56,
+    "IND": 0.53
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 6.63,
+   "votes": 47025,
+   "from": {
+    "Wairarapa": 0.95,
+    "Rangitīkei": 0.05
+   }
+  },
+  {
+   "name": "Waitaki",
+   "maori": false,
+   "party": {
+    "NAT": 43.43,
+    "LAB": 21.57,
+    "ACT": 12.33,
+    "GRN": 9.04,
+    "NZF": 6.99,
+    "OTH": 4.26,
+    "TOP": 1.97,
+    "TPM": 0.41
+   },
+   "cand": {
+    "NAT": 51.79,
+    "LAB": 24.04,
+    "GRN": 7.98,
+    "ACT": 5.66,
+    "OTH": 5.03,
+    "NZF": 4.16,
+    "IND": 1.33
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 27.75,
+   "votes": 44393,
+   "from": {
+    "Waitaki": 1.0
+   }
+  },
+  {
+   "name": "Waitākere",
+   "maori": false,
+   "party": {
+    "NAT": 34.4,
+    "LAB": 29.31,
+    "GRN": 16.87,
+    "ACT": 7.59,
+    "NZF": 5.1,
+    "OTH": 3.11,
+    "TOP": 2.13,
+    "TPM": 1.49
+   },
+   "cand": {
+    "LAB": 39.2,
+    "NAT": 35.81,
+    "GRN": 13.55,
+    "ACT": 5.96,
+    "OTH": 3.11,
+    "NZF": 1.53,
+    "TPM": 0.83
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 3.39,
+   "votes": 44073,
+   "from": {
+    "New Lynn": 0.601,
+    "Kelston": 0.399
+   }
+  },
+  {
+   "name": "Wellington Bays",
+   "maori": false,
+   "party": {
+    "GRN": 32.77,
+    "LAB": 30.86,
+    "NAT": 21.13,
+    "TOP": 4.36,
+    "ACT": 3.86,
+    "NZF": 3.26,
+    "TPM": 2.33,
+    "OTH": 1.43
+   },
+   "cand": {
+    "GRN": 39.81,
+    "LAB": 32.64,
+    "NAT": 21.04,
+    "ACT": 2.54,
+    "NZF": 2.0,
+    "OTH": 1.39,
+    "TOP": 0.29,
+    "IND": 0.29
+   },
+   "winner": "GRN",
+   "second": "LAB",
+   "margin": 7.17,
+   "votes": 47087,
+   "from": {
+    "Rongotai": 0.905,
+    "Wellington Central": 0.095
+   }
+  },
+  {
+   "name": "Wellington North",
+   "maori": false,
+   "party": {
+    "GRN": 34.79,
+    "LAB": 25.32,
+    "NAT": 23.98,
+    "TOP": 5.46,
+    "ACT": 4.96,
+    "NZF": 2.33,
+    "TPM": 2.14,
+    "OTH": 1.02
+   },
+   "cand": {
+    "GRN": 33.71,
+    "LAB": 30.74,
+    "NAT": 28.29,
+    "TOP": 4.77,
+    "OTH": 1.27,
+    "NZF": 0.8,
+    "ACT": 0.27,
+    "IND": 0.14
+   },
+   "winner": "GRN",
+   "second": "LAB",
+   "margin": 2.97,
+   "votes": 53872,
+   "from": {
+    "Wellington Central": 0.768,
+    "Ōhāriu": 0.232
+   }
+  },
+  {
+   "name": "West Coast-Tasman",
+   "maori": false,
+   "party": {
+    "NAT": 33.45,
+    "LAB": 23.75,
+    "ACT": 13.08,
+    "GRN": 10.77,
+    "NZF": 9.9,
+    "OTH": 6.47,
+    "TOP": 1.89,
+    "TPM": 0.69
+   },
+   "cand": {
+    "NAT": 32.02,
+    "LAB": 29.57,
+    "IND": 14.19,
+    "OTH": 7.24,
+    "GRN": 6.59,
+    "ACT": 6.06,
+    "NZF": 4.33
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 2.45,
+   "votes": 41973,
+   "from": {
+    "West Coast-Tasman": 1.0
+   }
+  },
+  {
+   "name": "Whanganui",
+   "maori": false,
+   "party": {
+    "NAT": 37.13,
+    "LAB": 27.44,
+    "NZF": 11.32,
+    "ACT": 9.76,
+    "GRN": 7.68,
+    "OTH": 3.88,
+    "TPM": 1.58,
+    "TOP": 1.21
+   },
+   "cand": {
+    "NAT": 47.69,
+    "LAB": 32.76,
+    "NZF": 8.18,
+    "GRN": 5.59,
+    "ACT": 4.8,
+    "OTH": 0.98
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 14.93,
+   "votes": 41719,
+   "from": {
+    "Whanganui": 0.944,
+    "Rangitīkei": 0.056
+   }
+  },
+  {
+   "name": "Whangaparāoa",
+   "maori": false,
+   "party": {
+    "NAT": 53.28,
+    "LAB": 15.34,
+    "ACT": 11.86,
+    "GRN": 7.57,
+    "NZF": 6.29,
+    "OTH": 3.59,
+    "TOP": 1.63,
+    "TPM": 0.46
+   },
+   "cand": {
+    "NAT": 66.53,
+    "LAB": 16.0,
+    "GRN": 7.46,
+    "ACT": 5.4,
+    "OTH": 4.61
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 50.53,
+   "votes": 46260,
+   "from": {
+    "Whangaparāoa": 1.0
+   }
+  },
+  {
+   "name": "Whangārei",
+   "maori": false,
+   "party": {
+    "NAT": 37.88,
+    "LAB": 22.37,
+    "NZF": 13.13,
+    "GRN": 9.38,
+    "ACT": 9.12,
+    "OTH": 5.06,
+    "TOP": 1.69,
+    "TPM": 1.37
+   },
+   "cand": {
+    "NAT": 48.63,
+    "LAB": 22.06,
+    "NZF": 12.63,
+    "GRN": 6.28,
+    "OTH": 5.2,
+    "ACT": 2.88,
+    "TPM": 1.99,
+    "IND": 0.32
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 26.57,
+   "votes": 43719,
+   "from": {
+    "Whangārei": 0.992,
+    "Northland": 0.008
+   }
+  },
+  {
+   "name": "Wigram",
+   "maori": false,
+   "party": {
+    "NAT": 39.63,
+    "LAB": 27.55,
+    "GRN": 12.81,
+    "ACT": 7.34,
+    "NZF": 4.9,
+    "TOP": 4.2,
+    "OTH": 2.79,
+    "TPM": 0.78
+   },
+   "cand": {
+    "NAT": 45.01,
+    "LAB": 37.89,
+    "GRN": 8.39,
+    "ACT": 4.36,
+    "OTH": 3.83,
+    "IND": 0.52
+   },
+   "winner": "NAT",
+   "second": "LAB",
+   "margin": 7.12,
+   "votes": 36636,
+   "from": {
+    "Wigram": 0.86,
+    "Selwyn": 0.14
+   }
+  },
+  {
+   "name": "Ōtāhuhu",
+   "maori": false,
+   "party": {
+    "LAB": 56.95,
+    "NAT": 24.45,
+    "GRN": 7.6,
+    "NZF": 3.08,
+    "OTH": 2.83,
+    "ACT": 2.81,
+    "TPM": 1.4,
+    "TOP": 0.87
+   },
+   "cand": {
+    "LAB": 57.22,
+    "NAT": 24.05,
+    "GRN": 12.91,
+    "ACT": 3.27,
+    "OTH": 2.55
+   },
+   "winner": "LAB",
+   "second": "NAT",
+   "margin": 33.17,
+   "votes": 28707,
+   "from": {
+    "Panmure-Ōtāhuhu": 0.883,
+    "Botany": 0.117
+   }
+  },
+  {
+   "name": "Hauraki-Waikato",
+   "maori": true,
+   "party": {
+    "LAB": 44.67,
+    "TPM": 33.04,
+    "GRN": 7.34,
+    "NAT": 5.02,
+    "OTH": 4.28,
+    "NZF": 3.78,
+    "ACT": 1.15,
+    "TOP": 0.72
+   },
+   "cand": {
+    "TPM": 53.51,
+    "LAB": 41.44,
+    "OTH": 5.03
+   },
+   "winner": "TPM",
+   "second": "LAB",
+   "margin": 12.07,
+   "votes": 25756,
+   "from": {
+    "Hauraki-Waikato": 0.997
+   }
+  },
+  {
+   "name": "Ikaroa-Rāwhiti",
+   "maori": true,
+   "party": {
+    "LAB": 55.52,
+    "TPM": 25.37,
+    "GRN": 6.91,
+    "OTH": 3.76,
+    "NAT": 3.61,
+    "NZF": 3.52,
+    "ACT": 0.78,
+    "TOP": 0.54
+   },
+   "cand": {
+    "LAB": 53.75,
+    "TPM": 43.04,
+    "OTH": 3.2
+   },
+   "winner": "LAB",
+   "second": "TPM",
+   "margin": 10.71,
+   "votes": 27094,
+   "from": {
+    "Ikaroa-Rāwhiti": 0.979,
+    "Te Tai Tonga": 0.021
+   }
+  },
+  {
+   "name": "Te Tai Hauāuru",
+   "maori": true,
+   "party": {
+    "LAB": 41.61,
+    "TPM": 35.64,
+    "GRN": 7.84,
+    "NAT": 4.68,
+    "NZF": 4.27,
+    "OTH": 4.24,
+    "ACT": 1.06,
+    "TOP": 0.67
+   },
+   "cand": {
+    "TPM": 63.76,
+    "LAB": 27.92,
+    "NAT": 5.56,
+    "OTH": 2.76
+   },
+   "winner": "TPM",
+   "second": "LAB",
+   "margin": 35.84,
+   "votes": 26667,
+   "from": {
+    "Te Tai Hauāuru": 1.0
+   }
+  },
+  {
+   "name": "Te Tai Tokerau",
+   "maori": true,
+   "party": {
+    "LAB": 44.4,
+    "TPM": 26.99,
+    "GRN": 9.64,
+    "NZF": 6.72,
+    "NAT": 5.43,
+    "OTH": 4.99,
+    "ACT": 1.08,
+    "TOP": 0.74
+   },
+   "cand": {
+    "TPM": 38.78,
+    "LAB": 36.87,
+    "GRN": 15.56,
+    "OTH": 7.14,
+    "IND": 1.65
+   },
+   "winner": "TPM",
+   "second": "LAB",
+   "margin": 1.91,
+   "votes": 28521,
+   "from": {
+    "Te Tai Tokerau": 0.997
+   }
+  },
+  {
+   "name": "Te Tai Tonga",
+   "maori": true,
+   "party": {
+    "LAB": 36.82,
+    "TPM": 22.87,
+    "GRN": 16.45,
+    "NAT": 8.84,
+    "NZF": 5.55,
+    "OTH": 5.13,
+    "ACT": 2.39,
+    "TOP": 1.96
+   },
+   "cand": {
+    "TPM": 48.29,
+    "LAB": 37.78,
+    "OTH": 10.8,
+    "IND": 3.13
+   },
+   "winner": "TPM",
+   "second": "LAB",
+   "margin": 10.51,
+   "votes": 27578,
+   "from": {
+    "Te Tai Tonga": 0.998
+   }
+  },
+  {
+   "name": "Tāmaki Makaurau",
+   "maori": true,
+   "party": {
+    "LAB": 43.43,
+    "TPM": 30.19,
+    "GRN": 12.07,
+    "NAT": 4.75,
+    "OTH": 4.2,
+    "NZF": 3.49,
+    "ACT": 0.94,
+    "TOP": 0.93
+   },
+   "cand": {
+    "TPM": 40.1,
+    "LAB": 39.88,
+    "GRN": 11.63,
+    "NAT": 5.07,
+    "OTH": 3.32
+   },
+   "winner": "TPM",
+   "second": "LAB",
+   "margin": 0.22,
+   "votes": 26624,
+   "from": {
+    "Tāmaki Makaurau": 0.996
+   }
+  },
+  {
+   "name": "Waiariki",
+   "maori": true,
+   "party": {
+    "LAB": 43.72,
+    "TPM": 38.33,
+    "GRN": 5.55,
+    "OTH": 3.95,
+    "NZF": 3.76,
+    "NAT": 3.4,
+    "ACT": 0.75,
+    "TOP": 0.54
+   },
+   "cand": {
+    "TPM": 76.31,
+    "LAB": 19.9,
+    "OTH": 3.79
+   },
+   "winner": "TPM",
+   "second": "LAB",
+   "margin": 56.41,
+   "votes": 29497,
+   "from": {
+    "Waiariki": 1.0
+   }
+  }
+ ]
+}
