@@ -119,6 +119,8 @@ details.sec:not(#maoriSec)>summary{padding:10px 13px}details.sec:not(#maoriSec) 
 .prow.dragging{position:relative;z-index:3;margin:0 -6px;padding-left:6px;padding-right:6px;border-radius:8px;background:var(--panel);box-shadow:0 4px 16px rgba(20,25,35,.16)}.prow.dragging .pgrip{opacity:1;color:var(--accent)}
 body.row-dragging,body.row-dragging *{cursor:grabbing!important;user-select:none;-webkit-user-select:none}
 .head-r{display:flex;align-items:baseline;gap:10px;min-width:0}.sort-btn{border:0;background:none;color:var(--accent);font-size:11.5px;font-weight:650;cursor:pointer;padding:0;white-space:nowrap}.sort-btn:hover{text-decoration:underline}
+/* electorate-only winners (no party vote input) */
+.eorow{display:grid;grid-template-columns:12px 10px minmax(0,1fr) 38px;column-gap:8px;align-items:center;padding:7px 0 6px;border-top:1px solid var(--line)}.eorow .swatch{grid-column:2;width:10px;height:10px;border-radius:50%}
 </style>
 </head>
 <body>
@@ -131,7 +133,7 @@ body.row-dragging,body.row-dragging *{cursor:grabbing!important;user-select:none
     <aside class="rail">
       <section class="panel">
         <div class="head"><h2 class="eyebrow">Party vote</h2><span class="head-r"><span class="sum" id="sum"></span><button type="button" class="sort-btn" id="sortVotes" title="Order rows by party vote, highest first">Sort by vote</button></span></div>
-        <div class="wiki-msg" id="wikiMsg" hidden></div><div id="parties"></div>
+        <div class="wiki-msg" id="wikiMsg" hidden></div><div id="parties"></div><div id="electOnly"></div>
         <details class="paste"><summary>Paste a poll</summary><textarea id="pasteBox" placeholder="Labour 30&#10;National 29&#10;Green 12&#10;ACT 9, NZ First 8, TOP 8, TPM 1"></textarea><div class="paste-row"><span class="paste-msg" id="pasteMsg">Names or abbreviations, one number each.</span><button class="btn primary" id="pasteBtn">Apply</button></div></details>
       </section>
       <section class="panel"><h2 class="eyebrow">Paths to majority</h2><div id="paths"></div><p style="margin:8px 0 0;font-size:10.5px;color:var(--muted)">Minimal winning combinations — maths, not compatibility. <span id="pathsTieNote"></span></p></section>
@@ -236,6 +238,9 @@ function bindMaori(root,st,render){root.addEventListener("change",function(e){if
 var KEY="coalitionlab-protoA",st=loadState(KEY),res=null,order=null;
 function statusOf(p){if(!p)return["",""];if(isOthers(p.name))return["","minor parties · no seats"];var v=p.pct,t=res.thresh;if(p.qualifies&&meetsThreshold(v,t))return v-t<1?["near","just over threshold"]:["in","in Parliament"];if(p.qualifies)return["in","electorate path"];return[t-v<1.5&&v>0?"near":"",(t-v>0&&t-v<.1?"below threshold":fmt(Math.max(0,t-v),1)+" pts to threshold")]}
 function renderInputs(){$("parties").innerHTML=partyOrder().map(function(n){return ROSTER.filter(function(r){return r.name===n})[0]}).map(function(p){return'<div class="prow" data-row="'+esc(p.name)+'" style="--pc:'+p.color+'">'+gripHTML(p.name)+'<span class="swatch" style="background:'+p.color+'"></span><div style="min-width:0"><div class="pname">'+esc(p.name)+' <span class="pswing" data-sw="'+esc(p.name)+'"></span></div><div class="pstat" data-stat="'+esc(p.name)+'"></div></div><span class="pin"><input type="number" min="0" step="0.1" inputmode="decimal" data-name="'+esc(p.name)+'" value="'+esc(st.votes[p.name]==null?"":st.votes[p.name])+'" aria-label="'+esc(p.name)+' party vote"><span>%</span></span><span class="pseats"><b data-seats="'+esc(p.name)+'">0</b><small>seats</small></span><input type="range" min="0" max="50" step="0.5" data-name="'+esc(p.name)+'" value="'+(parseFloat(st.votes[p.name])||0)+'" aria-label="'+esc(p.name)+' vote slider"></div>'}).join("");$("thresh").value=st.thresh;$("seats").value=st.seats;$("coattail").checked=st.coattail}
+// Read-only rows for parties that can only win electorates (TTT, independents): shown only while they hold a seat.
+function renderElectOnly(){$("electOnly").innerHTML=EXTRA.map(function(x){var p=by(x.name);if(!p||!p.total)return"";var seats=MAORI.filter(function(m){return(st.winners[m.seat]||m.party)===x.name}).map(function(m){return m.seat});
+  return'<div class="eorow" title="'+esc(x.name)+' has no party vote here; its seats come from electorate wins"><span class="swatch" style="background:'+x.color+'"></span><div style="min-width:0"><div class="pname">'+esc(x.name)+'</div><div class="pstat">electorate only · '+esc(seats.join(", "))+(p.overhang?' · <span style="color:var(--over)">overhang</span>':'')+'</div></div><span class="pseats"><b>'+p.total+'</b><small>'+(p.total===1?'seat':'seats')+'</small></span></div>'}).join("")}
 function laneOrder(){var seated=res.parties.filter(function(p){return p.total>0});if(!order)return seated;return seated.slice().sort(function(a,b){var i=order.indexOf(a.name),j=order.indexOf(b.name);return(i<0?99:i)-(j<0?99:j)})}
 function render(){var sv=swungVotes();res=compute(Object.assign({},st,{votes:sv.votes}));renderSwing(sv);document.querySelectorAll("[data-sw]").forEach(function(el){var n=el.dataset.sw,d=sv.votes[n]-vote(n);el.className="pswing"+(d>.005?" up":d<-.005?" dn":"");el.textContent=Math.abs(d)>.005?"→ "+formatShare(sv.votes[n],res.thresh):"";el.title=Math.abs(d)>.005?"After swing ("+(d>0?"+":"")+fmt(d,1)+" pts)":""});res.parties.forEach(function(p){if(!p.total)delete st.bloc[p.name]});var by={};res.parties.forEach(function(p){by[p.name]=p});
   var sum=ROSTER.reduce(function(a,p){return a+(parseFloat(st.votes[p.name])||0)},0),left=100-sum;$("sum").textContent="Σ "+fmt(sum,1)+"% · "+fmt(Math.abs(left),1)+(left>=0?" left":" over");$("sum").classList.toggle("bad",left<-.05);
@@ -246,7 +251,7 @@ function render(){var sv=swungVotes();res=compute(Object.assign({},st,{votes:sv.
   var lo=laneOrder(),active=Object.keys(st.bloc).length>0;drawHemi($("hemi"),res,lo.filter(function(p){return st.bloc[p.name]}).concat(lo.filter(function(p){return!st.bloc[p.name]})),{dim:function(p){return active&&!st.bloc[p.name]}});
   document.querySelectorAll('#parties input[type=number]').forEach(function(n){if(document.activeElement!==n)n.value=st.votes[n.dataset.name]==null?"":st.votes[n.dataset.name]});
   var arcOn=st.view==="arc";$("hemi").style.display=arcOn?"none":"";$("arcWrap").hidden=!arcOn;document.querySelectorAll(".viewsw button").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.view===(arcOn?"arc":"seats")))});if(arcOn)renderArc(false);
-  renderLanes(lo);renderTable();renderInsight();renderTie();saveState(KEY,st)}
+  renderElectOnly();renderLanes(lo);renderTable();renderInsight();renderTie();saveState(KEY,st)}
 // ---- vote arc (ported from the Vote sculptor) ----
 var DEFAULT_ARC=["Labour","Green","Te Pāti Māori","Opportunity (TOP)","Others (below 5%)","NZ First","National","ACT"],arcAnim={},arcRaf=0;
 function arcOrder(){var o=st.arcOrder;return Array.isArray(o)&&o.length===DEFAULT_ARC.length&&DEFAULT_ARC.every(function(n){return o.indexOf(n)>=0})?o:DEFAULT_ARC.slice()}
