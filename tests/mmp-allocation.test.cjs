@@ -77,4 +77,27 @@ test('Your-coalition suggestions follow the same rules as the blocs',()=>{
  for(const b of [left,right]){const s=set(b.names.filter(n=>(party(r,n)||{}).total));assert.deepEqual(Array.from(engine.partnersFor(r,s,engine.neverFor(s)),p=>p.name),Array.from(engine.blocPartners(r,b),p=>p.name))}
  assert.deepEqual(Array.from(engine.neverFor(set(['National','ACT']))),['Green','Te Pāti Māori']);assert.deepEqual(Array.from(engine.neverFor(set(['Labour']))),['ACT','NZ First']);assert.deepEqual(Array.from(engine.neverFor(set(['Green','ACT']))),[]);assert.deepEqual(Array.from(engine.neverFor(set(['ACT']))),['Green','Te Pāti Māori']);assert.deepEqual(Array.from(engine.neverFor(set(['Te Tai Tokerau Party']))),['ACT','NZ First']);assert.deepEqual(Array.from(engine.neverFor({})),[]);
 });
+vm.runInContext(html.slice(html.indexOf('// ---- paste parser'),html.indexOf('// ---- paste UI')),engine);
+test('Paste a poll understands common formats',()=>{
+ const P=t=>{const r=engine.parsePoll(t);return Object.fromEntries(Array.from(r.order,n=>[n,r.votes[n]]))};
+ const full={National:30,Labour:29,Green:12,ACT:9,'NZ First':9,'Te Pāti Māori':2,'Opportunity (TOP)':6};
+ assert.deepEqual(P('National 30, Labour 29, Green 12, ACT 9, NZ First 9, TPM 2, TOP 6'),full);
+ assert.deepEqual(P('National 30% (-1), Labour 29% (+2), Greens 12%, ACT 9% (▲1), NZ First 9%, Te Pāti Māori 2%, The Opportunity Party 6%'),full);
+ assert.deepEqual(P('National Party 30\nLabour Party 29\nGreen Party of Aotearoa New Zealand 12\nACT New Zealand 9\nNew Zealand First 9\nMāori Party 2\nThe Opportunity Party 6'),full);
+ assert.deepEqual(P('National\t30\nLabour\t29\nGreen\t12\nACT\t9\nNZ First\t9\nTe Pati Maori\t2\nTOP\t6'),full);
+ assert.deepEqual(P('NAT\tLAB\tGRN\tACT\tNZF\tTPM\tTOP\n30\t29\t12\t9\t9\t2\t6'),full);
+ assert.deepEqual(P('Date\tPolling organisation\tSample size\tNAT\tLAB\tGRN\tACT\tNZF\tTPM\tTOP\tLead\n10–14 Oct 2026\tVerian\t1,002\t30\t29\t12\t9\t9\t2\t6\t1'),full);
+ assert.deepEqual(P('30% National\n29% Labour\n12% Greens\n9% ACT\n9% NZ First\n2% TPM\n6% TOP'),full);
+ assert.deepEqual(P('1News–Verian poll, 28 Sept 2026: National 30, Labour 29, Greens 12, ACT 9, NZ First 9, TPM 2, TOP 6'),full);
+ assert.deepEqual(P('Labour 30\nNational 30\nOthers (below 5%) 4'),{Labour:30,National:30,'Others (below 5%)':4});
+ assert.deepEqual(P('NAT | LAB | GRN\n31 | 28 | 11.5'),{National:31,Labour:28,Green:11.5});
+});
+test('Paste a poll reports what it skipped and never guesses',()=>{
+ let r=engine.parsePoll("Labour 30, National 30, Undecided 12, Don't know 5");assert.deepEqual(Array.from(r.order),['Labour','National']);assert.deepEqual(Array.from(r.skipped),['Undecided','Dont know'.replace('Dont',"Don't")]);
+ r=engine.parsePoll('Labour 30, Labour 31');assert.equal(r.votes.Labour,30);assert.deepEqual(Array.from(r.dupes),['Labour']);
+ r=engine.parsePoll('Te Tai Tokerau Party 1, Labour 30');assert.deepEqual(Array.from(r.extras),['Te Tai Tokerau Party']);assert.ok(!('Te Tai Tokerau Party' in r.votes));
+ r=engine.parsePoll('Labour 300, National 30');assert.deepEqual(Array.from(r.order),['National']);assert.equal(r.bad.length,1);
+ r=engine.parsePoll('NAT\tLAB\n30\t29\n31\t28');assert.equal(r.votes.National,30);assert.ok(r.note);
+ assert.deepEqual(Array.from(engine.parsePoll('').order),[]);assert.deepEqual(Array.from(engine.parsePoll('hello world 42').order),[]);
+});
 console.log(`${checks} regression groups passed, including 200 conservation cases.`);

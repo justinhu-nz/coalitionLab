@@ -121,6 +121,9 @@ body.row-dragging,body.row-dragging *{cursor:grabbing!important;user-select:none
 .head-r{display:flex;align-items:baseline;gap:10px;min-width:0}.sort-btn{border:0;background:none;color:var(--accent);font-size:11.5px;font-weight:650;cursor:pointer;padding:0;white-space:nowrap}.sort-btn:hover{text-decoration:underline}
 /* electorate-only winners (no party vote input) */
 .eorow{display:grid;grid-template-columns:12px 10px minmax(0,1fr) 38px;column-gap:8px;align-items:center;padding:7px 0 6px;border-top:1px solid var(--line)}.eorow .swatch{grid-column:2;width:10px;height:10px;border-radius:50%}
+/* paste a poll */
+.paste-preview:empty{display:none}.paste-preview{margin-top:6px}.pp-chips{display:flex;flex-wrap:wrap;gap:4px}.pp{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:650;border:1px solid var(--line);border-radius:12px;padding:1px 7px;background:var(--panel2);font-variant-numeric:tabular-nums}.pp i{width:7px;height:7px;border-radius:50%}
+.pp-notes{font-size:11px;color:var(--muted);margin:5px 0 0;line-height:1.4}.pp-notes div+div{margin-top:2px}.pp-notes .warn{color:var(--warn)}.paste-keep{font-size:11.5px;color:var(--muted);display:flex;gap:5px;align-items:center;cursor:pointer}.paste .paste-msg{margin-top:4px}.btn:disabled{opacity:.45;cursor:not-allowed}.btn:disabled:hover{border-color:var(--line);color:inherit}.btn.primary:disabled:hover{color:#fff;filter:none}
 </style>
 </head>
 <body>
@@ -134,7 +137,7 @@ body.row-dragging,body.row-dragging *{cursor:grabbing!important;user-select:none
       <section class="panel">
         <div class="head"><h2 class="eyebrow">Party vote</h2><span class="head-r"><span class="sum" id="sum"></span><button type="button" class="sort-btn" id="sortVotes" title="Order rows by party vote, highest first">Sort by vote</button></span></div>
         <div class="wiki-msg" id="wikiMsg" hidden></div><div id="parties"></div><div id="electOnly"></div>
-        <details class="paste"><summary>Paste a poll</summary><textarea id="pasteBox" placeholder="Labour 30&#10;National 29&#10;Green 12&#10;ACT 9, NZ First 8, TOP 8, TPM 1"></textarea><div class="paste-row"><span class="paste-msg" id="pasteMsg">Names or abbreviations, one number each.</span><button class="btn primary" id="pasteBtn">Apply</button></div></details>
+        <details class="paste"><summary>Paste a poll</summary><textarea id="pasteBox" spellcheck="false" placeholder="Paste a poll in almost any form, e.g.&#10;National 30%, Labour 29%, Greens 12%, ACT 9…&#10;or a copied table with party headings"></textarea><div class="paste-preview" id="pastePreview" aria-live="polite"></div><div class="paste-row"><label class="paste-keep"><input type="checkbox" id="pasteKeep"> Keep parties I don’t list</label><button class="btn primary" id="pasteBtn" disabled>Apply</button></div><div class="paste-msg" id="pasteMsg">Names, full names or abbreviations · ⌘/Ctrl+Enter applies</div></details>
       </section>
       <section class="panel"><h2 class="eyebrow">Paths to majority</h2><div id="paths"></div><p style="margin:8px 0 0;font-size:10.5px;color:var(--muted)">Minimal winning combinations — maths, not compatibility. <span id="pathsTieNote"></span></p></section>
       <details class="panel sec"><summary><span class="eyebrow">Settings</span><span class="sum" id="setSum"></span></summary><div class="sec-body settings"><label>Threshold % <input type="number" id="thresh" min="0" step="0.1"></label><label>Nominal seats <input type="number" id="seats" min="1" step="1"></label><label class="check"><input type="checkbox" id="coattail"> Coat-tail (electorate win bypasses threshold)</label></div></details>
@@ -321,8 +324,58 @@ document.addEventListener("dragend",function(){dragName=null;$("laneCoal").class
 $("blocs").addEventListener("click",function(e){var b=e.target.closest("[data-bloc]");if(!b)return;BLOCS.forEach(function(x){if(x.id===b.dataset.bloc){st.bloc={};x.names.forEach(function(n){if((by(n)||{}).total)st.bloc[n]=true})}});render()});
 $("paths").addEventListener("click",function(e){var b=e.target.closest("[data-path]");if(!b)return;var pa=findPaths(res)[+b.dataset.path];st.bloc={};pa.members.forEach(function(p){st.bloc[p.name]=true});render()});
 document.querySelector(".top-actions").addEventListener("click",function(e){var b=e.target.closest("[data-preset]");if(!b)return;var k=b.dataset.preset;if(k==="clear")ROSTER.forEach(function(p){st.votes[p.name]=""});else{st.votes=Object.assign({},k==="2023"?ELECTION_2023:VERIAN);st.winners=Object.assign({},k==="2023"?MAORI_PRESETS[0].w:DEFAULT_WINNERS);if(k==="2023")MAORI.forEach(function(m){st.winners[m.seat]=m.seat==="Ikaroa-Rāwhiti"?"Labour":"Te Pāti Māori"});st.thresh=5;st.seats=120;st.coattail=true}st.bloc={};renderInputs();render()});
-var ALIASES={lab:"Labour",labour:"Labour",nat:"National",national:"National",nats:"National",grn:"Green",green:"Green",greens:"Green",act:"ACT",top:"Opportunity (TOP)",opportunity:"Opportunity (TOP)",nzf:"NZ First","nz first":"NZ First",nzfirst:"NZ First",tpm:"Te Pāti Māori","te pāti māori":"Te Pāti Māori","te pati maori":"Te Pāti Māori","maori party":"Te Pāti Māori",oth:"Others (below 5%)",other:"Others (below 5%)",others:"Others (below 5%)"};
-$("pasteBtn").addEventListener("click",function(){var txt=$("pasteBox").value,re=/([A-Za-zĀāēīōū ()]+?)\s*[:=\-–]?\s*(\d+(?:\.\d+)?)\s*%?/g,m,found={},n=0;while((m=re.exec(txt))){var key=m[1].trim().toLowerCase().replace(/\s+/g," ");var name=ALIASES[key]||ROSTER.map(function(p){return p.name}).filter(function(x){return x.toLowerCase()===key})[0];if(name){found[name]=parseFloat(m[2]);n++}}if(!n){$("pasteMsg").textContent="Couldn't find any parties — try “Labour 30”.";return}ROSTER.forEach(function(p){st.votes[p.name]=found[p.name]==null?"":found[p.name]});var s=Object.keys(found).reduce(function(a,k){return a+found[k]},0);if(found["Others (below 5%)"]==null&&s<100)st.votes["Others (below 5%)"]=+(100-s).toFixed(1);$("pasteMsg").textContent="Loaded "+n+" parties"+(found["Others (below 5%)"]==null&&s<100?" · Others set to remainder":"")+".";renderInputs();render()});
+// ---- paste parser (pure: text in, recognised party votes + notes out) ----
+function normName(x){return String(x).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[’'`]/g,"").replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").trim().replace(/^the /,"").replace(/ party$/,"")}
+var PASTE_KEYS={};(function(){function add(n,keys){keys.concat([n,abbr(n)]).forEach(function(k){PASTE_KEYS[normName(k)]=n})}
+  ROSTER.concat(EXTRA).forEach(function(p){add(p.name,[])});
+  add("Labour",["labor","nz labour","new zealand labour","labour nz"]);add("National",["nats","nz national","new zealand national","national nz"]);
+  add("Green",["greens","green party of aotearoa","green party of aotearoa new zealand","grns"]);add("ACT",["act new zealand","act nz"]);
+  add("NZ First",["nzfirst","new zealand first","nz 1st"]);add("Opportunity (TOP)",["opportunity","top","opp"]);
+  add("Te Pāti Māori",["te pati maori","maori","maori party","pati maori","te pati"]);add(OTHERS,["other","others","oth","minor","minor parties","other parties","all others"]);
+  add("Te Tai Tokerau Party",["te tai tokerau"]);add("Independent",["ind","independents"])})();
+// Longest-ending match: "28 Sept: National" -> National. Returns a canonical name or null.
+function resolveParty(raw){var w=normName(raw).split(" ").filter(Boolean);if(w.length>8)w=w.slice(-8);for(var k=0;k<w.length;k++){var key=w.slice(k).join(" ");if(PASTE_KEYS[key])return PASTE_KEYS[key]}return null}
+function pasteCells(line){if(/\t/.test(line))return line.split("\t").map(function(c){return c.trim()});if(/\s{2,}|[|;,]/.test(line))return line.split(/\s*(?:\s{2,}|[|;,])\s*/);return line.trim().split(/\s+/)}
+var PASTE_NUM=/^[<~≈]?\s*(\d+(?:\.\d+)?)\s*%?$/;
+function parsePoll(txt){var out={votes:{},order:[],skipped:[],dupes:[],extras:[],bad:[],mode:"",note:""};
+  function take(name,v,label){if(!isFinite(v))return;if(v<0||v>100){out.bad.push(label+" "+v);return}if(!name){out.skipped.push(label);return}if(EXTRA.some(function(x){return x.name===name})){if(out.extras.indexOf(name)<0)out.extras.push(name);return}if(name in out.votes){if(out.dupes.indexOf(name)<0)out.dupes.push(name);return}out.votes[name]=v;out.order.push(name)}
+  txt=String(txt||"").replace(/\(\s*below\s*\d+(?:\.\d+)?\s*%?\s*\)/gi,"")             // "Others (below 5%)"
+    .replace(/\(\s*[+\-−–±]\s*\d+(?:\.\d+)?\s*%?\s*(?:pts?|points?)?\s*\)/gi,"")            // change markers "(+2)", "(-1.5 pts)"
+    .replace(/[▲▼↑↓]\s*\d+(?:\.\d+)?/g,"");
+  var lines=txt.split(/\r?\n/).filter(function(l){return l.trim()});
+  // 1) table: a row of party headings, then a row of figures with the same number of cells
+  for(var i=0;i<lines.length;i++){var head=pasteCells(lines[i]);if(head.length<2||head.some(function(c){return PASTE_NUM.test(c)}))continue;var cols=head.map(resolveParty);if(cols.filter(Boolean).length<2)continue;
+    for(var j=i+1;j<lines.length;j++){var row=pasteCells(lines[j]);if(row.length!==head.length||row.filter(function(c){return PASTE_NUM.test(c)}).length<2)continue;
+      cols.forEach(function(name,c){var m=row[c].match(PASTE_NUM);if(name&&m)take(name,parseFloat(m[1]),head[c])});out.mode="table";
+      if(lines.slice(j+1).some(function(l){var r=pasteCells(l);return r.length===head.length&&r.filter(function(c){return PASTE_NUM.test(c)}).length>=2}))out.note="Used the first row of figures.";return out}}
+  // 2) name–number pairs, any separators, several per line; "30% Labour" lines work too
+  var NUM=/[<~≈]?(\d+(?:\.\d+)?)(?![\d.]*[a-z])\s*%?/gi;out.mode="pairs";
+  lines.forEach(function(line){var ms=[],m;NUM.lastIndex=0;while((m=NUM.exec(line)))ms.push({v:parseFloat(m[1]),at:m.index,end:m.index+m[0].length});if(!ms.length)return;
+    var lead=line.slice(0,ms[0].at).trim(),tail=line.slice(ms[ms.length-1].end);
+    if(ms.length===1&&!/[a-z]/i.test(lead)&&/[a-z]/i.test(tail)){take(resolveParty(tail),ms[0].v,tail.trim());return}
+    var prev=0;ms.forEach(function(x){var seg=line.slice(prev,x.at);prev=x.end;if(!/[a-z]/i.test(seg))return;var label=seg.replace(/^[\s,;:|=\-–—•*()\[\]]+|[\s,;:|=\-–—•*()\[\]]+$/g,"");take(resolveParty(seg),x.v,label)})});
+  return out}
+// ---- paste UI ----
+function pasteSum(r){return Object.keys(r.votes).reduce(function(a,n){return a+r.votes[n]},0)}
+function pastePreview(){var txt=$("pasteBox").value,r=parsePoll(txt),names=r.order,keep=$("pasteKeep").checked,box=$("pastePreview");$("pasteBtn").disabled=!names.length;if(!txt.trim()){box.innerHTML="";return r}
+  var sum=pasteSum(r),notes=[];
+  if(names.length){var s2=Math.round(sum*100)/100;if(keep)notes.push("Only these parties will change.");else{
+      if(!(OTHERS in r.votes)&&sum<100)notes.push("Σ "+s2+"% · Others will get the remaining "+Math.round((100-sum)*100)/100+"%");else if(sum>100.05)notes.push('<span class="warn">Adds to '+s2+"% — over 100 (Balance to 100% can fix it).</span>");else notes.push("Σ "+s2+"%");
+      var missing=ROSTER.filter(function(p){return!isOthers(p.name)&&!(p.name in r.votes)}).map(function(p){return abbr(p.name)});if(missing.length)notes.push("Not listed, will be cleared: "+missing.join(", "))}}
+  else notes.push('<span class="warn">No parties recognised yet — try “Labour 30”.</span>');
+  if(r.skipped.length)notes.push("Skipped: "+r.skipped.slice(0,6).map(esc).join(", ")+(r.skipped.length>6?"…":""));
+  if(r.extras.length)notes.push(r.extras.map(esc).join(", ")+" "+(r.extras.length>1?"have":"has")+" no party vote here — set electorate winners under Māori electorates.");
+  if(r.dupes.length)notes.push('<span class="warn">Listed twice, used the first: '+r.dupes.map(function(n){return esc(abbr(n))}).join(", ")+"</span>");
+  if(r.bad.length)notes.push('<span class="warn">Ignored impossible values: '+r.bad.map(esc).join(", ")+"</span>");
+  if(r.note)notes.push(esc(r.note));
+  box.innerHTML='<div class="pp-chips">'+names.map(function(n){return'<span class="pp" title="'+esc(n)+'"><i style="background:'+colorOf(n)+'"></i>'+esc(abbr(n))+" "+r.votes[n]+"</span>"}).join("")+'</div><div class="pp-notes">'+notes.map(function(x){return"<div>"+x+"</div>"}).join("")+"</div>";return r}
+function applyPaste(){var r=pastePreview(),names=r.order;if(!names.length){$("pasteMsg").textContent="Couldn’t find any parties — try “Labour 30”.";return}
+  var keep=$("pasteKeep").checked,sum=pasteSum(r),filled=null;
+  if(keep)names.forEach(function(n){st.votes[n]=r.votes[n]});
+  else{ROSTER.forEach(function(p){st.votes[p.name]=p.name in r.votes?r.votes[p.name]:""});if(!(OTHERS in r.votes)&&sum<100){filled=Math.round((100-sum)*100)/100;st.votes[OTHERS]=filled}}
+  renderInputs();render();$("pasteMsg").textContent="Applied "+names.length+(names.length===1?" party":" parties")+(filled!=null?" · Others set to "+filled+"%":"")+"."}
+$("pasteBox").addEventListener("input",pastePreview);$("pasteKeep").addEventListener("change",pastePreview);$("pasteBtn").addEventListener("click",applyPaste);
+$("pasteBox").addEventListener("keydown",function(e){if(e.key==="Enter"&&(e.metaKey||e.ctrlKey)){e.preventDefault();applyPaste()}});
 
 // ---- party row order (drag a grip, arrow keys on a grip, or Sort by vote). Others is not a party and stays last. ----
 var DEFAULT_ROWS=["National","Labour","Green","ACT","NZ First","Opportunity (TOP)","Te Pāti Māori"];
