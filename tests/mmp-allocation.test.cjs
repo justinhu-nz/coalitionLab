@@ -20,6 +20,13 @@ test('Independent reserves a seat, creates no overhang, and changes the tie cuto
  assert.equal(engine.coalitionTie(r,{Labour:true,Independent:true}).depends,true);
  assert.ok(engine.findPaths(r).some(p=>p.members.some(m=>m.name==='Independent')&&p.members.some(m=>m.name==='Labour')));
 });
+test('National general electorates beyond its entitlement become overhang',()=>{
+ const base=state({Labour:28.2,National:27.8,Green:16,ACT:11.4,'Opportunity (TOP)':5.6,'NZ First':8.8,'Te Pāti Māori':1.2});
+ const none=engine.compute(base),nat=party(none,'National').total;
+ const r=engine.compute({...base,natElect:nat+9});assert.equal(party(r,'National').elect,nat+9);assert.equal(party(r,'National').list,0);assert.equal(party(r,'National').overhang,9);assert.equal(r.house,none.house+9);assert.equal(members(r),r.house);
+ const under=engine.compute({...base,natElect:nat-5});assert.equal(party(under,'National').list,5);assert.equal(under.house,none.house);
+ assert.equal(engine.compute({...base,natElect:999}).parties.find(p=>p.name==='National').elect,64);
+});
 test('Multiple independents reserve multiple seats',()=>{
  const winners=Object.fromEntries(engine.MAORI.map(m=>[m.seat,'Independent'])),r=engine.compute(state({Labour:50,National:50},winners));
  assert.equal(r.allocationBase,113);assert.equal(r.independentSeats,7);assert.equal(r.house,120);assert.equal(members(r),120);assert.equal(r.overhang,0);

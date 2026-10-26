@@ -1,7 +1,8 @@
 // Run with: node tests/electorates.test.cjs
 // Evaluates electorates.html's engine block (between ==ENGINE== markers) with its embedded data.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
-const html=fs.readFileSync(path.join(__dirname,'..','electorates.html'),'utf8');
+const file=process.argv[2]||path.join(__dirname,'..','ignore me','electorates.html');
+const html=fs.readFileSync(file,'utf8');
 const data=html.match(/<script type="application\/json" id="seatData">([\s\S]*?)<\/script>/)[1];
 const engine=html.slice(html.indexOf('// ==ENGINE=='),html.indexOf('// ==/ENGINE=='));
 const ctx={D:JSON.parse(data)};vm.createContext(ctx);vm.runInContext(engine+'\nthis.E={PARTIES,DEFAULT_OPTS,prepSeat,seatPartyVote,forecastSeat,topTwo,allocateHouse,simulate,cand23};',ctx);

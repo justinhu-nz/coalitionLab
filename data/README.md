@@ -1,11 +1,11 @@
 # electorateLab data
 
-`electorates.html` embeds everything it needs. To rebuild:
+`ignore me/electorates.html` embeds everything it needs. To rebuild:
 
     # needs shapely + pyshp; reads 2023 results and boundaries from the booth-inspector repo
     python data/build/notional.py ../booth-inspector data/notional2023.json
     python3 data/build/candidates.py data/raw/wikipedia-candidates-2026.wiki data/candidates2026.json
-    python3 data/build/embed.py data/notional2023.json data/candidates2026.json electorates.html
+    python3 data/build/embed.py data/notional2023.json data/candidates2026.json "ignore me/electorates.html"
     node tests/electorates.test.cjs
 
 ## Inputs
