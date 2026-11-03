@@ -124,15 +124,40 @@ body.row-dragging,body.row-dragging *{cursor:grabbing!important;user-select:none
 /* paste a poll */
 .paste-preview:empty{display:none}.paste-preview{margin-top:6px}.pp-chips{display:flex;flex-wrap:wrap;gap:4px}.pp{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:650;border:1px solid var(--line);border-radius:12px;padding:1px 7px;background:var(--panel2);font-variant-numeric:tabular-nums}.pp i{width:7px;height:7px;border-radius:50%}
 .pp-notes{font-size:11px;color:var(--muted);margin:5px 0 0;line-height:1.4}.pp-notes div+div{margin-top:2px}.pp-notes .warn{color:var(--warn)}.paste-keep{font-size:11.5px;color:var(--muted);display:flex;gap:5px;align-items:center;cursor:pointer}.paste .paste-msg{margin-top:4px}.btn:disabled{opacity:.45;cursor:not-allowed}.btn:disabled:hover{border-color:var(--line);color:inherit}.btn.primary:disabled:hover{color:#fff;filter:none}
+/* scenarios: desktop-only column, no panel background */
+.scenarios{display:none}
+.brand{align-items:center}.scn-toggle{display:none;align-items:center;justify-content:center;width:30px;height:30px;padding:0;border:0;border-radius:8px;background:none;color:var(--muted);cursor:pointer}.scn-toggle:hover{color:var(--accent);background:var(--panel)}.scn-toggle[aria-pressed=true]{color:var(--accent);background:var(--accent-soft)}
+.scn-toggle .side{opacity:0;transition:opacity .2s}.scn-toggle[aria-pressed=true] .side{opacity:1}
+/* closed: an empty first track whose gap is cancelled by the negative margin, so the slide is a single track transition */
+@media(min-width:1400px){.scn-toggle{display:inline-flex}
+  .wrap{transition:max-width .28s ease}.wrap.scn-open{max-width:1620px}
+  .grid{grid-template-columns:0px 330px minmax(0,1fr) 300px;margin-left:-12px;transition:grid-template-columns .28s ease,margin-left .28s ease}.scn-open .grid{grid-template-columns:168px 330px minmax(0,1fr) 300px;margin-left:0}
+  .scenarios{display:block;position:sticky;top:16px;min-width:0;overflow:hidden;opacity:0;visibility:hidden;transform:translateX(-14px);transition:opacity .18s ease,transform .28s ease,visibility 0s linear .28s}
+  .scn-open .scenarios{opacity:1;visibility:visible;transform:none;transition:opacity .22s ease .06s,transform .28s ease,visibility 0s}
+  .scn-inner{width:168px;max-height:calc(100vh - 32px);overflow-y:auto;overscroll-behavior:contain}
+  .scn-instant,.scn-instant .grid,.scn-instant .scenarios{transition:none!important}}
+@media(min-width:1400px) and (prefers-reduced-motion:reduce){.wrap,.grid,.scenarios,.scn-open .scenarios{transition:none}}
+.scn-head{display:flex;justify-content:space-between;align-items:baseline;margin:6px 0 4px 10px}
+.scn-add{border:0;background:none;padding:0;color:var(--accent);font-size:11.5px;font-weight:650;cursor:pointer}.scn-add:disabled{opacity:.35;cursor:default}
+.scn{position:relative;padding:6px 4px 7px 10px;border-bottom:1px solid var(--line);cursor:pointer;border-radius:6px 6px 0 0}.scn:hover{background:var(--panel2)}.scn.on{cursor:default;background:none}
+.scn.on::before{content:"";position:absolute;left:0;top:7px;bottom:8px;width:3px;border-radius:2px;background:var(--accent)}
+.scn-top{display:flex;align-items:center;gap:4px;min-width:0}
+.scn-name{flex:1;min-width:0;font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}input.scn-name{border:1px solid transparent;background:transparent;padding:0 3px;margin:-1px -4px;border-radius:4px}input.scn-name:hover,input.scn-name:focus{border-color:var(--line);background:var(--panel)}
+.scn-acts{display:flex;gap:2px;flex:0 0 auto}.scn-acts button{border:0;background:none;padding:0 3px;color:var(--muted);font-size:12px;line-height:1;cursor:pointer}.scn-acts button:hover{color:var(--accent)}.scn-acts button:disabled{opacity:.3;cursor:default;color:var(--muted)}
+.scn-bar{display:flex;gap:1px;height:5px;border-radius:3px;overflow:hidden;margin:5px 0 3px;background:var(--line)}.scn-bar i{display:block;min-width:0}
+.scn-meta{font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.scn-meta b{color:var(--ink);font-weight:700}.scn-meta .good{color:var(--good)}
+.scn-undo{display:flex;justify-content:space-between;align-items:center;gap:6px;margin:2px 0 4px 10px;padding:5px 8px;border-radius:6px;background:var(--accent-soft);font-size:11px;min-width:0}.scn-undo span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.scn-undo button{border:0;background:none;padding:0;color:var(--accent);font-weight:700;font-size:11px;cursor:pointer}
+.scn-coal{font-size:10.5px;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.scn-coal .good{color:var(--good);font-weight:650}.scn-coal .warn{color:var(--warn);font-weight:650}
 </style>
 </head>
 <body>
 <main class="wrap">
   <header class="top">
-    <div class="brand"><h1>coalition<span>Lab</span></h1></div>
+    <div class="brand"><button class="scn-toggle" id="scnToggle" type="button" aria-pressed="false" aria-controls="scnPane" aria-label="Scenarios" title="Show saved scenarios to compare"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect x="1.75" y="2.75" width="14.5" height="12.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6.5 3v12" stroke="currentColor" stroke-width="1.5"/><rect class="side" x="2.5" y="3.5" width="4" height="11" rx="1.5" fill="currentColor"/></svg></button><h1>coalition<span>Lab</span></h1></div>
     <div class="top-actions"><button class="btn primary" id="wikiBtn" title="Fetch the newest polls">↻ Grab latest polls</button><button class="btn" data-preset="verian">Verian 28 Sept</button><button class="btn" data-preset="2023">2023 election</button><button class="btn" data-preset="clear">Clear</button><button class="btn" id="copyLink" title="Copy a link to these party vote figures and electorate winners">🔗 Copy link</button><button class="btn" id="themeBtn" aria-label="Toggle theme">◐</button></div>
   </header>
   <div class="grid">
+    <aside class="scenarios" id="scnPane" aria-labelledby="scnTitle"><div class="scn-inner"><div class="scn-head"><h2 class="eyebrow" id="scnTitle" title="Each scenario keeps its own votes, electorates, settings, swing and coalition">Scenarios</h2><button type="button" class="scn-add" id="scnAdd" aria-label="New scenario">+ New</button></div><div id="scnList"></div></div></aside>
     <aside class="rail">
       <section class="panel">
         <div class="head"><h2 class="eyebrow">Party vote</h2><span class="head-r"><span class="sum" id="sum"></span><button type="button" class="sort-btn" id="sortVotes" title="Order rows by party vote, highest first">Sort by vote</button></span></div>
@@ -262,14 +287,14 @@ function render(){var sv=swungVotes();res=compute(Object.assign({},st,{votes:sv.
   var sum=ROSTER.reduce(function(a,p){return a+(parseFloat(st.votes[p.name])||0)},0),left=100-sum;$("sum").textContent="Σ "+fmt(sum,1)+"% · "+fmt(Math.abs(left),1)+(left>=0?" left":" over");$("sum").classList.toggle("bad",left<-.05);
   document.querySelectorAll("[data-stat]").forEach(function(el){var s=statusOf(by[el.dataset.stat]);el.className="pstat "+s[0];el.textContent=s[1]});document.querySelectorAll("[data-seats]").forEach(function(el){el.textContent=(by[el.dataset.seats]||{total:0}).total});document.querySelectorAll('#parties input[type=range]').forEach(function(r){if(document.activeElement!==r)r.value=parseFloat(st.votes[r.dataset.name])||0;r.style.setProperty('--fill',Math.min(100,r.value/r.max*100)+'%')});
   var mo=res.parties.filter(function(p){return p.overhang>0});$("maori").innerHTML=maoriHTML(st);renderNat();$("maoriPill").className="pill"+(res.overhang?" over":"");$("maoriPill").textContent=res.overhang?"+"+res.overhang+" overhang":"no overhang";$("setSum").textContent=fmt(res.thresh,1)+"% · "+res.seats+" seats";
-  if(res.incomplete){renderIncomplete();saveState(KEY,st);return}
+  if(res.incomplete){renderIncomplete();saveState(KEY,st);renderScenarios();return}
   $("lanes").hidden=false;$("meterTick").hidden=false;
   $("house").innerHTML=res.house+"<small>seats · majority "+res.majority+"</small>";$("pills").innerHTML=(res.overhang?'<span class="pill over">+'+res.overhang+' overhang</span>':'')+'<span class="pill">'+res.parties.filter(function(p){return p.total>0}).length+' parties</span>';
   $("overNote").textContent=(res.independentSeats?res.independentSeats+" independent electorate seat"+(res.independentSeats===1?"":"s")+" reserved; parties share "+res.allocationBase+" proportional seats. ":"")+(res.overhang?"Ringed seats are overhang: "+mo.map(function(p){return p.name+" +"+p.overhang}).join(", ")+" — the House grows past "+res.seats+".":"");
   var lo=laneOrder(),active=Object.keys(st.bloc).length>0;drawHemi($("hemi"),res,lo.filter(function(p){return st.bloc[p.name]}).concat(lo.filter(function(p){return!st.bloc[p.name]})),{dim:function(p){return active&&!st.bloc[p.name]}});
   document.querySelectorAll('#parties input[type=number]').forEach(function(n){if(document.activeElement!==n)n.value=st.votes[n.dataset.name]==null?"":st.votes[n.dataset.name]});
   var arcOn=st.view==="arc";$("hemi").style.display=arcOn?"none":"";$("arcWrap").hidden=!arcOn;document.querySelectorAll(".viewsw button").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.view===(arcOn?"arc":"seats")))});if(arcOn)renderArc(false);
-  renderElectOnly();renderLanes(lo);renderTable();renderInsight();renderTie();saveState(KEY,st)}
+  renderElectOnly();renderLanes(lo);renderTable();renderInsight();renderTie();saveState(KEY,st);renderScenarios()}
 // No eligible positive votes: keep editable inputs and expose the missing allocation explicitly.
 function renderIncomplete(){
   $("house").innerHTML='—<small>allocation incomplete</small>';
@@ -483,7 +508,57 @@ function applyShareHash(){var h=location.hash.replace(/^#/,"");if(!h)return fals
 function copyText(text){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(text);return new Promise(function(ok,fail){var a=document.createElement("textarea");a.value=text;a.setAttribute("readonly","");a.style.position="fixed";a.style.opacity="0";document.body.appendChild(a);a.select();var done=false;try{done=document.execCommand("copy")}catch(e){}a.remove();done?ok():fail(new Error("copy blocked"))})}
 var copyTimer=0;
 $("copyLink").addEventListener("click",function(){var btn=$("copyLink"),url=location.href.split("#")[0]+"#"+shareHash();copyText(url).then(function(){btn.textContent="✓ Link copied";clearTimeout(copyTimer);copyTimer=setTimeout(function(){btn.textContent="🔗 Copy link"},1800)},function(){wikiMsg('Copy this link: <input type="text" readonly value="'+esc(url)+'" style="width:100%;margin-top:4px" onclick="this.select()">')})});
-window.addEventListener("hashchange",function(){if(applyShareHash()){renderInputs();render();wikiMsg("Loaded figures from a shared link.")}});
+window.addEventListener("hashchange",function(){if(applyShareHash()){scnFromLink();renderInputs();render();wikiMsg("Loaded figures from a shared link as a new scenario.")}});
+
+// ---- scenarios: discrete saved versions of every input. The active one lives in st; the rest are stored snapshots. ----
+// Mutate st in place (never reassign it): bindMaori and other handlers hold the st object.
+var SCN_KEY="coalitionlab-scenarios",SCN_FIELDS=["votes","winners","thresh","seats","coattail","natElect","swing","swingSides","bloc"],SCN_MAX=8,scnCache={};
+function snapshot(){var s={};SCN_FIELDS.forEach(function(k){if(st[k]!==undefined)s[k]=JSON.parse(JSON.stringify(st[k]))});return s}
+function loadInto(s){var d={votes:{},winners:DEFAULT_WINNERS,thresh:5,seats:120,coattail:true,natElect:NAT_GENERAL_2023,swing:0,swingSides:{},bloc:{}};SCN_FIELDS.forEach(function(k){st[k]=JSON.parse(JSON.stringify(s[k]!==undefined?s[k]:d[k]))})}
+// No saved list yet: the current state becomes the first scenario, so nothing already saved is lost.
+// A damaged entry is dropped on its own; a missing active id falls back to the first scenario rather than discarding the list.
+function readScenarios(){try{var x=JSON.parse(localStorage.getItem(SCN_KEY)),seen={},list=(x&&Array.isArray(x.list)?x.list:[]).filter(function(s){var ok=s&&typeof s.id==="string"&&/^s\d+$/.test(s.id)&&!seen[s.id]&&s.state&&typeof s.state==="object"&&!Array.isArray(s.state);if(ok){seen[s.id]=true;s.name=String(s.name==null?"":s.name).slice(0,40)||"Scenario "+s.id.slice(1)}return ok});
+  if(list.length)return{active:seen[x.active]?x.active:list[0].id,next:Math.max(x.next|0,1+Math.max.apply(null,list.map(function(s){return+s.id.slice(1)}))),list:list}}catch(e){}return null}
+function loadScenarios(){return readScenarios()||{active:"s1",next:2,list:[{id:"s1",name:"Scenario 1",state:snapshot()}]}}
+var scn=loadScenarios();loadInto(activeScn().state);
+function activeScn(){return scn.list.filter(function(s){return s.id===scn.active})[0]}
+function saveScenarios(){activeScn().state=snapshot();try{localStorage.setItem(SCN_KEY,JSON.stringify(scn))}catch(e){}}
+function addScenario(name,state){var id="s"+scn.next,s={id:id,name:name||"Scenario "+scn.next,state:state};scn.next++;scn.list.push(s);return s}
+// Called after a shared link has filled st: keep it as its own scenario and leave the previous one as it was.
+function scnFromLink(){scn.active=addScenario("Shared link",snapshot()).id}
+// Messages about the previous scenario's poll or link would be misleading after a switch.
+function enterScenario(){loadInto(activeScn().state);order=null;$("wikiMsg").hidden=true;$("pasteMsg").textContent="Names, full names or abbreviations · ⌘/Ctrl+Enter applies";if($("pasteBox").value.trim())pastePreview();renderInputs()}
+function switchTo(id){if(id===scn.active||!scn.list.some(function(s){return s.id===id}))return;saveScenarios();scnUndo=null;scn.active=id;enterScenario();render()}
+// The same result render() shows (swing included) for a stored scenario, cached until that scenario changes.
+function scnResult(s){if(s.id===scn.active)return res;var key=JSON.stringify(s.state),c=scnCache[s.id];if(c&&c.key===key)return c.r;var keep=snapshot(),r;loadInto(s.state);try{r=compute(Object.assign({},st,{votes:swungVotes().votes}))}finally{loadInto(keep)}scnCache[s.id]={key:key,r:r};return r}
+function scnCard(s){var on=s.id===scn.active,r=scnResult(s),bloc=s.state.bloc||{},vs=s.state.votes||{},sw=parseFloat(s.state.swing)||0;
+  var top=ROSTER.filter(function(p){return!isOthers(p.name)&&parseFloat(vs[p.name])>0}).sort(function(a,b){return parseFloat(vs[b.name])-parseFloat(vs[a.name])}).map(function(p){return abbr(p.name)+" "+fmt(parseFloat(vs[p.name]),1)}).join(" · ")||"No party votes";
+  var html='<div class="scn'+(on?' on':'')+'" data-scn="'+s.id+'" title="'+esc(top+(sw?" · swing "+fmt(Math.abs(sw),1)+(sw<0?" left":" right"):""))+'"'+(on?'':' tabindex="0" role="button" aria-label="Switch to '+esc(s.name)+'"')+'><div class="scn-top">'+(on?'<input class="scn-name" id="scnName" value="'+esc(s.name)+'" maxlength="40" aria-label="Scenario name"><span class="scn-acts"><button type="button" data-scn-act="dup" title="'+(scn.list.length>=SCN_MAX?'Up to '+SCN_MAX+' scenarios':'Duplicate')+'" aria-label="Duplicate scenario"'+(scn.list.length>=SCN_MAX?' disabled':'')+'>⧉</button><button type="button" data-scn-act="del" title="Delete" aria-label="Delete scenario"'+(scn.list.length<2?' disabled':'')+'>×</button></span>':'<span class="scn-name">'+esc(s.name)+'</span>')+'</div>';
+  if(r.incomplete)return html+'<div class="scn-meta" style="margin-top:3px">Allocation incomplete</div></div>';
+  var members=r.parties.filter(function(p){return bloc[p.name]&&p.total>0}),sum=blocSum(r,bloc),t=members.length?coalitionTie(r,bloc):null,gap=r.majority-sum;
+  html+='<div class="scn-bar">'+r.parties.filter(function(p){return p.total>0}).map(function(p){return'<i style="flex:'+p.total+' 1 0;background:'+p.color+'" title="'+esc(p.name)+' '+p.total+'"></i>'}).join("")+'</div><div class="scn-meta" title="'+r.house+' seats, majority '+r.majority+(r.overhang?', +'+r.overhang+' overhang':'')+'"><b>'+r.house+'</b> · '+BLOCS.map(function(b){var n=r.parties.reduce(function(a,p){return a+(b.names.indexOf(p.name)>=0?p.total:0)},0);return'<span class="'+(n>=r.majority?'good':'')+'" title="'+esc(b.label)+'">'+b.id.charAt(0).toUpperCase()+' '+n+'</span>'}).join(" · ")+'</div>';
+  if(members.length)html+='<div class="scn-coal">'+members.map(function(p){return esc(abbr(p.name))}).join("+")+' '+sum+' · '+(t&&t.depends?'<span class="warn">tie</span>':gap<=0?'<span class="good">governs</span>':'<span class="warn">'+gap+' short</span>')+'</div>';
+  return html+'</div>'}
+function renderScenarios(noSave){if(!noSave)saveScenarios();$("scnList").innerHTML=(scnUndo?'<div class="scn-undo" role="status"><span title="'+esc(scnUndo.s.name)+'">Deleted “'+esc(scnUndo.s.name)+'”</span><button type="button" data-scn-act="undo">Undo</button></div>':'')+scn.list.map(scnCard).join("");$("scnAdd").disabled=scn.list.length>=SCN_MAX;$("scnAdd").title=scn.list.length>=SCN_MAX?"Up to "+SCN_MAX+" scenarios":"New scenario, copied from the current one"}
+// Delete at once and offer Undo instead of confirm(), which returns false wherever dialogs are blocked.
+var scnUndo=null,scnUndoTimer=0;
+function deleteScenario(id){if(scn.list.length<2)return;var s=scn.list.filter(function(x){return x.id===id})[0];if(!s)return;saveScenarios();var i=scn.list.indexOf(s);scn.list.splice(i,1);delete scnCache[id];scnUndo={s:s,at:i};clearTimeout(scnUndoTimer);scnUndoTimer=setTimeout(function(){if(scnUndo&&scnUndo.s===s){scnUndo=null;renderScenarios(true)}},8000);if(id===scn.active){scn.active=scn.list[Math.max(0,i-1)].id;enterScenario()}render()}
+function undoDelete(){var u=scnUndo;if(!u)return;scnUndo=null;saveScenarios();scn.list.splice(Math.min(u.at,scn.list.length),0,u.s);scn.active=u.s.id;enterScenario();render()}
+function focusScnName(select){var n=$("scnName");if(n){n.focus();if(select&&n.select)n.select()}}
+// Another tab changed the saved list: adopt it but keep this tab's current scenario (re-adding it if deleted there). Not saved here, so tabs never ping-pong;
+// not redrawn while the name box has focus, so typing isn't interrupted.
+window.addEventListener("storage",function(e){if(e.key!==SCN_KEY)return;var x=readScenarios();if(!x)return;var mine=activeScn(),cur=x.list.filter(function(s){return s.id===mine.id})[0];mine.state=snapshot();var typing=document.activeElement&&document.activeElement.id==="scnName";if(cur){cur.state=mine.state;if(typing)cur.name=mine.name}else x.list.push(mine);x.active=mine.id;x.next=Math.max(x.next,scn.next);scn=x;if(!typing)renderScenarios(true)});
+// Show/hide is a per-viewer preference; hidden unless the viewer opened it before.
+function setScnOpen(open){document.querySelector(".wrap").classList.toggle("scn-open",open);$("scnToggle").setAttribute("aria-pressed",String(open));$("scnToggle").title=open?"Hide scenarios":"Show saved scenarios to compare";try{localStorage.setItem("coalitionlab-scn-open",open?"1":"0")}catch(e){}}
+$("scnToggle").addEventListener("click",function(){setScnOpen($("scnToggle").getAttribute("aria-pressed")!=="true")});
+(function(){var open=false,w=document.querySelector(".wrap");try{open=localStorage.getItem("coalitionlab-scn-open")==="1"}catch(e){}w.classList.add("scn-instant");setScnOpen(open);requestAnimationFrame(function(){requestAnimationFrame(function(){w.classList.remove("scn-instant")})})})();
+$("scnAdd").addEventListener("click",function(){if(scn.list.length>=SCN_MAX)return;saveScenarios();scnUndo=null;scn.active=addScenario(null,snapshot()).id;render()});
+$("scnList").addEventListener("click",function(e){var a=e.target.closest("[data-scn-act]");if(a){var act=a.dataset.scnAct;if(act==="dup"){if(scn.list.length>=SCN_MAX)return;saveScenarios();scnUndo=null;scn.active=addScenario(activeScn().name.slice(0,33)+" (copy)",snapshot()).id;render();focusScnName(true)}else if(act==="undo"){undoDelete();focusScnName()}else{deleteScenario(scn.active);var u=$("scnList").querySelector('[data-scn-act="undo"]');if(u&&u.focus)u.focus()}return}if(e.target.closest("input"))return;var c=e.target.closest("[data-scn]");if(c)switchTo(c.dataset.scn)});
+$("scnList").addEventListener("keydown",function(e){var c=e.target.closest("[data-scn]");if(!c||e.target.closest("input,button")||(e.key!=="Enter"&&e.key!==" "))return;e.preventDefault();var id=c.dataset.scn;switchTo(id);var again=$("scnList").querySelector('[data-scn="'+id+'"] input');if(again)again.focus()});
+// Renaming saves without re-rendering, so the name box keeps focus and a click on another card still lands.
+$("scnList").addEventListener("input",function(e){if(e.target.id!=="scnName")return;activeScn().name=e.target.value;saveScenarios()});
+$("scnList").addEventListener("keydown",function(e){if(e.target.id==="scnName"&&e.key==="Enter"){e.preventDefault();e.target.blur()}});
+$("scnList").addEventListener("change",function(e){if(e.target.id!=="scnName")return;var v=e.target.value.trim();if(!v)e.target.value=v="Scenario "+(scn.list.indexOf(activeScn())+1);activeScn().name=v;saveScenarios()});
 
 // ---- latest poll from Wikipedia (fiddly by nature: parses the live table) ----
 var WIKI_PAGE="Opinion_polling_for_the_2026_New_Zealand_general_election",WIKI_COLS={NAT:"National",LAB:"Labour",GRN:"Green",ACT:"ACT",NZF:"NZ First",TPM:"Te Pāti Māori",OPP:"Opportunity (TOP)",TOP:"Opportunity (TOP)",OTHERS:"Others (below 5%)",OTHER:"Others (below 5%)"};
@@ -508,7 +583,7 @@ $("wikiBtn").addEventListener("click",function(){var btn=$("wikiBtn");btn.disabl
   fetch("https://en.wikipedia.org/w/api.php?action=parse&page="+WIKI_PAGE+"&prop=text&format=json&formatversion=2&origin=*").then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(function(j){
     if(!j.parse)throw new Error(j.error&&j.error.info||"no page content");wikiPolls=parseLatestPolls(j.parse.text,6);if(!wikiPolls.length)throw new Error("couldn't find a usable poll row — the table layout may have changed");showPollPicker()
   }).catch(function(e){wikiMsg("Couldn't load polls: "+esc(e.message)+". Your numbers are unchanged.",true)}).then(function(){btn.disabled=false;btn.textContent="↻ Grab latest polls"})});
-initTheme($("themeBtn"));var fromLink=applyShareHash();renderInputs();render();if(fromLink)wikiMsg("Loaded figures from a shared link.");
+initTheme($("themeBtn"));var fromLink=applyShareHash();if(fromLink)scnFromLink();renderInputs();render();if(fromLink)wikiMsg("Loaded figures from a shared link as a new scenario.");
 })();
 </script>
 </body>
