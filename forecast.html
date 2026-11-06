@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>coalitionLab Forecast</title>
+<style>
+:root{--bg:#f6f7f9;--panel:#fff;--panel2:#fbfcfd;--ink:#15181d;--muted:#5b6472;--line:#e3e6eb;--accent:#0a5ad6;--accent-soft:#e7f0ff;--over:#8a1c9e;--shadow:0 1px 2px rgba(20,25,35,.06),0 10px 30px rgba(20,25,35,.06);--radius:14px;--left:#d1352b;--right:#1f6fd6;--king:#b07800;--hung:#8a1c9e}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b0e13;--panel:#141a22;--panel2:#0f151c;--ink:#e7ebf0;--muted:#9aa4b2;--line:#232b36;--accent:#5a9bff;--accent-soft:#16233a;--over:#d67cff;--shadow:0 1px 2px rgba(0,0,0,.5),0 14px 40px rgba(0,0,0,.45);--left:#e5534b;--right:#4d8ef0;--king:#b07c0a;--hung:#b86ad8}}
+:root[data-theme=dark]{--bg:#0b0e13;--panel:#141a22;--panel2:#0f151c;--ink:#e7ebf0;--muted:#9aa4b2;--line:#232b36;--accent:#5a9bff;--accent-soft:#16233a;--over:#d67cff;--shadow:0 1px 2px rgba(0,0,0,.5),0 14px 40px rgba(0,0,0,.45);--left:#e5534b;--right:#4d8ef0;--king:#b07c0a;--hung:#b86ad8}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink)}body{font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}button{font:inherit;color:inherit}button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:18px 16px 60px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.brand{display:flex;align-items:baseline;gap:10px}.brand h1{font-size:21px;margin:0;letter-spacing:-.02em;font-weight:680}.brand h1 span{color:var(--accent)}.badge{font-size:12px;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:2px 9px;border-radius:20px}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:6px 11px;cursor:pointer;font-size:12.5px;font-weight:600;text-decoration:none;color:var(--ink);display:inline-block}.btn:hover{border-color:var(--accent);color:var(--accent)}
+.top-actions{display:flex;gap:6px;align-items:center}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-bottom:16px;min-width:0}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:650;margin:0 0 6px}
+h2{font-size:19px;letter-spacing:-.015em;margin:0 0 4px}.sub{color:var(--muted);font-size:13.5px;margin:0 0 14px;max-width:70ch}
+.num{font-variant-numeric:tabular-nums}
+.swatch{width:11px;height:11px;border-radius:3px;display:inline-block;flex:0 0 auto;vertical-align:-1px;margin-right:6px}
+/* hero */
+.hero h2{font-size:clamp(22px,4vw,32px);line-height:1.15;letter-spacing:-.03em;max-width:24ch;margin-bottom:10px}
+.odds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 14px}
+.odd{border-top:4px solid var(--c);padding-top:8px;min-width:0}.odd b{display:block;font-size:clamp(26px,5vw,40px);font-weight:760;letter-spacing:-.04em;line-height:1.05}.odd b small{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:0;margin-left:3px}.odd span{display:block;font-size:13px;font-weight:650}.odd em{display:block;font-style:normal;font-size:12px;color:var(--muted);line-height:1.35;margin-top:2px}
+.stack{display:flex;height:14px;border-radius:7px;overflow:hidden;gap:2px;background:var(--panel)}.stack i{display:block;height:100%;min-width:0}
+.meta{font-size:12px;color:var(--muted);margin-top:10px}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.chip{border:1px solid var(--line);background:var(--panel2);border-radius:20px;padding:5px 11px;font-size:12px;font-weight:600;cursor:pointer}.chip:hover{border-color:var(--accent);color:var(--accent)}.chip[aria-pressed=true]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}.chip small{font-weight:500;color:var(--muted);margin-left:4px}
+.filter-note{font-size:12.5px;color:var(--muted);margin-top:10px}.filter-note b{color:var(--ink)}.filter-note.warn{color:var(--over)}
+/* you pick */
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em}
+.seats{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:10px;margin-bottom:14px}
+.seat{border:1px solid var(--line);border-radius:12px;padding:10px;background:var(--panel2);min-width:0;transition:border-color .2s}.seat.on{border-color:var(--ink)}
+.seat-h{display:flex;justify-content:space-between;align-items:baseline;gap:6px;margin-bottom:6px}.seat-h b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.seat-h span{font-size:9.5px;font-weight:700;color:var(--ink);white-space:nowrap}
+.seat .mbar{min-width:0;height:6px;margin-bottom:8px}
+.picks{display:flex;flex-wrap:wrap;gap:4px}.picks button{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:3px 7px;font-size:11.5px;font-weight:650;cursor:pointer;font-variant-numeric:tabular-nums}.picks button small{font-weight:500;color:var(--muted);margin-left:3px}.picks button:hover{border-color:var(--pc,var(--accent))}.picks button[aria-pressed=true]{background:var(--pc,var(--ink));border-color:var(--pc,var(--ink));color:var(--pc-ink,var(--bg))}.picks button[aria-pressed=true] small{color:rgba(255,255,255,.8)}
+.switches{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:12px;align-items:center}.switch{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:650}
+.segs{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}.segs button{border:0;background:var(--panel);padding:5px 10px;font-size:12px;font-weight:600;cursor:pointer;border-left:1px solid var(--line)}.segs button:first-child{border-left:0}.segs button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.more{font-size:11px;color:var(--muted);font-weight:650;margin-right:2px}
+.busy{opacity:.45;transition:opacity .2s}
+/* fox host */
+.host{display:flex;gap:14px;align-items:flex-end;margin-bottom:14px}
+.fox{width:168px;height:168px;flex:none;border-radius:20px;mix-blend-mode:multiply;transition:transform .3s}.fox.small{width:124px;height:124px}
+:root[data-theme=dark] .fox{mix-blend-mode:normal;background:#fff}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .fox{mix-blend-mode:normal;background:#fff}}
+.bubble{position:relative;flex:1;min-width:0;background:var(--panel2);border:1px solid var(--line);border-radius:18px;padding:14px 18px;margin-bottom:22px}
+.bubble:before{content:"";position:absolute;left:-9px;bottom:22px;width:16px;height:16px;background:var(--panel2);border-left:1px solid var(--line);border-bottom:1px solid var(--line);transform:rotate(45deg)}
+.bubble p{margin:0;font-size:15px;line-height:1.5}.bubble p+p{margin-top:6px}.bubble h2{margin:2px 0 6px}
+.huh{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:14px}.huh button{border:1px dashed var(--line);background:none;border-radius:20px;padding:5px 12px;font-size:12.5px;font-weight:600;cursor:pointer;color:var(--accent)}.huh button[aria-pressed=true]{border-style:solid;border-color:var(--accent);background:var(--accent-soft)}
+.explain{margin-top:12px}.explain .bubble{margin-bottom:12px}
+.nerd{margin-top:28px}.nerd>summary{list-style:none;cursor:pointer}.nerd>summary::-webkit-details-marker{display:none}
+.nerd>summary .bubble h2:after{content:" ▾";color:var(--muted);font-size:14px}.nerd[open]>summary .bubble h2:after{content:" ▴"}
+.nerd>summary:hover .bubble{border-color:var(--accent)}
+@media(max-width:560px){.fox{width:104px;height:104px}.fox.small{width:88px;height:88px}.host{gap:8px}.bubble{padding:12px 14px}.bubble p{font-size:14px}}
+/* edit panels */
+.ed-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.ed-head>div{min-width:0}
+.ed-btns{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.primary:hover{color:#fff;filter:brightness(1.08)}
+.ed-bar{display:flex;justify-content:flex-end;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.ed-msg{font-size:12.5px;color:var(--muted);margin-right:auto}.ed-msg.err{color:var(--left);font-weight:650}
+.edited{font-size:10.5px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:20px;padding:1px 8px;margin-left:6px;vertical-align:2px;letter-spacing:0;text-transform:none}
+.ein{width:58px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:4px 5px;text-align:right;font-variant-numeric:tabular-nums;font-size:12.5px}.ein.wide{width:100%;min-width:150px;text-align:left}.ein.date{width:128px;text-align:left}.ein.bad{border-color:var(--left);background:rgba(209,53,43,.08)}
+.msin{display:inline-flex;align-items:center;gap:4px;margin:2px 8px 2px 0;font-size:12px;font-weight:600}
+.del{border:0;background:none;color:var(--muted);cursor:pointer;font-size:16px;line-height:1;padding:2px 4px}.del:hover{color:var(--left)}
+.tune td:first-child{font-weight:600}.tune .hint{font-size:12px;color:var(--muted)}
+/* tug of war */
+.swarm{width:100%;height:auto;display:block;overflow:visible}.swarm .dotc{cursor:pointer;transition:transform .7s cubic-bezier(.2,.8,.2,1),fill .4s,opacity .5s}.swarm .dotc:hover,.swarm .dotc:focus{stroke:var(--ink);stroke-width:2;outline:none}.swarm .dotc.sel{stroke:var(--ink);stroke-width:3}
+.swarm text{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:11px;letter-spacing:.08em;fill:var(--muted)}.swarm .big{font-family:inherit;font-size:30px;font-weight:760;letter-spacing:-.03em}.swarm .bigl{font-family:inherit;font-size:13px;letter-spacing:0;font-weight:600;fill:var(--ink)}
+@media(prefers-reduced-motion:reduce){.swarm .dotc{transition:none}}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;margin:12px 0 0}.legend span{display:inline-flex;align-items:center}
+.detail{margin-top:18px;border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:start}
+.detail h3{font-size:16px;margin:0 0 4px}.detail p{margin:0 0 10px;font-size:13.5px}
+.hemi{width:100%;height:auto;display:block}
+.seatlist{display:grid;grid-template-columns:1fr auto auto;gap:3px 12px;font-size:13px}.seatlist .h{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.seatlist .r{text-align:right;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:11px;font-weight:650;border-radius:20px;padding:1px 8px;color:#fff;background:var(--c)}
+/* histogram */
+.hist{width:100%;height:auto;display:block;overflow:visible}.hist text{font-size:11px;fill:var(--muted)}.hist .lbl{fill:var(--ink);font-weight:650}
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--panel2);border-left:4px solid var(--c)}
+.card h3{margin:0;font-size:15px}.card .pct{font-size:24px;font-weight:760;letter-spacing:-.03em}.card p{font-size:13px;margin:6px 0 0;color:var(--ink)}.card .muted{color:var(--muted)}
+.card button{margin-top:8px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.fact{border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0}.fact b{font-size:22px;font-weight:760;letter-spacing:-.03em;display:block}.fact span{font-size:12.5px;color:var(--muted);display:block;line-height:1.35}
+/* tables */
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:650;text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:middle}tr:last-child td{border-bottom:0}td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+.range{position:relative;height:10px;min-width:110px;background:var(--line);border-radius:5px}.range i{position:absolute;top:0;bottom:0;border-radius:5px;opacity:.55}.range b{position:absolute;top:-3px;bottom:-3px;width:3px;border-radius:2px;margin-left:-1px}.range .t{position:absolute;top:-4px;bottom:-4px;width:0;border-left:2px dashed var(--ink);opacity:.5}
+.mbar{display:flex;height:12px;border-radius:6px;overflow:hidden;gap:2px;min-width:80px}.mbar i{display:block;height:100%}
+.small{font-size:12px;color:var(--muted)}
+.method p,.method li{font-size:13.5px;max-width:75ch}.method ul{padding-left:18px}
+#tip{position:fixed;pointer-events:none;z-index:10;background:var(--ink);color:var(--bg);font-size:12px;line-height:1.4;padding:7px 9px;border-radius:8px;max-width:260px;box-shadow:var(--shadow)}
+.loading{padding:40px 0;text-align:center;color:var(--muted)}
+[hidden]{display:none!important}
+@media(max-width:760px){.odds{grid-template-columns:repeat(2,minmax(0,1fr))}.cards,.facts{grid-template-columns:1fr}.detail{grid-template-columns:1fr}.seats{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{padding:16px}.hs{display:none}}
+/* bigger fox, corner buddy, goodbye */
+.fox{width:190px;height:190px}.fox.small{width:150px;height:150px}.hero .fox{width:240px;height:240px}
+.buddy{position:fixed;right:14px;bottom:14px;z-index:20;display:flex;flex-direction:column;align-items:flex-end;gap:8px;pointer-events:none}
+.buddy img{width:130px;height:130px;background:#fff;border-radius:20px;box-shadow:var(--shadow);border:1px solid var(--line);pointer-events:auto;cursor:pointer;transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.buddy img:hover{transform:scale(1.06) rotate(-3deg)}
+.buddy-say{max-width:240px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:16px 16px 4px 16px;box-shadow:var(--shadow);padding:10px 14px;font-size:14px;line-height:1.4;pointer-events:auto;transition:opacity .3s,transform .3s}
+.buddy-say[hidden]{display:block!important;opacity:0;transform:translateY(8px);visibility:hidden}
+.buddy-x{position:absolute;top:-8px;right:-6px;width:24px;height:24px;border:1px solid var(--line);border-radius:50%;background:var(--panel);color:var(--muted);cursor:pointer;pointer-events:auto;line-height:1}
+.buddy.gone{display:none}
+.bye{text-align:center;padding:24px 0 10px}.bye img{width:200px;height:200px}.bye p{font-size:22px;font-weight:700;margin:12px 0 0}
+@media(max-width:760px){.hero .fox{width:150px;height:150px}.fox,.fox.small{width:110px;height:110px}.buddy img{width:84px;height:84px}.buddy-say{max-width:190px;font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><h1>coalition<span>Lab</span></h1><span class="badge">Forecast · Election 2026</span></div>
+    <div class="top-actions"><a class="btn" href="index.html">← Seat calculator</a><button class="btn" id="themeBtn" aria-label="Toggle theme">◐</button></div>
+  </header>
+
+  <section class="panel hero" aria-labelledby="heroTitle">
+    <div class="host">
+      <img class="fox" id="heroFox" src="good-gifs/jar-idle.gif" alt="" width="256" height="256">
+      <div class="bubble"><p class="eyebrow" id="heroEyebrow">Kia ora! I'm running the election 20,000 times…</p>
+        <h2 id="heroTitle">Hang on, counting votes…</h2>
+        <p id="heroSub"></p></div>
+    </div>
+    <div class="odds" id="odds"></div>
+    <div class="stack" id="stack" aria-hidden="true"></div>
+    <div class="huh" id="huh"><span class="small">Huh?</span></div>
+    <div class="explain" id="explain" hidden></div>
+    <p class="meta" id="meta"></p>
+  </section>
+
+  <section class="panel" aria-labelledby="swarmTitle">
+    <div class="host">
+      <img class="fox small" src="good-gifs/magnifier-hop.gif" alt="" width="256" height="256">
+      <div class="bubble"><p class="eyebrow">100 ways it could go</p><h2 id="swarmTitle">The tug of war</h2>
+        <p>Every dot is one election I simulated. Dots <b>left</b> of the line: Labour's side got more seats. Dots <b>right</b>: National's side did. The colour shows who actually gets to govern. Tap a dot to see that Parliament.</p></div>
+    </div>
+    <svg class="swarm" id="swarm" role="group" aria-label="100 simulated elections, placed by the seat gap between the blocs"></svg>
+    <div class="legend" id="dotLegend"></div>
+    <div class="detail" id="detail" hidden></div>
+  </section>
+
+  <section class="panel" aria-labelledby="pickTitle" id="pickPanel">
+    <div class="host">
+      <img class="fox small" id="pickFox" src="good-gifs/headphones-hop.gif" alt="" width="256" height="256">
+      <div class="bubble"><p class="eyebrow">Your turn</p><h2 id="pickTitle">Call a race and I'll redo the maths</h2>
+        <p id="pickSay">The Māori seats are where it gets wild. Pick who you reckon wins, hit <b>Re-run</b>, and I'll run all 20,000 elections again. The switches below work instantly.</p></div>
+    </div>
+    <div class="seats" id="seats"></div>
+    <div class="ed-bar" id="pickBar" style="margin:0 0 14px;border-top:0;padding-top:0" hidden></div>
+    <div class="switches" id="switches"></div>
+    <div class="filters" id="filters"></div>
+    <p class="filter-note" id="filterNote" aria-live="polite"></p>
+  </section>
+
+  <section class="panel" aria-labelledby="tuneTitle">
+    <div class="host">
+      <img class="fox small" src="good-gifs/calculator-hop.gif" alt="" width="256" height="256">
+      <div class="bubble"><p class="eyebrow">Assumptions</p><h2 id="tuneTitle">The model's dials<span class="edited" id="tuneEdited" hidden>Edited</span></h2>
+        <p>The judgement calls behind the forecast. Hit <b>Edit</b>, change any of them, then <b>Save and re-run</b>. Your edits stay in this browser only.</p></div>
+    </div>
+    <div class="ed-head"><div></div><div class="ed-btns" data-ed="tune"></div></div>
+    <div class="tw"><table class="tune" id="tuneTable"></table></div>
+    <div class="ed-bar" data-bar="tune" hidden></div>
+  </section>
+
+  <section class="panel" aria-labelledby="watchTitle">
+    <div class="host">
+      <img class="fox small" src="good-gifs/shades-idle.gif" alt="" width="256" height="256">
+      <div class="bubble"><p class="eyebrow">Keep an eye on</p><h2 id="watchTitle">Three things that could flip it</h2>
+        <p>Small stuff that ends up deciding a lot.</p></div>
+    </div>
+    <div class="facts" id="facts"></div>
+  </section>
+
+  <details class="nerd" id="nerd" open>
+    <summary><div class="host">
+      <img class="fox small" src="good-gifs/graduate-look.gif" alt="" width="256" height="256">
+      <div class="bubble"><p class="eyebrow">For the nerds</p><h2>Nerd corner</h2>
+        <p>Every chart, table and poll behind all this. You can edit the polls and the Māori seat numbers in here too. Click here to fold it away.</p></div>
+    </div></summary>
+
+  <section class="panel" aria-labelledby="histTitle">
+    <p class="eyebrow">How close it gets</p>
+    <h2 id="histTitle">Labour-led bloc: seats above or below a majority</h2>
+    <p class="sub">Labour + Greens + Te Pāti Māori (and Te Tai Tokerau Party, if it wins its seat). Bars to the right of the line are a left majority. Bars to the left are split by what happens instead.</p>
+    <svg class="hist" id="hist" role="img" aria-label="Distribution of the left bloc's margin over a majority"></svg>
+    <div class="legend" id="histLegend"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="scenTitle">
+    <p class="eyebrow">The scenarios</p>
+    <h2 id="scenTitle">How each outcome comes about</h2>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="partyTitle">
+    <p class="eyebrow">Parties</p>
+    <h2 id="partyTitle">Party vote and seats</h2>
+    <p class="sub">Bars show the middle 80% of simulations, with the median marked. The dashed line is the 5% threshold.</p>
+    <div class="tw"><table id="partyTable"></table></div>
+  </section>
+
+  <section class="panel" aria-labelledby="maoriTitle">
+    <div class="ed-head"><div><p class="eyebrow">Māori electorates</p>
+    <h2 id="maoriTitle">Who wins the seven Māori seats<span class="edited" id="maoriEdited" hidden>Edited</span></h2></div><div class="ed-btns" data-ed="maori"></div></div>
+    <p class="sub">These drive the overhang. Starting shares come from the Whakaata Māori–Curia electorate polls (Sept–Oct), with undecided voters removed. Those polls badly understated Te Pāti Māori in 2023, so the model gives TPM a 4-point boost on top.</p>
+    <div class="tw"><table id="maoriTable"></table></div>
+    <div class="ed-bar" data-bar="maori" hidden></div>
+  </section>
+
+  <section class="panel" aria-labelledby="pollTitle">
+    <div class="ed-head"><div><p class="eyebrow">Inputs</p>
+    <h2 id="pollTitle">Polls in the average<span class="edited" id="pollsEdited" hidden>Edited</span></h2></div><div class="ed-btns" data-ed="polls"></div></div>
+    <p class="sub" id="pollSub"></p>
+    <div class="tw"><table id="pollTable"></table></div>
+    <div class="ed-bar" data-bar="polls" hidden></div>
+  </section>
+
+
+  <section class="panel method" aria-labelledby="methodTitle">
+    <p class="eyebrow">Method</p>
+    <h2 id="methodTitle">How this works</h2>
+    <ul>
+      <li><b>Party vote.</b> A weighted average of polls from the last four weeks. Newer polls count more (weight halves every 7 days), bigger samples count more, and 1 News–Verian and Taxpayers' Union–Curia get a slight (10%) bump. Before averaging, each poll is corrected for its firm's <b>house effect</b>: how far that firm has leaned from the all-firm consensus over 2020–2026 (<a href="https://theoverhangaonz.substack.com/">The Overhang</a>). For example, Verian has run 1.5 points high on National and Reid Research 1.7 high on Labour. This corrects for which firms happen to have polled lately; it can't correct for all the pollsters missing in the same direction, which the polling error below covers.</li>
+      <li><b>Polling error.</b> Each simulation adds a shared swing between the blocs (typically ±1.5 points), error for each party scaled to its size (about ±2.2 points for Labour and National), and extra error for Te Pāti Māori and TOP, whose polling is least reliable. That roughly matches past misses: 1 News–Verian's final poll has averaged 1.2 points of error per party since 2002, but Labour and National were each out by 4–5 points in 2020.</li>
+      <li><b>Special votes.</b> Each simulation is counted twice. The final count includes special votes; the election-night count removes them. Their lean is the average of 2020 and 2023 (in 2023 the Greens rose 7.6% from night to final, TPM 18%, TOP 7%, while National fell 2.4% and NZ First 5.9%), scaled down by 30% because election-day enrolment, a big source of left-leaning specials, ended in 2026. Each simulation varies the lean by ±50%.</li>
+      <li><b>General electorates.</b> Only National's count matters for the outcome, because it decides whether National gets overhang seats. Each seat's 2023 notional party vote is swung toward the poll, converted into candidate votes using how each party's voters split their ticket in 2023 (62% of ACT voters and 30% of NZ First voters gave National their electorate vote), and each candidate keeps their 2023 personal vote. The same method as the electorates page.</li>
+      <li><b>Māori electorates.</b> Starting shares from the Whakaata Māori–Curia polls (see the table), noise of ±8 points per candidate, and a shared Te Pāti Māori swing averaging +4, so a good night for TPM tends to be good everywhere.</li>
+      <li><b>Seats.</b> The same Sainte-Laguë allocation, 5% threshold, electorate lifeline and overhang rules as the seat calculator. The code is shared.</li>
+      <li><b>Outcomes.</b> <i>Left</i> is Labour + Greens + Te Pāti Māori + Te Tai Tokerau Party. <i>Right</i> is National + ACT + NZ First. If neither has a majority but TOP or the independent can give one, that's <i>kingmaker</i>. Otherwise it's <i>deadlock</i>: only a cross-bloc deal or a new election.</li>
+    </ul>
+    <p class="small">Sources: <a href="https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election">party polls</a> · <a href="https://www.teaonews.co.nz/2026/11/02/whakaata-maori-curia-poll-recap-whos-leading-in-each-seat/">Whakaata Māori–Curia electorate polls</a> · <a href="https://newsroom.co.nz/2026/11/06/the-maori-electorates-what-to-watch-for-on-election-night/">Newsroom on the Māori seats</a> · <a href="https://publicaddress.net/legalbeagle/election-23-the-special-votes/">2023 special votes</a> · <a href="https://czlee.substack.com/p/projection-of-special-votes-for-2023">2020 special-vote ratios</a> · <a href="https://www.1news.co.nz/2026/08/28/i-dont-believe-your-poll-politicians-like-to-say-but-are-they-right/">1 News poll accuracy</a> · <a href="https://en.wikipedia.org/wiki/Electoral_Amendment_Act_2025">Electoral Amendment Act 2025</a> · <a href="https://www.1news.co.nz/2026/11/06/analysis-these-15-seats-could-decide-this-election/">1 News on National's overhang</a>.</p>
+    <p class="small">Not modelled: new candidates or retirements in general seats, Kerrin Leoni standing as an independent while on the ballot as Labour (treated as Labour), a lifeline electorate for TOP or NZ First, ACT or Greens overhang, or changes in electorate results between election night and the final count. The error sizes are set by hand to roughly match recent New Zealand misses, not fitted.</p>
+  </section>
+  </details>
+  <div class="bye"><img class="fox" src="good-gifs/wave-cheer.gif" alt="" width="256" height="256"><p>Haere rā! Go vote.</p></div>
+</div>
+<aside class="buddy" id="buddy" aria-live="polite"><div class="buddy-say" id="buddySay">Psst. Everything on this page is clickable.</div><img id="buddyFox" src="good-gifs/wave-cheer.gif" alt="Fox buddy" width="256" height="256"><button type="button" class="buddy-x" id="buddyX" aria-label="Hide the fox">×</button></aside>
+<div id="tip" hidden></div>
+<script>
+(function(){"use strict";
+// ---- shared data + engine (same maths as index.html) ----
+var ROSTER=[{name:"Labour",color:"#d1352b"},{name:"National",color:"#1f6fd6"},{name:"Green",color:"#2f9e44"},{name:"ACT",color:"#f0a020"},{name:"Opportunity (TOP)",color:"#0c8599"},{name:"NZ First",color:"#495057"},{name:"Te Pāti Māori",color:"#b5316b"},{name:"Others (below 5%)",color:"#868e96"}];
+var EXTRA=[{name:"Te Tai Tokerau Party",color:"#7048e8"},{name:"Independent",color:"#12b886"}];
+var ABBR={"Labour":"LAB","National":"NAT","Green":"GRN","ACT":"ACT","Opportunity (TOP)":"TOP","NZ First":"NZF","Te Pāti Māori":"TPM","Others (below 5%)":"OTH","Te Tai Tokerau Party":"TTT","Independent":"IND"};
+var MAORI=[{seat:"Te Tai Tokerau",holder:"Mariameno Kapa-Kingi",party:"Te Tai Tokerau Party"},{seat:"Te Tai Tonga",holder:"Tākuta Ferris",party:"N/A",brief:"Ferris left TPM and runs as an independent, so no winner is assumed.",note:"Ferris won Te Tai Tonga for Te Pāti Māori in 2023, was expelled from the party in 2025 and is recontesting as an independent. The 2023 result no longer tells us who holds it for any party, so no winner is assumed: N/A gives no one an electorate seat there."},{seat:"Hauraki-Waikato",holder:"Hana-Rāwhiti Maipi-Clarke",party:"Te Pāti Māori"},{seat:"Tāmaki Makaurau",holder:"Oriini Kaipara",party:"Te Pāti Māori"},{seat:"Te Tai Hauāuru",holder:"Debbie Ngarewa-Packer",party:"Te Pāti Māori"},{seat:"Waiariki",holder:"Rawiri Waititi",party:"Te Pāti Māori"},{seat:"Ikaroa-Rāwhiti",holder:"Cushla Tangaere-Manuel",party:"Labour"}];
+var VERIAN={"Labour":28.2,"National":27.8,"Green":16,"ACT":11.4,"Opportunity (TOP)":5.6,"NZ First":8.8,"Te Pāti Māori":1.2,"Others (below 5%)":1};
+var ELECTION_2023={"Labour":26.92,"National":38.08,"Green":11.6,"ACT":8.64,"Opportunity (TOP)":2.22,"NZ First":6.09,"Te Pāti Māori":3.08,"Others (below 5%)":3.37};
+var GENERAL_SEATS=64,NAT_GENERAL_2023=44;
+var DEFAULT_WINNERS={};MAORI.forEach(function(m){DEFAULT_WINNERS[m.seat]=m.party});
+function maoriPreset(tpm){var w={};MAORI.forEach(function(m){w[m.seat]=tpm.indexOf(m.seat)>=0?"Te Pāti Māori":"Labour"});return w}
+var HISTORICAL_WINNERS=maoriPreset(MAORI.filter(function(m){return m.seat!=="Ikaroa-Rāwhiti"}).map(function(m){return m.seat}));
+var MAORI_PRESETS=[{id:"current",label:"As 2023",title:"Historical benchmark: six TPM seats and Ikaroa-Rāwhiti for Labour",w:HISTORICAL_WINNERS},{id:"default",label:"Defaults",title:"Default scenario assumptions, not historical results",w:DEFAULT_WINNERS},{id:"tpm1",label:"TPM wins 1",title:"Te Pāti Māori holds Waiariki only; Labour wins the rest",w:maoriPreset(["Waiariki"])},{id:"judgement",label:"TPM wins 4",title:"Te Pāti Māori holds its four seats; Labour wins the rest",w:maoriPreset(["Waiariki","Te Tai Hauāuru","Hauraki-Waikato","Tāmaki Makaurau"])}];
+// "Others" is a catch-all for minor parties, not a party: it never qualifies, never wins seats, and its vote is wasted.
+// "N/A" = no winner assumed for an electorate: it adds no electorate seat to anyone.
+var NA="N/A";var OTHERS="Others (below 5%)";function isOthers(n){return n===OTHERS}
+var WINNER_PARTIES=ROSTER.filter(function(p){return!isOthers(p.name)}).concat(EXTRA);
+// never: parties the bloc is assumed never to govern with, so they are never suggested as partners.
+var BLOCS=[{id:"left",label:"Labour-led",names:["Labour","Green","Te Pāti Māori","Te Tai Tokerau Party"],never:["ACT","NZ First"]},{id:"right",label:"National-led",names:["National","ACT","NZ First"],never:["Green","Te Pāti Māori"]}];
+var $=function(id){return document.getElementById(id)},NS="http://www.w3.org/2000/svg";
+function colorOf(n){var a=ROSTER.concat(EXTRA);for(var i=0;i<a.length;i++)if(a[i].name===n)return a[i].color;return"#868e96"}
+function abbr(n){return ABBR[n]||n.slice(0,3).toUpperCase()}
+function meetsThreshold(pct,threshold){return pct>=threshold||sameQuotient(pct,threshold)}
+// Round only for display; show enough digits to distinguish a share below the threshold.
+function formatShare(pct,threshold){var digits=Math.abs(pct-threshold)<.1?2:1;while(digits<12&&meetsThreshold(Number(pct.toFixed(digits)),threshold)!==meetsThreshold(pct,threshold))digits++;return fmt(pct,digits)+"%"}
+function balanceShares(votes,names){var total=names.reduce(function(sum,name){return sum+(parseFloat(votes[name])||0)},0),balanced=Object.assign({},votes);if(total)names.forEach(function(name){balanced[name]=(parseFloat(votes[name])||0)*100/total});return balanced}
+function fmt(n,d){return(Number(n)||0).toLocaleString("en-NZ",{minimumFractionDigits:d,maximumFractionDigits:d})}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+// Compare with a small relative tolerance for floating-point arithmetic, not poll rounding.
+function sameQuotient(a,b){return Math.abs(a-b)<=Number.EPSILON*16*Math.max(Math.abs(a),Math.abs(b))}
+function allocate(ps,seats){var by={},i;ps.forEach(function(p){by[p.name]=0});if(!ps.length)return by;for(var s=0;s<seats;s++){var key=null,q=-1,v=-1;for(i=0;i<ps.length;i++){var p=ps[i],nx=p.votes/(2*by[p.name]+1);if((nx>q&&!sameQuotient(nx,q))||(sameQuotient(nx,q)&&p.votes>v)){key=p.name;q=nx;v=p.votes}}by[key]++}return by}
+// A boundary tie may span several final seats. Enumerate combinations of the tied parties.
+function boundaryTie(ps,seats,by){
+  if(!ps.length||seats<=0)return null;
+  var boundary=Infinity,fixed={},tied=[],used=0;
+  ps.forEach(function(p){if(by[p.name])boundary=Math.min(boundary,p.votes/(2*by[p.name]-1))});
+  ps.forEach(function(p){var n=0;while(n<seats){var q=p.votes/(2*n+1);if(q>boundary&&!sameQuotient(q,boundary))n++;else break}fixed[p.name]=n;used+=n;if(sameQuotient(p.votes/(2*n+1),boundary))tied.push(p.name)});
+  var remaining=seats-used;if(tied.length<2||remaining<=0||remaining>=tied.length)return null;
+  var choices=[];
+  function choose(at,n,names){if(!n){var counts=Object.assign({},fixed);names.forEach(function(name){counts[name]++});choices.push({awarded:names.slice(),by:counts,shown:ps.every(function(p){return counts[p.name]===by[p.name]})});return}for(var i=at;i<=tied.length-n;i++)choose(i+1,n-1,names.concat(tied[i]))}
+  choose(0,remaining,[]);choices.sort(function(a,b){return Number(b.shown)-Number(a.shown)});
+  return{names:tied,seatsAvailable:remaining,choices:choices};
+}
+function allocationResult(input,by,seats,thr){var over=0,independentSeats=0,parties=input.map(function(p){p=Object.assign({},p);if(p.name==="Independent"){independentSeats+=p.elect;p.entitlement=0;p.list=0;p.overhang=0;p.total=p.elect;p.color=colorOf(p.name);return p}p.entitlement=p.qualifies?(by[p.name]||0):0;if(p.elect>p.entitlement){p.list=0;p.overhang=p.elect-p.entitlement;p.total=p.elect;over+=p.overhang}else{p.list=p.entitlement-p.elect;p.overhang=0;p.total=p.entitlement}p.color=colorOf(p.name);return p});parties.sort(function(a,b){return b.total-a.total||b.pct-a.pct});var house=Math.max(seats,independentSeats)+over;return{parties:parties,seats:seats,allocationBase:Math.max(0,seats-independentSeats),independentSeats:independentSeats,overhang:over,house:house,majority:Math.floor(house/2)+1,thresh:thr}}
+function natGeneral(st){var raw=st.natElect,n=(typeof raw==="number"||typeof raw==="string")?Number(raw):0;return isFinite(n)?Math.max(0,Math.min(GENERAL_SEATS,Math.trunc(n))):0}
+function compute(st){var t={};MAORI.forEach(function(m){var p=st.winners[m.seat]||m.party;if(p===NA)return;t[p]=(t[p]||0)+1});if(natGeneral(st))t.National=(t.National||0)+natGeneral(st);var input=ROSTER.map(function(p){return{name:p.name,votes:parseFloat(st.votes[p.name])||0,elect:t[p.name]||0}}).concat(EXTRA.map(function(p){return{name:p.name,votes:0,elect:t[p.name]||0}}));var seats=Math.max(1,parseInt(st.seats,10)||120),thr=Math.max(0,parseFloat(st.thresh)||0);input.forEach(function(p){p.pct=p.votes;if(isOthers(p.name)){p.elect=0;p.qualifies=false}else p.qualifies=p.name==="Independent"||meetsThreshold(p.pct,thr)||(st.coattail&&p.elect>0)});var independentSeats=t["Independent"]||0,allocationBase=Math.max(0,seats-independentSeats),eligible=input.filter(function(p){return p.name!=="Independent"&&p.qualifies&&p.votes>0}),by=allocate(eligible,allocationBase),result=allocationResult(input,by,seats,thr),tie=boundaryTie(eligible,allocationBase,by);result.incomplete=allocationBase>0&&!eligible.length;result.unallocated=result.incomplete?allocationBase:0;if(result.incomplete){result.house=null;result.majority=null;result.overhang=null;result.parties.forEach(function(p){p.entitlement=null;p.list=null;p.overhang=0;p.total=p.elect})}result.tie=tie?{names:tie.names,seatsAvailable:tie.seatsAvailable,outcomes:tie.choices.map(function(c){var outcome=allocationResult(input,c.by,seats,thr);outcome.awarded=c.awarded;outcome.shown=c.shown;return outcome})}:null;return result}
+function coalitionTie(result,bloc){if(!result.tie)return null;var outcomes=result.tie.outcomes.map(function(r){var sum=blocSum(r,bloc);return{sum:sum,majority:r.majority,wins:sum>=r.majority}});return{outcomes:outcomes,depends:outcomes.some(function(o){return o.wins!==outcomes[0].wins}),allWin:outcomes.every(function(o){return o.wins})}}
+function blocSum(res,bloc){return res.parties.reduce(function(a,p){return a+(bloc[p.name]?p.total:0)},0)}
+// Fewest extra parties (then smallest surplus) that take a set of parties to a majority, skipping `never`. [] if none needed or none can.
+function partnersFor(res,set,never){if(res.incomplete)return[];var gap=res.majority-blocSum(res,set);if(gap<=0)return[];var c=res.parties.filter(function(p){return p.total>0&&!set[p.name]&&never.indexOf(p.name)<0}),best=null;
+  for(var mask=1;mask<(1<<c.length);mask++){var m=[],sum=0;for(var i=0;i<c.length;i++)if(mask&(1<<i)){m.push(c[i]);sum+=c[i].total}if(sum<gap)continue;if(!best||m.length<best.m.length||(m.length===best.m.length&&sum<best.sum))best={m:m,sum:sum}}return best?best.m:[]}
+function blocPartners(res,b){var inB={};b.names.forEach(function(n){inB[n]=true});return partnersFor(res,inB,b.never||[])}
+// A coalition inherits a bloc's ruled-out partners if it includes that bloc's lead party (Labour / National)
+// or sits entirely inside the bloc (e.g. clicking National-led when National has no seats selects just ACT + NZF).
+function neverFor(set){var out=[],picked=Object.keys(set).filter(function(n){return set[n]});BLOCS.forEach(function(b){if(set[b.names[0]]||(picked.length&&picked.every(function(n){return b.names.indexOf(n)>=0})))(b.never||[]).forEach(function(n){if(out.indexOf(n)<0)out.push(n)})});return out}
+function findPaths(res){if(res.incomplete)return[];var ps=res.parties.filter(function(p){return p.total>0}),out=[];for(var mask=1;mask<(1<<ps.length);mask++){var m=[],sum=0;for(var i=0;i<ps.length;i++)if(mask&(1<<i)){m.push(ps[i]);sum+=ps[i].total}if(sum<res.majority)continue;if(m.every(function(p){return sum-p.total<res.majority}))out.push({members:m,sum:sum,surplus:sum-res.majority})}out.sort(function(a,b){return a.members.length-b.members.length||a.surplus-b.surplus});return out}
+function hemiSeats(n){var rings=Math.max(4,Math.round(Math.sqrt(n/3))),w=[],i;for(i=0;i<rings;i++)w.push(.5+.5*(i/(rings-1||1)));var sum=w.reduce(function(a,b){return a+b},0),c=w.map(function(x){return Math.max(1,Math.round(n*x/sum))}),d=n-c.reduce(function(a,b){return a+b},0),idx=c.length-1;while(d!==0){c[idx]+=d>0?1:-1;d+=d>0?-1:1;idx=(idx-1+c.length)%c.length}var out=[];for(i=0;i<rings;i++)for(var j=0;j<c[i];j++){var t=c[i]===1?Math.PI/2:Math.PI*j/(c[i]-1);out.push({ang:Math.PI-t,ring:i})}out.sort(function(a,b){return b.ang-a.ang||a.ring-b.ring});return out}
+// order: parties in seat order (left to right). opts.dim(p) -> bool
+function drawHemi(svg,res,order,opts){opts=opts||{};var W=760,H=400,cx=380,cy=370,maxR=350,seats=hemiSeats(res.house),flat=[];order.forEach(function(p){for(var i=0;i<p.total;i++)flat.push({p:p,over:i>=p.total-p.overhang})});svg.setAttribute("viewBox","0 0 "+W+" "+H);svg.innerHTML="";var rings=0,counts={};seats.forEach(function(s){rings=Math.max(rings,s.ring+1);counts[s.ring]=(counts[s.ring]||0)+1});var minArc=1e9;Object.keys(counts).forEach(function(k){var r=(.45+.55*(rings>1?k/(rings-1):0))*maxR;minArc=Math.min(minArc,counts[k]>1?r*Math.PI/(counts[k]-1):r)});var gap=rings>1?.55*maxR/(rings-1):maxR,dotR=Math.max(4,Math.min(11,.4*Math.min(minArc,gap)));seats.forEach(function(s,i){var d=flat[i],r=(.45+.55*(rings>1?s.ring/(rings-1):0))*maxR,c=document.createElementNS(NS,"circle");c.setAttribute("cx",(cx+r*Math.cos(s.ang)).toFixed(1));c.setAttribute("cy",(cy-r*Math.sin(s.ang)).toFixed(1));c.setAttribute("r",dotR.toFixed(1));c.setAttribute("fill",d?d.p.color:"var(--line)");if(d&&opts.dim&&opts.dim(d.p))c.setAttribute("opacity",".22");if(d&&d.over){c.setAttribute("stroke","var(--over)");c.setAttribute("stroke-width","2.5")}if(d){var t=document.createElementNS(NS,"title");t.textContent=d.p.name+(d.over?" (overhang seat)":"");c.appendChild(t)}svg.appendChild(c)});var m=seats[Math.min(seats.length-1,Math.max(0,res.majority-1))]||{ang:Math.PI/2},r1=.45*maxR-12,r2=maxR+12,l=document.createElementNS(NS,"line");l.setAttribute("x1",cx+r1*Math.cos(m.ang));l.setAttribute("y1",cy-r1*Math.sin(m.ang));l.setAttribute("x2",cx+r2*Math.cos(m.ang));l.setAttribute("y2",cy-r2*Math.sin(m.ang));l.setAttribute("stroke","var(--ink)");l.setAttribute("stroke-width","2.5");l.setAttribute("stroke-dasharray","5 5");svg.appendChild(l)}
+// ---- end shared engine ----
+
+// ---- forecast model ----
+var CODES={NAT:"National",LAB:"Labour",GRN:"Green",ACT:"ACT",NZF:"NZ First",TPM:"Te Pāti Māori",TOP:"Opportunity (TOP)",OTH:"Others (below 5%)",TTT:"Te Tai Tokerau Party",IND:"Independent"};
+var VOTE_CODES=["NAT","LAB","GRN","ACT","NZF","TPM","TOP","OTH"],LEFT=["LAB","GRN","TPM","TTT"],RIGHT=["NAT","ACT","NZF"],CROSS=["TOP","IND"];
+function codeOf(name){for(var k in CODES)if(CODES[k]===name)return k;return name}
+// Polls since 5 Oct 2026 (Wikipedia, 4 Nov 2026). Others = 100 minus the listed parties.
+var POLLS=[
+ {date:"2026-11-03",org:"The Post/Freshwater Strategy",n:1044,v:{NAT:26.4,LAB:30.7,GRN:13,ACT:9.8,NZF:12,TPM:2,TOP:5.1}},
+ {date:"2026-11-03",org:"Taxpayers' Union–Curia",n:1000,v:{NAT:28.9,LAB:28.4,GRN:14.4,ACT:10.5,NZF:9.8,TPM:1.1,TOP:5.8}},
+ {date:"2026-11-02",org:"1 News–Verian",n:1006,v:{NAT:29.5,LAB:28.8,GRN:16.4,ACT:10,NZF:8.4,TPM:0.4,TOP:6.2}},
+ {date:"2026-10-26",org:"RNZ–Reid Research",n:1000,v:{NAT:24.8,LAB:30.6,GRN:14.5,ACT:10.1,NZF:9.9,TPM:1.9,TOP:7.2}},
+ {date:"2026-10-25",org:"1 News–Verian",n:1000,v:{NAT:28.9,LAB:27.3,GRN:14.8,ACT:12.4,NZF:10,TPM:0.1,TOP:6.3}},
+ {date:"2026-10-25",org:"Roy Morgan",n:859,v:{NAT:26.5,LAB:27.5,GRN:15.5,ACT:11,NZF:10,TPM:1,TOP:8}},
+ {date:"2026-10-19",org:"1 News–Verian",n:1003,v:{NAT:32,LAB:27,GRN:16,ACT:11,NZF:8,TPM:0.7,TOP:7}},
+ {date:"2026-10-19",org:"The Post/Freshwater Strategy",n:1458,v:{NAT:27.6,LAB:28.7,GRN:14.3,ACT:9,NZF:11.8,TPM:2,TOP:5.4}},
+ {date:"2026-10-12",org:"1 News–Verian",n:1007,v:{NAT:28,LAB:28,GRN:15,ACT:10,NZF:10,TPM:0.4,TOP:8}},
+ {date:"2026-10-10",org:"Anacta",n:1352,v:{NAT:28,LAB:29,GRN:15,ACT:9,NZF:10,TPM:1.9,TOP:5.4}},
+ {date:"2026-10-05",org:"Taxpayers' Union–Curia",n:1000,v:{NAT:28.5,LAB:28.2,GRN:13.3,ACT:9.2,NZF:12,TPM:1.4,TOP:4.8}},
+ {date:"2026-10-05",org:"1 News–Verian",n:1001,v:{NAT:29,LAB:28,GRN:16,ACT:9,NZF:10,TPM:0.6,TOP:7}}
+];
+var AS_OF="2026-11-03",HALF_LIFE_DAYS=7,HOUSE_BONUS={"1 News–Verian":1.1,"Taxpayers' Union–Curia":1.1};
+// House effects: each firm's average lean against the all-firm consensus over 2020–2026, in points
+// (The Overhang, as at 11 Sep 2026, read off its chart to about ±0.05). Subtracted from each poll before averaging.
+// Anacta has no estimate, and Freshwater none for TOP or Others, so those are left as published.
+var HOUSE_EFFECTS_ON=true,HOUSE_EFFECTS={
+ "Taxpayers' Union–Curia":{ACT:-.03,GRN:-.83,LAB:.27,NAT:.46,NZF:-.1,TOP:-.43,TPM:-.07,OTH:-.02},
+ "The Post/Freshwater Strategy":{ACT:-.3,GRN:.07,LAB:.75,NAT:-.67,NZF:.52,TPM:-.7},
+ "RNZ–Reid Research":{ACT:-.86,GRN:-.53,LAB:1.71,NAT:.43,NZF:-.35,TOP:-.2,TPM:-.02,OTH:-.2},
+ "Roy Morgan":{ACT:.83,GRN:1.62,LAB:-2.22,NAT:-.8,NZF:-.1,TOP:.53,TPM:.29,OTH:-.51},
+ "1 News–Verian":{ACT:-.45,GRN:-.45,LAB:.23,NAT:1.54,NZF:-.4,TOP:-.3,TPM:-.32,OTH:.28},
+ "Talbot Mills":{ACT:-.4,GRN:-.97,LAB:2.12,NAT:-.68,NZF:.63,TOP:0,TPM:.13}
+};
+// Error sizes, in percentage points. PARTY_ERR scales sqrt(p(100-p))/10: about ±2.2 for a 28% party.
+var PARTY_ERR=.5,BLOC_SWING_SD=1.5,EXTRA_ERR={TPM:1.6,TOP:1.3},OTHERS_SD=.4;
+// How much each party's share moves from election night to the final count. Average of 2020 and 2023
+// (2023: NAT 38.99→38.06, GRN 10.78→11.60, TPM 2.60→3.08, TOP 2.07→2.22, ACT 9.00→8.64, NZF 6.46→6.08),
+// scaled by 0.7 because 2026 has no election-day enrolment, which supplied many of the most left-leaning specials.
+// Night = final / (1 + lean × a per-simulation factor around 1).
+var SPECIALS_LEAN={NAT:-.021,LAB:.006,GRN:.037,ACT:-.028,NZF:-.041,TPM:.105,TOP:.05,OTH:.03},SPECIALS_SD=.5,SPECIALS_SCALE=1;
+// Candidate noise in general seats scales with sqrt(share/30), as in the electorates page.
+var SEAT_SD=4,MAORI_SEAT_SD=8,MAORI_SHARED_SD=6,MAORI_TPM_BIAS=4;
+// Māori seats: Whakaata Māori–Curia electorate polls (Sept–Oct 2026), undecided and "other" removed.
+// Tāmaki Makaurau gets TPM +3 for Kaipara's 2025 by-election win (3,519 majority), Te Tai Tonga gives Ferris +3 for a
+// Horizon poll that had him narrowly ahead. In 2023 these polls badly understated TPM (it led in one seat and won six),
+// so every simulation adds MAORI_TPM_BIAS to TPM on top of a shared TPM swing.
+var MAORI_FC=[
+ {seat:"Te Tai Tokerau",s:{GRN:34,LAB:25,TPM:24,TTT:17}},
+ {seat:"Te Tai Tonga",s:{LAB:37,TPM:22,IND:21,GRN:20}},
+ {seat:"Hauraki-Waikato",s:{TPM:63,LAB:37}},
+ {seat:"Tāmaki Makaurau",s:{TPM:41,LAB:35,GRN:24}},
+ {seat:"Te Tai Hauāuru",s:{TPM:51,LAB:36,NAT:13}},
+ {seat:"Waiariki",s:{TPM:56,GRN:21,LAB:19,TOP:4}},
+ {seat:"Ikaroa-Rāwhiti",s:{LAB:54,TPM:26,GRN:20}}
+];
+// 2023 notional party (p) and candidate (c) shares on the 2025 general-electorate boundaries (data/notional2023.json).
+var GENERAL=[{"n":"Auckland Central","p":{"NAT":32.23,"GRN":25.1,"LAB":23.35,"ACT":8.93,"NZF":3.58,"TOP":3.49,"OTH":1.71,"TPM":1.63},"c":{"GRN":43.8,"NAT":35.78,"LAB":13.23,"ACT":3.48,"TOP":1.75}},{"n":"Banks Peninsula","p":{"NAT":31.96,"LAB":26.63,"GRN":19.7,"ACT":7.91,"NZF":5.36,"TOP":4.84,"OTH":2.81,"TPM":0.78},"c":{"NAT":36.53,"LAB":35.72,"GRN":17.03,"ACT":4.24,"NZF":3.27}},{"n":"Botany","p":{"NAT":63.13,"LAB":15.26,"ACT":8.7,"GRN":5.98,"NZF":3.09,"OTH":2.25,"TOP":1.23,"TPM":0.35},"c":{"NAT":71.67,"LAB":18.3,"ACT":6.26,"NZF":0.69}},{"n":"Christchurch Central","p":{"NAT":30.44,"LAB":29.09,"GRN":19.77,"ACT":6.6,"TOP":5.35,"NZF":5.24,"OTH":2.55,"TPM":0.97},"c":{"LAB":41.64,"NAT":34.61,"GRN":13.84,"ACT":3.55,"NZF":3.39}},{"n":"Christchurch East","p":{"LAB":34.31,"NAT":28.57,"GRN":14.72,"ACT":7.09,"NZF":6.82,"OTH":3.95,"TOP":3.46,"TPM":1.07},"c":{"LAB":39.64,"NAT":33.09,"GRN":12.12,"NZF":5.3,"ACT":4.39}},{"n":"Coromandel","p":{"NAT":43.09,"LAB":19.67,"ACT":11.92,"NZF":10.44,"GRN":7.83,"OTH":5.2,"TOP":1.09,"TPM":0.77},"c":{"NAT":54.28,"LAB":16.73,"GRN":10.69,"NZF":6.81,"ACT":5.93}},{"n":"Dunedin","p":{"LAB":30.96,"GRN":26.93,"NAT":22.71,"ACT":5.79,"NZF":5.64,"TOP":4.26,"OTH":2.27,"TPM":1.44},"c":{"LAB":40.97,"NAT":21.87,"GRN":19.23,"TOP":4.53,"ACT":4.06,"NZF":3.12}},{"n":"East Cape","p":{"NAT":36.94,"LAB":29.87,"NZF":9.65,"ACT":8.92,"GRN":7.47,"OTH":3.73,"TPM":2.27,"TOP":1.14},"c":{"NAT":43.12,"LAB":35.01,"NZF":6.38,"ACT":4.88,"GRN":4.48,"TPM":3.13}},{"n":"East Coast Bays","p":{"NAT":57.17,"LAB":14.88,"ACT":9.83,"GRN":8.99,"NZF":3.97,"OTH":3.12,"TOP":1.67,"TPM":0.37},"c":{"NAT":72.04,"LAB":19.13,"ACT":4.24,"GRN":0.29}},{"n":"Epsom","p":{"NAT":50.59,"LAB":14.96,"GRN":14.36,"ACT":12.27,"TOP":3.35,"NZF":2.6,"OTH":1.04,"TPM":0.82},"c":{"ACT":42.82,"NAT":24.72,"LAB":15.08,"GRN":11.18,"TOP":4.37,"NZF":1.37}},{"n":"Glendene","p":{"LAB":34.92,"NAT":33.99,"GRN":13.78,"ACT":6.12,"NZF":4.61,"OTH":2.96,"TOP":2.07,"TPM":1.55},"c":{"LAB":41.8,"NAT":35.51,"GRN":11.24,"ACT":5.92,"TPM":2.68,"NZF":1.21}},{"n":"Hamilton East","p":{"NAT":42.85,"LAB":24.85,"GRN":12.35,"ACT":8.07,"NZF":5.01,"TOP":2.72,"OTH":2.66,"TPM":1.48},"c":{"NAT":48.45,"LAB":34.79,"ACT":4.53,"TPM":3.31,"NZF":3.26,"TOP":3.23}},{"n":"Hamilton West","p":{"NAT":41.37,"LAB":26.44,"GRN":9.97,"ACT":8.77,"NZF":6.22,"OTH":2.89,"TOP":2.5,"TPM":1.84},"c":{"NAT":46.82,"LAB":29.55,"GRN":8.59,"ACT":5.9,"NZF":4.62,"TOP":2.79}},{"n":"Henderson","p":{"LAB":37.52,"NAT":36.55,"GRN":9.39,"ACT":5.9,"NZF":4.54,"OTH":3.16,"TPM":1.63,"TOP":1.3},"c":{"LAB":42.11,"NAT":36.94,"GRN":8.75,"ACT":6.38,"TPM":2.57,"NZF":1.32,"TOP":0.34}},{"n":"Hutt South","p":{"NAT":34.11,"LAB":32.29,"GRN":15.63,"ACT":5.72,"NZF":5.17,"TOP":3.41,"OTH":2.29,"TPM":1.38},"c":{"NAT":44.53,"LAB":41.66,"GRN":5.92,"NZF":2.81,"TOP":2.46,"ACT":1.33}},{"n":"Ilam","p":{"NAT":42.98,"LAB":22.22,"GRN":14.9,"ACT":8.24,"TOP":4.95,"NZF":4.15,"OTH":1.94,"TPM":0.62},"c":{"NAT":44.26,"TOP":25.46,"LAB":21.76,"GRN":5.7,"NZF":0.11}},{"n":"Invercargill","p":{"NAT":43.0,"LAB":25.5,"ACT":10.66,"NZF":7.42,"GRN":6.21,"OTH":5.19,"TOP":1.28,"TPM":0.74},"c":{"NAT":56.58,"LAB":29.49,"ACT":5.42}},{"n":"Kaikōura","p":{"NAT":41.21,"LAB":20.78,"ACT":14.09,"NZF":9.11,"GRN":7.83,"OTH":4.8,"TOP":1.68,"TPM":0.51},"c":{"NAT":49.97,"LAB":22.47,"NZF":10.47,"ACT":6.32,"GRN":6.05}},{"n":"Kaipara ki Mahurangi","p":{"NAT":47.48,"LAB":16.78,"ACT":12.31,"GRN":9.42,"NZF":7.03,"OTH":4.51,"TOP":1.82,"TPM":0.66},"c":{"NAT":58.24,"LAB":17.78,"GRN":9.64,"ACT":6.01,"NZF":5.48}},{"n":"Kapiti","p":{"NAT":36.67,"LAB":28.54,"GRN":14.47,"ACT":7.2,"NZF":6.5,"OTH":2.79,"TOP":2.63,"TPM":1.19},"c":{"NAT":47.64,"LAB":36.34,"GRN":9.08,"ACT":2.85,"NZF":1.6}},{"n":"Kenepuru","p":{"LAB":36.71,"NAT":31.07,"GRN":15.78,"ACT":5.23,"NZF":4.31,"TOP":3.07,"OTH":2.13,"TPM":1.69},"c":{"LAB":47.41,"NAT":33.67,"GRN":9.98,"TOP":3.15,"ACT":2.38,"NZF":2.12}},{"n":"Manurewa","p":{"LAB":51.69,"NAT":29.78,"GRN":5.94,"OTH":3.61,"NZF":3.44,"ACT":2.79,"TPM":2.13,"TOP":0.61},"c":{"LAB":57.59,"NAT":33.08,"TPM":5.54,"ACT":0.23}},{"n":"Maungakiekie","p":{"NAT":40.48,"LAB":28.58,"GRN":13.67,"ACT":7.89,"NZF":3.88,"TOP":2.65,"OTH":1.88,"TPM":0.97},"c":{"NAT":46.42,"LAB":36.17,"GRN":9.62,"ACT":4.19,"NZF":2.35}},{"n":"Mount Albert","p":{"NAT":34.33,"LAB":29.51,"GRN":20.57,"ACT":6.21,"NZF":3.27,"TOP":3.23,"OTH":1.53,"TPM":1.35},"c":{"LAB":38.07,"NAT":35.49,"GRN":18.78,"ACT":4.53,"TOP":2.33,"TPM":0.15,"NZF":0.14}},{"n":"Mount Maunganui","p":{"NAT":47.35,"LAB":17.6,"ACT":11.24,"NZF":8.37,"GRN":8.26,"OTH":3.82,"TOP":2.07,"TPM":1.27},"c":{"NAT":51.78,"LAB":18.41,"ACT":9.41,"GRN":9.17,"NZF":8.63,"TPM":0.13}},{"n":"Mount Roskill","p":{"NAT":45.25,"LAB":26.7,"GRN":12.11,"ACT":6.8,"NZF":4.03,"OTH":2.13,"TOP":2.07,"TPM":0.91},"c":{"NAT":47.03,"LAB":36.05,"GRN":9.76,"ACT":6.3}},{"n":"Māngere","p":{"LAB":61.09,"NAT":19.52,"GRN":7.81,"NZF":3.37,"OTH":3.06,"ACT":2.11,"TPM":2.1,"TOP":0.94},"c":{"LAB":61.21,"NAT":20.16,"GRN":9.33,"TPM":3.37,"ACT":2.32}},{"n":"Napier","p":{"NAT":41.17,"LAB":26.27,"ACT":11.27,"GRN":8.47,"NZF":6.9,"OTH":3.49,"TOP":1.51,"TPM":0.92},"c":{"NAT":53.8,"LAB":30.87,"GRN":5.4,"NZF":4.24,"ACT":3.14}},{"n":"Nelson","p":{"NAT":32.45,"LAB":29.32,"GRN":14.41,"ACT":10.37,"NZF":6.12,"OTH":4.06,"TOP":2.48,"TPM":0.8},"c":{"LAB":41.74,"NAT":41.68,"GRN":6.64,"ACT":6.41}},{"n":"New Plymouth","p":{"NAT":42.18,"LAB":24.19,"ACT":10.16,"GRN":8.51,"NZF":7.26,"OTH":4.31,"TOP":1.96,"TPM":1.43},"c":{"NAT":52.92,"LAB":36.47,"ACT":4.61}},{"n":"North Shore","p":{"NAT":51.68,"LAB":17.34,"GRN":11.47,"ACT":10.87,"NZF":3.86,"TOP":2.49,"OTH":1.8,"TPM":0.49},"c":{"NAT":62.49,"LAB":21.01,"GRN":8.39,"ACT":5.01,"TOP":2.81}},{"n":"Northcote","p":{"NAT":43.71,"LAB":23.49,"GRN":14.01,"ACT":8.61,"NZF":4.21,"TOP":3.03,"OTH":2.2,"TPM":0.75},"c":{"NAT":54.36,"LAB":30.55,"GRN":8.77,"NZF":2.81,"ACT":2.74,"TOP":0.17}},{"n":"Northland","p":{"NAT":35.47,"LAB":22.04,"NZF":14.04,"ACT":10.22,"GRN":8.01,"OTH":7.44,"TPM":1.54,"TOP":1.24},"c":{"NAT":35.92,"LAB":22.45,"NZF":17.94,"GRN":5.33,"ACT":4.7}},{"n":"Pakuranga","p":{"NAT":58.26,"LAB":16.5,"ACT":9.97,"GRN":7.29,"NZF":3.8,"OTH":2.22,"TOP":1.46,"TPM":0.51},"c":{"NAT":72.36,"LAB":20.41,"ACT":3.77}},{"n":"Palmerston North","p":{"NAT":35.42,"LAB":29.71,"GRN":12.24,"ACT":9.12,"NZF":6.22,"OTH":3.37,"TOP":2.26,"TPM":1.67},"c":{"LAB":40.98,"NAT":36.81,"GRN":9.04,"ACT":9.02,"NZF":0.65}},{"n":"Papakura","p":{"NAT":50.27,"LAB":23.41,"ACT":9.1,"GRN":5.99,"NZF":5.48,"OTH":3.27,"TPM":1.26,"TOP":1.21},"c":{"NAT":56.62,"LAB":28.08,"ACT":7.09,"NZF":4.24}},{"n":"Port Waikato","p":{"NAT":50.18,"LAB":18.67,"ACT":12.05,"NZF":7.42,"GRN":5.86,"OTH":3.72,"TOP":1.2,"TPM":0.9},"c":{"NAT":56.56,"LAB":22.59,"ACT":7.08,"GRN":5.17,"NZF":3.12,"TPM":2.1,"TOP":0.78}},{"n":"Rangitata","p":{"NAT":44.9,"LAB":26.35,"ACT":10.09,"NZF":7.44,"GRN":5.81,"OTH":3.74,"TOP":1.29,"TPM":0.39},"c":{"NAT":56.97,"LAB":29.86,"NZF":5.4,"GRN":4.46}},{"n":"Rangitīkei","p":{"NAT":40.03,"LAB":26.16,"ACT":11.73,"NZF":9.1,"GRN":6.73,"OTH":3.82,"TPM":1.27,"TOP":1.17},"c":{"NAT":48.38,"LAB":28.21,"ACT":11.06,"GRN":6.42,"NZF":4.85}},{"n":"Remutaka","p":{"LAB":38.29,"NAT":30.45,"GRN":12.22,"ACT":5.94,"NZF":5.83,"OTH":3.29,"TOP":2.78,"TPM":1.2},"c":{"LAB":54.03,"NAT":32.93,"GRN":6.76,"ACT":3.02,"TOP":0.06}},{"n":"Rotorua","p":{"NAT":41.79,"LAB":23.91,"ACT":9.84,"GRN":7.8,"NZF":7.78,"OTH":4.91,"TPM":2.25,"TOP":1.73},"c":{"NAT":54.07,"LAB":28.54,"TPM":7.41,"ACT":5.01,"NZF":0.29,"GRN":0.26}},{"n":"Selwyn","p":{"NAT":49.11,"LAB":18.11,"ACT":12.26,"GRN":9.07,"NZF":5.5,"OTH":2.78,"TOP":2.67,"TPM":0.5},"c":{"NAT":65.95,"LAB":24.8,"ACT":6.06}},{"n":"Southland","p":{"NAT":48.32,"LAB":16.56,"ACT":13.6,"GRN":8.82,"NZF":5.69,"OTH":4.48,"TOP":2.05,"TPM":0.48},"c":{"NAT":59.44,"LAB":15.51,"GRN":9.94,"ACT":7.19}},{"n":"Taieri","p":{"LAB":34.33,"NAT":33.62,"GRN":10.84,"ACT":7.92,"NZF":7.71,"OTH":2.81,"TOP":2.2,"TPM":0.58},"c":{"LAB":39.86,"NAT":36.39,"GRN":9.37,"NZF":7.38,"ACT":4.08}},{"n":"Takanini","p":{"NAT":51.77,"LAB":28.96,"GRN":5.89,"ACT":5.58,"NZF":3.32,"OTH":2.51,"TPM":1.14,"TOP":0.84},"c":{"NAT":56.9,"LAB":35.72,"ACT":5.42}},{"n":"Taranaki-King Country","p":{"NAT":46.59,"LAB":17.96,"ACT":13.09,"NZF":8.59,"GRN":6.81,"OTH":4.16,"TOP":1.54,"TPM":1.25},"c":{"NAT":61.54,"LAB":26.59,"NZF":0.66,"ACT":0.46,"GRN":0.4}},{"n":"Taupō","p":{"NAT":45.52,"LAB":22.08,"ACT":11.31,"NZF":8.0,"GRN":6.32,"OTH":4.0,"TOP":1.47,"TPM":1.29},"c":{"NAT":57.83,"LAB":19.43,"GRN":8.01,"ACT":6.53,"NZF":4.92}},{"n":"Tauranga","p":{"NAT":45.9,"LAB":18.18,"ACT":10.73,"NZF":9.26,"GRN":8.74,"OTH":3.98,"TOP":2.13,"TPM":1.08},"c":{"NAT":46.72,"LAB":23.0,"ACT":9.23,"NZF":8.7,"GRN":6.5,"TPM":1.37}},{"n":"Tukituki","p":{"NAT":41.38,"LAB":25.75,"ACT":12.21,"GRN":8.02,"NZF":6.12,"OTH":4.08,"TOP":1.44,"TPM":1.01},"c":{"NAT":53.88,"LAB":29.54,"GRN":5.96,"ACT":4.9}},{"n":"Tāmaki","p":{"NAT":51.97,"LAB":17.4,"ACT":12.15,"GRN":11.08,"NZF":2.93,"TOP":2.35,"OTH":1.4,"TPM":0.72},"c":{"ACT":42.07,"NAT":33.82,"LAB":22.5,"GRN":0.59,"NZF":0.06}},{"n":"Upper Harbour","p":{"NAT":53.3,"LAB":18.69,"GRN":9.72,"ACT":9.37,"NZF":3.92,"TOP":2.2,"OTH":2.15,"TPM":0.66},"c":{"NAT":57.85,"LAB":21.86,"GRN":7.56,"ACT":6.02,"NZF":2.92,"TOP":2.43}},{"n":"Waikato","p":{"NAT":50.41,"LAB":17.64,"ACT":12.27,"NZF":7.69,"GRN":5.51,"OTH":3.8,"TOP":1.72,"TPM":0.96},"c":{"NAT":65.51,"LAB":21.24,"NZF":8.56,"TOP":3.69}},{"n":"Waimakariri","p":{"NAT":42.74,"LAB":24.22,"ACT":10.58,"GRN":8.55,"NZF":7.03,"OTH":4.15,"TOP":2.21,"TPM":0.51},"c":{"NAT":58.25,"LAB":29.99,"ACT":4.49}},{"n":"Wairarapa","p":{"NAT":38.55,"LAB":27.23,"ACT":10.8,"NZF":8.39,"GRN":8.3,"OTH":4.06,"TOP":1.64,"TPM":1.02},"c":{"NAT":45.69,"LAB":39.06,"ACT":4.82,"GRN":4.47,"TPM":1.12,"NZF":0.56}},{"n":"Waitaki","p":{"NAT":43.43,"LAB":21.57,"ACT":12.33,"GRN":9.04,"NZF":6.99,"OTH":4.26,"TOP":1.97,"TPM":0.41},"c":{"NAT":51.79,"LAB":24.04,"GRN":7.98,"ACT":5.66,"NZF":4.16}},{"n":"Waitākere","p":{"NAT":34.4,"LAB":29.31,"GRN":16.87,"ACT":7.59,"NZF":5.1,"OTH":3.11,"TOP":2.13,"TPM":1.49},"c":{"LAB":39.2,"NAT":35.81,"GRN":13.55,"ACT":5.96,"NZF":1.53,"TPM":0.83}},{"n":"Wellington Bays","p":{"GRN":32.77,"LAB":30.86,"NAT":21.13,"TOP":4.36,"ACT":3.86,"NZF":3.26,"TPM":2.33,"OTH":1.43},"c":{"GRN":39.81,"LAB":32.64,"NAT":21.04,"ACT":2.54,"NZF":2.0,"TOP":0.29}},{"n":"Wellington North","p":{"GRN":34.79,"LAB":25.32,"NAT":23.98,"TOP":5.46,"ACT":4.96,"NZF":2.33,"TPM":2.14,"OTH":1.02},"c":{"GRN":33.71,"LAB":30.74,"NAT":28.29,"TOP":4.77,"NZF":0.8,"ACT":0.27}},{"n":"West Coast-Tasman","p":{"NAT":33.45,"LAB":23.75,"ACT":13.08,"GRN":10.77,"NZF":9.9,"OTH":6.47,"TOP":1.89,"TPM":0.69},"c":{"NAT":32.02,"LAB":29.57,"GRN":6.59,"ACT":6.06,"NZF":4.33}},{"n":"Whanganui","p":{"NAT":37.13,"LAB":27.44,"NZF":11.32,"ACT":9.76,"GRN":7.68,"OTH":3.88,"TPM":1.58,"TOP":1.21},"c":{"NAT":47.69,"LAB":32.76,"NZF":8.18,"GRN":5.59,"ACT":4.8}},{"n":"Whangaparāoa","p":{"NAT":53.28,"LAB":15.34,"ACT":11.86,"GRN":7.57,"NZF":6.29,"OTH":3.59,"TOP":1.63,"TPM":0.46},"c":{"NAT":66.53,"LAB":16.0,"GRN":7.46,"ACT":5.4}},{"n":"Whangārei","p":{"NAT":37.88,"LAB":22.37,"NZF":13.13,"GRN":9.38,"ACT":9.12,"OTH":5.06,"TOP":1.69,"TPM":1.37},"c":{"NAT":48.63,"LAB":22.06,"NZF":12.63,"GRN":6.28,"ACT":2.88,"TPM":1.99}},{"n":"Wigram","p":{"NAT":39.63,"LAB":27.55,"GRN":12.81,"ACT":7.34,"NZF":4.9,"TOP":4.2,"OTH":2.79,"TPM":0.78},"c":{"NAT":45.01,"LAB":37.89,"GRN":8.39,"ACT":4.36}},{"n":"Ōtāhuhu","p":{"LAB":56.95,"NAT":24.45,"GRN":7.6,"NZF":3.08,"OTH":2.83,"ACT":2.81,"TPM":1.4,"TOP":0.87},"c":{"LAB":57.22,"NAT":24.05,"GRN":12.91,"ACT":3.27}}];
+// 2023 split voting: share of each party's party voters who gave their electorate vote to each candidate party.
+var SPLIT={"ACT":{"ACT":0.2887,"OTH":0.0286,"GRN":0.0088,"LAB":0.0324,"NAT":0.62,"NZF":0.0131,"TPM":0.003,"TOP":0.0055},"OTH":{"ACT":0.054,"OTH":0.0534,"GRN":0.0816,"LAB":0.3058,"NAT":0.4267,"NZF":0.0293,"TPM":0.039,"TOP":0.0102},"GRN":{"ACT":0.0084,"OTH":0.0183,"GRN":0.411,"LAB":0.45,"NAT":0.0535,"NZF":0.0036,"TPM":0.0356,"TOP":0.0195},"LAB":{"ACT":0.0076,"OTH":0.0136,"GRN":0.0687,"LAB":0.8118,"NAT":0.0419,"NZF":0.0086,"TPM":0.0423,"TOP":0.0054},"NAT":{"ACT":0.0553,"OTH":0.0138,"GRN":0.0106,"LAB":0.0283,"NAT":0.8757,"NZF":0.0083,"TPM":0.0037,"TOP":0.0043},"NZF":{"ACT":0.0518,"OTH":0.1236,"GRN":0.0272,"LAB":0.1701,"NAT":0.296,"NZF":0.3015,"TPM":0.0224,"TOP":0.0073},"TPM":{"ACT":0.0038,"OTH":0.027,"GRN":0.1107,"LAB":0.2116,"NAT":0.0227,"NZF":0.0062,"TPM":0.6128,"TOP":0.0052},"TOP":{"ACT":0.0369,"OTH":0.049,"GRN":0.1916,"LAB":0.3282,"NAT":0.2104,"NZF":0.0127,"TPM":0.0165,"TOP":0.1547}}
+var E23={};VOTE_CODES.forEach(function(k){E23[k]=ELECTION_2023[CODES[k]]});
+
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;var t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function gauss(r){return Math.sqrt(-2*Math.log(1-r()))*Math.cos(2*Math.PI*r())}
+function normalise(v){var t=0,k,o={};for(k in v)t+=v[k];for(k in v)o[k]=v[k]*100/t;return o}
+function othersOf(p){var s=0;VOTE_CODES.forEach(function(k){if(k!=="OTH")s+=p.v[k]});return Math.max(0,100-s)}
+function pollWeights(){var t=Date.parse(AS_OF);return POLLS.map(function(p){var age=(t-Date.parse(p.date))/864e5;return Math.sqrt(p.n/1000)*Math.pow(.5,age/HALF_LIFE_DAYS)*(HOUSE_BONUS[p.org]||1)})}
+function adjustedPoll(p){var e=HOUSE_EFFECTS_ON&&HOUSE_EFFECTS[p.org]||{},o={};VOTE_CODES.forEach(function(k){o[k]=Math.max(0,(k==="OTH"?othersOf(p):p.v[k])-(e[k]||0))});return o}
+function pollAverage(raw){var w=pollWeights(),W=w.reduce(function(a,b){return a+b},0),avg={};VOTE_CODES.forEach(function(k){avg[k]=POLLS.reduce(function(a,p,i){return a+w[i]*(raw?(k==="OTH"?othersOf(p):p.v[k]):adjustedPoll(p)[k])},0)/W});return normalise(avg)}
+function drawVotes(avg,r){var sw=gauss(r)*BLOC_SWING_SD,lt=avg.LAB+avg.GRN+avg.TPM,rt=avg.NAT+avg.ACT+avg.NZF,v={};
+  VOTE_CODES.forEach(function(k){var p=avg[k],x=k==="OTH"?p+gauss(r)*OTHERS_SD:p+gauss(r)*PARTY_ERR*Math.sqrt(p*(100-p))/10*(EXTRA_ERR[k]||1);if(LEFT.indexOf(k)>=0)x-=sw*p/lt;if(RIGHT.indexOf(k)>=0)x+=sw*p/rt;v[k]=Math.max(.05,x)});return normalise(v)}
+function nightVotes(v,r){var m=Math.max(0,1+gauss(r)*SPECIALS_SD),n={};VOTE_CODES.forEach(function(k){n[k]=v[k]/(1+SPECIALS_LEAN[k]*SPECIALS_SCALE*m)});return normalise(n)}
+function argmax(shares,bump,r,sd){var best=null,bs=-Infinity;for(var k in shares){var s=shares[k]+(bump[k]||0)+gauss(r)*sd;if(s>bs){bs=s;best=k}}return best}
+// General seats, the electorates page's method: swing the seat's party vote (half uniform, half proportional),
+// turn it into candidate votes with the 2023 split-voting matrix, then add back each candidate's 2023 personal vote.
+function seatPartyVote(g,v){var out={},sum=0,k;VOTE_CODES.forEach(function(k){var s=g.p[k]||0,n=E23[k],q=v[k],x=Math.max(0,.5*(s+q-n)+.5*(n>0?s*q/n:q));out[k]=x;sum+=x});for(k in out)out[k]=out[k]*100/sum;return out}
+function splitBase(pv,present){var b={},t=0;present.forEach(function(k){b[k]=0});for(var p in pv){var row=SPLIT[p]||SPLIT.OTH;for(var k in row)if(k in b)b[k]+=pv[p]*row[k]}present.forEach(function(k){t+=b[k]});present.forEach(function(k){b[k]=t?b[k]*100/t:100/present.length});return b}
+GENERAL.forEach(function(g){g.present=Object.keys(g.c);var b=splitBase(g.p,g.present);g.resid={};g.present.forEach(function(k){g.resid[k]=g.c[k]-b[k]})});
+function natGeneralWins(v,r){var n=0;GENERAL.forEach(function(g){var b=splitBase(seatPartyVote(g,v),g.present),best=null,bs=-Infinity;g.present.forEach(function(k){var x=b[k]+g.resid[k];x+=gauss(r)*SEAT_SD*Math.sqrt(Math.max(x,1)/30);if(x>bs){bs=x;best=k}});if(best==="NAT")n++});return n}
+// picks: {seat: party code} forced by the reader. The random draws still happen, so other seats and votes are unchanged.
+function maoriWinners(r,picks){var bump={TPM:MAORI_TPM_BIAS+gauss(r)*MAORI_SHARED_SD},w={};MAORI_FC.forEach(function(m){var k=argmax(m.s,bump,r,MAORI_SEAT_SD);w[m.seat]=CODES[picks&&picks[m.seat]||k]});return w}
+function stateFor(v,w,ne){var votes={};VOTE_CODES.forEach(function(k){votes[CODES[k]]=v[k]});return{votes:votes,winners:w,natElect:ne,seats:120,thresh:5,coattail:true}}
+function sumOf(s,ks){return ks.reduce(function(a,k){return a+(s[k]||0)},0)}
+function outcomeOf(L,R,X,m){return L>=m?"left":R>=m?"right":(L+X>=m||R+X>=m)?"king":"hung"}
+function summarise(res){var s={},nat={},tpm={};res.parties.forEach(function(p){var k=codeOf(p.name);s[k]=p.total;if(k==="NAT")nat=p;if(k==="TPM")tpm=p});
+  var L=sumOf(s,LEFT),R=sumOf(s,RIGHT),X=sumOf(s,CROSS);return{s:s,house:res.house,maj:res.majority,L:L,R:R,X:X,b:outcomeOf(L,R,X,res.majority),natOver:nat.overhang||0,tpmEnt:tpm.entitlement||0,tpmElect:tpm.elect||0}}
+function evaluate(v,w,ne){return summarise(compute(stateFor(v,w,ne)))}
+function simulate(n,seed,picks){var r=rng(seed),avg=pollAverage(),sims=[];for(var i=0;i<n;i++){var v=drawVotes(avg,r),vn=nightVotes(v,r),w=maoriWinners(r,picks),ne=natGeneralWins(v,r);sims.push({i:i,v:v,vn:vn,w:w,ne:ne,f:evaluate(v,w,ne),n:evaluate(vn,w,ne)})}return{avg:avg,sims:sims}}
+function resultOf(x,night){return compute(stateFor(night?x.vn:x.v,x.w,x.ne))}
+// Smallest majorities that cross the blocs (for deadlocks), e.g. "National + Labour".
+function crossDeals(x){var res=resultOf(x);return findPaths(res).filter(function(p){var c=p.members.map(function(m){return codeOf(m.name)});return!c.every(function(k){return LEFT.concat(CROSS).indexOf(k)>=0})&&!c.every(function(k){return RIGHT.concat(CROSS).indexOf(k)>=0})})}
+// ---- end forecast model ----
+
+var N=20000,SEED=2026;
+// Dials the reader can edit. get/set reach the model's own variables, so a save changes what simulate() uses.
+var TUNE=[
+ {id:"n",label:"Simulations",unit:"",step:1000,min:1000,max:50000,hint:"More is smoother but slower (about 1 second per 20,000).",get:function(){return N},set:function(v){N=Math.round(v)}},
+ {id:"halfLife",label:"Poll half-life",unit:"days",step:1,min:1,max:90,hint:"A poll's weight halves every this many days.",get:function(){return HALF_LIFE_DAYS},set:function(v){HALF_LIFE_DAYS=v}},
+ {id:"bonus",label:"1 News and Taxpayers' Union weight",unit:"×",step:.05,min:0,max:5,hint:"Extra weight on these two pollsters. 1 = none.",get:function(){return HOUSE_BONUS["1 News–Verian"]},set:function(v){HOUSE_BONUS["1 News–Verian"]=v;HOUSE_BONUS["Taxpayers' Union–Curia"]=v}},
+ {id:"house",label:"Apply house effects",bool:true,hint:"Correct each poll for its firm's usual lean (The Overhang, 2020–2026).",get:function(){return HOUSE_EFFECTS_ON},set:function(v){HOUSE_EFFECTS_ON=!!v}},
+ {id:"partyErr",label:"Party polling error",unit:"×",step:.05,min:0,max:3,hint:"0.5 ≈ ±2.2 points for a party on 28%.",get:function(){return PARTY_ERR},set:function(v){PARTY_ERR=v}},
+ {id:"bloc",label:"Shared swing between blocs",unit:"points",step:.1,min:0,max:10,hint:"How far the polls can miss in the same direction for a whole bloc.",get:function(){return BLOC_SWING_SD},set:function(v){BLOC_SWING_SD=v}},
+ {id:"tpmErr",label:"Extra error for Te Pāti Māori",unit:"×",step:.1,min:0,max:5,hint:"Multiplies TPM's polling error.",get:function(){return EXTRA_ERR.TPM},set:function(v){EXTRA_ERR.TPM=v}},
+ {id:"topErr",label:"Extra error for TOP",unit:"×",step:.1,min:0,max:5,hint:"Multiplies TOP's polling error.",get:function(){return EXTRA_ERR.TOP},set:function(v){EXTRA_ERR.TOP=v}},
+ {id:"specials",label:"Special-vote lean",unit:"×",step:.1,min:0,max:3,hint:"1 = our estimate (70% of the 2020–2023 average). 1.43 = the full average. 0 = none.",get:function(){return SPECIALS_SCALE},set:function(v){SPECIALS_SCALE=v}},
+ {id:"seatSd",label:"General-seat noise",unit:"points",step:.5,min:0,max:20,hint:"Random error per candidate in general electorates (sets National's overhang spread).",get:function(){return SEAT_SD},set:function(v){SEAT_SD=v}},
+ {id:"tpmBias",label:"TPM boost in Māori seats",unit:"points",step:.5,min:-20,max:20,hint:"Added to TPM in every Māori seat, because the 2023 polls understated it.",get:function(){return MAORI_TPM_BIAS},set:function(v){MAORI_TPM_BIAS=v}},
+ {id:"mSeatSd",label:"Māori seat noise",unit:"points",step:.5,min:0,max:30,hint:"Random error per candidate in each Māori seat.",get:function(){return MAORI_SEAT_SD},set:function(v){MAORI_SEAT_SD=v}},
+ {id:"mShared",label:"Shared TPM swing",unit:"points",step:.5,min:0,max:30,hint:"A swing applied to TPM in all seven seats at once.",get:function(){return MAORI_SHARED_SD},set:function(v){MAORI_SHARED_SD=v}}
+];
+var EDIT_KEY="coalitionlab-forecast-edits",editing={},DEFAULTS=null;
+var OUT=[{id:"left",label:"Labour's side wins",short:"Labour's side wins",note:"Labour, Greens and Te Pāti Māori have enough seats on their own"},{id:"right",label:"National's side wins",short:"National's side wins",note:"National, ACT and NZ First have enough seats on their own"},{id:"king",label:"TOP decides",short:"TOP decides",note:"Neither side has enough, so TOP (or an independent) picks who governs"},{id:"hung",label:"Nobody can govern",short:"Nobody can govern",note:"Neither side has enough, even with TOP: an odd deal or a new election"}];
+// The fox's plain-English explainers for the "Huh?" buttons.
+var GLOSS=[
+ {id:"sides",q:"Who's on each side?",a:"<b>Labour's side</b> is Labour, the Greens and Te Pāti Māori. <b>National's side</b> is National, ACT and NZ First. A side needs more than half the seats in Parliament to govern."},
+ {id:"top",q:"Why does TOP matter?",a:"TOP (The Opportunity Party) is polling around 6%, just over the 5% it needs to get any seats. I don't count it on either side, so when neither side has enough seats, TOP's 6 or so MPs decide who governs. If TOP drops under 5%, it gets nothing."},
+ {id:"overhang",q:"What's an overhang?",a:"If a party wins more electorates than its party vote earns, it keeps the extra seats and Parliament gets bigger. Te Pāti Māori is trying to do this on purpose, and National might do it by accident. A bigger Parliament means more seats are needed to govern."},
+ {id:"specials",q:"Why might election night be wrong?",a:"Around 1 in 6 votes are <b>special votes</b> (overseas voters, people who moved, and so on), counted after election night. They usually lean towards the Greens and Te Pāti Māori, so the final result can differ from what you see on the night."},
+ {id:"dots",q:"What does '20,000 elections' mean?",a:"Polls are never exactly right. So I take the polls, wiggle them by about as much as polls are usually wrong, play out every electorate, count the seats, and do that 20,000 times. If something happens in 30 of every 100 runs, it's about a 30% chance."}
+];
+var SHRUGS=["shrug-idle","shrug-look","shrug-wag"];
+function foxFor(id,p){if(id==="hung")return"stars-cheer";if(id==="king"||p<50)return SHRUGS[Math.floor(Math.random()*SHRUGS.length)];return p>=65?"number-one-cheer":"wave-idle"}
+// The corner fox: says a line, then goes quiet after a few seconds.
+var buddyTimer=null;
+function buddy(text,gif){var say=$("buddySay");if(!say||$("buddy").classList.contains("gone"))return;say.textContent=text;say.hidden=false;if(gif)setFox($("buddyFox"),gif);
+  clearTimeout(buddyTimer);buddyTimer=setTimeout(function(){say.hidden=true;setFox($("buddyFox"),"wave-cheer")},5000)}
+var BUDDY_IDLE=["Tap any dot in the tug of war to see that Parliament.","Try picking a Māori seat winner, then hit Re-run.","Stuck on a word? Hit one of the “Huh?” buttons up top.","The dials let you change my assumptions. Go on, break it."];
+function setFox(el,name){var src="good-gifs/"+name+".gif";if(el&&el.getAttribute("src")!==src)el.setAttribute("src",src)}
+// One plain sentence on why the likeliest outcome happens, then the runner-up.
+var WHY={left:"Labour, the Greens and Te Pāti Māori get enough seats between them",right:"National, ACT and NZ First get enough seats between them",king:"neither side gets enough seats on its own, so TOP gets to choose",hung:"neither side gets enough seats, even with TOP's help"};
+var NEXT={left:"Labour's side winning outright",right:"National's side winning outright",king:"TOP getting to choose",hung:"nobody being able to govern"};
+function sayOdds(c,n){var o=OUT.slice().sort(function(a,b){return c[b.id]-c[a.id]}),a=o[0],b=o[1];
+  return"In <b>"+inHundred(pct(c[a.id],n))+"</b> of every 100 elections, "+WHY[a.id]+"."+(c[b.id]?" Next most likely is "+NEXT[b.id]+" (<b>"+inHundred(pct(c[b.id],n))+"</b> in 100).":"")}
+var COL={left:"var(--left)",right:"var(--right)",king:"var(--king)",hung:"var(--hung)"};
+var ORDER=["Green","Te Pāti Māori","Te Tai Tokerau Party","Labour","Independent","Opportunity (TOP)","NZ First","National","ACT"];
+var FILTERS=[
+ {id:"topSpecials",label:"TOP gets in on special votes",test:function(x){return x.vn.TOP<5&&x.v.TOP>=5}},
+ {id:"tpm5",label:"TPM wins 5+ Māori seats",test:function(x){return tpmSeats(x)>=5}},
+ {id:"tpmAllOver",label:"All TPM seats are overhang",test:function(x){return x.f.tpmElect>0&&x.f.tpmEnt===0}},
+ {id:"rightBeat",label:"Polls underrate the right by 2+",test:function(x){return sumOf(x.v,RIGHT)-sumOf(DATA.avg,RIGHT)>=2}},
+ {id:"leftBeat",label:"Polls underrate the left by 2+",test:function(x){return sumOf(x.v,LEFT)-sumOf(DATA.avg,LEFT)>=2}}
+];
+// Switches keep only the simulations where something happens; "model" keeps them all.
+var SEGS=[
+ {id:"top",label:"TOP",opts:[["model","Model"],["in","Gets in"],["out","Misses 5%"]],test:{"in":function(x){return x.f.s.TOP>0},out:function(x){return!x.f.s.TOP}}},
+ {id:"nat",label:"National overhang",opts:[["model","Model"],["yes","Happens"],["no","Doesn't"]],test:{yes:function(x){return x.f.natOver>0},no:function(x){return!x.f.natOver}}}
+];
+// picks: seat winners the current simulations use. pending: what the reader has clicked, applied on "Re-run".
+var DATA=null,active={},seg={top:"model",nat:"model"},picks={},pending={},view=[],picked=null,swarmDrawn=false;
+function topOnSpecials(x){return x.vn.TOP<5&&x.v.TOP>=5}
+function keeps(x){return FILTERS.every(function(f){return!active[f.id]||f.test(x)})&&SEGS.every(function(s){return seg[s.id]==="model"||s.test[seg[s.id]](x)})}
+function narrowed(){return Object.keys(active).length>0||SEGS.some(function(s){return seg[s.id]!=="model"})}
+function pickCount(){return Object.keys(picks).length}
+function pendingChanges(){var n=0;MAORI_FC.forEach(function(m){if((pending[m.seat]||"")!==(picks[m.seat]||""))n++});return n}
+function tpmSeats(x){var n=0;for(var k in x.w)if(x.w[k]==="Te Pāti Māori")n++;return n}
+function pct(n,d){return d?n*100/d:0}
+function inHundred(p){return p<.5?"<1":p>99.5?">99":String(Math.round(p))}
+function share(p){return p>0&&p<.05?"<0.1":p<1&&p>0?fmt(p,1):String(Math.round(p))}
+function q(arr,p){if(!arr.length)return 0;var a=arr.slice().sort(function(x,y){return x-y});return a[Math.min(a.length-1,Math.floor(p*(a.length-1)+.5))]}
+function countBy(list,f){var o={};list.forEach(function(x){var k=f(x);o[k]=(o[k]||0)+1});return o}
+
+function initTheme(){try{var t=localStorage.getItem("nzmmp-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}
+  $("themeBtn").addEventListener("click",function(){var d=document.documentElement,dark=d.dataset.theme?d.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;d.dataset.theme=dark?"light":"dark";try{localStorage.setItem("nzmmp-theme",d.dataset.theme)}catch(e){}})}
+
+// ---- tooltip ----
+var tip=null;
+function showTip(e,html){tip.innerHTML=html;tip.hidden=false;var x=e.clientX+14,y=e.clientY+14,w=tip.offsetWidth,h=tip.offsetHeight;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y+h>innerHeight-8)y=e.clientY-h-14;tip.style.left=x+"px";tip.style.top=y+"px"}
+function hideTip(){tip.hidden=true}
+function bindTips(root,fn){root.addEventListener("mousemove",function(e){var t=e.target.closest("[data-tip]");if(t)showTip(e,fn(t));else hideTip()});root.addEventListener("mouseleave",hideTip)}
+
+// ---- text ----
+function leftName(s){return"Labour, Greens and Te Pāti Māori"+(s.TTT?" (plus Te Tai Tokerau Party)":"")}
+function kingWho(f){var m=f.maj,who=[];if(f.s.TOP&&(f.L+f.s.TOP>=m||f.R+f.s.TOP>=m))who.push("TOP ("+f.s.TOP+" seats)");if(f.s.IND&&(f.L+f.s.IND>=m||f.R+f.s.IND>=m))who.push("the independent");return who.length?who.join(" or "):"TOP and the independent together"}
+function describe(x){var f=x.f,h=f.house;
+  if(f.b==="left")return leftName(f.s)+" hold "+f.L+" of "+h+" seats, "+(f.L-f.maj+1)+" more than they need.";
+  if(f.b==="right")return"National, ACT and NZ First hold "+f.R+" of "+h+" seats, "+(f.R-f.maj+1)+" more than they need.";
+  var base="Left "+f.L+", right "+f.R+" in a House of "+h+" (majority "+f.maj+"). ";
+  if(f.b==="king")return base+"Neither bloc gets there, so "+kingWho(f)+" decides.";
+  var d=crossDeals(x).slice(0,2).map(function(p){return p.members.map(function(m){return abbr(m.name)}).join("+")});
+  return base+"Not even TOP can tip either side."+(d.length?" Majorities on offer: "+d.join(", ")+".":"");}
+function nightNote(x){if(x.n.b===x.f.b)return"";var a=OUT.filter(function(o){return o.id===x.n.b})[0];return"On election night this looked like a <b>"+esc(a.short.toLowerCase())+"</b>. Special votes changed it."}
+
+// ---- render ----
+function render(){view=DATA.sims.filter(keeps);
+  renderHero();renderPick();renderSwarm();renderHist();renderCards();renderParties();if(!editing.maori)renderMaori();if(!editing.polls)renderPolls();if(!editing.tune)renderTune();renderEditButtons()} // open editors keep unsaved input
+function outcomeCounts(list){var c={left:0,right:0,king:0,hung:0};list.forEach(function(x){c[x.f.b]++});return c}
+// FiveThirtyEight-style wording: how strongly the most likely outcome is favoured.
+function strength(p){return p>=85?"clearly favoured":p>=65?"favoured":"slightly favoured"}
+function headline(id,p){if(id==="left"||id==="right")return(p>=50?(id==="left"?"<em>Labour's side</em> is ":"<em>National's side</em> is ")+strength(p)+" to win":"Nobody's favoured, but "+(id==="left"?"Labour's side":"National's side")+" winning is likeliest");
+  if(id==="king")return p>=50?"<em>TOP</em> "+(p>=85?"is all but certain to":p>=65?"is likely to":"will probably")+" pick the government":"Nobody's favoured, but <em>TOP</em> picking is likeliest";return"<em>Nobody can govern</em> is the likeliest outcome"}
+function renderHero(){var c=outcomeCounts(view),n=view.length,lead=OUT.slice().sort(function(a,b){return c[b.id]-c[a.id]})[0],filtered=narrowed();
+  $("heroTitle").innerHTML=n?headline(lead.id,pct(c[lead.id],n)):"No simulations match these picks";
+  $("heroEyebrow").textContent=filtered?"Only the elections that match your switches":pickCount()?"With your picks, I re-ran it "+fmt(N,0)+" times":"Kia ora! I ran the election "+fmt(N,0)+" times";
+  $("heroSub").innerHTML=n?sayOdds(c,n):"Try turning off a switch below.";setFox($("heroFox"),n?foxFor(lead.id,pct(c[lead.id],n)):SHRUGS[0]);
+  $("odds").innerHTML=OUT.map(function(o){return'<div class="odd" style="--c:'+COL[o.id]+'"><span>'+o.label+'</span><b class="num">'+inHundred(pct(c[o.id],n))+'<small>in 100</small></b><em>'+o.note+'</em></div>'}).join("");
+  $("stack").innerHTML=OUT.map(function(o){var p=pct(c[o.id],n);return p?'<i style="flex:'+p+' 1 0;background:'+COL[o.id]+'"></i>':""}).join("");
+  var flips=view.filter(function(x){return x.n.b!==x.f.b}).length;
+  $("meta").innerHTML=fmt(n,0)+" simulations"+(filtered?" match your switches (of "+fmt(N,0)+")":"")+" · the election-night count gives a different outcome in "+share(pct(flips,n))+"% of them · polls up to "+esc(AS_OF.split("-").reverse().join("/"))}
+function seatLabel(seat,k){return k==="IND"?(seat==="Te Tai Tonga"?"Ferris":"Ind."):abbr(CODES[k])}
+function renderPick(){var all=DATA.sims,n=all.length;
+  $("seats").innerHTML=MAORI_FC.map(function(m){var c=countBy(all,function(x){return codeOf(x.w[m.seat])}),on=!!pending[m.seat],waiting=(pending[m.seat]||"")!==(picks[m.seat]||""),ks=Object.keys(m.s).sort(function(a,b){return(c[b]||0)-(c[a]||0)});
+    return'<div class="seat'+(on||waiting?" on":"")+'"><div class="seat-h"><b title="'+esc(m.seat)+'">'+esc(m.seat)+'</b>'+(waiting?'<span class="mono" style="color:var(--accent)">Not run yet</span>':on?'<span class="mono">Winner picked</span>':'')+'</div><div class="mbar">'+ks.filter(function(k){return c[k]}).map(function(k){return'<i style="flex:'+c[k]+' 1 0;background:'+colorOf(CODES[k])+'"></i>'}).join("")+'</div><div class="picks" role="group" aria-label="Winner in '+esc(m.seat)+'"><button type="button" data-seat="'+esc(m.seat)+'" data-p="" aria-pressed="'+!on+'">Model</button>'+ks.map(function(k){return'<button type="button" data-seat="'+esc(m.seat)+'" data-p="'+k+'" style="--pc:'+colorOf(CODES[k])+';--pc-ink:#fff" aria-pressed="'+(pending[m.seat]===k)+'">'+esc(seatLabel(m.seat,k))+(picks[m.seat]?'':'<small>'+share(pct(c[k]||0,n))+'%</small>')+'</button>'}).join("")+'</div></div>'}).join("");
+  var w=pendingChanges(),bar=$("pickBar");bar.hidden=!w;bar.innerHTML=w?'<span class="ed-msg" style="color:var(--accent);font-weight:650">'+w+' seat change'+(w>1?"s":"")+' not run yet</span><button type="button" class="btn" data-pick-discard="1">Discard</button><button type="button" class="btn primary" data-pick-run="1">Re-run with these picks</button>':"";
+  $("switches").innerHTML=SEGS.map(function(s){return'<div class="switch">'+esc(s.label)+'<span class="segs" role="group" aria-label="'+esc(s.label)+'">'+s.opts.map(function(o){var k=o[0]==="model"?n:all.filter(s.test[o[0]]).length;return'<button type="button" data-seg="'+s.id+'" data-v="'+o[0]+'" aria-pressed="'+(seg[s.id]===o[0])+'"'+(o[0]==="model"?'':' title="Happens in '+share(pct(k,n))+'% of simulations"')+'>'+esc(o[1])+'</button>'}).join("")+'</span></div>'}).join("")+(pickCount()||pendingChanges()||narrowed()?'<button type="button" class="btn" data-reset="1">Reset all</button>':'');
+  $("filters").innerHTML='<span class="more mono">More what-ifs</span>'+FILTERS.map(function(f){var k=all.filter(f.test).length;return'<button type="button" class="chip" data-f="'+f.id+'" aria-pressed="'+!!active[f.id]+'">'+esc(f.label)+'<small>'+share(pct(k,n))+'%</small></button>'}).join("");
+  var m=view.length,note=$("filterNote");note.className="filter-note"+(m&&m<200?" warn":"");
+  note.innerHTML=(pickCount()?"<b>"+pickCount()+"</b> seat"+(pickCount()>1?"s":"")+" locked in. ":"")+(narrowed()?(m?"<b>"+fmt(m,0)+"</b> of "+fmt(n,0)+" simulations match your switches ("+share(pct(m,n))+"%)."+(m<200?" That's few, so the odds are rough.":""):"No simulation matches all of these. Try removing one."):"Percentages show how often each thing happens.")}
+// Tug of war: 100 simulations as a beeswarm on the seat gap (right bloc minus left bloc), stacked in columns.
+// Drawn at the chart's real width (capped at 760) so dots and labels stay legible on phones.
+function renderSwarm(){var svg=$("swarm"),SW_W=Math.max(320,Math.min(760,Math.round(svg.parentNode.clientWidth-(parseFloat(getComputedStyle(svg.parentNode).paddingLeft)||0)*2))),narrow=SW_W<560,SW_H=narrow?370:330,SW_BASE=narrow?245:205,top=narrow?132:120,big=narrow?22:30,sample=view.slice(0,100),c=outcomeCounts(view),n=view.length,rank={left:0,king:1,hung:2,right:3};
+  var span=10,widest=0;sample.forEach(function(x){widest=Math.max(widest,Math.abs(x.f.R-x.f.L))});span=Math.min(narrow?20:30,Math.max(10,Math.ceil(widest/5)*5));var clamped=widest>span; // outliers sit in the end columns, labelled "20+"
+  var pad=narrow?14:34,cw=(SW_W-2*pad)/(2*span+1),r=Math.max(3.5,Math.min(7,cw/2-.7)),step=r*2+1.5,X=function(d){return pad+(d+span+.5)*cw},cols={},pos=[];
+  sample.forEach(function(x,i){var d=Math.max(-span,Math.min(span,x.f.R-x.f.L));(cols[d]=cols[d]||[]).push(i)});
+  Object.keys(cols).forEach(function(d){cols[d].sort(function(a,b){return rank[sample[a].f.b]-rank[sample[b].f.b]}).forEach(function(i,k){var off=k===0?0:(k%2?-1:1)*Math.ceil(k/2);pos[i]={x:X(+d),y:SW_BASE+off*step}})});
+  svg.setAttribute("viewBox","0 0 "+SW_W+" "+SW_H);var g=svg.querySelector("g.axis");if(!g){svg.innerHTML='<g class="axis"></g><g class="dots"></g>';g=svg.querySelector("g.axis")}
+  var h='',p=function(id){return inHundred(pct(c[id],n))};
+  for(var d=-span;d<=span;d+=5){if(!d)continue;var col=d<0?"var(--left)":"var(--right)";h+='<line x1="'+X(d)+'" x2="'+X(d)+'" y1="'+top+'" y2="'+(SW_H-34)+'" stroke="'+col+'" stroke-opacity=".35" stroke-width="1.5"/><text x="'+X(d)+'" y="'+(SW_H-18)+'" text-anchor="middle" style="fill:'+col+'">+'+Math.abs(d)+(clamped&&Math.abs(d)===span?'+':'')+'</text>'}
+  h+='<line x1="'+X(0)+'" x2="'+X(0)+'" y1="'+(narrow?top-10:top-24)+'" y2="'+(SW_H-30)+'" stroke="var(--ink)" stroke-width="2.5"/><text x="'+X(0)+'" y="'+(SW_H-4)+'" text-anchor="middle" style="fill:var(--ink)">TIE</text>';
+  h+='<text x="'+pad+'" y="'+(SW_H-4)+'">'+(narrow?'← LABOUR AHEAD':"← LABOUR'S SIDE AHEAD")+'</text><text x="'+(SW_W-pad)+'" y="'+(SW_H-4)+'" text-anchor="end">'+(narrow?'NATIONAL AHEAD →':"NATIONAL'S SIDE AHEAD →")+'</text>';
+  h+='<text class="big" x="'+pad+'" y="40" style="fill:var(--left);font-size:'+big+'px">'+p("left")+' in 100</text><text class="bigl" x="'+pad+'" y="60">'+(narrow?"Labour's side":"Labour's side wins")+'</text>';
+  h+='<text class="big" x="'+(SW_W-pad)+'" y="40" text-anchor="end" style="fill:var(--right);font-size:'+big+'px">'+p("right")+' in 100</text><text class="bigl" x="'+(SW_W-pad)+'" y="60" text-anchor="end">'+(narrow?"National's side":"National's side wins")+'</text>';
+  var cy=narrow?88:34;h+='<text class="bigl" x="'+X(0)+'" y="'+cy+'" text-anchor="middle" style="fill:var(--king);font-weight:760;font-size:17px">'+p("king")+' in 100 TOP decides</text><text class="bigl" x="'+X(0)+'" y="'+(cy+20)+'" text-anchor="middle" style="fill:var(--hung)">'+p("hung")+' in 100 nobody can govern</text>';
+  g.innerHTML=h;
+  var dg=svg.querySelector("g.dots"),first=!swarmDrawn;while(dg.children.length<sample.length)dg.insertAdjacentHTML("beforeend",'<circle class="dotc" cx="0" cy="0" tabindex="0" role="button" data-tip="1"/>');while(dg.children.length>sample.length)dg.removeChild(dg.lastChild);
+  sample.forEach(function(x,i){var el=dg.children[i],o=OUT.filter(function(o){return o.id===x.f.b})[0],to="translate("+pos[i].x.toFixed(1)+"px,"+pos[i].y.toFixed(1)+"px)";el.setAttribute("r",r.toFixed(1));el.dataset.sim=x.i;el.style.fill=COL[x.f.b];el.setAttribute("aria-label",o.short+": left "+x.f.L+", right "+x.f.R+(x.f.s.TOP?", TOP "+x.f.s.TOP:""));el.classList.toggle("sel",picked===x.i);
+    if(first){el.style.transition="none";el.style.opacity="0";el.style.transform="translate("+pos[i].x.toFixed(1)+"px,-30px)";el.getBoundingClientRect();el.style.transition="";el.style.transitionDelay=(pos[i].x/SW_W*500+Math.random()*150).toFixed(0)+"ms"}else el.style.transitionDelay="0ms";
+    el.style.opacity="1";el.style.transform=to});
+  swarmDrawn=true;
+  $("dotLegend").innerHTML=OUT.map(function(o){return'<span><i class="swatch" style="background:'+COL[o.id]+';border-radius:50%"></i>'+o.short+'</span>'}).join("");
+  if(picked!=null&&!sample.some(function(x){return x.i===picked}))picked=null;renderDetail()}
+function selectSim(i){picked=picked===i?null:i;[].forEach.call($("swarm").querySelectorAll(".dotc"),function(d){d.classList.toggle("sel",+d.dataset.sim===picked)});renderDetail()}
+function simById(i){return DATA.sims[i]}
+function renderDetail(){var box=$("detail");if(picked==null){box.hidden=true;return}var x=simById(picked),res=resultOf(x),o=OUT.filter(function(o){return o.id===x.f.b})[0],order=ORDER.map(function(n){return res.parties.filter(function(p){return p.name===n&&p.total>0})[0]}).filter(Boolean),nn=nightNote(x);
+  box.hidden=false;box.innerHTML='<div><svg class="hemi" id="hemi" role="img" aria-label="Seats in this simulated Parliament"></svg></div><div><span class="tag" style="--c:'+COL[x.f.b]+'">'+esc(o.short)+'</span><h3 style="margin-top:8px">'+res.house+' seats · majority '+res.majority+'</h3><p>'+esc(describe(x))+'</p>'+(nn?'<p class="small">'+nn+'</p>':'')+'<div class="seatlist"><span class="h">Party</span><span class="h r">Vote</span><span class="h r">Seats</span>'+order.map(function(p){var k=codeOf(p.name);return'<span><i class="swatch" style="background:'+p.color+'"></i>'+esc(p.name)+'</span><span class="r">'+(x.v[k]!=null?fmt(x.v[k],1)+"%":"–")+'</span><span class="r"><b>'+p.total+'</b>'+(p.overhang?' <small style="color:var(--over)">+'+p.overhang+' OH</small>':'')+'</span>'}).join("")+'</div>'+(x.v.TOP<5&&x.v.TOP>4?'<p class="small" style="margin-top:8px">TOP finishes on '+fmt(x.v.TOP,2)+'%, just short.</p>':'')+'</div>';
+  drawHemi($("hemi"),res,order)}
+function renderHist(){var lo=-15,hi=15,bins={},n=view.length;view.forEach(function(x){var d=Math.max(lo,Math.min(hi,x.f.L-x.f.maj));bins[d]=bins[d]||{left:0,right:0,king:0,hung:0};bins[d][x.f.b]++});
+  var W=720,H=240,pl=8,pr=8,pt=24,pb=36,bw=(W-pl-pr)/(hi-lo+1),max=1,svg=$("hist");for(var k in bins)max=Math.max(max,bins[k].left+bins[k].right+bins[k].king+bins[k].hung);
+  var y=function(c){return(H-pb)-(c/max)*(H-pb-pt)},h='';
+  for(var d=lo;d<=hi;d++){var b=bins[d];var x0=pl+(d-lo)*bw+1,w=bw-2,acc=0;if(b)["right","hung","king","left"].forEach(function(id){var c=b[id];if(!c)return;var y1=y(acc+c),y0=y(acc);h+='<rect x="'+x0.toFixed(1)+'" y="'+y1.toFixed(1)+'" width="'+w.toFixed(1)+'" height="'+Math.max(0,y0-y1-(acc?1:0)).toFixed(1)+'" rx="2" fill="'+COL[id]+'"/>';acc+=c});
+    var tot=b?b.left+b.right+b.king+b.hung:0,lab=d===lo?d+" or fewer":d===hi?"+"+d+" or more":d>=0?"+"+d:String(d);
+    h+='<rect x="'+(pl+(d-lo)*bw).toFixed(1)+'" y="'+pt+'" width="'+bw.toFixed(1)+'" height="'+(H-pb-pt)+'" fill="transparent" data-tip="1" data-d="'+d+'" data-lab="'+esc(lab)+'"/>';
+    if(d%5===0)h+='<text x="'+(x0+w/2).toFixed(1)+'" y="'+(H-pb+16)+'" text-anchor="middle">'+(d>0?"+":"")+d+'</text>'}
+  var zx=pl+(0-lo)*bw-.5;h+='<line x1="'+zx+'" x2="'+zx+'" y1="'+(pt-14)+'" y2="'+(H-pb)+'" stroke="var(--ink)" stroke-width="2" stroke-dasharray="4 4"/><text class="lbl" x="'+(zx+6)+'" y="'+(pt-4)+'">Majority →</text><text class="lbl" x="'+(zx-6)+'" y="'+(pt-4)+'" text-anchor="end">← Short</text><line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+(H-pb)+'" y2="'+(H-pb)+'" stroke="var(--line)"/><text x="'+(W/2)+'" y="'+(H-4)+'" text-anchor="middle">Left-bloc seats minus the majority line (0 = exactly a majority)</text>';
+  svg.setAttribute("viewBox","0 0 "+W+" "+H);svg.innerHTML=h;svg._bins=bins;svg._n=n;
+  $("histLegend").innerHTML=OUT.map(function(o){return'<span><i class="swatch" style="background:'+COL[o.id]+'"></i>'+o.short+'</span>'}).join("")}
+function histTip(t){var svg=$("hist"),b=svg._bins[t.dataset.d],n=svg._n;if(!b)return"<b>"+esc(t.dataset.lab)+"</b><br>No simulations";var tot=b.left+b.right+b.king+b.hung;return"<b>Left bloc "+esc(t.dataset.lab)+"</b> · "+share(pct(tot,n))+"% of simulations"+OUT.filter(function(o){return b[o.id]}).map(function(o){return"<br>"+o.short+": "+share(pct(b[o.id],n))+"%"}).join("")}
+function dotTip(t){var x=simById(+t.dataset.sim),f=x.f;return"<b>"+esc(OUT.filter(function(o){return o.id===f.b})[0].short)+"</b><br>Left "+f.L+" · Right "+f.R+(f.s.TOP?" · TOP "+f.s.TOP:"")+"<br>House "+f.house+", majority "+f.maj+(x.n.b!==f.b?"<br><i>Changed on special votes</i>":"")}
+function typical(list){if(!list.length)return null;var m=q(list.map(function(x){return x.f.L}),.5);return list.reduce(function(a,x){return Math.abs(x.f.L-m)<Math.abs(a.f.L-m)?x:a})}
+function renderCards(){var n=view.length;$("cards").innerHTML=OUT.map(function(o){var list=view.filter(function(x){return x.f.b===o.id}),t=typical(list),extra="";
+    if(o.id==="king"&&list.length){var top=list.filter(function(x){return x.f.s.TOP>0}).length;extra=" TOP holds the balance in "+share(pct(top,list.length))+"% of these.";}
+    if(o.id==="hung"&&list.length){var tie=list.filter(function(x){return x.f.L===x.f.R}).length;extra=" "+share(pct(tie,list.length))+"% are an exact seat-for-seat tie between the blocs.";}
+    return'<div class="card" style="--c:'+COL[o.id]+'"><h3>'+o.label+'</h3><div class="pct num">'+share(pct(list.length,n))+'%</div><p class="muted">'+o.note+'.'+extra+'</p>'+(t?'<p><b>Typical:</b> '+esc(describe(t))+'</p><button type="button" class="btn" data-show="'+t.i+'">Show this Parliament</button>':'<p class="muted">Doesn\'t happen in these simulations.</p>')+'</div>'}).join("");
+  var flips=view.filter(function(x){return x.n.b!==x.f.b}),fc=countBy(flips,function(x){return x.n.b+">"+x.f.b}),fk=Object.keys(fc).sort(function(a,b){return fc[b]-fc[a]})[0],nm=function(id){return"“"+OUT.filter(function(o){return o.id===id})[0].short+"”"};
+  var topSp=view.filter(topOnSpecials).length,over=view.filter(function(x){return x.f.house>120}).length,natO=view.filter(function(x){return x.f.natOver>0}).length;
+  $("facts").innerHTML='<div class="fact"><b class="num">'+share(pct(flips.length,n))+'%</b><span>of the time, the special votes counted after election night change who governs.'+(fk?' Usually '+nm(fk.split(">")[0])+' on the night becomes '+nm(fk.split(">")[1])+'.':'')+'</span></div><div class="fact"><b class="num">'+share(pct(topSp,n))+'%</b><span>of the time, TOP looks out on election night (under 5%) but squeaks in once special votes are counted.</span></div><div class="fact"><b class="num">'+share(pct(natO,n))+'%</b><span>of the time, National wins more electorates than its party vote earns, so Parliament grows and the finish line moves.</span></div>'}
+function renderParties(){var n=view.length,names=["NAT","LAB","GRN","ACT","NZF","TOP","TPM"];var maxV=0;names.forEach(function(k){maxV=Math.max(maxV,q(view.map(function(x){return x.v[k]}),.9))});maxV=Math.ceil(maxV/5)*5||5;
+  var row=function(k){var vs=view.map(function(x){return x.v[k]}),ss=view.map(function(x){return x.f.s[k]||0}),inP=view.filter(function(x){return x.f.s[k]>0}).length,c=colorOf(CODES[k]),a=q(vs,.1),m=q(vs,.5),b=q(vs,.9),sc=function(v){return(v/maxV*100).toFixed(2)+"%"};
+    return'<tr><td><i class="swatch" style="background:'+c+'"></i>'+esc(CODES[k])+'</td><td class="r">'+fmt(DATA.avg[k],1)+'%</td><td><div class="range" data-tip="1" data-k="'+k+'"><span class="t" style="left:'+sc(5)+'"></span><i style="left:'+sc(a)+';width:calc('+sc(b)+' - '+sc(a)+');background:'+c+'"></i><b style="left:'+sc(m)+';background:'+c+'"></b></div></td><td class="r hs">'+fmt(a,1)+'–'+fmt(b,1)+'%</td><td class="r">'+share(pct(inP,n))+'%</td><td class="r"><b>'+q(ss,.5)+'</b> <span class="small">('+q(ss,.1)+'–'+q(ss,.9)+')</span></td></tr>'};
+  $("partyTable").innerHTML='<thead><tr><th>Party</th><th class="r">Poll avg</th><th>Simulated vote</th><th class="r hs">80% range</th><th class="r">In Parliament</th><th class="r">Seats</th></tr></thead><tbody>'+(n?names.map(row).join(""):"")+'</tbody>'}
+function renderMaori(){var n=view.length,parties=["TPM","LAB","TTT","IND","GRN","NAT","TOP"];
+  var ed=editing.maori,hs=ed?"":"hs";
+  $("maoriTable").innerHTML='<thead><tr><th>Seat</th><th class="'+hs+'">Starting shares (poll-based)</th><th>Chance of winning</th><th class="r">TPM</th></tr></thead><tbody>'+MAORI_FC.map(function(m){var c=countBy(view,function(x){return codeOf(x.w[m.seat])}),label=function(k){return k==="IND"?(m.seat==="Te Tai Tonga"?"Ferris (ind.)":"Independent"):abbr(CODES[k])};
+    return'<tr><td>'+esc(m.seat)+'</td><td class="small '+hs+'">'+(ed?Object.keys(m.s).map(function(k){return'<label class="msin">'+esc(label(k))+' <input class="ein" type="number" step="1" min="0" max="100" data-ms="'+esc(m.seat)+'" data-k="'+k+'" value="'+m.s[k]+'"></label>'}).join(""):Object.keys(m.s).map(function(k){return label(k)+" "+m.s[k]}).join(" · "))+'</td><td><div class="mbar">'+parties.filter(function(k){return c[k]}).map(function(k){var p=pct(c[k],n);return'<i data-tip="1" data-t="'+esc(label(k)+": "+share(p)+"%")+'" style="flex:'+p+' 1 0;background:'+colorOf(CODES[k])+'"></i>'}).join("")+'</div></td><td class="r">'+share(pct(c.TPM||0,n))+'%</td></tr>'}).join("")+'</tbody>';
+  var dist=countBy(view,tpmSeats),line=[0,1,2,3,4,5,6,7].filter(function(k){return dist[k]}).map(function(k){return k+": "+share(pct(dist[k],n))+"%"}).join(" · ");
+  $("maoriTable").insertAdjacentHTML("beforeend",'<caption class="small" style="caption-side:bottom;text-align:left;padding-top:10px">Number of seats TPM wins — '+line+'</caption>')}
+function renderPolls(){var w=pollWeights(),W=w.reduce(function(a,b){return a+b},0),ks=["NAT","LAB","GRN","ACT","NZF","TPM","TOP"];
+  var raw=pollAverage(true);$("pollSub").innerHTML="Average after house effects: <b>"+ks.map(function(k){return abbr(CODES[k])+" "+fmt(DATA.avg[k],1)}).join(" · ")+"</b>. Without them: "+ks.map(function(k){return abbr(CODES[k])+" "+fmt(raw[k],1)}).join(" · ")+". Each cell shows the published figure with the house-effect-adjusted figure below it.";
+  if(editing.polls){renderPollEditor(ks);return}
+  $("pollTable").innerHTML='<thead><tr><th>Date</th><th>Pollster</th><th class="r">n</th><th class="r">Weight</th>'+ks.map(function(k){return'<th class="r">'+abbr(CODES[k])+'</th>'}).join("")+'</tr></thead><tbody>'+POLLS.map(function(p,i){return'<tr><td class="num">'+p.date.slice(5).split("-").reverse().join("/")+'</td><td>'+esc(p.org)+'</td><td class="r">'+fmt(p.n,0)+'</td><td class="r">'+fmt(w[i]*100/W,1)+'%</td>'+ks.map(function(k){var a=adjustedPoll(p)[k],d=a-p.v[k];return'<td class="r">'+fmt(p.v[k],1)+(Math.abs(d)>=.05?'<br><span class="small">'+fmt(a,1)+'</span>':'')+'</td>'}).join("")+'</tr>'}).join("")+'</tbody>'}
+
+// ---- editing ----
+function clone(o){return JSON.parse(JSON.stringify(o))}
+function snapshot(){var tune={};TUNE.forEach(function(d){tune[d.id]=d.get()});var maori={};MAORI_FC.forEach(function(m){maori[m.seat]=clone(m.s)});return{polls:clone(POLLS),maori:maori,tune:tune}}
+function same(a,b){return JSON.stringify(a)===JSON.stringify(b)}
+function applyEdits(e){if(e.polls){POLLS=clone(e.polls);AS_OF=POLLS.reduce(function(a,p){return p.date>a?p.date:a},"")}
+  if(e.maori)MAORI_FC.forEach(function(m){if(e.maori[m.seat])m.s=clone(e.maori[m.seat])});
+  if(e.tune)TUNE.forEach(function(d){if(e.tune[d.id]!=null)d.set(e.tune[d.id])})}
+function saveEdits(){var now=snapshot(),out={};["polls","maori","tune"].forEach(function(k){if(!same(now[k],DEFAULTS[k]))out[k]=now[k]});try{if(Object.keys(out).length)localStorage.setItem(EDIT_KEY,JSON.stringify(out));else localStorage.removeItem(EDIT_KEY)}catch(e){}}
+function loadEdits(){try{var e=JSON.parse(localStorage.getItem(EDIT_KEY));if(e&&typeof e==="object")applyEdits(e)}catch(err){}}
+function isEdited(k){return DEFAULTS&&!same(snapshot()[k],DEFAULTS[k])}
+function renderEditButtons(){[].forEach.call(document.querySelectorAll("[data-ed]"),function(box){var k=box.dataset.ed;box.innerHTML=editing[k]?"":(isEdited(k)?'<button type="button" class="btn" data-reset-ed="'+k+'">Reset to defaults</button>':'')+'<button type="button" class="btn" data-edit="'+k+'">Edit</button>';
+    $(k+"Edited").hidden=!isEdited(k);var bar=document.querySelector('[data-bar="'+k+'"]');bar.hidden=!editing[k];if(editing[k]&&!bar.innerHTML)bar.innerHTML='<span class="ed-msg">Changes apply when you save.</span><button type="button" class="btn" data-cancel="'+k+'">Cancel</button><button type="button" class="btn primary" data-save="'+k+'">Save and re-run</button>';if(!editing[k])bar.innerHTML=""})}
+function renderTune(){var ed=editing.tune;$("tuneTable").innerHTML='<thead><tr><th>Dial</th><th class="r">Value</th><th class="hs">What it does</th></tr></thead><tbody>'+TUNE.map(function(d){var v=d.get(),val=d.bool?(ed?'<input type="checkbox" data-tune="'+d.id+'"'+(v?" checked":"")+'>':(v?"On":"Off")):(ed?'<input class="ein" type="number" data-tune="'+d.id+'" step="'+d.step+'" min="'+d.min+'" max="'+d.max+'" value="'+v+'">':(d.id==="n"?fmt(v,0):String(+v.toFixed(3))))+(d.unit&&!d.bool?' <span class="small">'+d.unit+'</span>':'');
+    return'<tr><td>'+esc(d.label)+'</td><td class="r" style="white-space:nowrap">'+val+'</td><td class="hint hs">'+esc(d.hint)+'</td></tr>'}).join("")+'</tbody>'}
+function renderPollEditor(ks){var orgs=[];POLLS.concat(Object.keys(HOUSE_EFFECTS).map(function(o){return{org:o}})).forEach(function(p){if(orgs.indexOf(p.org)<0)orgs.push(p.org)});
+  var row=function(p){return'<tr data-row="1"><td><input class="ein date" type="date" data-pf="date" value="'+esc(p.date||"")+'"></td><td><input class="ein wide" list="orgList" data-pf="org" value="'+esc(p.org||"")+'"></td><td><input class="ein" type="number" min="1" step="1" data-pf="n" value="'+(p.n||"")+'"></td>'+ks.map(function(k){return'<td><input class="ein" type="number" min="0" max="100" step="0.1" data-pf="'+k+'" value="'+(p.v&&p.v[k]!=null?p.v[k]:"")+'"></td>'}).join("")+'<td><button type="button" class="del" data-del-poll="1" aria-label="Remove this poll">×</button></td></tr>'};
+  $("pollTable").innerHTML='<thead><tr><th>Date</th><th>Pollster</th><th class="r">n</th>'+ks.map(function(k){return'<th class="r">'+abbr(CODES[k])+'</th>'}).join("")+'<th></th></tr></thead><tbody>'+POLLS.map(row).join("")+'</tbody><tfoot><tr><td colspan="'+(ks.length+4)+'"><button type="button" class="btn" data-add-poll="1">+ Add a poll</button> <span class="small">Pollster names that match a house effect (e.g. "1 News–Verian") get corrected for it.</span></td></tr></tfoot>';
+  if(!$("orgList"))document.body.insertAdjacentHTML("beforeend",'<datalist id="orgList">'+orgs.map(function(o){return'<option value="'+esc(o)+'">'}).join("")+'</datalist>');
+  $("pollTable")._newRow=row}
+function num(el,min,max){var v=parseFloat(el.value),ok=el.value.trim()!==""&&isFinite(v)&&v>=min&&v<=max;el.classList.toggle("bad",!ok);return ok?v:null}
+// Each reader returns {ok, msg, apply} so nothing changes until every field is valid.
+function readMaori(){var bad=0,next={};MAORI_FC.forEach(function(m){next[m.seat]={}});[].forEach.call($("maoriTable").querySelectorAll("[data-ms]"),function(el){var v=num(el,0,100);if(v==null)bad++;else next[el.dataset.ms][el.dataset.k]=v});
+  MAORI_FC.forEach(function(m){if(Object.keys(next[m.seat]).every(function(k){return!next[m.seat][k]}))bad++});
+  return bad?{msg:"Enter a share from 0 to 100 for every candidate, with at least one above 0 in each seat."}:{apply:function(){MAORI_FC.forEach(function(m){m.s=next[m.seat]})}}}
+function readTune(){var bad=0,vals={};TUNE.forEach(function(d){var el=$("tuneTable").querySelector('[data-tune="'+d.id+'"]');if(d.bool){vals[d.id]=el.checked;return}var v=num(el,d.min,d.max);if(v==null)bad++;else vals[d.id]=v});
+  return bad?{msg:"Some values are out of range. Check the highlighted fields."}:{apply:function(){TUNE.forEach(function(d){d.set(vals[d.id])})}}}
+function readPolls(){var rows=[].slice.call($("pollTable").querySelectorAll("tr[data-row]")),bad=[],list=[];
+  rows.forEach(function(tr,i){var f=function(k){return tr.querySelector('[data-pf="'+k+'"]')},d=f("date"),org=f("org"),p={date:d.value,org:org.value.trim(),n:num(f("n"),1,1e6),v:{}},sum=0,okRow=true;
+    d.classList.toggle("bad",!/^\d{4}-\d{2}-\d{2}$/.test(p.date));org.classList.toggle("bad",!p.org);if(d.classList.contains("bad")||!p.org||p.n==null)okRow=false;
+    VOTE_CODES.forEach(function(k){if(k==="OTH")return;var v=num(f(k),0,100);if(v==null)okRow=false;else{p.v[k]=v;sum+=v}});
+    if(sum>102){okRow=false; // published polls can top 100 by rounding (1 News, 19 Oct: 101.7)
+     [].forEach.call(tr.querySelectorAll('[data-pf]'),function(el){if(VOTE_CODES.indexOf(el.dataset.pf)>=0)el.classList.add("bad")})}
+    if(okRow)list.push(p);else bad.push(i+1)});
+  if(!rows.length)return{msg:"Keep at least one poll."};
+  return bad.length?{msg:"Fix poll row"+(bad.length>1?"s ":" ")+bad.join(", ")+": every field is needed and party shares can't add up to more than 102 (a little over 100 allows for rounding)."}:{apply:function(){list.sort(function(a,b){return a.date<b.date?1:a.date>b.date?-1:0});POLLS=list;AS_OF=list[0].date}}}
+var READERS={maori:readMaori,tune:readTune,polls:readPolls};
+function startEdit(k){editing[k]=true;if(k==="maori")renderMaori();else if(k==="polls")renderPolls();else renderTune();renderEditButtons()}
+function stopEdit(k){delete editing[k];renderMaori();renderPolls();renderTune();renderEditButtons()}
+function saveEdit(k){var r=READERS[k](),bar=document.querySelector('[data-bar="'+k+'"]'),msg=bar.querySelector(".ed-msg");if(r.msg){msg.textContent=r.msg;msg.classList.add("err");return}
+  r.apply();delete editing[k];saveEdits();rerun()}
+function resetEdit(k){applyEdits(DEFAULTS[k]&&(function(){var o={};o[k]=DEFAULTS[k];return o})());saveEdits();rerun()}
+function rerun(){var before=view.length?outcomeCounts(view):null,nb=view.length;$("pickPanel").classList.add("busy");document.querySelector(".hero").classList.add("busy");$("meta").textContent="Re-running "+fmt(N,0)+" elections…";
+  setFox($("heroFox"),"calculator-hop");setFox($("pickFox"),"calculator-hop");$("pickSay").textContent="Crunching "+fmt(N,0)+" elections…";
+  setTimeout(function(){DATA=simulate(N,SEED,picks);$("pickPanel").classList.remove("busy");document.querySelector(".hero").classList.remove("busy");render();setFox($("pickFox"),"headphones-hop");
+    if(before){var after=outcomeCounts(view),n=view.length,moved=OUT.filter(function(o){return inHundred(pct(before[o.id],nb))!==inHundred(pct(after[o.id],n))});
+      $("pickSay").innerHTML=moved.length?"Done! Out of every 100 elections: "+moved.map(function(o){return o.short+" <b>"+inHundred(pct(before[o.id],nb))+" → "+inHundred(pct(after[o.id],n))+"</b>"}).join(" · "):"Done! That barely changed anything."}},30)}
+function renderHuh(){$("huh").innerHTML='<span class="small">Huh?</span>'+GLOSS.map(function(g){return'<button type="button" data-gloss="'+g.id+'" aria-pressed="false" aria-controls="explain">'+esc(g.q)+'</button>'}).join("")}
+function showGloss(id){var box=$("explain"),open=box.dataset.id===id&&!box.hidden,g=GLOSS.filter(function(g){return g.id===id})[0];
+  [].forEach.call($("huh").querySelectorAll("button"),function(b){b.setAttribute("aria-pressed",String(!open&&b.dataset.gloss===id))});
+  if(open){box.hidden=true;box.dataset.id="";return}box.hidden=false;box.dataset.id=id;
+  box.innerHTML='<div class="host"><img class="fox small" src="good-gifs/graduate-look.gif" alt="" width="256" height="256"><div class="bubble" role="status"><p class="eyebrow">'+esc(g.q)+'</p><p>'+g.a+'</p></div></div>'}
+function bind(){$("huh").addEventListener("click",function(e){var b=e.target.closest("[data-gloss]");if(b){showGloss(b.dataset.gloss);buddy("Good question.","graduate-look")}});
+  $("buddyX").addEventListener("click",function(){$("buddy").classList.add("gone")});
+  $("buddyFox").addEventListener("click",function(){buddy(BUDDY_IDLE[Math.floor(Math.random()*BUDDY_IDLE.length)],SHRUGS[Math.floor(Math.random()*SHRUGS.length)])});
+  document.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var d=b.dataset;
+    if(d.seat!=null&&d.p)buddy("Ooh, bold call in "+d.seat+". Hit Re-run when you're ready.","headphones-hop");
+    else if(d.pickRun||d.save)buddy("Crunching the numbers…","calculator-hop");
+    else if(d.seg&&d.v!=="model")buddy("Only keeping the elections where that happens.","magnifier-hop");
+    else if(d.reset||d.resetEd)buddy("Back to my original guess.","wave-cheer")});
+  $("swarm").addEventListener("click",function(e){var d=e.target.closest(".dotc");if(d){var x=simById(+d.dataset.sim);buddy("That's one possible Parliament: "+x.f.house+" seats, "+x.f.maj+" needed to govern.","magnifier-hop")}});$("pickPanel").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+    if(b.dataset.seat!=null){var s=b.dataset.seat;if(b.dataset.p)pending[s]=b.dataset.p;else delete pending[s];renderPick();return}
+    if(b.dataset.pickRun){picks=clone(pending);rerun();return}
+    if(b.dataset.pickDiscard){pending=clone(picks);renderPick();return}
+    if(b.dataset.seg){seg[b.dataset.seg]=b.dataset.v;render();return}
+    if(b.dataset.f){var id=b.dataset.f;if(active[id])delete active[id];else active[id]=true;render();return}
+    if(b.dataset.reset){active={};seg={top:"model",nat:"model"};var had=pickCount();picks={};pending={};if(had)rerun();else render()}});
+  document.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var d=b.dataset;
+    if(d.edit)startEdit(d.edit);else if(d.cancel)stopEdit(d.cancel);else if(d.save)saveEdit(d.save);else if(d.resetEd)resetEdit(d.resetEd);
+    else if(d.addPoll){var tb=$("pollTable").tBodies[0];tb.insertAdjacentHTML("afterbegin",$("pollTable")._newRow({date:new Date().toISOString().slice(0,10)}));tb.querySelector("input").focus()}
+    else if(d.delPoll)b.closest("tr").remove()});
+  document.addEventListener("input",function(e){if(e.target.classList.contains("bad"))e.target.classList.remove("bad");var bar=e.target.closest("section")&&e.target.closest("section").querySelector(".ed-msg.err");if(bar){bar.classList.remove("err");bar.textContent="Changes apply when you save."}});
+  $("swarm").addEventListener("click",function(e){var d=e.target.closest(".dotc");if(d)selectSim(+d.dataset.sim)});
+  $("swarm").addEventListener("keydown",function(e){var d=e.target.closest(".dotc");if(d&&(e.key==="Enter"||e.key===" ")){e.preventDefault();selectSim(+d.dataset.sim)}});
+  $("cards").addEventListener("click",function(e){var b=e.target.closest("[data-show]");if(!b)return;picked=null;selectSim(+b.dataset.show);$("detail").scrollIntoView({behavior:"smooth",block:"nearest"})});
+  bindTips($("swarm"),dotTip);bindTips($("hist"),histTip);bindTips($("maoriTable"),function(t){return esc(t.dataset.t)});
+  bindTips($("partyTable"),function(t){var k=t.dataset.k,vs=view.map(function(x){return x.v[k]});return"<b>"+esc(CODES[k])+"</b><br>Median "+fmt(q(vs,.5),1)+"% · 80% range "+fmt(q(vs,.1),1)+"–"+fmt(q(vs,.9),1)+"%<br>Under 5% in "+share(pct(vs.filter(function(v){return v<5}).length,vs.length))+"% of simulations"})}
+
+if(typeof document!=="undefined"&&document.getElementById("hist")){tip=$("tip");initTheme();renderHuh();bind();var lastW=innerWidth;addEventListener("resize",function(){if(DATA&&Math.abs(innerWidth-lastW)>40){lastW=innerWidth;renderSwarm()}});DEFAULTS=snapshot();loadEdits();setTimeout(function(){DATA=simulate(N,SEED,picks);render();buddy("Kia ora! I'm your guide. Click me for tips.","wave-cheer")},30)}
+})();
+</script>
+</body>
+</html>
