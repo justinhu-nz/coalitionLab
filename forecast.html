@@ -368,7 +368,7 @@ function pollWeights(){var t=Date.parse(AS_OF);return POLLS.map(function(p){var 
 function adjustedPoll(p){var e=HOUSE_EFFECTS_ON&&HOUSE_EFFECTS[p.org]||{},o={};VOTE_CODES.forEach(function(k){o[k]=Math.max(0,(k==="OTH"?othersOf(p):p.v[k])-(e[k]||0))});return o}
 function pollAverage(raw){var w=pollWeights(),W=w.reduce(function(a,b){return a+b},0),avg={};VOTE_CODES.forEach(function(k){avg[k]=POLLS.reduce(function(a,p,i){return a+w[i]*(raw?(k==="OTH"?othersOf(p):p.v[k]):adjustedPoll(p)[k])},0)/W});return normalise(avg)}
 function drawVotes(avg,r){var sw=gauss(r)*BLOC_SWING_SD,lt=avg.LAB+avg.GRN+avg.TPM,rt=avg.NAT+avg.ACT+avg.NZF,v={};
-  VOTE_CODES.forEach(function(k){var p=avg[k],x=k==="OTH"?p+gauss(r)*OTHERS_SD:p+gauss(r)*PARTY_ERR*Math.sqrt(p*(100-p))/10*(EXTRA_ERR[k]||1);if(LEFT.indexOf(k)>=0)x-=sw*p/lt;if(RIGHT.indexOf(k)>=0)x+=sw*p/rt;v[k]=Math.max(.05,x)});return normalise(v)}
+  VOTE_CODES.forEach(function(k){var p=avg[k],x=k==="OTH"?p+gauss(r)*OTHERS_SD:p+gauss(r)*PARTY_ERR*Math.sqrt(p*(100-p))/10*(EXTRA_ERR[k]||1);if(lt>0&&LEFT.indexOf(k)>=0)x-=sw*p/lt;if(rt>0&&RIGHT.indexOf(k)>=0)x+=sw*p/rt;v[k]=Math.max(.05,x)});return normalise(v)}
 function nightVotes(v,r){var m=Math.max(0,1+gauss(r)*SPECIALS_SD),n={};VOTE_CODES.forEach(function(k){n[k]=v[k]/(1+SPECIALS_LEAN[k]*SPECIALS_SCALE*m)});return normalise(n)}
 function argmax(shares,bump,r,sd){var best=null,bs=-Infinity;for(var k in shares){var s=shares[k]+(bump[k]||0)+gauss(r)*sd;if(s>bs){bs=s;best=k}}return best}
 // General seats, the electorates page's method: swing the seat's party vote (half uniform, half proportional),

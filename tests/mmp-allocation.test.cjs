@@ -12,7 +12,38 @@ const state=(votes,winners=allLab)=>({votes:makeVotes(votes),winners,seats:120,t
 const party=(r,n)=>r.parties.find(p=>p.name===n);
 const members=r=>r.parties.reduce((sum,p)=>sum+p.total,0);
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-10,`${a} != ${b}`);
+vm.runInContext(html.slice(html.indexOf('var RESULTS_BASE='),html.indexOf('function feedFile(')),engine);
+const feedRef={parties:{16:'NAT',13:'LAB',10:'GP',5:'ACT',17:'NZF',24:'OPP',14:'TPMAO',71:'TTTP',2:'FYP'},
+ electorates:{1:'Epsom',2:'Botany',3:'Dunedin',4:'Waiariki',5:'Te Tai Tonga',6:'Te Tai Tokerau',7:'Hauraki-Waikato'},
+ candidates:{1:[{c:'a',p:5},{c:'b',p:16}],2:[{c:'c',p:16},{c:'d',p:13}],3:[{c:'e',p:0},{c:'f',p:13}],4:[{c:'g',p:14},{c:'h',p:13}],5:[{c:'i',p:0},{c:'j',p:13}],6:[{c:'k',p:71},{c:'l',p:10}],7:[{c:'m',p:2},{c:'n',p:14}]}};
+const feedVotes={16:400,13:300,10:100,5:80,17:50,24:49,14:10,71:6,2:5};
 let checks=0;function test(name,fn){fn();checks++;console.log('PASS '+name)}
+test('Feed results fill votes, seat leaders and National\'s general count',()=>{
+ const r=engine.resultsFromFeed(feedRef,{updated:'2026-11-07T20:14:00',counted:40.5,votes:feedVotes,seats:{1:{a:90,b:50},2:{c:70,d:20},3:{e:60,f:10},4:{g:9,h:5},5:{i:8,j:2},6:{k:7,l:1},7:{m:6,n:3}}});
+ assert.equal(r.votes.National,40);assert.equal(r.votes.Labour,30);assert.equal(r.votes['Opportunity (TOP)'],4.9);near(r.votes['Others (below 5%)'],1.1);
+ assert.equal(r.natElect,1);assert.equal(r.general,3);assert.equal(r.maori,4);
+ assert.deepEqual({...r.winners},{Waiariki:'Te Pāti Māori','Te Tai Tonga':'Independent','Te Tai Tokerau':'Te Tai Tokerau Party','Hauraki-Waikato':'Independent'});
+ assert.deepEqual(Array.from(r.skipped),['Dunedin (Independent)']);
+});
+test('Feed results retain precision below the threshold, skip seats without votes and wait for a count',()=>{
+ const r=engine.resultsFromFeed(feedRef,{updated:'',counted:1,votes:{16:50001,24:4999.9,13:45000},seats:{1:{a:0,b:0}}});
+ near(r.votes['Opportunity (TOP)'],4999.9/100000.9*100);assert.equal(r.general,0);assert.equal(r.natElect,0);assert.deepEqual({...r.winners},{});
+ assert.equal(engine.resultsFromFeed(feedRef,{updated:'',counted:0,votes:{16:0,13:0},seats:{}}),null);
+});
+test('Tied electorate counts do not choose a winner by candidate order',()=>{
+ const r=engine.resultsFromFeed(feedRef,{votes:feedVotes,seats:{2:{c:70,d:70},4:{g:9,h:9}}});
+ assert.equal(r.natElect,0);assert.equal(r.general,0);assert.deepEqual({...r.winners},{});
+ assert.deepEqual(Array.from(r.tied),['Botany','Waiariki']);
+ assert.equal(engine.seatLeader(feedRef,2,{c:71,d:70}).tied,false);
+});
+test('Feed votes preserve a close seat allocation and sum to 100',()=>{
+ const counts={16:94200,13:94199,10:5999,5:5602};
+ const r=engine.resultsFromFeed(feedRef,{votes:counts,seats:{}});
+ near(Object.values(r.votes).reduce((a,b)=>a+b,0),100);
+ const raw=Object.fromEntries(Object.entries(counts).map(([p,n])=>[engine.feedName(feedRef,p),n/200000*100]));
+ assert.deepEqual(Array.from(engine.compute(state(r.votes)).parties,p=>p.total),Array.from(engine.compute(state(raw)).parties,p=>p.total));
+ assert.equal(engine.compute(state(r.votes)).tie,null);
+});
 test('Independent reserves a seat, creates no overhang, and changes the tie cutoff',()=>{
  const r=engine.compute(state({Labour:50,National:50},{...allLab,'Te Tai Tonga':'Independent'}));
  assert.equal(r.allocationBase,119);assert.equal(r.independentSeats,1);assert.equal(r.house,120);assert.equal(members(r),120);assert.equal(r.overhang,0);assert.equal(party(r,'Independent').overhang,0);assert.equal(party(r,'Independent').list,0);

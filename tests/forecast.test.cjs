@@ -90,4 +90,16 @@ test('Edited dials, seat shares and polls reach the model',()=>{
  r.applyEdits({polls:[poll]});assert.equal(r.getAsOf(),'2026-11-06');assert.ok(Math.abs(r.pollAverage(true).NAT-40*100/(94+6))<1e-9);
 });
 
+test('Zero-share blocs produce finite simulations in both forecast pages',()=>{
+ for(const filename of ['forecast.html','forecast-bold.html']){
+  const js=script(fs.readFileSync(path.join(root,filename),'utf8'));
+  const model=new Function(js.slice(js.indexOf('var ROSTER='),js.indexOf('// ---- end forecast model ----'))+';return{drawVotes:drawVotes,rng:rng}')();
+  for(const avg of [v({NAT:100}),v({LAB:100}),v({TOP:100})]){
+   const draw=model.drawVotes(avg,model.rng(7));
+   assert.ok(Object.values(draw).every(Number.isFinite),filename);
+   assert.ok(Math.abs(Object.values(draw).reduce((a,b)=>a+b,0)-100)<1e-9);
+  }
+ }
+});
+
 console.log(`\n${checks} checks passed`);
