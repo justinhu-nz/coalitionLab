@@ -272,6 +272,19 @@ a.btn{text-decoration:none}.btn.ghost{border-color:transparent;background:transp
 
 /* close tiles: name gets the full width; party label sits beside the margin on line two */
 .close-row b{grid-column:1/3;grid-row:1}.close-row small{grid-column:1;grid-row:2}.close-row .who{grid-column:2;grid-row:2}
+
+/* what changes from election night: compact strip under the House size */
+.changes{margin:10px 0 4px;padding-top:10px;border-top:1px solid var(--line)}
+.chg-title{font-size:13px;font-weight:650;margin:0 0 6px}
+.chg-grid{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;align-items:baseline}
+.chg-k{font-size:13px;font-weight:600;color:var(--muted)}.chg-v{display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;min-width:0}
+.chg-chip{display:inline-block;background:var(--pc);color:#fff;font-size:11px;font-weight:750;letter-spacing:.02em;padding:2px 7px;border-radius:2px;line-height:1.4}
+.chg-seat{font-size:13px;white-space:nowrap;margin-right:8px}.chg-seat b{font-weight:650}.chg-seat small{font-size:11px;color:var(--muted);margin-left:2px}
+.chg-house,.chg-none{font-size:11px;color:var(--muted)}.chg-house{margin-left:4px}
+
+/* no vertical jumps: the turning-point text reserves its tallest height; close-seat tiles stay one size */
+#turn{min-height:calc(7 * 1.4em)}
+.close-row small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 </head>
 <body>
@@ -312,6 +325,7 @@ a.btn{text-decoration:none}.btn.ghost{border-color:transparent;background:transp
     <div class="center">
     <section class="panel parliament" aria-labelledby="parlTitle">
       <div class="parl-head"><div><h2 class="eyebrow" id="parlTitle">Projected Parliament</h2><div class="big num" id="house" aria-live="polite"></div></div><div class="parl-side"><div class="viewsw" role="group" aria-label="Parliament view"><button data-view="seats" aria-pressed="true">Seats</button><button data-view="arc" aria-pressed="false">Vote arc</button></div><div class="parl-pills" id="pills"></div></div></div>
+      <div class="changes" id="changes" aria-live="polite" hidden></div>
       <svg class="hemi" id="hemi" role="img" aria-label="Parliament seat diagram"></svg>
       <div class="arc-wrap" id="arcWrap" hidden>
         <div class="arc-canvas"><svg class="vote-arc" id="voteArc" viewBox="0 0 760 440" role="img" aria-label="Adjustable semicircle of party vote share"></svg><div class="arc-center"><strong id="arcSum"></strong><span>party vote</span></div></div>
@@ -486,9 +500,9 @@ function render(){var sv=swungVotes();res=compute(Object.assign({},st,{votes:sv.
   var lo=laneOrder(),active=Object.keys(st.bloc).length>0;drawHemi($("hemi"),res,lo.filter(function(p){return st.bloc[p.name]}).concat(lo.filter(function(p){return!st.bloc[p.name]})),{dim:function(p){return active&&!st.bloc[p.name]}});
   document.querySelectorAll('#parties input[type=number]').forEach(function(n){if(document.activeElement!==n)n.value=st.votes[n.dataset.name]==null?"":st.votes[n.dataset.name]});
   var arcOn=st.view==="arc";$("hemi").style.display=arcOn?"none":"";$("arcWrap").hidden=!arcOn;document.querySelectorAll(".viewsw button").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.view===(arcOn?"arc":"seats")))});if(arcOn)renderArc(false);
-  renderElectOnly();renderLanes(lo);renderTable();renderInsight();renderTie();saveState(KEY,st);renderScenarios()}
+  renderChanges();renderElectOnly();renderLanes(lo);renderTable();renderInsight();renderTie();saveState(KEY,st);renderScenarios()}
 // No eligible positive votes: keep editable inputs and expose the missing allocation explicitly.
-function renderIncomplete(){
+function renderIncomplete(){$("changes").hidden=true;$("changes").innerHTML="";$("hemi").style.maxHeight="";
   $("house").innerHTML='—<small>allocation incomplete</small>';
   $("pills").innerHTML="";$("maoriPill").textContent="allocation incomplete";
   $("overNote").textContent="No party with positive votes qualifies. Enter party votes or adjust the threshold and electorate settings. "+res.unallocated+" proportional seats cannot yet be allocated; House size and majority are unknown.";
@@ -606,6 +620,25 @@ $("spN").addEventListener("input",function(e){setSp({n:+e.target.value})});
 $("spReset").addEventListener("click",function(){setSp({k:0})});
 // Picking a pattern while the lean is 0% would change nothing, so it also sets the lean to 100%.
 $("spYears").addEventListener("click",function(e){var b=e.target.closest("[data-spy]");if(!b)return;var sp=spState(st);setSp({y:b.dataset.spy,k:sp.k||1})});
+// ---- what changes from election night: seat gains/losses and flipped electorates, against the preliminary count ----
+var nightRes=null;
+function renderChanges(){if(!nightRes)nightRes=compute({votes:ELECTION_NIGHT,winners:DEFAULT_WINNERS,gen:GEN_NIGHT,thresh:5,seats:120,coattail:true});
+  var base={},d=[];nightRes.parties.forEach(function(p){base[p.name]=p.total});res.parties.forEach(function(p){var x=p.total-(base[p.name]||0);delete base[p.name];if(x)d.push([p.name,x])});Object.keys(base).forEach(function(n){if(base[n])d.push([n,-base[n]])});
+  d.sort(function(a,b){return(b[1]>0)-(a[1]>0)||Math.abs(b[1])-Math.abs(a[1])});
+  var chip=function(n,txt){return'<span class="chg-chip" style="--pc:'+colorOf(n)+'">'+esc(txt)+'</span>'};
+  var seats=GENERAL.filter(function(g){return genWinner(st,g)!==g.a}).map(function(g){var w=genWinner(st,g);return{seat:g.seat,to:w,lead:g.lead,note:abbr(g.a)+" led by "+fmt(g.lead,0)}})
+    .concat(MAORI.filter(function(m){return(st.winners[m.seat]||m.party)!==m.party}).map(function(m){var c=CLOSE.filter(function(x){return x.seat===m.seat})[0];return{seat:m.seat,to:st.winners[m.seat]||m.party,lead:c?c.lead:null,note:c?abbr(c.a)+" led by "+fmt(c.lead,0):abbr(m.party)+" led"}}));
+  seats.sort(function(a,b){return(a.lead==null?1e9:a.lead)-(b.lead==null?1e9:b.lead)});var few=seats.length<=2;
+  var houseTxt=res.house!==nightRes.house?'<span class="chg-house">'+nightRes.house+' → '+res.house+' seats</span>':'';
+  var box=$("changes");box.hidden=!d.length&&!seats.length&&!houseTxt;if(box.hidden){box.innerHTML="";fitHemi();return}
+  box.innerHTML='<h3 class="chg-title">What changes from election night</h3><div class="chg-grid">'+
+    '<span class="chg-k">Seats</span><span class="chg-v">'+(d.length?d.map(function(x){return chip(x[0],abbr(x[0])+" "+(x[1]>0?"+":"−")+Math.abs(x[1]))}).join(""):'<span class="chg-none">no change</span>')+houseTxt+'</span>'+
+    (seats.length?'<span class="chg-k">Electorates</span><span class="chg-v">'+seats.slice(0,few?2:4).map(function(x){return'<span class="chg-seat">'+esc(x.seat)+' <b>to</b> '+(x.to===NA?'<span class="chg-none">no one</span>':chip(x.to,abbr(x.to)))+(few?' <small>'+esc(x.note)+'</small>':'')+'</span>'}).join("")+(seats.length>4?'<span class="chg-none" title="'+esc(seats.slice(4).map(function(x){return x.seat+" to "+(x.to===NA?"no one":abbr(x.to))}).join(", "))+'">+'+(seats.length-4)+' more</span>':'')+'</span>':'')+'</div>';fitHemi()}
+// The strip borrows its height from the seat diagram, so the Parliament panel doesn't grow when changes appear.
+function fitHemi(){var h=$("hemi"),c=$("changes");h.style.maxHeight="";if(typeof getComputedStyle!=="function"||c.hidden||h.style.display==="none")return;
+  var cs=getComputedStyle(c),take=c.offsetHeight+parseFloat(cs.marginTop||0)+parseFloat(cs.marginBottom||0),natural=h.getBoundingClientRect().height;
+  if(natural>0)h.style.maxHeight=Math.max(150,Math.round(natural-take))+"px"}
+window.addEventListener("resize",fitHemi);
 // ---- general electorates: every seat, filterable, click to give it to the runner-up ----
 var genSort="margin";
 function renderGen(){var c={},flipped=0;GENERAL.forEach(function(g){var w=genWinner(st,g);if(w!==NA)c[w]=(c[w]||0)+1;if(w!==g.a)flipped++});
@@ -622,7 +655,7 @@ $("genReset").addEventListener("click",function(){st.gen=Object.assign({},GEN_NI
 function closeWinner(c){return c.maori?(st.winners[c.seat]||c.a):genWinner(st,c)}
 // General seat: leader <-> runner-up (anything else goes to the runner-up). Māori seat: the same, on the Māori winners.
 function flipSeat(c){var cur=closeWinner(c),to=cur===c.b?c.a:c.b;if(c.maori)st.winners[c.seat]=to;else{st.gen=Object.assign({},st.gen);st.gen[c.seat]=to;st.natElect=natGeneral(st)}}
-function renderClose(){$("close").innerHTML=CLOSE.map(function(c){var who=closeWinner(c),on=who===c.b;return'<button type="button" class="close-row" style="--pc:'+colorOf(who)+'" data-close="'+c.code+'" aria-pressed="'+on+'" title="'+esc(c.seat+": "+c.a+" led "+c.b+" by "+fmt(c.lead,0)+" on election night. "+(on?"Give it back to "+c.a:"Give it to "+c.b)+".")+'"><b>'+esc(c.seat)+'</b><span class="who">'+esc(abbr(who))+'</span><small>'+esc(abbr(c.a))+' by '+fmt(c.lead,0)+(on?' · <em>flipped</em>':'')+'</small></button>'}).join("")}
+function renderClose(){$("close").innerHTML=CLOSE.map(function(c){var who=closeWinner(c),on=who===c.b;return'<button type="button" class="close-row" style="--pc:'+colorOf(who)+'" data-close="'+c.code+'" aria-pressed="'+on+'" title="'+esc(c.seat+": "+c.a+" led "+c.b+" by "+fmt(c.lead,0)+" on election night. "+(on?"Give it back to "+c.a:"Give it to "+c.b)+".")+'"><b>'+esc(c.seat)+'</b><span class="who">'+esc(abbr(who))+'</span><small>'+esc(abbr(c.a))+' by '+fmt(c.lead,0)+'</small></button>'}).join("")}
 $("close").addEventListener("click",function(e){var b=e.target.closest("[data-close]");if(!b)return;var c=CLOSE.filter(function(x){return x.code===b.dataset.close})[0];if(!c)return;flipSeat(c);
   render();var again=$("close").querySelector('[data-close="'+c.code+'"]');if(again)again.focus()});
 $("swingReset").addEventListener("click",function(){st.swing=0;render()});

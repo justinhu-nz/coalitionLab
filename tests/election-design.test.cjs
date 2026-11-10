@@ -73,3 +73,17 @@ test('Each scenario keeps its own electorate winners',()=>{
  p.node('scnList').dispatch('click',{target:{closest:sel=>sel==='[data-scn]'?{dataset:{scn:'s1'}}:null}});
  assert.equal(p.state().gen.Wairarapa,'Labour');assert.match(p.node('genSum').textContent,/1 flipped/);
 });
+test('“What changes from election night” lists seat changes and flipped electorates',()=>{
+ const p=design();assert.equal(p.node('changes').hidden,true);// nothing to show on election night
+ p.preset('final');p.flip('55');p.flip('58');const t=p.node('changes').textContent;
+ assert.equal(p.node('changes').hidden,false);
+ assert.match(t,/SeatsGRN \+1TOP \+1NAT −1NZF −1/);// gains first, as in the mock-up
+ assert.match(t,/Wairarapa to LAB NAT led by 139/);assert.match(t,/Wellington Bays to GRN LAB led by 140/);
+ p.preset('night');assert.equal(p.node('changes').hidden,true);
+});
+test('The changes strip stays compact with many flips: closest first, no margins, at most four seats',()=>{
+ const p=design();for(const n of ['46','29','63','15','12'])p.flip(n);// Takanini, Nelson, Whangārei, Hutt South, Hamilton East
+ const t=p.node('changes').textContent;
+ assert.match(t,/ElectoratesHamilton East to LABHutt South to NATWhangārei to LABNelson to LAB\+1 more/);// harness drops spaces between tags
+ assert.doesNotMatch(t,/led by/);
+});
