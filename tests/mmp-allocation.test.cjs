@@ -1,7 +1,7 @@
 // Run with: node tests/mmp-allocation.test.cjs
 // Exercises the standalone page's actual pure calculation functions without a browser dependency.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
-const file=process.argv[2]||path.join(__dirname,'..','index.html');
+const file=process.argv[2]||path.join(__dirname,'..','index-old.html');
 const html=fs.readFileSync(file,'utf8');new vm.Script(html.match(/<script>([\s\S]*)<\/script>/)[1]);
 const engine={};vm.createContext(engine);
 vm.runInContext(html.slice(html.indexOf('var ROSTER='),html.indexOf('function hemiSeats(')),engine);

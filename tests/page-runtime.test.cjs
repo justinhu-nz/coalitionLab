@@ -2,7 +2,7 @@
 // This verifies startup and render transitions, not browser layout or native focus.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const assert=require('node:assert/strict'),{test}=require('node:test');
-const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
+const html=fs.readFileSync(path.join(__dirname,'..','index-old.html'),'utf8');
 function page(saved,{hash='',store}={}){
  const nodes=new Map(),storage=store||new Map(saved?[['coalitionlab-protoA',JSON.stringify(saved)]]:[]);
  class Element{

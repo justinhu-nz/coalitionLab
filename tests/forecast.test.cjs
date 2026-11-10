@@ -1,8 +1,8 @@
 // Run with: node tests/forecast.test.cjs
-// Checks forecast.html shares index.html's seat engine and that its outcome model gives the hand-worked results.
+// Checks forecast.html shares index-old.html's seat engine (the pre-election calculator) and that its outcome model gives the hand-worked results.
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.join(__dirname,'..');
-const index=fs.readFileSync(path.join(root,'index.html'),'utf8'),forecast=fs.readFileSync(path.join(root,'forecast.html'),'utf8');
+const index=fs.readFileSync(path.join(root,'index-old.html'),'utf8'),forecast=fs.readFileSync(path.join(root,'forecast.html'),'utf8');
 const script=html=>html.match(/<script>([\s\S]*)<\/script>/)[1];
 const fjs=script(forecast);
 let checks=0;function test(name,fn){fn();checks++;console.log('PASS '+name)}

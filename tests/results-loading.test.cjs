@@ -1,7 +1,7 @@
 // Exercise the real results button handler with controllable asynchronous feeds.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const assert=require('node:assert/strict'),{test}=require('node:test');
-const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
+const html=fs.readFileSync(path.join(__dirname,'..','index-old.html'),'utf8');
 const source=html.slice(html.indexOf('var RESULTS_BASE='),html.indexOf('initTheme($("themeBtn"))'));
 function page(){
  const button={addEventListener(type,fn){this.click=fn}},messages=[];

@@ -3,7 +3,7 @@
 // Executes actual page functions; DOM stubs test handlers/markup, NOT browser layout.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const assert=require('node:assert/strict'),{test}=require('node:test');
-const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
+const html=fs.readFileSync(path.join(__dirname,'..','index-old.html'),'utf8');
 function setup(){
  const nodes={},events={},storage={};
  const node=id=>nodes[id]||(nodes[id]={value:'',checked:false,innerHTML:'',textContent:'',addEventListener(type,fn){events[id+':'+type]=fn}});
